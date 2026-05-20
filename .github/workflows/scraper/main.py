@@ -2,6 +2,7 @@ import os
 import sys
 import asyncio
 import logging
+import traceback
 from datetime import datetime
 from pathlib import Path
 from typing import List
@@ -46,7 +47,13 @@ async def run_scraper_with_semaphore(scraper, semaphore):
 
 
 async def run_all_scrapers() -> List[JobPosting]:
-    scrapers = get_all_scrapers()
+    try:
+        scrapers = get_all_scrapers()
+    except Exception as e:
+        logger.error(f"Failed to load scrapers: {e}")
+        logger.error(traceback.format_exc())
+        return []
+
     logger.info(f"Starting {len(scrapers)} scrapers...")
     semaphore = asyncio.Semaphore(MAX_CONCURRENT)
     tasks = [
@@ -192,18 +199,42 @@ def main():
     logger.info(f"Time: {datetime.now().isoformat()}")
     logger.info("=" * 50)
 
-    all_postings = asyncio.run(run_all_scrapers())
+    # Ensure output dir always exists
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+
+    try:
+        all_postings = asyncio.run(run_all_scrapers())
+    except Exception as e:
+        logger.error(f"Scraping crashed: {e}")
+        logger.error(traceback.format_exc())
+        all_postings = []
+
     unique = deduplicate(all_postings)
 
     if not unique:
         logger.info("No new postings found.")
+        # Still create an empty Excel so artifact uploads
+        try:
+            filepath = create_excel([])
+            logger.info(f"Empty report created: {filepath}")
+        except Exception as e:
+            logger.error(f"Excel error: {e}")
+
         try:
             send_no_results_email(RECIPIENT_EMAIL)
         except Exception as e:
             logger.error(f"Email error: {e}")
+            logger.error(traceback.format_exc())
+        logger.info("DONE (no results)")
         return
 
-    filepath = create_excel(unique)
+    try:
+        filepath = create_excel(unique)
+    except Exception as e:
+        logger.error(f"Failed to create Excel: {e}")
+        logger.error(traceback.format_exc())
+        return
+
     companies = set(p.company for p in unique)
 
     try:
@@ -216,10 +247,17 @@ def main():
         logger.info("Report sent successfully!")
     except Exception as e:
         logger.error(f"Email failed: {e}")
+        logger.error(traceback.format_exc())
         logger.info(f"Results saved at: {filepath}")
 
     logger.info("DONE")
 
 
 if __name__ == '__main__':
-    main()
+    try:
+        main()
+    except Exception as e:
+        logger.error(f"FATAL ERROR: {e}")
+        logger.error(traceback.format_exc())
+        # Exit 0 so artifacts still upload
+        sys.exit(0)
