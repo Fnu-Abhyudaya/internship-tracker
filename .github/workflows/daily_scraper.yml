@@ -19,20 +19,13 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Cache pip packages
-        uses: actions/cache@v4
-        with:
-          path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
-          restore-keys: |
-            ${{ runner.os }}-pip-
-
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-          playwright install chromium
-          playwright install-deps
+
+      - name: Create output directory
+        run: mkdir -p output
 
       - name: Run scraper
         env:
@@ -49,5 +42,8 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: internship-results-${{ github.run_number }}
-          path: output/
+          path: |
+            output/
+            scraper.log
+          if-no-files-found: ignore
           retention-days: 30
