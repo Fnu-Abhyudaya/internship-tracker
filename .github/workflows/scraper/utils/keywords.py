@@ -1,6 +1,6 @@
 """Keyword and location matching for filtering job postings."""
 
-# Full list of role keywords to match against
+# ===== ROLES TO INCLUDE =====
 ROLE_KEYWORDS = [
     'mechanical engineer', 'mechanical engineering',
     'mechanical intern', 'mechanical engineering intern',
@@ -45,8 +45,26 @@ ROLE_KEYWORDS = [
 ]
 
 
-# Compact set of search terms used when querying career sites.
-# These broad terms catch ~99% of results matching ROLE_KEYWORDS.
+# ===== ROLES TO EXCLUDE =====
+# Any role title containing these will be REJECTED,
+# even if it matches an inclusion keyword above.
+EXCLUDE_KEYWORDS = [
+    'civil', 'marketing', 'fire', 'machine learning',
+    'software', 'computer', 'algorithm', 'communication',
+    'operations', 'sales', 'media', 'chemical',
+    'supply', 'chain', 'electrical', 'accounting',
+    'finance', 'logistic', 'cybersecurity', 'tax',
+    'construction', 'procurement', 'management',
+    'data', 'purchasing', 'analytics', 'geology',
+    'human resource',
+]
+
+# Whole-word-only excludes (to avoid false positives like
+# "ITar" matching "it", "ITS" matching "its", etc.)
+EXCLUDE_WHOLE_WORDS = ['it', 'hr']
+
+
+# ===== SEARCH TERMS USED WHEN QUERYING SITES =====
 SEARCH_KEYWORDS = [
     'intern',
     'mechanical',
@@ -57,13 +75,12 @@ SEARCH_KEYWORDS = [
 ]
 
 
-# Acceptable US location names
+# ===== US LOCATION DETECTION =====
 US_LOCATION_TOKENS = [
     'united states', 'united states of america', 'usa', 'u.s.',
     'u.s.a', 'us-', ', us', '(us)', ' us ',
 ]
 
-# US state names and 2-letter codes for location matching
 US_STATES = [
     'alabama', 'alaska', 'arizona', 'arkansas', 'california',
     'colorado', 'connecticut', 'delaware', 'florida', 'georgia',
@@ -78,7 +95,7 @@ US_STATES = [
     'wisconsin', 'wyoming', 'district of columbia',
 ]
 
-US_STATE_CODES = [
+US_STATE_CODES_COMMA = [
     ' al,', ' ak,', ' az,', ' ar,', ' ca,', ' co,', ' ct,',
     ' de,', ' fl,', ' ga,', ' hi,', ' id,', ' il,', ' in,',
     ' ia,', ' ks,', ' ky,', ' la,', ' me,', ' md,', ' ma,',
@@ -89,56 +106,65 @@ US_STATE_CODES = [
     ' wy,', ' dc,',
 ]
 
+US_STATE_2LETTER = {
+    'AL', 'AK', 'AZ', 'AR', 'CA', 'CO', 'CT', 'DE',
+    'FL', 'GA', 'HI', 'ID', 'IL', 'IN', 'IA', 'KS',
+    'KY', 'LA', 'ME', 'MD', 'MA', 'MI', 'MN', 'MS',
+    'MO', 'MT', 'NE', 'NV', 'NH', 'NJ', 'NM', 'NY',
+    'NC', 'ND', 'OH', 'OK', 'OR', 'PA', 'RI', 'SC',
+    'SD', 'TN', 'TX', 'UT', 'VT', 'VA', 'WA', 'WV',
+    'WI', 'WY', 'DC',
+}
+
 
 def matches_role_keywords(title: str) -> bool:
-    """Check if a job title contains any of the target keywords."""
+    """Check if title matches inclusion keywords AND
+    does NOT match any exclusion keyword."""
     if not title:
         return False
+
     lower = title.lower()
+
+    # First check exclusions - if any match, reject immediately
+    for bad_kw in EXCLUDE_KEYWORDS:
+        if bad_kw in lower:
+            return False
+
+    # Whole-word excludes (avoid false positives)
+    import re
+    for bad_word in EXCLUDE_WHOLE_WORDS:
+        if re.search(r'\b' + re.escape(bad_word) + r'\b', lower):
+            return False
+
+    # Then check inclusions
     for kw in ROLE_KEYWORDS:
         if kw in lower:
             return True
+
     return False
 
 
 def is_us_location(location: str) -> bool:
-    """Check if a location string represents a US location."""
     if not location or location.lower() == 'n/a':
-        # If location unknown, include (benefit of doubt)
         return True
 
     lower = ' ' + location.lower() + ' '
 
-    # Check direct US mentions
     for token in US_LOCATION_TOKENS:
         if token in lower:
             return True
 
-    # Check state names
     for state in US_STATES:
         if state in lower:
             return True
 
-    # Check state codes (with comma)
-    for code in US_STATE_CODES:
+    for code in US_STATE_CODES_COMMA:
         if code in lower:
             return True
 
-    # Check state codes at end of string
     parts = location.replace(',', ' ').split()
     for part in parts:
-        if len(part) == 2:
-            code = part.upper()
-            state_2letter = [
-                'AL', 'AK', 'AZ', 'AR', 'CA', 'CO', 'CT', 'DE',
-                'FL', 'GA', 'HI', 'ID', 'IL', 'IN', 'IA', 'KS',
-                'KY', 'LA', 'ME', 'MD', 'MA', 'MI', 'MN', 'MS',
-                'MO', 'MT', 'NE', 'NV', 'NH', 'NJ', 'NM', 'NY',
-                'NC', 'ND', 'OH', 'OK', 'OR', 'PA', 'RI', 'SC',
-                'SD', 'TN', 'TX', 'UT', 'VT', 'VA', 'WA', 'WV',
-                'WI', 'WY', 'DC',
-            ]
-            if code in state_2letter:
-                return True
+        if len(part) == 2 and part.upper() in US_STATE_2LETTER:
+            return True
 
     return False
