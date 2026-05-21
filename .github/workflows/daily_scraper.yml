@@ -25,9 +25,11 @@ jobs:
           pip install -r requirements.txt
 
       - name: Create output directory
+        working-directory: .github/workflows
         run: mkdir -p output
 
       - name: Run scraper
+        working-directory: .github/workflows
         env:
           SMTP_SERVER: ${{ secrets.SMTP_SERVER }}
           SMTP_PORT: ${{ secrets.SMTP_PORT }}
@@ -43,7 +45,7 @@ jobs:
         with:
           name: internship-results-${{ github.run_number }}
           path: |
-            output/
-            scraper.log
+            .github/workflows/output/
+            .github/workflows/scraper.log
           if-no-files-found: ignore
           retention-days: 30
