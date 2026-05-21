@@ -1,3 +1,5 @@
+"""Main entry point for the internship scraper."""
+
 import os
 import sys
 import asyncio
@@ -8,12 +10,15 @@ from pathlib import Path
 from typing import List
 
 import openpyxl
-from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
+from openpyxl.styles import (
+    Font, PatternFill, Alignment, Border, Side
+)
 from openpyxl.utils import get_column_letter
 
 from .scrapers.base_scraper import JobPosting
 from .scrapers.company_configs import get_all_scrapers
 from .email_sender import send_email, send_no_results_email
+from .utils.keywords import matches_role_keywords, is_us_location
 
 logging.basicConfig(
     level=logging.INFO,
@@ -36,7 +41,7 @@ async def run_scraper_with_semaphore(scraper, semaphore):
     async with semaphore:
         try:
             return await asyncio.wait_for(
-                scraper.run(), timeout=60
+                scraper.run(), timeout=120
             )
         except asyncio.TimeoutError:
             logger.warning(f"[{scraper.company_name}] Timed out")
@@ -72,8 +77,25 @@ async def run_all_scrapers() -> List[JobPosting]:
                 f"failed: {result}"
             )
 
-    logger.info(f"Total postings found: {len(all_postings)}")
+    logger.info(f"Total raw postings: {len(all_postings)}")
     return all_postings
+
+
+def final_filter(postings: List[JobPosting]) -> List[JobPosting]:
+    """Final sanity-check filter for keywords and US location."""
+    filtered = []
+    for p in postings:
+        if not matches_role_keywords(p.title):
+            continue
+        # Only filter location if we have one
+        if p.location and p.location != 'N/A':
+            if not is_us_location(p.location):
+                continue
+        filtered.append(p)
+    logger.info(
+        f"After keyword/location filter: {len(filtered)} postings"
+    )
+    return filtered
 
 
 def deduplicate(postings: List[JobPosting]) -> List[JobPosting]:
@@ -163,24 +185,20 @@ def create_excel(postings: List[JobPosting]) -> str:
                 cell.font = link_font
                 cell.hyperlink = value
 
-    # Summary sheet
     ws2 = wb.create_sheet('Summary')
     ws2['A1'] = 'Internship Tracker Summary'
     ws2['A1'].font = Font(bold=True, size=14)
     ws2['A3'] = f'Date: {today}'
-    ws2['A4'] = f'Total New Postings: {len(postings)}'
+    ws2['A4'] = f'Total Postings: {len(postings)}'
     companies = set(p.company for p in postings)
-    ws2['A5'] = f'Companies with Results: {len(companies)}'
-    ws2['A6'] = f'Generated at: {datetime.now().isoformat()}'
+    ws2['A5'] = f'Companies: {len(companies)}'
+    ws2['A6'] = f'Generated: {datetime.now().isoformat()}'
     ws2['A8'] = 'By Company:'
     ws2['A8'].font = Font(bold=True)
-    ws2['A9'] = 'Company'
-    ws2['B9'] = 'Count'
 
     counts = {}
     for p in postings:
         counts[p.company] = counts.get(p.company, 0) + 1
-
     for i, (co, cnt) in enumerate(sorted(counts.items()), 10):
         ws2[f'A{i}'] = co
         ws2[f'B{i}'] = cnt
@@ -199,7 +217,6 @@ def main():
     logger.info(f"Time: {datetime.now().isoformat()}")
     logger.info("=" * 50)
 
-    # Ensure output dir always exists
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
     try:
@@ -209,34 +226,29 @@ def main():
         logger.error(traceback.format_exc())
         all_postings = []
 
-    unique = deduplicate(all_postings)
+    # Final filter against ROLE_KEYWORDS + US location
+    filtered = final_filter(all_postings)
+    unique = deduplicate(filtered)
 
     if not unique:
-        logger.info("No new postings found.")
-        # Still create an empty Excel so artifact uploads
+        logger.info("No new matching postings found.")
         try:
             filepath = create_excel([])
-            logger.info(f"Empty report created: {filepath}")
         except Exception as e:
             logger.error(f"Excel error: {e}")
-
         try:
             send_no_results_email(RECIPIENT_EMAIL)
         except Exception as e:
             logger.error(f"Email error: {e}")
-            logger.error(traceback.format_exc())
-        logger.info("DONE (no results)")
         return
 
     try:
         filepath = create_excel(unique)
     except Exception as e:
         logger.error(f"Failed to create Excel: {e}")
-        logger.error(traceback.format_exc())
         return
 
     companies = set(p.company for p in unique)
-
     try:
         send_email(
             filepath=filepath,
@@ -244,11 +256,10 @@ def main():
             total_jobs=len(unique),
             total_companies=len(companies),
         )
-        logger.info("Report sent successfully!")
+        logger.info("Report sent!")
     except Exception as e:
         logger.error(f"Email failed: {e}")
         logger.error(traceback.format_exc())
-        logger.info(f"Results saved at: {filepath}")
 
     logger.info("DONE")
 
@@ -257,7 +268,6 @@ if __name__ == '__main__':
     try:
         main()
     except Exception as e:
-        logger.error(f"FATAL ERROR: {e}")
+        logger.error(f"FATAL: {e}")
         logger.error(traceback.format_exc())
-        # Exit 0 so artifacts still upload
         sys.exit(0)
