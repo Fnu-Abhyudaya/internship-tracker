@@ -17,6 +17,7 @@ from openpyxl.utils import get_column_letter
 
 from .scrapers.base_scraper import JobPosting
 from .scrapers.company_configs import get_all_scrapers
+from .scrapers.playwright_scraper import shutdown_browser
 from .email_sender import send_email, send_no_results_email
 from .utils.keywords import matches_role_keywords, is_us_location
 
@@ -34,35 +35,42 @@ RECIPIENT_EMAIL = os.environ.get(
     'RECIPIENT_EMAIL', 'abhyudaya.manipal@gmail.com'
 )
 OUTPUT_DIR = Path('output')
-MAX_CONCURRENT = 10
+MAX_CONCURRENT = 5  # lower because we use a browser
 
 
-async def run_scraper_with_semaphore(scraper, semaphore):
+async def run_scraper_with_semaphore(scraper, semaphore, stats):
     async with semaphore:
         try:
-            return await asyncio.wait_for(
-                scraper.run(), timeout=120
+            results = await asyncio.wait_for(
+                scraper.run(), timeout=180
             )
+            stats[scraper.company_name] = len(results)
+            return results
         except asyncio.TimeoutError:
-            logger.warning(f"[{scraper.company_name}] Timed out")
+            logger.warning(
+                f"[{scraper.company_name}] Timed out (180s)"
+            )
+            stats[scraper.company_name] = 'TIMEOUT'
             return []
         except Exception as e:
             logger.error(f"[{scraper.company_name}] Error: {e}")
+            stats[scraper.company_name] = f'ERROR: {e}'
             return []
 
 
-async def run_all_scrapers() -> List[JobPosting]:
+async def run_all_scrapers():
     try:
         scrapers = get_all_scrapers()
     except Exception as e:
         logger.error(f"Failed to load scrapers: {e}")
         logger.error(traceback.format_exc())
-        return []
+        return [], {}
 
     logger.info(f"Starting {len(scrapers)} scrapers...")
     semaphore = asyncio.Semaphore(MAX_CONCURRENT)
+    stats = {}
     tasks = [
-        run_scraper_with_semaphore(s, semaphore)
+        run_scraper_with_semaphore(s, semaphore, stats)
         for s in scrapers
     ]
     results = await asyncio.gather(*tasks, return_exceptions=True)
@@ -77,28 +85,38 @@ async def run_all_scrapers() -> List[JobPosting]:
                 f"failed: {result}"
             )
 
+    # Shutdown the shared browser
+    try:
+        await shutdown_browser()
+    except Exception as e:
+        logger.warning(f"Browser shutdown error: {e}")
+
     logger.info(f"Total raw postings: {len(all_postings)}")
-    return all_postings
+    return all_postings, stats
 
 
-def final_filter(postings: List[JobPosting]) -> List[JobPosting]:
-    """Final sanity-check filter for keywords and US location."""
+def final_filter(postings):
     filtered = []
+    rejected_kw = 0
+    rejected_loc = 0
     for p in postings:
         if not matches_role_keywords(p.title):
+            rejected_kw += 1
             continue
-        # Only filter location if we have one
         if p.location and p.location != 'N/A':
             if not is_us_location(p.location):
+                rejected_loc += 1
                 continue
         filtered.append(p)
     logger.info(
-        f"After keyword/location filter: {len(filtered)} postings"
+        f"Filter results: kept {len(filtered)}, "
+        f"rejected {rejected_kw} (keyword), "
+        f"rejected {rejected_loc} (location)"
     )
     return filtered
 
 
-def deduplicate(postings: List[JobPosting]) -> List[JobPosting]:
+def deduplicate(postings):
     seen = set()
     unique = []
     for p in postings:
@@ -116,7 +134,22 @@ def deduplicate(postings: List[JobPosting]) -> List[JobPosting]:
     return unique
 
 
-def create_excel(postings: List[JobPosting]) -> str:
+def log_company_stats(stats):
+    """Log per-company breakdown for debugging."""
+    logger.info("=" * 60)
+    logger.info("PER-COMPANY RESULTS:")
+    logger.info("=" * 60)
+    for company in sorted(stats.keys()):
+        count = stats[company]
+        if isinstance(count, int):
+            marker = "✓" if count > 0 else "—"
+            logger.info(f"  {marker} {company}: {count}")
+        else:
+            logger.info(f"  ✗ {company}: {count}")
+    logger.info("=" * 60)
+
+
+def create_excel(postings):
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     today = datetime.now().strftime('%Y-%m-%d')
     filepath = OUTPUT_DIR / f'internship_postings_{today}.xlsx'
@@ -220,22 +253,23 @@ def main():
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
     try:
-        all_postings = asyncio.run(run_all_scrapers())
+        all_postings, stats = asyncio.run(run_all_scrapers())
     except Exception as e:
         logger.error(f"Scraping crashed: {e}")
         logger.error(traceback.format_exc())
-        all_postings = []
+        all_postings, stats = [], {}
 
-    # Final filter against ROLE_KEYWORDS + US location
+    log_company_stats(stats)
+
     filtered = final_filter(all_postings)
     unique = deduplicate(filtered)
 
     if not unique:
-        logger.info("No new matching postings found.")
+        logger.info("No matching postings.")
         try:
-            filepath = create_excel([])
-        except Exception as e:
-            logger.error(f"Excel error: {e}")
+            create_excel([])
+        except Exception:
+            pass
         try:
             send_no_results_email(RECIPIENT_EMAIL)
         except Exception as e:
@@ -245,7 +279,7 @@ def main():
     try:
         filepath = create_excel(unique)
     except Exception as e:
-        logger.error(f"Failed to create Excel: {e}")
+        logger.error(f"Excel error: {e}")
         return
 
     companies = set(p.company for p in unique)
