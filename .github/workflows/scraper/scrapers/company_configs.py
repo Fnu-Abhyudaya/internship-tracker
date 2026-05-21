@@ -316,6 +316,10 @@ def get_all_scrapers() -> List[BaseScraper]:
             'company': 'Rep Fitness',
             'url': 'https://repfitness.com/pages/rep-careers',
         },
+        {
+            'company': 'Standard Subsea',
+            'url': 'https://www.standardsubsea.com/careers',
+        },
     ]
 
     for cfg in playwright_configs:
