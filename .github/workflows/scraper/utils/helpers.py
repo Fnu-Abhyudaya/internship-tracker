@@ -1,8 +1,12 @@
+"""Helper utilities for the scraper."""
+
 import re
 import logging
 from datetime import datetime, timedelta
 from typing import Optional
 from dateutil import parser as date_parser
+
+from .keywords import matches_role_keywords, is_us_location
 
 logger = logging.getLogger(__name__)
 
@@ -64,12 +68,5 @@ def clean_text(text: str) -> str:
 
 
 def is_internship_role(title: str) -> bool:
-    if not title:
-        return False
-    lower = title.lower()
-    keywords = [
-        'intern', 'internship', 'co-op', 'coop', 'co op',
-        'student', 'apprentice', 'trainee', 'summer',
-        'undergraduate', 'graduate intern'
-    ]
-    return any(kw in lower for kw in keywords)
+    """Now uses the expanded keyword matcher."""
+    return matches_role_keywords(title)
