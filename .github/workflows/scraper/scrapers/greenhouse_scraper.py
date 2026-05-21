@@ -1,3 +1,5 @@
+"""Scraper for Greenhouse job board pages."""
+
 import logging
 from typing import List
 from urllib.parse import urlparse
@@ -6,18 +8,16 @@ from bs4 import BeautifulSoup
 
 from .base_scraper import BaseScraper, JobPosting
 from ..utils.helpers import (
-    is_within_last_24_hours, is_internship_role,
-    normalize_url, clean_text
+    is_within_last_24_hours, normalize_url, clean_text
 )
+from ..utils.keywords import matches_role_keywords, is_us_location
 
 logger = logging.getLogger(__name__)
 
 
 class GreenhouseScraper(BaseScraper):
-    def __init__(self, company_name: str, base_url: str,
-                 board_token: str = None,
-                 filter_internships: bool = True,
-                 office_ids: list = None):
+    def __init__(self, company_name, base_url, board_token=None,
+                 filter_internships=True, office_ids=None):
         super().__init__(company_name, base_url)
         self.filter_internships = filter_internships
         self.office_ids = office_ids or []
@@ -38,19 +38,16 @@ class GreenhouseScraper(BaseScraper):
             data = await self.fetch_json(
                 api_url, params={'content': 'true'}
             )
-
             if not data or 'jobs' not in data:
-                return await self._scrape_html()
+                return results
 
             for job in data.get('jobs', []):
                 title = job.get('title', '')
                 job_id = job.get('id', '')
                 updated_at = job.get('updated_at', '')
                 abs_url = job.get('absolute_url', '')
-                location_name = ''
                 loc = job.get('location', {})
-                if loc:
-                    location_name = loc.get('name', '')
+                location_name = loc.get('name', '') if loc else ''
 
                 if self.office_ids:
                     job_offices = [
@@ -64,60 +61,26 @@ class GreenhouseScraper(BaseScraper):
                         continue
 
                 if self.filter_internships and \
-                        not is_internship_role(title):
+                        not matches_role_keywords(title):
                     continue
-
                 if not is_within_last_24_hours(updated_at):
+                    continue
+                if not is_us_location(location_name):
                     continue
 
                 job_url = abs_url or (
                     f"https://boards.greenhouse.io/"
                     f"{self.board_token}/jobs/{job_id}"
                 )
-
                 results.append(JobPosting(
                     title=title,
                     company=self.company_name,
                     url=job_url,
                     date_posted=updated_at,
-                    location=location_name,
+                    location=location_name or 'N/A',
                 ))
-
         except Exception as e:
             logger.error(
                 f"[{self.company_name}] Greenhouse error: {e}"
             )
-
-        return results
-
-    async def _scrape_html(self) -> List[JobPosting]:
-        results = []
-        html = await self.fetch(self.base_url)
-        if not html:
-            return results
-
-        soup = BeautifulSoup(html, 'lxml')
-        for opening in soup.select('.opening'):
-            link_tag = opening.select_one('a')
-            if not link_tag:
-                continue
-            title = clean_text(link_tag.get_text())
-            href = link_tag.get('href', '')
-            job_url = normalize_url(
-                'https://boards.greenhouse.io', href
-            )
-            location = ''
-            loc_tag = opening.select_one('.location')
-            if loc_tag:
-                location = clean_text(loc_tag.get_text())
-            if self.filter_internships and \
-                    not is_internship_role(title):
-                continue
-            results.append(JobPosting(
-                title=title,
-                company=self.company_name,
-                url=job_url,
-                location=location,
-            ))
-
         return results
