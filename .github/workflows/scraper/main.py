@@ -20,6 +20,10 @@ from .scrapers.company_configs import get_all_scrapers
 from .scrapers.playwright_scraper import shutdown_browser
 from .email_sender import send_email, send_no_results_email
 from .utils.keywords import matches_role_keywords, is_us_location
+from .utils.seen_tracker import (
+    load_seen, prune_old, filter_new_postings,
+    mark_as_seen, save_seen
+)
 
 logging.basicConfig(
     level=logging.INFO,
@@ -35,7 +39,7 @@ RECIPIENT_EMAIL = os.environ.get(
     'RECIPIENT_EMAIL', 'abhyudaya.manipal@gmail.com'
 )
 OUTPUT_DIR = Path('output')
-MAX_CONCURRENT = 5  # lower because we use a browser
+MAX_CONCURRENT = 5
 
 
 async def run_scraper_with_semaphore(scraper, semaphore, stats):
@@ -47,9 +51,7 @@ async def run_scraper_with_semaphore(scraper, semaphore, stats):
             stats[scraper.company_name] = len(results)
             return results
         except asyncio.TimeoutError:
-            logger.warning(
-                f"[{scraper.company_name}] Timed out (180s)"
-            )
+            logger.warning(f"[{scraper.company_name}] Timed out")
             stats[scraper.company_name] = 'TIMEOUT'
             return []
         except Exception as e:
@@ -85,7 +87,6 @@ async def run_all_scrapers():
                 f"failed: {result}"
             )
 
-    # Shutdown the shared browser
     try:
         await shutdown_browser()
     except Exception as e:
@@ -129,13 +130,12 @@ def deduplicate(postings):
             seen.add(key)
             unique.append(p)
     logger.info(
-        f"Deduplicated: {len(postings)} -> {len(unique)}"
+        f"Within-run dedup: {len(postings)} -> {len(unique)}"
     )
     return unique
 
 
 def log_company_stats(stats):
-    """Log per-company breakdown for debugging."""
     logger.info("=" * 60)
     logger.info("PER-COMPANY RESULTS:")
     logger.info("=" * 60)
@@ -252,6 +252,10 @@ def main():
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
+    # Load previously-seen jobs and prune old entries
+    seen = load_seen()
+    seen = prune_old(seen)
+
     try:
         all_postings, stats = asyncio.run(run_all_scrapers())
     except Exception as e:
@@ -261,11 +265,21 @@ def main():
 
     log_company_stats(stats)
 
+    # Apply role + location filter
     filtered = final_filter(all_postings)
+    # Dedupe within this run
     unique = deduplicate(filtered)
+    # NEW: filter out anything already seen in previous runs
+    new_jobs = filter_new_postings(unique, seen)
 
-    if not unique:
-        logger.info("No matching postings.")
+    # Update seen tracker with ALL of today's matching jobs
+    # (so even if today's email had no NEW ones,
+    # we don't re-email them tomorrow)
+    seen = mark_as_seen(unique, seen)
+    save_seen(seen)
+
+    if not new_jobs:
+        logger.info("No NEW postings since last run.")
         try:
             create_excel([])
         except Exception:
@@ -277,20 +291,20 @@ def main():
         return
 
     try:
-        filepath = create_excel(unique)
+        filepath = create_excel(new_jobs)
     except Exception as e:
         logger.error(f"Excel error: {e}")
         return
 
-    companies = set(p.company for p in unique)
+    companies = set(p.company for p in new_jobs)
     try:
         send_email(
             filepath=filepath,
             recipient=RECIPIENT_EMAIL,
-            total_jobs=len(unique),
+            total_jobs=len(new_jobs),
             total_companies=len(companies),
         )
-        logger.info("Report sent!")
+        logger.info(f"Report sent with {len(new_jobs)} NEW jobs!")
     except Exception as e:
         logger.error(f"Email failed: {e}")
         logger.error(traceback.format_exc())
