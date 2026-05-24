@@ -13,7 +13,6 @@ from ..utils.keywords import matches_role_keywords, is_us_location
 
 logger = logging.getLogger(__name__)
 
-# Shared browser instance (created on first use)
 _browser = None
 _playwright = None
 _browser_lock = asyncio.Lock()
@@ -46,9 +45,35 @@ async def shutdown_browser():
         _playwright = None
 
 
-class PlaywrightScraper(BaseScraper):
-    """Scraper that uses Playwright to render JavaScript pages."""
+def _try_parse_date(text):
+    """Try to extract a date-sortable string from messy text."""
+    if not text:
+        return ''
+    import re
+    from datetime import datetime
+    from dateutil import parser as dp
+    try:
+        # Handle "X days ago" etc.
+        lower = text.lower()
+        if 'just' in lower or 'today' in lower or 'hour' in lower \
+                or 'minute' in lower:
+            return datetime.now().isoformat()
+        if 'yesterday' in lower:
+            from datetime import timedelta
+            return (datetime.now() - timedelta(days=1)).isoformat()
+        m = re.search(r'(\d+)\s*day', lower)
+        if m:
+            from datetime import timedelta
+            return (
+                datetime.now() - timedelta(days=int(m.group(1)))
+            ).isoformat()
+        # Try to parse explicit date
+        return dp.parse(text, fuzzy=True).isoformat()
+    except Exception:
+        return ''
 
+
+class PlaywrightScraper(BaseScraper):
     def __init__(self, company_name, base_url,
                  wait_selector=None,
                  job_link_pattern=None,
@@ -83,7 +108,6 @@ class PlaywrightScraper(BaseScraper):
                 timeout=45000
             )
 
-            # Wait for content to load
             if self.wait_selector:
                 try:
                     await page.wait_for_selector(
@@ -92,12 +116,11 @@ class PlaywrightScraper(BaseScraper):
                 except Exception:
                     pass
 
-            # Extra wait for JS rendering
-            await page.wait_for_timeout(
-                self.wait_seconds * 1000
-            )
+            await page.wait_for_timeout(self.wait_seconds * 1000)
 
-            # Get rendered HTML
+            # Try clicking common "Sort by date" / "Most recent" controls
+            await self._try_sort_by_date(page)
+
             html = await page.content()
             results = self._parse_html(html, page.url)
 
@@ -114,7 +137,33 @@ class PlaywrightScraper(BaseScraper):
             except Exception:
                 pass
 
+        # Sort newest-first based on whatever date we extracted
+        results.sort(
+            key=lambda p: p.date_posted or '',
+            reverse=True
+        )
         return results
+
+    async def _try_sort_by_date(self, page):
+        """Try clicking common 'Most Recent' sort controls."""
+        sort_candidates = [
+            'button:has-text("Most Recent")',
+            'button:has-text("Newest")',
+            'button:has-text("Date Posted")',
+            'option:has-text("Most Recent")',
+            'option:has-text("Newest")',
+            '[aria-label*="ort"]',
+            '[data-sort*="date"]',
+        ]
+        for selector in sort_candidates:
+            try:
+                el = await page.query_selector(selector)
+                if el:
+                    await el.click(timeout=2000)
+                    await page.wait_for_timeout(2000)
+                    return
+            except Exception:
+                continue
 
     def _parse_html(self, html: str, current_url: str):
         from bs4 import BeautifulSoup
@@ -123,7 +172,6 @@ class PlaywrightScraper(BaseScraper):
 
         soup = BeautifulSoup(html, 'lxml')
 
-        # Strategy 1: Look for structured job listing containers
         selectors = [
             'a[href*="/job/"]',
             'a[href*="/jobs/"]',
@@ -142,7 +190,6 @@ class PlaywrightScraper(BaseScraper):
         for sel in selectors:
             all_links.extend(soup.select(sel))
 
-        # Also generic patterns
         if self.job_link_pattern:
             for link in soup.select('a[href]'):
                 href = link.get('href', '')
@@ -157,21 +204,19 @@ class PlaywrightScraper(BaseScraper):
                 continue
 
             title = clean_text(link.get_text())
+            parent = link.find_parent(
+                ['div', 'li', 'article', 'tr']
+            )
 
-            # Try parent for richer text
-            if not title or len(title) < 3:
-                parent = link.find_parent(
-                    ['div', 'li', 'article', 'tr']
-                )
-                if parent:
-                    for sel in [
-                        '.title', '.job-title', 'h2',
-                        'h3', 'h4', '[class*="title"]'
-                    ]:
-                        t_el = parent.select_one(sel)
-                        if t_el:
-                            title = clean_text(t_el.get_text())
-                            break
+            if (not title or len(title) < 3) and parent:
+                for sel in [
+                    '.title', '.job-title', 'h2',
+                    'h3', 'h4', '[class*="title"]'
+                ]:
+                    t_el = parent.select_one(sel)
+                    if t_el:
+                        title = clean_text(t_el.get_text())
+                        break
 
             if not title or len(title) < 3:
                 continue
@@ -181,11 +226,8 @@ class PlaywrightScraper(BaseScraper):
                 continue
             seen.add(job_url)
 
-            # Try to extract location from nearby element
             location = ''
-            parent = link.find_parent(
-                ['div', 'li', 'article', 'tr']
-            )
+            date_str = ''
             if parent:
                 loc_el = parent.select_one(
                     '[class*="location"], [class*="city"], '
@@ -194,11 +236,18 @@ class PlaywrightScraper(BaseScraper):
                 if loc_el:
                     location = clean_text(loc_el.get_text())
 
+                date_el = parent.select_one(
+                    '[class*="date"], [class*="posted"], '
+                    'time, [datetime]'
+                )
+                if date_el:
+                    raw = date_el.get('datetime') or \
+                          clean_text(date_el.get_text())
+                    date_str = _try_parse_date(raw)
+
             if self.filter_internships and \
                     not matches_role_keywords(title):
                 continue
-
-            # Lenient location filter - only reject if clearly non-US
             if location and not is_us_location(location):
                 continue
 
@@ -206,6 +255,7 @@ class PlaywrightScraper(BaseScraper):
                 title=title,
                 company=self.company_name,
                 url=job_url,
+                date_posted=date_str,
                 location=location or 'N/A',
             ))
 
