@@ -4,12 +4,8 @@ import logging
 from typing import List
 from urllib.parse import urlparse
 
-from bs4 import BeautifulSoup
-
 from .base_scraper import BaseScraper, JobPosting
-from ..utils.helpers import (
-    is_within_last_24_hours, normalize_url, clean_text
-)
+from ..utils.helpers import is_within_last_24_hours
 from ..utils.keywords import matches_role_keywords, is_us_location
 
 logger = logging.getLogger(__name__)
@@ -41,7 +37,15 @@ class GreenhouseScraper(BaseScraper):
             if not data or 'jobs' not in data:
                 return results
 
-            for job in data.get('jobs', []):
+            jobs = data.get('jobs', [])
+
+            # Sort by updated_at DESC (most recent first)
+            jobs.sort(
+                key=lambda j: j.get('updated_at', '') or '',
+                reverse=True
+            )
+
+            for job in jobs:
                 title = job.get('title', '')
                 job_id = job.get('id', '')
                 updated_at = job.get('updated_at', '')
