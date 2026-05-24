@@ -97,6 +97,7 @@ async def run_all_scrapers():
 
 
 def final_filter(postings):
+    """Filter by role keywords and US location."""
     filtered = []
     rejected_kw = 0
     rejected_loc = 0
@@ -118,6 +119,7 @@ def final_filter(postings):
 
 
 def deduplicate(postings):
+    """Remove duplicates within this run."""
     seen = set()
     unique = []
     for p in postings:
@@ -136,23 +138,51 @@ def deduplicate(postings):
 
 
 def log_company_stats(stats):
+    """Print a per-company summary to the log."""
     logger.info("=" * 60)
     logger.info("PER-COMPANY RESULTS:")
     logger.info("=" * 60)
     for company in sorted(stats.keys()):
         count = stats[company]
         if isinstance(count, int):
-            marker = "✓" if count > 0 else "—"
+            marker = "OK " if count > 0 else "-- "
             logger.info(f"  {marker} {company}: {count}")
         else:
-            logger.info(f"  ✗ {company}: {count}")
+            logger.info(f"  ERR {company}: {count}")
     logger.info("=" * 60)
 
 
+def sort_newest_first(postings):
+    """Sort postings by date_posted DESC (newest first).
+    Postings with no date go to the bottom."""
+    def sort_key(p):
+        date = p.date_posted or ''
+        # Empty dates sort to end; non-empty sort by reverse string
+        return (0 if date else 1, date)
+
+    # Sort with non-empty dates first, then by date desc
+    with_date = [p for p in postings if p.date_posted]
+    without_date = [p for p in postings if not p.date_posted]
+
+    with_date.sort(
+        key=lambda p: p.date_posted or '',
+        reverse=True
+    )
+    without_date.sort(
+        key=lambda p: (p.company.lower(), p.title.lower())
+    )
+
+    return with_date + without_date
+
+
 def create_excel(postings):
+    """Build and save the styled Excel report."""
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     today = datetime.now().strftime('%Y-%m-%d')
     filepath = OUTPUT_DIR / f'internship_postings_{today}.xlsx'
+
+    # Sort newest-first before writing
+    postings = sort_newest_first(postings)
 
     wb = openpyxl.Workbook()
     ws = wb.active
@@ -195,10 +225,6 @@ def create_excel(postings):
     )
     data_align = Alignment(vertical='center', wrap_text=True)
 
-    postings.sort(
-        key=lambda p: (p.company.lower(), p.title.lower())
-    )
-
     for row_num, posting in enumerate(postings, 2):
         row_data = [
             row_num - 1,
@@ -218,6 +244,7 @@ def create_excel(postings):
                 cell.font = link_font
                 cell.hyperlink = value
 
+    # Summary sheet
     ws2 = wb.create_sheet('Summary')
     ws2['A1'] = 'Internship Tracker Summary'
     ws2['A1'].font = Font(bold=True, size=14)
@@ -226,13 +253,18 @@ def create_excel(postings):
     companies = set(p.company for p in postings)
     ws2['A5'] = f'Companies: {len(companies)}'
     ws2['A6'] = f'Generated: {datetime.now().isoformat()}'
-    ws2['A8'] = 'By Company:'
-    ws2['A8'].font = Font(bold=True)
+    ws2['A7'] = 'Sorted by: Most recent first'
+    ws2['A9'] = 'By Company:'
+    ws2['A9'].font = Font(bold=True)
+    ws2['A10'] = 'Company'
+    ws2['B10'] = 'Count'
+    ws2['A10'].font = Font(bold=True)
+    ws2['B10'].font = Font(bold=True)
 
     counts = {}
     for p in postings:
         counts[p.company] = counts.get(p.company, 0) + 1
-    for i, (co, cnt) in enumerate(sorted(counts.items()), 10):
+    for i, (co, cnt) in enumerate(sorted(counts.items()), 11):
         ws2[f'A{i}'] = co
         ws2[f'B{i}'] = cnt
 
@@ -269,12 +301,11 @@ def main():
     filtered = final_filter(all_postings)
     # Dedupe within this run
     unique = deduplicate(filtered)
-    # NEW: filter out anything already seen in previous runs
+    # Filter out anything already seen in previous runs
     new_jobs = filter_new_postings(unique, seen)
 
-    # Update seen tracker with ALL of today's matching jobs
-    # (so even if today's email had no NEW ones,
-    # we don't re-email them tomorrow)
+    # Mark ALL of today's matching jobs as seen
+    # (so they won't be re-emailed even if no new ones today)
     seen = mark_as_seen(unique, seen)
     save_seen(seen)
 
@@ -282,8 +313,8 @@ def main():
         logger.info("No NEW postings since last run.")
         try:
             create_excel([])
-        except Exception:
-            pass
+        except Exception as e:
+            logger.error(f"Excel error: {e}")
         try:
             send_no_results_email(RECIPIENT_EMAIL)
         except Exception as e:
@@ -293,7 +324,7 @@ def main():
     try:
         filepath = create_excel(new_jobs)
     except Exception as e:
-        logger.error(f"Excel error: {e}")
+        logger.error(f"Failed to create Excel: {e}")
         return
 
     companies = set(p.company for p in new_jobs)
