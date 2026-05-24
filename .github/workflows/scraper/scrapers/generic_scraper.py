@@ -3,7 +3,7 @@
 import re
 import json
 import logging
-from typing import List, Optional
+from typing import List
 from urllib.parse import urlparse
 
 from bs4 import BeautifulSoup
@@ -44,6 +44,12 @@ class GenericHTMLScraper(BaseScraper):
             logger.error(
                 f"[{self.company_name}] Generic error: {e}"
             )
+
+        # Sort newest first
+        results.sort(
+            key=lambda p: p.date_posted or '',
+            reverse=True
+        )
         return results
 
     def _apply_filters(self, title, location):
@@ -94,6 +100,17 @@ class GenericHTMLScraper(BaseScraper):
                 if loc_el:
                     location = clean_text(loc_el.get_text())
 
+                date_str = ''
+                date_el = item.select_one(
+                    '[class*="date"], [class*="posted"], '
+                    'time, [datetime]'
+                )
+                if date_el:
+                    date_str = (
+                        date_el.get('datetime') or
+                        clean_text(date_el.get_text())
+                    )
+
                 if not self._apply_filters(title, location):
                     continue
 
@@ -101,6 +118,7 @@ class GenericHTMLScraper(BaseScraper):
                     title=title,
                     company=self.company_name,
                     url=job_url,
+                    date_posted=date_str,
                     location=location or 'N/A',
                 ))
             if results:
@@ -210,7 +228,14 @@ class AshbyScraper(BaseScraper):
             if not data or 'jobs' not in data:
                 return results
 
-            for job in data.get('jobs', []):
+            jobs = data.get('jobs', [])
+            # Sort newest first
+            jobs.sort(
+                key=lambda j: j.get('publishedDate', '') or '',
+                reverse=True
+            )
+
+            for job in jobs:
                 title = job.get('title', '')
                 job_id = job.get('id', '')
                 published = job.get('publishedDate', '')
