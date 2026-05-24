@@ -1,5 +1,6 @@
 """Scraper for Workday-based career pages."""
 
+import json
 import logging
 from typing import List
 from urllib.parse import urlparse, parse_qs
@@ -20,16 +21,45 @@ class WorkdayScraper(BaseScraper):
         self.search_params = search_params or {}
         self.filter_internships = filter_internships
 
-    async def _search_one_keyword(self, api_url, base_params,
-                                  host, site_path, keyword):
-        """Run a single keyword search and return postings."""
-        results = []
-        params = dict(base_params)
-        params['searchText'] = keyword
-        params['offset'] = 0
+    async def _post_search(self, api_url, payload):
+        """POST to Workday's search API."""
+        import aiohttp
+        await self.create_session()
+        try:
+            headers = dict(self.headers)
+            headers['Content-Type'] = 'application/json'
+            headers['Accept'] = 'application/json'
+            async with self.session.post(
+                api_url, json=payload, headers=headers,
+                allow_redirects=True
+            ) as response:
+                if response.status == 200:
+                    return await response.json(content_type=None)
+                logger.warning(
+                    f"[{self.company_name}] "
+                    f"POST {api_url} returned {response.status}"
+                )
+        except Exception as e:
+            logger.error(
+                f"[{self.company_name}] POST error: {e}"
+            )
+        return None
 
-        for _ in range(5):  # max 5 pages per keyword
-            data = await self.fetch_json(api_url, params=params)
+    async def _search_one_keyword(self, api_url, host,
+                                  site_path, keyword):
+        """Run a single keyword search, requesting newest first."""
+        results = []
+        offset = 0
+
+        for _ in range(5):
+            # Workday returns by posting date desc by default
+            payload = {
+                'appliedFacets': {},
+                'limit': 20,
+                'offset': offset,
+                'searchText': keyword,
+            }
+            data = await self._post_search(api_url, payload)
             if not data or 'jobPostings' not in data:
                 break
 
@@ -64,8 +94,8 @@ class WorkdayScraper(BaseScraper):
                 ))
 
             total = data.get('total', 0)
-            params['offset'] += len(postings)
-            if params['offset'] >= total:
+            offset += len(postings)
+            if offset >= total:
                 break
 
         return results
@@ -80,45 +110,35 @@ class WorkdayScraper(BaseScraper):
                 if p and p != 'en-US'
             ]
             site_path = path_parts[0] if path_parts else ''
-            api_url = f"{host}/wday/cxs/{parsed.hostname.split('.')[0]}/{site_path}/jobs"
+            tenant = parsed.hostname.split('.')[0]
 
-            base_params = {'limit': 20}
-            if parsed.query:
-                qs = parse_qs(parsed.query)
-                for key, values in qs.items():
-                    if key == 'workerSubType':
-                        base_params['workerSubType'] = values
-                    elif key == 'locationCountry':
-                        base_params['locationCountry'] = values[0]
-            base_params.update(self.search_params)
+            # Workday CXS API endpoint
+            api_url = (
+                f"{host}/wday/cxs/{tenant}/{site_path}/jobs"
+            )
 
-            # Try POST-style API first (newer Workday)
             for keyword in SEARCH_KEYWORDS:
                 kw_results = await self._search_one_keyword(
-                    api_url, base_params, host, site_path, keyword
+                    api_url, host, site_path, keyword
                 )
                 all_results.extend(kw_results)
-
-            # If nothing found, try the older REST API style
-            if not all_results:
-                alt_api = f"{host}/api/v1/{site_path}/jobs"
-                for keyword in SEARCH_KEYWORDS:
-                    kw_results = await self._search_one_keyword(
-                        alt_api, base_params, host,
-                        site_path, keyword
-                    )
-                    all_results.extend(kw_results)
 
         except Exception as e:
             logger.error(
                 f"[{self.company_name}] Workday error: {e}"
             )
 
-        # Deduplicate by URL
+        # Dedupe by URL
         seen = set()
         unique = []
         for r in all_results:
             if r.url not in seen:
                 seen.add(r.url)
                 unique.append(r)
+
+        # Sort newest-first
+        unique.sort(
+            key=lambda p: p.date_posted or '',
+            reverse=True
+        )
         return unique
