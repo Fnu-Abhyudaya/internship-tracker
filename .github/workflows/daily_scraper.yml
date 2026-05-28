@@ -48,17 +48,17 @@ jobs:
         run: |
           python -m scraper.main
 
-      - name: Commit updated seen-jobs tracker
+      - name: Commit updated job history
         if: always()
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          if [ -f seen_jobs.json ]; then
-            git add seen_jobs.json
-            git diff --staged --quiet || git commit -m "Update seen_jobs.json [skip ci]"
+          if [ -f job_history.json ]; then
+            git add job_history.json
+            git diff --staged --quiet || git commit -m "Update job_history.json [skip ci]"
             git push || echo "Nothing to push"
           else
-            echo "No seen_jobs.json file to commit"
+            echo "No job_history.json file to commit"
           fi
 
       - name: Upload results artifact
@@ -69,6 +69,6 @@ jobs:
           path: |
             .github/workflows/output/
             .github/workflows/scraper.log
-            seen_jobs.json
+            job_history.json
           if-no-files-found: ignore
           retention-days: 30
