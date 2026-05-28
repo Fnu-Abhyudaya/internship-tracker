@@ -21,8 +21,8 @@ from .scrapers.playwright_scraper import shutdown_browser
 from .email_sender import send_email, send_no_results_email
 from .utils.keywords import matches_role_keywords, is_us_location
 from .utils.seen_tracker import (
-    load_seen, prune_old, filter_new_postings,
-    mark_as_seen, save_seen
+    load_history, filter_new_postings,
+    add_to_history, save_history
 )
 
 logging.basicConfig(
@@ -118,18 +118,14 @@ def final_filter(postings):
     return filtered
 
 
-def deduplicate(postings):
-    """Remove duplicates within this run."""
-    seen = set()
+def deduplicate_within_run(postings):
+    """Remove duplicates within this single run (by URL)."""
+    seen_urls = set()
     unique = []
     for p in postings:
-        key = (
-            p.title.lower().strip(),
-            p.company.lower().strip(),
-            p.url.lower().strip(),
-        )
-        if key not in seen:
-            seen.add(key)
+        url_key = (p.url or '').lower().strip().rstrip('/')
+        if url_key and url_key not in seen_urls:
+            seen_urls.add(url_key)
             unique.append(p)
     logger.info(
         f"Within-run dedup: {len(postings)} -> {len(unique)}"
@@ -153,17 +149,9 @@ def log_company_stats(stats):
 
 
 def sort_newest_first(postings):
-    """Sort postings by date_posted DESC (newest first).
-    Postings with no date go to the bottom."""
-    def sort_key(p):
-        date = p.date_posted or ''
-        # Empty dates sort to end; non-empty sort by reverse string
-        return (0 if date else 1, date)
-
-    # Sort with non-empty dates first, then by date desc
+    """Sort by date_posted DESC; undated entries go to bottom."""
     with_date = [p for p in postings if p.date_posted]
     without_date = [p for p in postings if not p.date_posted]
-
     with_date.sort(
         key=lambda p: p.date_posted or '',
         reverse=True
@@ -171,7 +159,6 @@ def sort_newest_first(postings):
     without_date.sort(
         key=lambda p: (p.company.lower(), p.title.lower())
     )
-
     return with_date + without_date
 
 
@@ -181,7 +168,6 @@ def create_excel(postings):
     today = datetime.now().strftime('%Y-%m-%d')
     filepath = OUTPUT_DIR / f'internship_postings_{today}.xlsx'
 
-    # Sort newest-first before writing
     postings = sort_newest_first(postings)
 
     wb = openpyxl.Workbook()
@@ -249,7 +235,7 @@ def create_excel(postings):
     ws2['A1'] = 'Internship Tracker Summary'
     ws2['A1'].font = Font(bold=True, size=14)
     ws2['A3'] = f'Date: {today}'
-    ws2['A4'] = f'Total Postings: {len(postings)}'
+    ws2['A4'] = f'New Postings Today: {len(postings)}'
     companies = set(p.company for p in postings)
     ws2['A5'] = f'Companies: {len(companies)}'
     ws2['A6'] = f'Generated: {datetime.now().isoformat()}'
@@ -284,10 +270,11 @@ def main():
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-    # Load previously-seen jobs and prune old entries
-    seen = load_seen()
-    seen = prune_old(seen)
+    # ===== Load permanent job-history =====
+    history = load_history()
+    history_size_before = len(history)
 
+    # ===== Scrape all sites =====
     try:
         all_postings, stats = asyncio.run(run_all_scrapers())
     except Exception as e:
@@ -297,20 +284,25 @@ def main():
 
     log_company_stats(stats)
 
-    # Apply role + location filter
+    # ===== Filter & dedupe within today's run =====
     filtered = final_filter(all_postings)
-    # Dedupe within this run
-    unique = deduplicate(filtered)
-    # Filter out anything already seen in previous runs
-    new_jobs = filter_new_postings(unique, seen)
+    unique = deduplicate_within_run(filtered)
 
-    # Mark ALL of today's matching jobs as seen
-    # (so they won't be re-emailed even if no new ones today)
-    seen = mark_as_seen(unique, seen)
-    save_seen(seen)
+    # ===== Compare URLs against permanent history =====
+    new_jobs = filter_new_postings(unique, history)
 
+    # ===== Update history with ALL of today's URLs =====
+    history = add_to_history(unique, history)
+    save_history(history)
+
+    logger.info(
+        f"History grew from {history_size_before} "
+        f"to {len(history)} URLs"
+    )
+
+    # ===== Email handling =====
     if not new_jobs:
-        logger.info("No NEW postings since last run.")
+        logger.info("No NEW URLs since last run.")
         try:
             create_excel([])
         except Exception as e:
@@ -335,7 +327,9 @@ def main():
             total_jobs=len(new_jobs),
             total_companies=len(companies),
         )
-        logger.info(f"Report sent with {len(new_jobs)} NEW jobs!")
+        logger.info(
+            f"Report sent with {len(new_jobs)} NEW URLs!"
+        )
     except Exception as e:
         logger.error(f"Email failed: {e}")
         logger.error(traceback.format_exc())
