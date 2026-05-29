@@ -13,6 +13,9 @@ from ..utils.keywords import (
 
 logger = logging.getLogger(__name__)
 
+MAX_PAGES = 10
+PAGE_SIZE = 20  # Workday's default
+
 
 class WorkdayScraper(BaseScraper):
     def __init__(self, company_name, base_url,
@@ -22,7 +25,6 @@ class WorkdayScraper(BaseScraper):
         self.filter_internships = filter_internships
 
     async def _post_search(self, api_url, payload):
-        """POST to Workday's search API."""
         import aiohttp
         await self.create_session()
         try:
@@ -47,26 +49,35 @@ class WorkdayScraper(BaseScraper):
 
     async def _search_one_keyword(self, api_url, host,
                                   site_path, keyword):
-        """Run a single keyword search, requesting newest first."""
+        """Search 10 pages of results, always starting at page 1."""
         results = []
-        offset = 0
 
-        for _ in range(5):
-            # Workday returns by posting date desc by default
+        # ALWAYS start at page 1 (offset = 0)
+        for page_num in range(1, MAX_PAGES + 1):
+            offset = (page_num - 1) * PAGE_SIZE
+
+            # Workday returns by posting date DESC by default
+            # when no sort is specified
             payload = {
                 'appliedFacets': {},
-                'limit': 20,
+                'limit': PAGE_SIZE,
                 'offset': offset,
                 'searchText': keyword,
             }
+
             data = await self._post_search(api_url, payload)
             if not data or 'jobPostings' not in data:
+                logger.debug(
+                    f"[{self.company_name}] '{keyword}' "
+                    f"page {page_num}: no data"
+                )
                 break
 
             postings = data.get('jobPostings', [])
             if not postings:
                 break
 
+            page_added = 0
             for posting in postings:
                 title = posting.get('title', '')
                 posted_on = posting.get('postedOn', '')
@@ -92,10 +103,19 @@ class WorkdayScraper(BaseScraper):
                     date_posted=posted_on,
                     location=locs or 'N/A',
                 ))
+                page_added += 1
 
+            logger.debug(
+                f"[{self.company_name}] '{keyword}' "
+                f"page {page_num}: {len(postings)} fetched, "
+                f"{page_added} kept"
+            )
+
+            # Stop if this page wasn't full (we've reached the end)
             total = data.get('total', 0)
-            offset += len(postings)
-            if offset >= total:
+            if offset + len(postings) >= total:
+                break
+            if len(postings) < PAGE_SIZE:
                 break
 
         return results
@@ -112,7 +132,6 @@ class WorkdayScraper(BaseScraper):
             site_path = path_parts[0] if path_parts else ''
             tenant = parsed.hostname.split('.')[0]
 
-            # Workday CXS API endpoint
             api_url = (
                 f"{host}/wday/cxs/{tenant}/{site_path}/jobs"
             )
