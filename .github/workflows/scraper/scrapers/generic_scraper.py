@@ -16,6 +16,8 @@ from ..utils.keywords import matches_role_keywords, is_us_location
 
 logger = logging.getLogger(__name__)
 
+MAX_JOBS_ASHBY = 200
+
 
 class GenericHTMLScraper(BaseScraper):
     def __init__(self, company_name, base_url,
@@ -45,7 +47,6 @@ class GenericHTMLScraper(BaseScraper):
                 f"[{self.company_name}] Generic error: {e}"
             )
 
-        # Sort newest first
         results.sort(
             key=lambda p: p.date_posted or '',
             reverse=True
@@ -229,11 +230,13 @@ class AshbyScraper(BaseScraper):
                 return results
 
             jobs = data.get('jobs', [])
-            # Sort newest first
+            # Sort by publishedDate DESC (newest first)
             jobs.sort(
                 key=lambda j: j.get('publishedDate', '') or '',
                 reverse=True
             )
+            # Cap to first 10 pages worth
+            jobs = jobs[:MAX_JOBS_ASHBY]
 
             for job in jobs:
                 title = job.get('title', '')
