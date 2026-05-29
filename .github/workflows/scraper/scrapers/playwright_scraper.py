@@ -6,12 +6,12 @@ import re
 from typing import List
 
 from .base_scraper import BaseScraper, JobPosting
-from ..utils.helpers import (
-    is_within_last_24_hours, normalize_url, clean_text
-)
+from ..utils.helpers import normalize_url, clean_text
 from ..utils.keywords import matches_role_keywords, is_us_location
 
 logger = logging.getLogger(__name__)
+
+MAX_PAGES = 10
 
 _browser = None
 _playwright = None
@@ -46,14 +46,12 @@ async def shutdown_browser():
 
 
 def _try_parse_date(text):
-    """Try to extract a date-sortable string from messy text."""
     if not text:
         return ''
     import re
     from datetime import datetime
     from dateutil import parser as dp
     try:
-        # Handle "X days ago" etc.
         lower = text.lower()
         if 'just' in lower or 'today' in lower or 'hour' in lower \
                 or 'minute' in lower:
@@ -67,10 +65,33 @@ def _try_parse_date(text):
             return (
                 datetime.now() - timedelta(days=int(m.group(1)))
             ).isoformat()
-        # Try to parse explicit date
         return dp.parse(text, fuzzy=True).isoformat()
     except Exception:
         return ''
+
+
+def _build_paginated_url(base_url: str, page_num: int) -> str:
+    """Try common pagination URL patterns."""
+    # If page parameter already in URL, replace it
+    patterns = [
+        (r'([?&])page=\d+', rf'\g<1>page={page_num}'),
+        (r'([?&])p=\d+', rf'\g<1>p={page_num}'),
+        (r'([?&])startrow=\d+',
+         rf'\g<1>startrow={(page_num - 1) * 25}'),
+        (r'([?&])offset=\d+',
+         rf'\g<1>offset={(page_num - 1) * 25}'),
+        (r'([?&])from=\d+',
+         rf'\g<1>from={(page_num - 1) * 10}'),
+    ]
+    for pattern, replacement in patterns:
+        if re.search(pattern, base_url):
+            return re.sub(pattern, replacement, base_url)
+
+    # No existing pagination param: append page= for page > 1
+    if page_num == 1:
+        return base_url
+    sep = '&' if '?' in base_url else '?'
+    return f"{base_url}{sep}page={page_num}"
 
 
 class PlaywrightScraper(BaseScraper):
@@ -86,9 +107,11 @@ class PlaywrightScraper(BaseScraper):
         self.wait_seconds = wait_seconds
 
     async def scrape(self) -> List[JobPosting]:
-        results = []
+        all_results = []
+        seen_urls = set()
         page = None
         context = None
+
         try:
             browser = await get_browser()
             context = await browser.new_context(
@@ -102,27 +125,62 @@ class PlaywrightScraper(BaseScraper):
             page = await context.new_page()
             page.set_default_timeout(45000)
 
-            await page.goto(
-                self.base_url,
-                wait_until='domcontentloaded',
-                timeout=45000
-            )
+            # ALWAYS start at page 1 and iterate up to MAX_PAGES
+            for page_num in range(1, MAX_PAGES + 1):
+                page_url = _build_paginated_url(
+                    self.base_url, page_num
+                )
 
-            if self.wait_selector:
                 try:
-                    await page.wait_for_selector(
-                        self.wait_selector, timeout=15000
+                    await page.goto(
+                        page_url,
+                        wait_until='domcontentloaded',
+                        timeout=45000
                     )
-                except Exception:
-                    pass
+                except Exception as e:
+                    logger.warning(
+                        f"[{self.company_name}] page "
+                        f"{page_num} nav error: {e}"
+                    )
+                    break
 
-            await page.wait_for_timeout(self.wait_seconds * 1000)
+                if self.wait_selector:
+                    try:
+                        await page.wait_for_selector(
+                            self.wait_selector, timeout=10000
+                        )
+                    except Exception:
+                        pass
 
-            # Try clicking common "Sort by date" / "Most recent" controls
-            await self._try_sort_by_date(page)
+                await page.wait_for_timeout(
+                    self.wait_seconds * 1000
+                )
 
-            html = await page.content()
-            results = self._parse_html(html, page.url)
+                # On page 1, try to click "sort by most recent"
+                if page_num == 1:
+                    await self._try_sort_by_date(page)
+                    await page.wait_for_timeout(2000)
+
+                html = await page.content()
+                page_results = self._parse_html(html, page.url)
+
+                # Track new links from this page
+                new_count = 0
+                for r in page_results:
+                    if r.url not in seen_urls:
+                        seen_urls.add(r.url)
+                        all_results.append(r)
+                        new_count += 1
+
+                logger.debug(
+                    f"[{self.company_name}] page {page_num}: "
+                    f"{len(page_results)} found, "
+                    f"{new_count} new"
+                )
+
+                # If this page added 0 new postings, stop early
+                if new_count == 0 and page_num > 1:
+                    break
 
         except Exception as e:
             logger.error(
@@ -137,12 +195,12 @@ class PlaywrightScraper(BaseScraper):
             except Exception:
                 pass
 
-        # Sort newest-first based on whatever date we extracted
-        results.sort(
+        # Sort newest-first
+        all_results.sort(
             key=lambda p: p.date_posted or '',
             reverse=True
         )
-        return results
+        return all_results
 
     async def _try_sort_by_date(self, page):
         """Try clicking common 'Most Recent' sort controls."""
@@ -150,8 +208,11 @@ class PlaywrightScraper(BaseScraper):
             'button:has-text("Most Recent")',
             'button:has-text("Newest")',
             'button:has-text("Date Posted")',
+            'button:has-text("Sort by Date")',
             'option:has-text("Most Recent")',
             'option:has-text("Newest")',
+            'a:has-text("Most Recent")',
+            'a:has-text("Newest")',
             '[aria-label*="ort"]',
             '[data-sort*="date"]',
         ]
@@ -160,7 +221,7 @@ class PlaywrightScraper(BaseScraper):
                 el = await page.query_selector(selector)
                 if el:
                     await el.click(timeout=2000)
-                    await page.wait_for_timeout(2000)
+                    await page.wait_for_timeout(1500)
                     return
             except Exception:
                 continue
