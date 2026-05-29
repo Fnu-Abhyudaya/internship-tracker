@@ -12,6 +12,9 @@ from ..utils.keywords import (
 
 logger = logging.getLogger(__name__)
 
+MAX_PAGES = 10
+PAGE_SIZE = 25
+
 
 class OracleHCMScraper(BaseScraper):
     def __init__(self, company_name, base_url,
@@ -22,20 +25,24 @@ class OracleHCMScraper(BaseScraper):
     async def _fetch_keyword(self, api_url, site_name,
                              base_host, keyword):
         results = []
-        # Add sortBy to get most recent first
-        finder = (
-            f'findReqs;siteNumber={site_name},'
-            f'keyword={keyword},'
-            f'sortBy=POSTING_DATES_DESC'
-        )
-        params = {
-            'onlyData': 'true',
-            'finder': finder,
-            'limit': 25,
-            'offset': 0,
-        }
 
-        for _ in range(5):
+        # Oracle sortBy=POSTING_DATES_DESC = newest first
+        # ALWAYS start at offset 0 (page 1)
+        for page_num in range(1, MAX_PAGES + 1):
+            offset = (page_num - 1) * PAGE_SIZE
+
+            finder = (
+                f'findReqs;siteNumber={site_name},'
+                f'keyword={keyword},'
+                f'sortBy=POSTING_DATES_DESC'
+            )
+            params = {
+                'onlyData': 'true',
+                'finder': finder,
+                'limit': PAGE_SIZE,
+                'offset': offset,
+            }
+
             data = await self.fetch_json(api_url, params=params)
             if not data:
                 break
@@ -48,6 +55,7 @@ class OracleHCMScraper(BaseScraper):
             if not items:
                 break
 
+            page_added = 0
             for item in items:
                 title = item.get('Title', '') or item.get('title', '')
                 req_id = item.get('Id', '') or item.get('id', '')
@@ -79,10 +87,17 @@ class OracleHCMScraper(BaseScraper):
                     date_posted=posted,
                     location=loc or 'N/A',
                 ))
+                page_added += 1
 
-            if len(items) < 25:
+            logger.debug(
+                f"[{self.company_name}] '{keyword}' "
+                f"page {page_num}: {len(items)} fetched, "
+                f"{page_added} kept"
+            )
+
+            # Stop early if page wasn't full
+            if len(items) < PAGE_SIZE:
                 break
-            params['offset'] += 25
 
         return results
 
@@ -122,7 +137,6 @@ class OracleHCMScraper(BaseScraper):
                 seen.add(r.url)
                 unique.append(r)
 
-        # Sort newest-first
         unique.sort(
             key=lambda p: p.date_posted or '',
             reverse=True
