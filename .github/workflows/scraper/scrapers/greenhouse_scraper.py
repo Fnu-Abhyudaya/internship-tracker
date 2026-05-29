@@ -10,6 +10,9 @@ from ..utils.keywords import matches_role_keywords, is_us_location
 
 logger = logging.getLogger(__name__)
 
+# Greenhouse returns all jobs in one call; we still cap for safety
+MAX_JOBS = 200  # equivalent to ~10 pages of 20
+
 
 class GreenhouseScraper(BaseScraper):
     def __init__(self, company_name, base_url, board_token=None,
@@ -40,10 +43,14 @@ class GreenhouseScraper(BaseScraper):
             jobs = data.get('jobs', [])
 
             # Sort by updated_at DESC (most recent first)
+            # ALWAYS start from the top of the sorted list
             jobs.sort(
                 key=lambda j: j.get('updated_at', '') or '',
                 reverse=True
             )
+
+            # Cap to MAX_JOBS (equivalent of first 10 pages)
+            jobs = jobs[:MAX_JOBS]
 
             for job in jobs:
                 title = job.get('title', '')
