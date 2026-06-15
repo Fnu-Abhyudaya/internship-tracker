@@ -829,6 +829,11 @@
     "first_seen": "2026-05-28T23:19:59.896652",
     "title": "JTC SPI Combustion and Emissions Systems EngineerLakewood, NYWork Type: On-site with Flexibility"
   },
+  "https://cummins.jobs/locations/new-orleans-la/jobs/?q=intern": {
+    "company": "Cummins",
+    "first_seen": "2026-06-15T17:22:03.987568",
+    "title": "New Orleans, LA (1)"
+  },
   "https://cummins.jobs/locations/new-york/jobs/?q=intern": {
     "company": "Cummins",
     "first_seen": "2026-05-28T23:19:59.896652",
@@ -1323,6 +1328,11 @@
     "company": "Hargrove EPC",
     "first_seen": "2026-05-30T13:32:19.890371",
     "title": "Process Engineer"
+  },
+  "https://hargroveepc.wd12.myworkdayjobs.com/hargrove_careers/job/carrollton-tx/capital-project-engineer_2026-000552": {
+    "company": "Hargrove EPC",
+    "first_seen": "2026-06-15T17:22:03.987568",
+    "title": "Capital Project Engineer"
   },
   "https://hargroveepc.wd12.myworkdayjobs.com/hargrove_careers/job/coffeyville-ks/mechanical-engineer--fixed-equipment-_2026-000331-1": {
     "company": "Hargrove EPC",
@@ -2274,6 +2284,11 @@
     "first_seen": "2026-05-30T13:32:19.890371",
     "title": "Mechanical Designer in Qu\u00e9bec"
   },
+  "https://jobs.ametek.com/job/levis-mechanical-designer-in-qu%c3%a9bec-queb-g6v-4l2/1399837700": {
+    "company": "AMETEK",
+    "first_seen": "2026-06-15T17:22:03.987568",
+    "title": "Mechanical Designer in Qu\u00e9bec"
+  },
   "https://jobs.ametek.com/job/levis-mechanical-designer-l%c3%a9vis-queb-g6v-4l2/1381330500": {
     "company": "AMETEK",
     "first_seen": "2026-05-30T13:32:19.890371",
@@ -2794,6 +2809,11 @@
     "first_seen": "2026-05-29T20:27:40.573582",
     "title": "Automation Engineer"
   },
+  "https://jobs.bd.com/en/job/canaan/quality-engineer-ii/159/96467266592": {
+    "company": "BD",
+    "first_seen": "2026-06-15T17:22:03.987568",
+    "title": "Quality Engineer II"
+  },
   "https://jobs.bd.com/en/job/el-paso/lead-technician-mechanical-engineering-5th-shift/159/95723336352": {
     "company": "BD",
     "first_seen": "2026-05-29T18:46:43.602361",
@@ -2818,6 +2838,16 @@
     "company": "BD",
     "first_seen": "2026-05-28T23:19:59.896652",
     "title": "Senior Quality Engineer, Instrument Plant"
+  },
+  "https://jobs.dana.com/job/boucherville-advanced-engineering-intern-qu%c3%a9b-canada/1399869500": {
+    "company": "Dana Inc",
+    "first_seen": "2026-06-15T17:22:03.987568",
+    "title": "Advanced Engineering Intern"
+  },
+  "https://jobs.dana.com/job/boucherville-eng_co-opinterntrainee-queb-canada/1399869400": {
+    "company": "Dana Inc",
+    "first_seen": "2026-06-15T17:22:03.987568",
+    "title": "ENG_Co-Op/Intern/Trainee"
   },
   "https://jobs.dana.com/job/danville-manufacturing-process-engineer-ky-40422-9560/1395510600": {
     "company": "Dana Inc",
@@ -2883,6 +2913,11 @@
     "company": "Dana Inc",
     "first_seen": "2026-06-05T14:52:50.047072",
     "title": "Engineering Co-op"
+  },
+  "https://jobs.dana.com/job/maumee-engineering-co-op-fall-2026-oh-43537/1346618100": {
+    "company": "Dana Inc",
+    "first_seen": "2026-06-15T17:22:03.987568",
+    "title": "Engineering Co-Op - Fall 2026"
   },
   "https://jobs.dana.com/job/maumee-engineering-co-op-spring-2027-oh-43537/1387465000": {
     "company": "Dana Inc",
@@ -3023,6 +3058,21 @@
     "company": "Legence",
     "first_seen": "2026-06-12T15:02:21.270874",
     "title": "Comissioning Intern"
+  },
+  "https://jobs.dayforcehcm.com/en-us/legence/studentportal/jobs/31657": {
+    "company": "Legence",
+    "first_seen": "2026-06-15T17:22:03.987568",
+    "title": "Solar Engineer Intern/Co-op Fall 2026 - Energy Solutions"
+  },
+  "https://jobs.dayforcehcm.com/en-us/legence/studentportal/jobs/31668": {
+    "company": "Legence",
+    "first_seen": "2026-06-15T17:22:03.987568",
+    "title": "Lighting Designer/Engineer Intern/Co-op Fall 2026 - Energy Solutions"
+  },
+  "https://jobs.dayforcehcm.com/en-us/legence/studentportal/jobs/31669": {
+    "company": "Legence",
+    "first_seen": "2026-06-15T17:22:03.987568",
+    "title": "Mechanical Engineer Intern/Co-op Fall 2026 - Energy Solutions"
   },
   "https://jobs.freseniusmedicalcare.com/career-areas/internships-and-graduate-opportunities": {
     "company": "Fresenius Medical Care",
@@ -3574,6 +3624,11 @@
     "first_seen": "2026-05-29T15:04:54.636177",
     "title": "Mechanical Fitter"
   },
+  "https://jobs.siemens-energy.com/en_us/jobs/folderdetail/mechanical-integrity-engineer-r-d-turbine/297575": {
+    "company": "Siemens Energy",
+    "first_seen": "2026-06-15T17:22:03.987568",
+    "title": "Mechanical Integrity Engineer - R&D Turbine"
+  },
   "https://jobs.siemens-energy.com/en_us/jobs/folderdetail/mechanical-integrity-engineer-rotors/296589": {
     "company": "Siemens Energy",
     "first_seen": "2026-06-01T17:42:16.418050",
@@ -3592,6 +3647,11 @@
   "https://jobs.siemens-energy.com/en_us/jobs/folderdetail/project-engineer/296954": {
     "company": "Siemens Energy",
     "first_seen": "2026-06-02T16:26:57.848651",
+    "title": "Project Engineer"
+  },
+  "https://jobs.siemens-energy.com/en_us/jobs/folderdetail/project-engineer/297507": {
+    "company": "Siemens Energy",
+    "first_seen": "2026-06-15T17:22:03.987568",
     "title": "Project Engineer"
   },
   "https://jobs.siemens-energy.com/en_us/jobs/folderdetail/senior-ai-engineer-internship-agentic-ai-for-power-grids/296232": {
@@ -3708,6 +3768,11 @@
     "company": "Tenneco",
     "first_seen": "2026-06-05T14:52:50.047072",
     "title": "Manufacturing Engineer"
+  },
+  "https://jobs.tenneco.com/job/seward-quality-engineer-ne-68434/1396723100": {
+    "company": "Tenneco",
+    "first_seen": "2026-06-15T17:22:03.987568",
+    "title": "Quality Engineer"
   },
   "https://jobs.tenneco.com/job/seward-snr-quality-systems-engineer-ne-68434/1396723100": {
     "company": "Tenneco",
@@ -4323,6 +4388,11 @@
     "company": "Terex",
     "first_seen": "2026-05-30T13:32:19.890371",
     "title": "Mobile Field Service Technician - New Mexico"
+  },
+  "https://terex.wd1.myworkdayjobs.com/terexcareers/job/us-sd-huron/cwi-quality-engineer_req-13280": {
+    "company": "Terex",
+    "first_seen": "2026-06-15T17:22:03.987568",
+    "title": "CWI Quality Engineer"
   },
   "https://terex.wd1.myworkdayjobs.com/terexcareers/job/us-sd-watertown/senior-design-engineer_req-11829": {
     "company": "Terex",
