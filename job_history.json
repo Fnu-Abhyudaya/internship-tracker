@@ -364,6 +364,11 @@
     "first_seen": "2026-06-26T14:28:57.131512",
     "title": "Process Engineering Technician"
   },
+  "https://brunswick.wd1.myworkdayjobs.com/search/job/fond-du-lac-wi/engineering-technician---mechatronics_jr-050708": {
+    "company": "Brunswick",
+    "first_seen": "2026-06-30T14:22:19.328769",
+    "title": "Engineering Technician - Mechatronics"
+  },
   "https://brunswick.wd1.myworkdayjobs.com/search/job/fond-du-lac-wi/maintenance-engineer_jr-050420": {
     "company": "Brunswick",
     "first_seen": "2026-06-05T14:52:50.047072",
@@ -493,6 +498,16 @@
     "company": "Calista/Yulista",
     "first_seen": "2026-06-02T16:26:57.848651",
     "title": "Supplier Quality Engineer II"
+  },
+  "https://calistacorp.wd1.myworkdayjobs.com/yulista/job/tfome1---oh---glenn-research-center-at-lewis-field/instrument-maker-technician-apprentice-intern_jr108998": {
+    "company": "Calista/Yulista",
+    "first_seen": "2026-06-30T14:22:19.328769",
+    "title": "Instrument Maker Technician Apprentice Intern"
+  },
+  "https://calistacorp.wd1.myworkdayjobs.com/yulista/job/tfome1---oh---glenn-research-center-at-lewis-field/technician-apprentice-internship_jr108996": {
+    "company": "Calista/Yulista",
+    "first_seen": "2026-06-30T14:22:19.328769",
+    "title": "Technician Apprentice Internship"
   },
   "https://calistacorp.wd1.myworkdayjobs.com/yulista/job/tfome2---oh---neil-a-armstrong-test-facility/mechanical-test-engineer_jr108573": {
     "company": "Calista/Yulista",
@@ -878,6 +893,26 @@
     "company": "Formlabs",
     "first_seen": "2026-06-11T16:04:51.663940",
     "title": "Mechanical Engineering Manager"
+  },
+  "https://careers.formlabs.com/job/8036035/apply": {
+    "company": "Formlabs",
+    "first_seen": "2026-06-30T14:22:19.328769",
+    "title": "Mechanical Engineering Manager"
+  },
+  "https://careers.formlabs.com/job/8036036/apply": {
+    "company": "Formlabs",
+    "first_seen": "2026-06-30T14:22:19.328769",
+    "title": "R&D Engineer"
+  },
+  "https://careers.formlabs.com/job/8036037/apply": {
+    "company": "Formlabs",
+    "first_seen": "2026-06-30T14:22:19.328769",
+    "title": "Senior 3D Printing R&D Engineer"
+  },
+  "https://careers.formlabs.com/job/8036051/apply": {
+    "company": "Formlabs",
+    "first_seen": "2026-06-30T14:22:19.328769",
+    "title": "Senior Product Design Engineer"
   },
   "https://careers.itw.com/us/en/job/jr4584/mechanical-engineer-intern": {
     "company": "ITW",
@@ -1534,10 +1569,30 @@
     "first_seen": "2026-06-27T13:36:24.258842",
     "title": "Project Manager New York"
   },
+  "https://emit.fa.ca3.oraclecloud.com/hcmui/candidateexperience/en/sites/cx_2001/requisitions/preview/89882": {
+    "company": "WSP",
+    "first_seen": "2026-06-30T14:22:19.328769",
+    "title": "Substation Senior Project Engineer Orlando | Fort Worth | Portland | Saint Louis | Boise | Richmond | Denver"
+  },
   "https://emit.fa.ca3.oraclecloud.com/hcmui/candidateexperience/en/sites/cx_2001/requisitions/preview/89884": {
     "company": "WSP",
     "first_seen": "2026-06-29T15:50:09.260865",
     "title": "Early Professional, Structural Engineering Buffalo"
+  },
+  "https://emit.fa.ca3.oraclecloud.com/hcmui/candidateexperience/en/sites/cx_2001/requisitions/preview/89929": {
+    "company": "WSP",
+    "first_seen": "2026-06-30T14:22:19.328769",
+    "title": "Intermidiate Transmission Line Design Engineer Rochester | Binghamton | Albany | Syracuse"
+  },
+  "https://emit.fa.ca3.oraclecloud.com/hcmui/candidateexperience/en/sites/cx_2001/requisitions/preview/89933": {
+    "company": "WSP",
+    "first_seen": "2026-06-30T14:22:19.328769",
+    "title": "Senior Transmission Line Design Engineer Rochester | Buffalo | Binghamton | Albany | Syracuse"
+  },
+  "https://emit.fa.ca3.oraclecloud.com/hcmui/candidateexperience/en/sites/cx_2001/requisitions/preview/89954": {
+    "company": "WSP",
+    "first_seen": "2026-06-30T14:22:19.328769",
+    "title": "Associate Structural Engineer (Buildings) San Diego"
   },
   "https://fortive.eightfold.ai/careers/job/893395269264": {
     "company": "Fortive",
@@ -1659,6 +1714,11 @@
     "first_seen": "2026-06-16T16:56:18.052930",
     "title": "Mechanical Coordinator 3"
   },
+  "https://hargroveepc.wd12.myworkdayjobs.com/hargrove_careers/job/ball-ground-ga/mechanical-coordinator_2026-000431": {
+    "company": "Hargrove EPC",
+    "first_seen": "2026-06-30T14:22:19.328769",
+    "title": "Mechanical Coordinator"
+  },
   "https://hargroveepc.wd12.myworkdayjobs.com/hargrove_careers/job/bessemer-city-nc/process-engineer_2026-000416": {
     "company": "Hargrove EPC",
     "first_seen": "2026-05-30T13:32:19.890371",
@@ -1677,6 +1737,11 @@
   "https://hargroveepc.wd12.myworkdayjobs.com/hargrove_careers/job/columbus-oh/process-engineer-ii_2026-000266-1": {
     "company": "Hargrove EPC",
     "first_seen": "2026-05-30T13:32:19.890371",
+    "title": "Process Engineer II"
+  },
+  "https://hargroveepc.wd12.myworkdayjobs.com/hargrove_careers/job/concord-ca/process-engineer-ii_2026-000256": {
+    "company": "Hargrove EPC",
+    "first_seen": "2026-06-30T14:22:19.328769",
     "title": "Process Engineer II"
   },
   "https://hargroveepc.wd12.myworkdayjobs.com/hargrove_careers/job/decatur-al/mechanical-designer_2026-000514": {
@@ -1738,6 +1803,11 @@
     "company": "Hargrove EPC",
     "first_seen": "2026-06-12T15:02:21.270874",
     "title": "Mechanical Engineer IV"
+  },
+  "https://hargroveepc.wd12.myworkdayjobs.com/hargrove_careers/job/memphis-tn/structural-engineer-iii_2026-000190": {
+    "company": "Hargrove EPC",
+    "first_seen": "2026-06-30T14:22:19.328769",
+    "title": "Structural Engineer III"
   },
   "https://hargroveepc.wd12.myworkdayjobs.com/hargrove_careers/job/mobile-al/controls---automation-engineering-intern_2026-000503": {
     "company": "Hargrove EPC",
@@ -2084,6 +2154,11 @@
     "first_seen": "2026-05-28T23:19:59.896652",
     "title": "Senior Mechanical Engineer "
   },
+  "https://job-boards.greenhouse.io/dlrgroup/jobs/4826203008": {
+    "company": "DLR Group",
+    "first_seen": "2026-06-30T14:22:19.328769",
+    "title": "Mechanical Engineer"
+  },
   "https://job-boards.greenhouse.io/dlrgroup/jobs/4941952008": {
     "company": "DLR Group",
     "first_seen": "2026-05-28T23:19:59.896652",
@@ -2243,6 +2318,11 @@
     "company": "DLR Group",
     "first_seen": "2026-06-23T14:50:01.088693",
     "title": "High School Intern"
+  },
+  "https://job-boards.greenhouse.io/dlrgroup/jobs/5285465008": {
+    "company": "DLR Group",
+    "first_seen": "2026-06-30T14:22:19.328769",
+    "title": "Senior Mechanical Engineer"
   },
   "https://job-boards.greenhouse.io/lunarenergy/jobs/5984882004": {
     "company": "Lunar Energy",
@@ -2423,6 +2503,11 @@
     "company": "Scout Motors",
     "first_seen": "2026-06-27T13:36:24.258842",
     "title": "Supplier Quality Engineer, Consignment"
+  },
+  "https://job-boards.greenhouse.io/scoutmotors/jobs/5174904007": {
+    "company": "Scout Motors",
+    "first_seen": "2026-06-30T14:22:19.328769",
+    "title": "Specialist, Manufacturing Engineer-Assembly Finish & Rework"
   },
   "https://job-boards.greenhouse.io/sharkninjaoperatingllc/jobs/4601610006": {
     "company": "SharkNinja",
@@ -3064,6 +3149,11 @@
     "first_seen": "2026-05-30T13:32:19.890371",
     "title": "Staff Mechanical Engineer - Electronics Packaging and Rugged Design"
   },
+  "https://jobs.ametek.com/job/westerly-design-engineer-ri-02891/1404231900": {
+    "company": "AMETEK",
+    "first_seen": "2026-06-30T14:22:19.328769",
+    "title": "Design Engineer"
+  },
   "https://jobs.ametek.com/job/whitsett-gear-manufacturing-engineer-nc-27377/1401316600": {
     "company": "AMETEK",
     "first_seen": "2026-06-19T15:18:41.242530",
@@ -3484,6 +3574,11 @@
     "first_seen": "2026-06-16T16:56:18.052930",
     "title": "Advanced Engineering Intern"
   },
+  "https://jobs.dana.com/job/boucherville-electro-magnetic-intern-queb-canada/1404199400": {
+    "company": "Dana Inc",
+    "first_seen": "2026-06-30T14:22:19.328769",
+    "title": "Electro-Magnetic intern"
+  },
   "https://jobs.dana.com/job/boucherville-eng_co-opinterntrainee-queb-canada/1399869400": {
     "company": "Dana Inc",
     "first_seen": "2026-06-15T17:22:03.987568",
@@ -3623,6 +3718,11 @@
     "company": "Dana Inc",
     "first_seen": "2026-05-31T13:48:10.500484",
     "title": "Manager Manufacturing Engineering"
+  },
+  "https://jobs.dana.com/job/pune-sr-test-engineer-mh-411057/1404361700": {
+    "company": "Dana Inc",
+    "first_seen": "2026-06-30T14:22:19.328769",
+    "title": "Sr Test Engineer"
   },
   "https://jobs.dana.com/job/reggio-emilia-supplier-quality-engineer-42124/1363446700": {
     "company": "Dana Inc",
@@ -3929,6 +4029,11 @@
     "first_seen": "2026-05-29T20:27:40.573582",
     "title": "Product Design Engineer (Water Pump)"
   },
+  "https://jobs.schaeffler.com/job/cuautitl%c3%a1n-izcalli-automotive-product-application-intern-chassis-systems-54769/1409558733": {
+    "company": "Schaeffler",
+    "first_seen": "2026-06-30T14:22:19.328769",
+    "title": "Automotive Product Application Intern - Chassis Systems"
+  },
   "https://jobs.schaeffler.com/job/cuautitl%c3%a1n-izcalli-customs-intern-54769/1384294133": {
     "company": "Schaeffler",
     "first_seen": "2026-05-29T20:27:40.573582",
@@ -4204,6 +4309,21 @@
     "first_seen": "2026-05-29T20:27:40.573582",
     "title": "Accounts Payable Intern"
   },
+  "https://jobs.schaeffler.com/job/puebla-huejotzingo-accounts-receivable-intern-74160/1409578133": {
+    "company": "Schaeffler",
+    "first_seen": "2026-06-30T14:22:19.328769",
+    "title": "Accounts Receivable Intern"
+  },
+  "https://jobs.schaeffler.com/job/puebla-huejotzingo-accounts-receivable-intern-74160/1409578733": {
+    "company": "Schaeffler",
+    "first_seen": "2026-06-30T14:22:19.328769",
+    "title": "Accounts Receivable Intern"
+  },
+  "https://jobs.schaeffler.com/job/puebla-huejotzingo-accounts-receivable-intern-74160/1409579833": {
+    "company": "Schaeffler",
+    "first_seen": "2026-06-30T14:22:19.328769",
+    "title": "Accounts Receivable Intern"
+  },
   "https://jobs.schaeffler.com/job/puebla-huejotzingo-customer-service-intern-74160/1400013233": {
     "company": "Schaeffler",
     "first_seen": "2026-06-03T16:52:14.091373",
@@ -4293,6 +4413,11 @@
     "company": "Schaeffler",
     "first_seen": "2026-05-29T20:27:40.573582",
     "title": "Mechanical Engineer"
+  },
+  "https://jobs.schaeffler.com/job/vadodara-mechanical-eng_-390013/1406435133": {
+    "company": "Schaeffler",
+    "first_seen": "2026-06-30T14:22:19.328769",
+    "title": "Mechanical Eng."
   },
   "https://jobs.schaeffler.com/job/wooster%2c-oh-accelerated-leadership-program-r&d-career-path-ai-simulation-%28begins-june-2027%29-oh-44691/1291075801": {
     "company": "Schaeffler",
@@ -4443,6 +4568,11 @@
     "company": "Siemens Energy",
     "first_seen": "2026-05-29T15:04:54.636177",
     "title": "Mechanical Fitter"
+  },
+  "https://jobs.siemens-energy.com/en_us/jobs/folderdetail/mechanical-integrity-engineer-f-m-d/297847": {
+    "company": "Siemens Energy",
+    "first_seen": "2026-06-30T14:22:19.328769",
+    "title": "Mechanical Integrity Engineer (f/m/d)"
   },
   "https://jobs.siemens-energy.com/en_us/jobs/folderdetail/mechanical-integrity-engineer-r-d-turbine/297575": {
     "company": "Siemens Energy",
@@ -4769,6 +4899,11 @@
     "first_seen": "2026-06-21T14:14:09.748244",
     "title": "Materials Engineering Intern"
   },
+  "https://nidec.wd1.myworkdayjobs.com/nidec/job/atlanta-ga/nidec-aerospace-internship-opportunities_r0010414": {
+    "company": "Nidec",
+    "first_seen": "2026-06-30T14:22:19.328769",
+    "title": "Nidec Aerospace Internship & Graduate Opportunities"
+  },
   "https://nidec.wd1.myworkdayjobs.com/nidec/job/north-americausaarkansasft-smith-ar/engineering-co-op_r0014019-1": {
     "company": "Nidec",
     "first_seen": "2026-05-30T13:32:19.890371",
@@ -4784,6 +4919,11 @@
     "first_seen": "2026-05-30T13:32:19.890371",
     "title": "Electronics Design Engineer"
   },
+  "https://nidec.wd1.myworkdayjobs.com/nidec/job/north-americausageorgiaatlanta-ga/engineer-intern-co-op-1_r0015574": {
+    "company": "Nidec",
+    "first_seen": "2026-06-30T14:22:19.328769",
+    "title": "Engineer Intern/Co-op-1"
+  },
   "https://nidec.wd1.myworkdayjobs.com/nidec/job/north-americausageorgiaatlanta-ga/engineering-intern_r0013399": {
     "company": "Nidec",
     "first_seen": "2026-05-30T13:32:19.890371",
@@ -4798,6 +4938,11 @@
     "company": "Nidec",
     "first_seen": "2026-05-30T13:32:19.890371",
     "title": "Power Electronics Hardware Engineer"
+  },
+  "https://nidec.wd1.myworkdayjobs.com/nidec/job/north-americausageorgiaatlanta-ga/testing-engineering-manager_r0015956": {
+    "company": "Nidec",
+    "first_seen": "2026-06-30T14:22:19.328769",
+    "title": "Testing Engineering Manager"
   },
   "https://nidec.wd1.myworkdayjobs.com/nidec/job/north-americausaillinoishoffman-estates-il/design-engineer-iv_r0014956": {
     "company": "Nidec",
@@ -4944,6 +5089,11 @@
     "first_seen": "2026-06-03T16:52:14.091373",
     "title": "Manufacturing Engineer III"
   },
+  "https://nidec.wd1.myworkdayjobs.com/nidec/job/north-americausanew-yorkeast-syracuse-ny/manufacturing-engineer-manager_r0014717": {
+    "company": "Nidec",
+    "first_seen": "2026-06-30T14:22:19.328769",
+    "title": "Manufacturing Engineer Manager"
+  },
   "https://nidec.wd1.myworkdayjobs.com/nidec/job/north-americausanew-yorkeast-syracuse-ny/mechanical-engineer-iii_r0015686-1": {
     "company": "Nidec",
     "first_seen": "2026-05-29T18:46:43.602361",
@@ -4979,10 +5129,20 @@
     "first_seen": "2026-05-30T13:32:19.890371",
     "title": "Supplier Quality Engineer"
   },
+  "https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/us-ca-remote/quantum-error-correction-research-scientist-intern---fall-2026_jr2018628": {
+    "company": "NVIDIA",
+    "first_seen": "2026-06-30T14:22:19.328769",
+    "title": "Quantum Error Correction Research Scientist Intern - Fall 2026"
+  },
   "https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/us-ca-remote/quantum-research-scientist-intern---fall-2026_jr2018244": {
     "company": "NVIDIA",
     "first_seen": "2026-05-28T23:19:59.896652",
     "title": "Quantum Research Scientist Intern - Fall 2026"
+  },
+  "https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/us-ca-santa-clara/applied-deep-learning-phd-research-intern--reinforcement-learning-for-llms---fall-2026_jr2012398": {
+    "company": "NVIDIA",
+    "first_seen": "2026-06-30T14:22:19.328769",
+    "title": "Applied Deep Learning PhD Research Intern, Reinforcement Learning for LLMs - Fall 2026"
   },
   "https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/us-ca-santa-clara/asic-design-engineer_jr2015189-1": {
     "company": "NVIDIA",
@@ -5019,20 +5179,45 @@
     "first_seen": "2026-06-24T14:33:54.028180",
     "title": "Director, Internal Audit - Compliance"
   },
+  "https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/us-ca-santa-clara/director--internal-audit---financial-controls-and-sox-compliance_jr2017836": {
+    "company": "NVIDIA",
+    "first_seen": "2026-06-30T14:22:19.328769",
+    "title": "Director, Internal Audit \u2013 Financial Controls and SOX Compliance"
+  },
   "https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/us-ca-santa-clara/hardware-validation-engineer_jr2013665": {
     "company": "NVIDIA",
     "first_seen": "2026-05-30T13:32:19.890371",
     "title": "Hardware Validation Engineer"
+  },
+  "https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/us-ca-santa-clara/java-engineering-intern---fall-2026_jr2019769": {
+    "company": "NVIDIA",
+    "first_seen": "2026-06-30T14:22:19.328769",
+    "title": "Java Engineering Intern - Fall 2026"
   },
   "https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/us-ca-santa-clara/lead-design-engineer---autonomous-vehicles_jr2012580": {
     "company": "NVIDIA",
     "first_seen": "2026-05-30T13:32:19.890371",
     "title": "Lead Design Engineer - Autonomous Vehicles"
   },
+  "https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/us-ca-santa-clara/manufacturing-test-engineer_jr2014051": {
+    "company": "NVIDIA",
+    "first_seen": "2026-06-30T14:22:19.328769",
+    "title": "Manufacturing Test Engineer"
+  },
+  "https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/us-ca-santa-clara/mechanical-optical-simulation-engineer_jr2017643": {
+    "company": "NVIDIA",
+    "first_seen": "2026-06-30T14:22:19.328769",
+    "title": "Mechanical Optical Simulation Engineer"
+  },
   "https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/us-ca-santa-clara/phd-research-intern--generative-ai---2026_jr2016035": {
     "company": "NVIDIA",
     "first_seen": "2026-05-28T23:19:59.896652",
     "title": "PhD Research Intern, Generative AI - 2026"
+  },
+  "https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/us-ca-santa-clara/phd-research-intern--security-and-privacy---fall-2026_jr2010492-1": {
+    "company": "NVIDIA",
+    "first_seen": "2026-06-30T14:22:19.328769",
+    "title": "PhD Research Intern, Security and Privacy - Fall 2026"
   },
   "https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/us-ca-santa-clara/principal-thermal-mechanical-photonic-designer_jr1989155": {
     "company": "NVIDIA",
@@ -5048,6 +5233,21 @@
     "company": "NVIDIA",
     "first_seen": "2026-05-30T13:32:19.890371",
     "title": "Senior ASIC Design Engineer"
+  },
+  "https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/us-ca-santa-clara/senior-asic-design-engineer_jr2017358": {
+    "company": "NVIDIA",
+    "first_seen": "2026-06-30T14:22:19.328769",
+    "title": "Senior ASIC Design Engineer"
+  },
+  "https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/us-ca-santa-clara/senior-ate-hardware-engineer_jr2017777": {
+    "company": "NVIDIA",
+    "first_seen": "2026-06-30T14:22:19.328769",
+    "title": "Senior ATE Hardware Engineer"
+  },
+  "https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/us-ca-santa-clara/senior-circuit-design-engineer_jr2014591": {
+    "company": "NVIDIA",
+    "first_seen": "2026-06-30T14:22:19.328769",
+    "title": "Senior Circuit Design Engineer"
   },
   "https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/us-ca-santa-clara/senior-circuit-design-engineer_jr2014593": {
     "company": "NVIDIA",
@@ -5074,6 +5274,11 @@
     "first_seen": "2026-05-30T13:32:19.890371",
     "title": "Senior Hardware Validation Engineer"
   },
+  "https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/us-ca-santa-clara/senior-logic-design-engineer_jr2017647": {
+    "company": "NVIDIA",
+    "first_seen": "2026-06-30T14:22:19.328769",
+    "title": "Senior Logic Design Engineer"
+  },
   "https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/us-ca-santa-clara/senior-mask-design-engineer_jr2015937": {
     "company": "NVIDIA",
     "first_seen": "2026-05-28T23:19:59.896652",
@@ -5093,6 +5298,16 @@
     "company": "NVIDIA",
     "first_seen": "2026-05-30T13:32:19.890371",
     "title": "Senior PCB Design For Manufacturing Engineer"
+  },
+  "https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/us-ca-santa-clara/senior-physical-design-engineer_jr2017826": {
+    "company": "NVIDIA",
+    "first_seen": "2026-06-30T14:22:19.328769",
+    "title": "Senior Physical Design Engineer"
+  },
+  "https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/us-ca-santa-clara/senior-platform-design-engineer_jr2014596-1": {
+    "company": "NVIDIA",
+    "first_seen": "2026-06-30T14:22:19.328769",
+    "title": "Senior Platform Design Engineer"
   },
   "https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/us-ca-santa-clara/senior-product-manager--internal-ai-and-employee-productivity_jr2019102": {
     "company": "NVIDIA",
@@ -5324,6 +5539,11 @@
     "first_seen": "2026-06-22T17:03:07.170285",
     "title": "Senior Mechanical Engineer"
   },
+  "https://stvinc.wd5.myworkdayjobs.com/stv/job/empire-state-building-new-york-new-york/senior-structural-design-engineer_jr5687": {
+    "company": "STV Inc",
+    "first_seen": "2026-06-30T14:22:19.328769",
+    "title": "Senior Structural Design Engineer"
+  },
   "https://stvinc.wd5.myworkdayjobs.com/stv/job/hartford-connecticut/project-design-engineer_jr5237": {
     "company": "STV Inc",
     "first_seen": "2026-05-30T13:32:19.890371",
@@ -5364,6 +5584,11 @@
     "first_seen": "2026-06-01T17:42:16.418050",
     "title": "Design Engineer"
   },
+  "https://terex.wd1.myworkdayjobs.com/terexcareers/job/us-nh-newton/design-engineer_req-13069": {
+    "company": "Terex",
+    "first_seen": "2026-06-30T14:22:19.328769",
+    "title": "Design Engineer"
+  },
   "https://terex.wd1.myworkdayjobs.com/terexcareers/job/us-nm-home/mobile-field-service-technician---new-mexico_req-12556": {
     "company": "Terex",
     "first_seen": "2026-05-30T13:32:19.890371",
@@ -5394,9 +5619,19 @@
     "first_seen": "2026-06-24T14:33:54.028180",
     "title": "Manufacturing Engineer I - OT/MES"
   },
+  "https://terex.wd1.myworkdayjobs.com/terexcareers/job/us-wa-moses-lake/manufacturing-engineer-i-ii---weld-engineer_req-11487": {
+    "company": "Terex",
+    "first_seen": "2026-06-30T14:22:19.328769",
+    "title": "Manufacturing Engineer I/II - Weld Engineer"
+  },
   "https://terex.wd1.myworkdayjobs.com/terexcareers/job/us-wa-moses-lake/manufacturing-engineer-i_req-12024": {
     "company": "Terex",
     "first_seen": "2026-05-30T13:32:19.890371",
+    "title": "Manufacturing Engineer I"
+  },
+  "https://terex.wd1.myworkdayjobs.com/terexcareers/job/us-wa-moses-lake/manufacturing-engineer-i_req-12027": {
+    "company": "Terex",
+    "first_seen": "2026-06-30T14:22:19.328769",
     "title": "Manufacturing Engineer I"
   },
   "https://terex.wd1.myworkdayjobs.com/terexcareers/job/us-wa-redmond/design-engineer-ii-sr_req-12314": {
