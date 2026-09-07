@@ -2059,6 +2059,11 @@
     "first_seen": "2026-09-05T14:39:56.045218",
     "title": "Consultant, Architect New York"
   },
+  "https://emit.fa.ca3.oraclecloud.com/hcmui/candidateexperience/en/sites/cx_2001/job/92907": {
+    "company": "WSP",
+    "first_seen": "2026-09-07T17:20:23.260626",
+    "title": "Assistant Vice President, Track Design Lead New York | Newark"
+  },
   "https://emit.fa.ca3.oraclecloud.com/hcmui/candidateexperience/en/sites/cx_2001/job/93020": {
     "company": "WSP",
     "first_seen": "2026-09-01T16:09:49.600279",
@@ -2118,6 +2123,11 @@
     "company": "WSP",
     "first_seen": "2026-09-06T15:00:49.553726",
     "title": "Lead Substation Project Engineer Richmond"
+  },
+  "https://emit.fa.ca3.oraclecloud.com/hcmui/candidateexperience/en/sites/cx_2001/job/94639": {
+    "company": "WSP",
+    "first_seen": "2026-09-07T17:20:23.260626",
+    "title": "Early Career Substation Structural Engineer Lake Oswego"
   },
   "https://emit.fa.ca3.oraclecloud.com/hcmui/candidateexperience/en/sites/cx_2001/requisitions/preview/79723": {
     "company": "WSP",
@@ -8024,10 +8034,20 @@
     "first_seen": "2026-06-02T16:26:57.848651",
     "title": "Internship - Programator CNC"
   },
+  "https://jobs.schaeffler.com/job/brasov-mechanical-eng_-507075/1434270333": {
+    "company": "Schaeffler",
+    "first_seen": "2026-09-07T17:20:23.260626",
+    "title": "Mechanical Eng."
+  },
   "https://jobs.schaeffler.com/job/brasov-mechanical-product-design-eng_-507075/1403669633": {
     "company": "Schaeffler",
     "first_seen": "2026-06-12T15:02:21.270874",
     "title": "Mechanical Product Design Eng."
+  },
+  "https://jobs.schaeffler.com/job/brasov-mechanical-techn_-507075/1434337133": {
+    "company": "Schaeffler",
+    "first_seen": "2026-09-07T17:20:23.260626",
+    "title": "Mechanical Techn."
   },
   "https://jobs.schaeffler.com/job/brasov-network-automation-engineer-netdevops-507075/1406016733": {
     "company": "Schaeffler",
@@ -8604,6 +8624,11 @@
     "first_seen": "2026-05-29T20:27:40.573582",
     "title": "Ausbildung Industriemechaniker*in 2026 (m/w/d)"
   },
+  "https://jobs.schaeffler.com/job/m%c3%bcnchen-ceocfo-assistant-&-office-manager-%28dmw%29-defence-&-new-space-80809/1422853233": {
+    "company": "Schaeffler",
+    "first_seen": "2026-09-07T17:20:23.260626",
+    "title": "CEO/CFO Assistant & Office Manager (d/m/w) - Defence & New Space"
+  },
   "https://jobs.schaeffler.com/job/m%c3%bcnchen-manager-export-control-&-sanctions-%28dmw%29-defence-&-new-space-80809/1393998333": {
     "company": "Schaeffler",
     "first_seen": "2026-08-04T14:11:12.763390",
@@ -8838,6 +8863,11 @@
     "company": "Schaeffler",
     "first_seen": "2026-08-24T12:50:04.463281",
     "title": "Assembly Intern"
+  },
+  "https://jobs.schaeffler.com/job/puebla-resurrecci%c3%b3n-heat-treatment-intern-72228/1434564633": {
+    "company": "Schaeffler",
+    "first_seen": "2026-09-07T17:20:23.260626",
+    "title": "Heat Treatment Intern"
   },
   "https://jobs.schaeffler.com/job/puebla-resurrecci%c3%b3n-intern-planetary-area-72228/1408520833": {
     "company": "Schaeffler",
@@ -9274,6 +9304,16 @@
     "first_seen": "2026-06-09T14:54:07.220425",
     "title": "Design Engineer Rotor & Steam Path (f/m/d)"
   },
+  "https://jobs.siemens-energy.com/en_us/jobs/folderdetail/design-engineer-siemens-energy-dammam-ksa/302696": {
+    "company": "Siemens Energy",
+    "first_seen": "2026-09-07T17:20:23.260626",
+    "title": "Design Engineer - Siemens Energy, Dammam KSA"
+  },
+  "https://jobs.siemens-energy.com/en_us/jobs/folderdetail/design-engineer-siemens-energy-dammam-ksa/302698": {
+    "company": "Siemens Energy",
+    "first_seen": "2026-09-07T17:20:23.260626",
+    "title": "Design Engineer - Siemens Energy, Dammam KSA"
+  },
   "https://jobs.siemens-energy.com/en_us/jobs/folderdetail/design-engineer-w-m-d/297757": {
     "company": "Siemens Energy",
     "first_seen": "2026-06-18T15:28:34.258499",
@@ -9569,6 +9609,16 @@
     "first_seen": "2026-07-31T14:06:29.716703",
     "title": "Mechanikus karbantart\u00f3 (Mechanical Maintenance)"
   },
+  "https://jobs.siemens-energy.com/en_us/jobs/folderdetail/mgt-new-unit-commissioning-engineer/301941": {
+    "company": "Siemens Energy",
+    "first_seen": "2026-09-07T17:20:23.260626",
+    "title": "MGT New Unit Commissioning Engineer"
+  },
+  "https://jobs.siemens-energy.com/en_us/jobs/folderdetail/mgt-new-unit-site-installation-engineer/301942": {
+    "company": "Siemens Energy",
+    "first_seen": "2026-09-07T17:20:23.260626",
+    "title": "MGT New Unit Site Installation Engineer"
+  },
   "https://jobs.siemens-energy.com/en_us/jobs/folderdetail/min-s-g-gyi-m-rn-k-quality-engineer/299091": {
     "company": "Siemens Energy",
     "first_seen": "2026-07-13T14:35:47.960539",
@@ -9723,6 +9773,11 @@
     "company": "Siemens Energy",
     "first_seen": "2026-08-16T12:40:01.756459",
     "title": "Senior Project Engineer - Siemens Energy, Cairo Egypt"
+  },
+  "https://jobs.siemens-energy.com/en_us/jobs/folderdetail/senior-project-engineer-siemens-energy-dammam-ksa/302699": {
+    "company": "Siemens Energy",
+    "first_seen": "2026-09-07T17:20:23.260626",
+    "title": "Senior Project Engineer - Siemens Energy, Dammam KSA"
   },
   "https://jobs.siemens-energy.com/en_us/jobs/folderdetail/senior-quality-engineer/302214": {
     "company": "Siemens Energy",
