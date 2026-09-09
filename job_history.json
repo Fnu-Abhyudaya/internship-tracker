@@ -2134,6 +2134,11 @@
     "first_seen": "2026-08-31T18:52:01.042635",
     "title": "Early Professional, Structural Engineering Billings | Overland Park | Denver"
   },
+  "https://emit.fa.ca3.oraclecloud.com/hcmui/candidateexperience/en/sites/cx_2001/job/94559": {
+    "company": "WSP",
+    "first_seen": "2026-09-09T16:01:10.773335",
+    "title": "Structural Engineering Intern - Fall 2026 San Diego"
+  },
   "https://emit.fa.ca3.oraclecloud.com/hcmui/candidateexperience/en/sites/cx_2001/job/94620": {
     "company": "WSP",
     "first_seen": "2026-09-08T16:06:20.001227",
@@ -2144,10 +2149,30 @@
     "first_seen": "2026-09-06T15:00:49.553726",
     "title": "Lead Substation Project Engineer Richmond"
   },
+  "https://emit.fa.ca3.oraclecloud.com/hcmui/candidateexperience/en/sites/cx_2001/job/94637": {
+    "company": "WSP",
+    "first_seen": "2026-09-09T16:01:10.773335",
+    "title": "Structural Engineering Intern - Summer 2027 Dallas"
+  },
   "https://emit.fa.ca3.oraclecloud.com/hcmui/candidateexperience/en/sites/cx_2001/job/94639": {
     "company": "WSP",
     "first_seen": "2026-09-07T17:20:23.260626",
     "title": "Early Career Substation Structural Engineer Lake Oswego"
+  },
+  "https://emit.fa.ca3.oraclecloud.com/hcmui/candidateexperience/en/sites/cx_2001/job/94642": {
+    "company": "WSP",
+    "first_seen": "2026-09-09T16:01:10.773335",
+    "title": "Senior Environmental Planner Boston | Portland | Waterbury | Merrimack | New Haven | North Providence"
+  },
+  "https://emit.fa.ca3.oraclecloud.com/hcmui/candidateexperience/en/sites/cx_2001/job/94825": {
+    "company": "WSP",
+    "first_seen": "2026-09-09T16:01:10.773335",
+    "title": "Early Career Mechanical Engineer Atlanta"
+  },
+  "https://emit.fa.ca3.oraclecloud.com/hcmui/candidateexperience/en/sites/cx_2001/job/94834": {
+    "company": "WSP",
+    "first_seen": "2026-09-09T16:01:10.773335",
+    "title": "Regional Aviation Program & Business Development Leader \u2013 Southeast Atlanta | New Orleans | Miami"
   },
   "https://emit.fa.ca3.oraclecloud.com/hcmui/candidateexperience/en/sites/cx_2001/requisitions/preview/79723": {
     "company": "WSP",
@@ -4789,6 +4814,11 @@
     "first_seen": "2026-09-08T16:06:20.001227",
     "title": "Director-Product ComplianceNewReno, Nevada, United States; San Francisco, California, United States\u2192"
   },
+  "https://job-boards.greenhouse.io/amperesand/jobs/4398027009": {
+    "company": "Amperesand",
+    "first_seen": "2026-09-09T16:01:10.773335",
+    "title": "Test Engineering Technician "
+  },
   "https://job-boards.greenhouse.io/axon/jobs/6301266003": {
     "company": "Axon",
     "first_seen": "2026-05-29T18:46:43.602361",
@@ -5318,6 +5348,11 @@
     "company": "DLR Group",
     "first_seen": "2026-09-04T15:51:39.156677",
     "title": "Senior Mechanical Engineering Leader - Justice + Civic"
+  },
+  "https://job-boards.greenhouse.io/dlrgroup/jobs/5418777008": {
+    "company": "DLR Group",
+    "first_seen": "2026-09-09T16:01:10.773335",
+    "title": "Senior Structural Engineer"
   },
   "https://job-boards.greenhouse.io/lunarenergy/jobs/5984882004": {
     "company": "Lunar Energy",
@@ -6659,6 +6694,11 @@
     "first_seen": "2026-08-01T13:20:33.436412",
     "title": "AI Automation Co-Op"
   },
+  "https://jobs.ametek.com/job/suwanee-associate-mechanical-engineer-atl-ga-30024/1422923100": {
+    "company": "AMETEK",
+    "first_seen": "2026-09-09T16:01:10.773335",
+    "title": "Associate Mechanical Engineer - ATL"
+  },
   "https://jobs.ametek.com/job/suwanee-mechanical-engineer-atl-ga-30024/1395176200": {
     "company": "AMETEK",
     "first_seen": "2026-05-29T20:27:40.573582",
@@ -6863,6 +6903,11 @@
     "company": "Mariana Minerals",
     "first_seen": "2026-05-28T23:19:59.896652",
     "title": "Field Engineering Intern "
+  },
+  "https://jobs.ashbyhq.com/marianaminerals/c46e6d45-e7b0-4c6e-a5dd-287aa0db07a1": {
+    "company": "Mariana Minerals",
+    "first_seen": "2026-09-09T16:01:10.773335",
+    "title": "Sr./Staff Pyrometallurgical Process Engineer"
   },
   "https://jobs.ashbyhq.com/marianaminerals/c59fd9e0-27b9-4125-bcfc-40569938359e": {
     "company": "Mariana Minerals",
@@ -7363,6 +7408,11 @@
     "company": "BD",
     "first_seen": "2026-07-09T15:01:00.904992",
     "title": "Quality Engineer I"
+  },
+  "https://jobs.bd.com/en/job/san-diego/sr-systems-engineer-i/159/100388670416": {
+    "company": "BD",
+    "first_seen": "2026-09-09T16:01:10.773335",
+    "title": "Sr. Systems Engineer I"
   },
   "https://jobs.bd.com/en/job/sandy/environment-health-and-safety-process-engineer/159/94701886816": {
     "company": "BD",
@@ -9119,6 +9169,11 @@
     "first_seen": "2026-07-28T14:07:37.736034",
     "title": "Mechanical Design Engineer - Humanoid Robotics (Gear Design)"
   },
+  "https://jobs.schaeffler.com/job/troy%2c-mi-sr_-mechanical-design-engineer-%28gearing-humanoid-robotics%29-mi-48083/1435395233": {
+    "company": "Schaeffler",
+    "first_seen": "2026-09-09T16:01:10.773335",
+    "title": "Sr. Mechanical Design Engineer (Gearing - Humanoid Robotics)"
+  },
   "https://jobs.schaeffler.com/job/troy%2c-mi-sr_-systems-engineer-%28sensors-humanoid-robotics%29-mi-48083/1426681433": {
     "company": "Schaeffler",
     "first_seen": "2026-08-15T12:38:46.499333",
@@ -9464,6 +9519,11 @@
     "first_seen": "2026-07-23T13:58:19.229227",
     "title": "Industrialization Intern - Cantabria Tech Talent Program"
   },
+  "https://jobs.siemens-energy.com/en_us/jobs/folderdetail/international-order-manager/302758": {
+    "company": "Siemens Energy",
+    "first_seen": "2026-09-09T16:01:10.773335",
+    "title": "International Order Manager"
+  },
   "https://jobs.siemens-energy.com/en_us/jobs/folderdetail/internship-converter-department/296365": {
     "company": "Siemens Energy",
     "first_seen": "2026-05-28T23:19:59.896652",
@@ -9779,6 +9839,11 @@
     "first_seen": "2026-07-24T13:46:21.218530",
     "title": "Quality Engineer"
   },
+  "https://jobs.siemens-energy.com/en_us/jobs/folderdetail/quality-engineer/302264": {
+    "company": "Siemens Energy",
+    "first_seen": "2026-09-09T16:01:10.773335",
+    "title": "Quality Engineer"
+  },
   "https://jobs.siemens-energy.com/en_us/jobs/folderdetail/quality-manufacturing-engineer-power-transformers/302650": {
     "company": "Siemens Energy",
     "first_seen": "2026-08-28T21:50:05.469853",
@@ -9813,6 +9878,11 @@
     "company": "Siemens Energy",
     "first_seen": "2026-06-01T17:42:16.418050",
     "title": "Senior AI Engineer Internship \u2013 Agentic AI for Power Grids"
+  },
+  "https://jobs.siemens-energy.com/en_us/jobs/folderdetail/senior-controls-design-engineer/301717": {
+    "company": "Siemens Energy",
+    "first_seen": "2026-09-09T16:01:10.773335",
+    "title": "Senior Controls Design Engineer"
   },
   "https://jobs.siemens-energy.com/en_us/jobs/folderdetail/senior-design-engineer/301161": {
     "company": "Siemens Energy",
@@ -9889,6 +9959,11 @@
     "first_seen": "2026-06-12T15:02:21.270874",
     "title": "Structural Engineer"
   },
+  "https://jobs.siemens-energy.com/en_us/jobs/folderdetail/student-worker-mechanical-design-engineering/302764": {
+    "company": "Siemens Energy",
+    "first_seen": "2026-09-09T16:01:10.773335",
+    "title": "Student Worker - Mechanical design engineering"
+  },
   "https://jobs.siemens-energy.com/en_us/jobs/folderdetail/stwh-test-engineer/301477": {
     "company": "Siemens Energy",
     "first_seen": "2026-08-14T13:07:14.714570",
@@ -9953,6 +10028,11 @@
     "company": "Siemens Energy",
     "first_seen": "2026-07-02T14:02:02.246261",
     "title": "Supplier Quality Engineer (w/m/d)"
+  },
+  "https://jobs.siemens-energy.com/en_us/jobs/folderdetail/supplier-quality-engineer/302397": {
+    "company": "Siemens Energy",
+    "first_seen": "2026-09-09T16:01:10.773335",
+    "title": "Supplier Quality Engineer"
   },
   "https://jobs.siemens-energy.com/en_us/jobs/folderdetail/supplier-quality-manufacturing-engineer/299037": {
     "company": "Siemens Energy",
@@ -10549,6 +10629,11 @@
     "first_seen": "2026-06-18T15:28:34.258499",
     "title": "Associate Mechanical Engineer"
   },
+  "https://nidec.wd1.myworkdayjobs.com/nidec/job/north-americausaminnesotamankato-mn/associate-mechanical-engineer_r0017511": {
+    "company": "Nidec",
+    "first_seen": "2026-09-09T16:01:10.773335",
+    "title": "Associate Mechanical Engineer"
+  },
   "https://nidec.wd1.myworkdayjobs.com/nidec/job/north-americausaminnesotamankato-mn/associate-project-engineer_r0011874": {
     "company": "Nidec",
     "first_seen": "2026-05-30T13:32:19.890371",
@@ -10572,6 +10657,11 @@
   "https://nidec.wd1.myworkdayjobs.com/nidec/job/north-americausaminnesotamankato-mn/mechanical-engineer_r0016276": {
     "company": "Nidec",
     "first_seen": "2026-06-18T15:28:34.258499",
+    "title": "Mechanical Engineer"
+  },
+  "https://nidec.wd1.myworkdayjobs.com/nidec/job/north-americausaminnesotamankato-mn/mechanical-engineer_r0017512": {
+    "company": "Nidec",
+    "first_seen": "2026-09-09T16:01:10.773335",
     "title": "Mechanical Engineer"
   },
   "https://nidec.wd1.myworkdayjobs.com/nidec/job/north-americausaminnesotamankato-mn/production---mechanical-maintenance---second-shift_r0014512-1": {
@@ -10673,6 +10763,11 @@
     "company": "Nidec",
     "first_seen": "2026-05-28T23:19:59.896652",
     "title": "Application Engineering Co-Op"
+  },
+  "https://nidec.wd1.myworkdayjobs.com/nidec/job/north-americausamissourist-louis---wpe-mo/engineer-v---mechanical_r0017436": {
+    "company": "Nidec",
+    "first_seen": "2026-09-09T16:01:10.773335",
+    "title": "Engineer V - Mechanical"
   },
   "https://nidec.wd1.myworkdayjobs.com/nidec/job/north-americausamissourist-louis---wpe-mo/engineering-co-op-2_r0017023": {
     "company": "Nidec",
@@ -11313,6 +11408,11 @@
     "company": "Stanley Black & Decker",
     "first_seen": "2026-09-05T14:39:56.045218",
     "title": "Product Manager (Plumbing & Mechanical Power Tools - DEWALT)"
+  },
+  "https://sbdinc.wd1.myworkdayjobs.com/stanley_black_decker_career_site/job/towson-md-united-states/project-engineer--cae_req-1000052025": {
+    "company": "Stanley Black & Decker",
+    "first_seen": "2026-09-09T16:01:10.773335",
+    "title": "Project Engineer, CAE"
   },
   "https://sbdinc.wd1.myworkdayjobs.com/stanley_black_decker_career_site/job/towson-md-united-states/project-engineer--electro-mechanical_req-1000047072-1": {
     "company": "Stanley Black & Decker",
