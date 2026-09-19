@@ -49,6 +49,11 @@
     "first_seen": "2026-06-20T14:06:44.425263",
     "title": "Ausbildung zur Fachkraft f\u00fcr Lagerlogistik (m/w/d) 2026"
   },
+  "https://assaabloy.jobs2web.com/job/albstadt-ausbildung-zur-fachkraft-f%c3%bcr-lagerlogistik-%28mwd%29-2027-bw-72458/1386295533": {
+    "company": "ASSA ABLOY",
+    "first_seen": "2026-09-19T15:28:10.783552",
+    "title": "Ausbildung zur Fachkraft f\u00fcr Lagerlogistik (m/w/d) 2027"
+  },
   "https://assaabloy.jobs2web.com/job/albstadt-ausbildung-zur-industriekauffrau%2c-zum-industriekaufmann-%28mwd%29-2027-bw-72458/1405856533": {
     "company": "ASSA ABLOY",
     "first_seen": "2026-07-17T13:30:05.954679",
@@ -1989,6 +1994,16 @@
     "first_seen": "2026-09-14T17:47:33.781787",
     "title": "Print Process Intern (Winter/Spring 2027)"
   },
+  "https://careers.formlabs.com/job/8214416/apply": {
+    "company": "Formlabs",
+    "first_seen": "2026-09-19T15:28:10.783552",
+    "title": "Field Service Engineer - Newark"
+  },
+  "https://careers.formlabs.com/job/8214510/apply": {
+    "company": "Formlabs",
+    "first_seen": "2026-09-19T15:28:10.783552",
+    "title": "Enterprise Architect - Business Systems (Internal)"
+  },
   "https://careers.itw.com/us/en/job/jr10021/manufacturing-engineer-intern": {
     "company": "ITW",
     "first_seen": "2026-09-11T15:58:45.534278",
@@ -2033,6 +2048,11 @@
     "company": "ITW",
     "first_seen": "2026-09-16T16:14:58.897249",
     "title": "Mechanical Engineering Intern- Summer 2027"
+  },
+  "https://careers.itw.com/us/en/job/jr10204/mechanical-engineering-intern": {
+    "company": "ITW",
+    "first_seen": "2026-09-19T15:28:10.783552",
+    "title": "Mechanical Engineering Intern"
   },
   "https://careers.itw.com/us/en/job/jr4584/mechanical-engineer-intern": {
     "company": "ITW",
@@ -2218,6 +2238,11 @@
     "company": "Cummins",
     "first_seen": "2026-08-10T13:07:55.525857",
     "title": "Product Systems Validation EngineerColumbus, INWork Type: On-site with Flexibility"
+  },
+  "https://cummins.jobs/columbus-in/supplier-quality-engineer/82c717088ec1450c9e2d3231ff0032d3/job": {
+    "company": "Cummins",
+    "first_seen": "2026-09-19T15:28:10.783552",
+    "title": "Supplier Quality EngineerColumbus, INWork Type: Off-site Remote"
   },
   "https://cummins.jobs/columbus-in/thermal-and-fluid-systems-engineer/33e181e5e32842ee9fa03207243cdf86/job": {
     "company": "Cummins",
@@ -7019,6 +7044,11 @@
     "first_seen": "2026-05-29T18:46:43.602361",
     "title": "Senior Quality Engineer"
   },
+  "https://jobs.ametek.com/job/keene-co-op-cnc-lathe-operator-nh-03431/1431662100": {
+    "company": "AMETEK",
+    "first_seen": "2026-09-19T15:28:10.783552",
+    "title": "Co-Op CNC Lathe Operator"
+  },
   "https://jobs.ametek.com/job/keene-manufacturing-and-quality-engineering-manager-nh-03431/1387407300": {
     "company": "AMETEK",
     "first_seen": "2026-05-30T13:32:19.890371",
@@ -7397,6 +7427,11 @@
   "https://jobs.ametek.com/job/pittsburgh-electro-mechanical-assembler-pa-15238/1416268200": {
     "company": "AMETEK",
     "first_seen": "2026-08-06T14:08:28.878568",
+    "title": "Electro Mechanical Assembler"
+  },
+  "https://jobs.ametek.com/job/pittsburgh-electro-mechanical-assembler-pa-15238/1431555600": {
+    "company": "AMETEK",
+    "first_seen": "2026-09-19T15:28:10.783552",
     "title": "Electro Mechanical Assembler"
   },
   "https://jobs.ametek.com/job/pittsburgh-supervisor%2c-manufacturing-engineering-pa-15238/1412678700": {
@@ -8134,6 +8169,11 @@
     "first_seen": "2026-06-15T17:22:03.987568",
     "title": "Quality Engineer II"
   },
+  "https://jobs.bd.com/en/job/columbus/electro-mechanical-technician-b-shift/159/100818819648": {
+    "company": "BD",
+    "first_seen": "2026-09-19T15:28:10.783552",
+    "title": "Electro-Mechanical Technician B Shift"
+  },
   "https://jobs.bd.com/en/job/columbus/manager-quality-engineering/159/94259366144": {
     "company": "BD",
     "first_seen": "2026-08-05T14:09:46.422630",
@@ -8203,6 +8243,11 @@
     "company": "BD",
     "first_seen": "2026-06-08T15:54:09.908847",
     "title": "Senior Internal Auditor"
+  },
+  "https://jobs.bd.com/en/job/irvine/sr-manager-quality-engineering/159/100815259552": {
+    "company": "BD",
+    "first_seen": "2026-09-19T15:28:10.783552",
+    "title": "Sr. Manager, Quality Engineering"
   },
   "https://jobs.bd.com/en/job/madison/ehs-process-engineer/159/97793664016": {
     "company": "BD",
@@ -10818,6 +10863,11 @@
     "company": "Siemens Energy",
     "first_seen": "2026-08-06T14:08:28.878568",
     "title": "Repairs Tendering & Project Engineer"
+  },
+  "https://jobs.siemens-energy.com/en_us/jobs/folderdetail/resident-quality-engineer/303699": {
+    "company": "Siemens Energy",
+    "first_seen": "2026-09-19T15:28:10.783552",
+    "title": "Resident Quality Engineer"
   },
   "https://jobs.siemens-energy.com/en_us/jobs/folderdetail/robotics-engineer-f-m-d/302502": {
     "company": "Siemens Energy",
