@@ -339,6 +339,11 @@
     "first_seen": "2026-05-29T20:27:40.573582",
     "title": "Manufacturing Engineer"
   },
+  "https://assaabloy.jobs2web.com/job/phoenix-manufacturing-engineering-technician-az-85044/1440669133": {
+    "company": "ASSA ABLOY",
+    "first_seen": "2026-09-30T17:42:24.841829",
+    "title": "Manufacturing Engineering Technician"
+  },
   "https://assaabloy.jobs2web.com/job/phoenix-quality-test-engineer-az-85044/1390562433": {
     "company": "ASSA ABLOY",
     "first_seen": "2026-06-03T16:52:14.091373",
@@ -849,6 +854,11 @@
     "first_seen": "2026-06-29T15:50:09.260865",
     "title": "Brunswick New York Mills - Warehouse Worker"
   },
+  "https://brunswick.wd1.myworkdayjobs.com/search/job/new-york-mills-mn/brunswick-new-york-mills---warehouse-worker_jr-051785": {
+    "company": "Brunswick",
+    "first_seen": "2026-09-30T17:42:24.841829",
+    "title": "Brunswick New York Mills - Warehouse Worker"
+  },
   "https://brunswick.wd1.myworkdayjobs.com/search/job/new-york-mills-mn/brunswick-new-york-mills---welder-in-training_jr-048666": {
     "company": "Brunswick",
     "first_seen": "2026-09-21T17:58:12.362383",
@@ -1028,6 +1038,11 @@
     "company": "Calista/Yulista",
     "first_seen": "2026-09-24T16:35:07.734325",
     "title": "Mechanical Quality Inspector III (CWI)"
+  },
+  "https://calistacorp.wd1.myworkdayjobs.com/yulista/job/huntsville-al/production-control-planner-ii--mechanical-_jr109963": {
+    "company": "Calista/Yulista",
+    "first_seen": "2026-09-30T17:42:24.841829",
+    "title": "Production Control Planner II (Mechanical)"
   },
   "https://calistacorp.wd1.myworkdayjobs.com/yulista/job/huntsville-al/quality-engineer-ii_jr109340": {
     "company": "Calista/Yulista",
@@ -1503,6 +1518,11 @@
     "company": "AMD",
     "first_seen": "2026-09-24T16:35:07.734325",
     "title": "2027 China Spring Intern (Jan - Jun)"
+  },
+  "https://careers.amd.com/careers-home/jobs/93091?lang=en-us": {
+    "company": "AMD",
+    "first_seen": "2026-09-30T17:42:24.841829",
+    "title": "2027 Undergrad Thermal Engineering Intern/Co-Op"
   },
   "https://careers.appliedmaterials.com/careers/job/790312921923": {
     "company": "Applied Materials",
@@ -2479,6 +2499,86 @@
     "first_seen": "2026-09-28T19:20:17.151799",
     "title": "Mechanical Engineering Manager"
   },
+  "https://careers.formlabs.com/job/8241424/apply": {
+    "company": "Formlabs",
+    "first_seen": "2026-09-30T17:42:24.841829",
+    "title": "Robotic Systems Integration Engineer (SLA & SLS) - June 2027 Grads"
+  },
+  "https://careers.formlabs.com/job/8241429/apply": {
+    "company": "Formlabs",
+    "first_seen": "2026-09-30T17:42:24.841829",
+    "title": "Robotic Systems Integration Engineer (SLA & SLS) - June 2027 Grads"
+  },
+  "https://careers.formlabs.com/job/8241460/apply": {
+    "company": "Formlabs",
+    "first_seen": "2026-09-30T17:42:24.841829",
+    "title": "R&D Reliability/Test Engineer"
+  },
+  "https://careers.formlabs.com/job/8241461/apply": {
+    "company": "Formlabs",
+    "first_seen": "2026-09-30T17:42:24.841829",
+    "title": "R&D Reliability/Test Engineer"
+  },
+  "https://careers.formlabs.com/job/8241465/apply": {
+    "company": "Formlabs",
+    "first_seen": "2026-09-30T17:42:24.841829",
+    "title": "R&D Reliability/Test Engineer - June 2027 Grads"
+  },
+  "https://careers.formlabs.com/job/8241472/apply": {
+    "company": "Formlabs",
+    "first_seen": "2026-09-30T17:42:24.841829",
+    "title": "R&D Reliability/Test Engineer - June 2027 Grads"
+  },
+  "https://careers.formlabs.com/job/8241493/apply": {
+    "company": "Formlabs",
+    "first_seen": "2026-09-30T17:42:24.841829",
+    "title": "Mechanical Engineer"
+  },
+  "https://careers.formlabs.com/job/8241495/apply": {
+    "company": "Formlabs",
+    "first_seen": "2026-09-30T17:42:24.841829",
+    "title": "Mechanical Engineer"
+  },
+  "https://careers.formlabs.com/job/8241499/apply": {
+    "company": "Formlabs",
+    "first_seen": "2026-09-30T17:42:24.841829",
+    "title": "Senior Mechanical Engineer"
+  },
+  "https://careers.formlabs.com/job/8241500/apply": {
+    "company": "Formlabs",
+    "first_seen": "2026-09-30T17:42:24.841829",
+    "title": "Senior Mechanical Engineer"
+  },
+  "https://careers.formlabs.com/job/8241503/apply": {
+    "company": "Formlabs",
+    "first_seen": "2026-09-30T17:42:24.841829",
+    "title": "3D Print Optimization Engineer - June 2027 New Grads"
+  },
+  "https://careers.formlabs.com/job/8241504/apply": {
+    "company": "Formlabs",
+    "first_seen": "2026-09-30T17:42:24.841829",
+    "title": "3D Print Optimization Engineer - June 2027 New Grads"
+  },
+  "https://careers.formlabs.com/job/8241539/apply": {
+    "company": "Formlabs",
+    "first_seen": "2026-09-30T17:42:24.841829",
+    "title": "Materials Scientist - June 2027 Grads"
+  },
+  "https://careers.formlabs.com/job/8241540/apply": {
+    "company": "Formlabs",
+    "first_seen": "2026-09-30T17:42:24.841829",
+    "title": "Materials Scientist - June 2027 Grads"
+  },
+  "https://careers.formlabs.com/job/8241541/apply": {
+    "company": "Formlabs",
+    "first_seen": "2026-09-30T17:42:24.841829",
+    "title": "SLS Materials Scientist - June 2027 Grads"
+  },
+  "https://careers.formlabs.com/job/8241542/apply": {
+    "company": "Formlabs",
+    "first_seen": "2026-09-30T17:42:24.841829",
+    "title": "SLS Materials Scientist - June 2027 Grads"
+  },
   "https://careers.itw.com/us/en/job/jr10021/manufacturing-engineer-intern": {
     "company": "ITW",
     "first_seen": "2026-09-11T15:58:45.534278",
@@ -2533,6 +2633,11 @@
     "company": "ITW",
     "first_seen": "2026-09-19T15:28:10.783552",
     "title": "Mechanical Engineering Intern"
+  },
+  "https://careers.itw.com/us/en/job/jr10284/industrial-engineering-co-op-intern": {
+    "company": "ITW",
+    "first_seen": "2026-09-30T17:42:24.841829",
+    "title": "Industrial Engineering Co-Op Intern"
   },
   "https://careers.itw.com/us/en/job/jr4584/mechanical-engineer-intern": {
     "company": "ITW",
@@ -2787,6 +2892,11 @@
   "https://cummins.jobs/columbus-in/product-systems-validation-engineer/0b609ad7fc904cb8a331ebb311c0d75f/job": {
     "company": "Cummins",
     "first_seen": "2026-08-10T13:07:55.525857",
+    "title": "Product Systems Validation EngineerColumbus, INWork Type: On-site with Flexibility"
+  },
+  "https://cummins.jobs/columbus-in/product-systems-validation-engineer/3718e24b0b0e4dd49d7c71999e116dd4/job": {
+    "company": "Cummins",
+    "first_seen": "2026-09-30T17:42:24.841829",
     "title": "Product Systems Validation EngineerColumbus, INWork Type: On-site with Flexibility"
   },
   "https://cummins.jobs/columbus-in/product-systems-validation-engineer/3ca85d216f4846b0b6c14568dba7f188/job": {
@@ -3253,6 +3363,36 @@
     "company": "WSP",
     "first_seen": "2026-09-12T15:05:47.678304",
     "title": "Bridge Inspection Team Leader - Structural Engineer Worcester | Boston | Providence | Glastonbury"
+  },
+  "https://emit.fa.ca3.oraclecloud.com/hcmui/candidateexperience/en/sites/cx_2001/job/95991": {
+    "company": "WSP",
+    "first_seen": "2026-09-30T17:42:24.841829",
+    "title": "Structural Engineering Co-op - Spring 2027 Boston"
+  },
+  "https://emit.fa.ca3.oraclecloud.com/hcmui/candidateexperience/en/sites/cx_2001/job/96102": {
+    "company": "WSP",
+    "first_seen": "2026-09-30T17:42:24.841829",
+    "title": "Project Director, Urban Design and Development New York"
+  },
+  "https://emit.fa.ca3.oraclecloud.com/hcmui/candidateexperience/en/sites/cx_2001/job/96341": {
+    "company": "WSP",
+    "first_seen": "2026-09-30T17:42:24.841829",
+    "title": "Senior Manager Springfield"
+  },
+  "https://emit.fa.ca3.oraclecloud.com/hcmui/candidateexperience/en/sites/cx_2001/job/96418": {
+    "company": "WSP",
+    "first_seen": "2026-09-30T17:42:24.841829",
+    "title": "Regional T&I Business Line Leader New York"
+  },
+  "https://emit.fa.ca3.oraclecloud.com/hcmui/candidateexperience/en/sites/cx_2001/job/96446": {
+    "company": "WSP",
+    "first_seen": "2026-09-30T17:42:24.841829",
+    "title": "Field Structural Engineer New York"
+  },
+  "https://emit.fa.ca3.oraclecloud.com/hcmui/candidateexperience/en/sites/cx_2001/job/96514": {
+    "company": "WSP",
+    "first_seen": "2026-09-30T17:42:24.841829",
+    "title": "BIM Manager - Open Buildings (BENTLEY) New York | Newark"
   },
   "https://emit.fa.ca3.oraclecloud.com/hcmui/candidateexperience/en/sites/cx_2001/requisitions/preview/79723": {
     "company": "WSP",
@@ -6349,6 +6489,11 @@
     "first_seen": "2026-09-26T15:50:34.968906",
     "title": "Senior CNC MachinistNewReno, Nevada, United States\u2192"
   },
+  "https://job-boards.greenhouse.io/amperesand/jobs/4425221009": {
+    "company": "Amperesand",
+    "first_seen": "2026-09-30T17:42:24.841829",
+    "title": "Power Electronics Design Intern "
+  },
   "https://job-boards.greenhouse.io/axon/jobs/6301266003": {
     "company": "Axon",
     "first_seen": "2026-05-29T18:46:43.602361",
@@ -7078,6 +7223,11 @@
     "company": "Salient Motion",
     "first_seen": "2026-08-20T12:49:00.619299",
     "title": "Systems Engineer"
+  },
+  "https://job-boards.greenhouse.io/salientmotion/jobs/5439312008": {
+    "company": "Salient Motion",
+    "first_seen": "2026-09-30T17:42:24.841829",
+    "title": "Mechanical Test Engineer "
   },
   "https://job-boards.greenhouse.io/scoutmotors/jobs/5039590007": {
     "company": "Scout Motors",
@@ -9204,6 +9354,11 @@
     "first_seen": "2026-09-02T16:03:35.330355",
     "title": "Associate Director, International Business, Growth Markets"
   },
+  "https://jobs.bd.com/en/job/covington/quality-engineer-ii/159/101352360240": {
+    "company": "BD",
+    "first_seen": "2026-09-30T17:42:24.841829",
+    "title": "Quality Engineer II"
+  },
   "https://jobs.bd.com/en/job/covington/sr-design-quality-engineer/159/95635216560": {
     "company": "BD",
     "first_seen": "2026-07-18T13:15:18.004051",
@@ -9258,6 +9413,11 @@
     "company": "BD",
     "first_seen": "2026-06-08T15:54:09.908847",
     "title": "Senior Internal Auditor"
+  },
+  "https://jobs.bd.com/en/job/hunt-valley/quality-engineer-iii/159/101352360384": {
+    "company": "BD",
+    "first_seen": "2026-09-30T17:42:24.841829",
+    "title": "Quality Engineer III"
   },
   "https://jobs.bd.com/en/job/irvine/sr-manager-quality-engineering/159/100815259552": {
     "company": "BD",
@@ -9363,6 +9523,11 @@
     "company": "BD",
     "first_seen": "2026-07-25T13:26:57.834148",
     "title": "Sr. Staff Systems Engineer"
+  },
+  "https://jobs.dana.com/job/auburn-hills-quality-engineer-mi-48326-1580/1434985700": {
+    "company": "Dana Inc",
+    "first_seen": "2026-09-30T17:42:24.841829",
+    "title": "Quality Engineer"
   },
   "https://jobs.dana.com/job/boucherville-advance-solution-engineering-and-application-engineering-intern-queb-canada/1409351700": {
     "company": "Dana Inc",
@@ -9578,6 +9743,11 @@
     "company": "Dana Inc",
     "first_seen": "2026-07-15T13:45:41.262397",
     "title": "NVH Test Engineer"
+  },
+  "https://jobs.dana.com/job/maumee-test-engineer-oh-43537/1434982900": {
+    "company": "Dana Inc",
+    "first_seen": "2026-09-30T17:42:24.841829",
+    "title": "Test Engineer"
   },
   "https://jobs.dana.com/job/mount-forest-summer-student-on-n0g-2l1/1395573300": {
     "company": "Dana Inc",
@@ -10674,6 +10844,11 @@
     "first_seen": "2026-07-02T14:02:02.246261",
     "title": "Intern"
   },
+  "https://jobs.schaeffler.com/job/irapuato-intern-36815/1442954733": {
+    "company": "Schaeffler",
+    "first_seen": "2026-09-30T17:42:24.841829",
+    "title": "Intern"
+  },
   "https://jobs.schaeffler.com/job/irapuato-intern-assistant-plant-manager-36815/1413070633": {
     "company": "Schaeffler",
     "first_seen": "2026-07-10T14:27:48.737380",
@@ -11759,6 +11934,11 @@
     "first_seen": "2026-09-02T16:03:35.330355",
     "title": "Mechanical Maintenance Engineer - Beni Suef Power Plant."
   },
+  "https://jobs.siemens-energy.com/en_us/jobs/folderdetail/mechanical-maintenance-supervisor-o-m/304003": {
+    "company": "Siemens Energy",
+    "first_seen": "2026-09-30T17:42:24.841829",
+    "title": "Mechanical Maintenance Supervisor (O&M)"
+  },
   "https://jobs.siemens-energy.com/en_us/jobs/folderdetail/mechanical-process-system-engineer/296800": {
     "company": "Siemens Energy",
     "first_seen": "2026-08-22T12:39:54.961234",
@@ -11848,6 +12028,11 @@
     "company": "Siemens Energy",
     "first_seen": "2026-07-15T13:45:41.262397",
     "title": "Operational Excellence Expert (w/m/d) Digitalisierung & Automatisierung (befristet bis zum 30.09.2027))"
+  },
+  "https://jobs.siemens-energy.com/en_us/jobs/folderdetail/plant-engineer-lead/303909": {
+    "company": "Siemens Energy",
+    "first_seen": "2026-09-30T17:42:24.841829",
+    "title": "Plant Engineer Lead"
   },
   "https://jobs.siemens-energy.com/en_us/jobs/folderdetail/power-system-consultant-sept-2026/298864": {
     "company": "Siemens Energy",
@@ -12288,6 +12473,11 @@
     "company": "Tenneco",
     "first_seen": "2026-05-29T20:27:40.573582",
     "title": "Assistant Manager - Process Engineering"
+  },
+  "https://jobs.tenneco.com/job/bhiwadi-assistant-manager-manufacturing-engineering/1435187500": {
+    "company": "Tenneco",
+    "first_seen": "2026-09-30T17:42:24.841829",
+    "title": "Assistant Manager- Manufacturing Engineering"
   },
   "https://jobs.tenneco.com/job/blacksburg-ci-intern-va/1410389700": {
     "company": "Tenneco",
@@ -12814,6 +13004,11 @@
     "first_seen": "2026-05-30T13:32:19.890371",
     "title": "Customer Quality Engineer"
   },
+  "https://nidec.wd1.myworkdayjobs.com/nidec/job/north-americausaillinoisst-charles-il/design-quality-engineer--aspice-_r0017849": {
+    "company": "Nidec",
+    "first_seen": "2026-09-30T17:42:24.841829",
+    "title": "Design Quality Engineer (ASPICE)"
+  },
   "https://nidec.wd1.myworkdayjobs.com/nidec/job/north-americausaillinoisst-charles-il/emc-test-engineer_r0014359": {
     "company": "Nidec",
     "first_seen": "2026-05-30T13:32:19.890371",
@@ -13297,6 +13492,11 @@
   "https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/us-ca-santa-clara/senior-ate-hardware-engineer_jr2017777": {
     "company": "NVIDIA",
     "first_seen": "2026-06-30T14:22:19.328769",
+    "title": "Senior ATE Hardware Engineer"
+  },
+  "https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/us-ca-santa-clara/senior-ate-hardware-engineer_jr2021885": {
+    "company": "NVIDIA",
+    "first_seen": "2026-09-30T17:42:24.841829",
     "title": "Senior ATE Hardware Engineer"
   },
   "https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/us-ca-santa-clara/senior-circuit-design-engineer_jr2014591": {
@@ -13909,6 +14109,11 @@
     "first_seen": "2026-06-04T15:04:36.908314",
     "title": "Mechanical Engineer (Moveable Bridge)"
   },
+  "https://stvinc.wd5.myworkdayjobs.com/stv/job/oklahoma-city-oklahoma/structural-engineering-intern---summer-2027_jr6315": {
+    "company": "STV Inc",
+    "first_seen": "2026-09-30T17:42:24.841829",
+    "title": "Structural Engineering Intern - Summer 2027"
+  },
   "https://stvinc.wd5.myworkdayjobs.com/stv/job/owings-mills-maryland/transportation-engineering-intern----summer-2027_jr6113": {
     "company": "STV Inc",
     "first_seen": "2026-09-04T15:51:39.156677",
@@ -14397,6 +14602,11 @@
   "https://xylem.wd5.myworkdayjobs.com/xylem-careers/job/morrisville-north-carolina-office/hardware-test-reliability-engineer_r48082-1": {
     "company": "Xylem",
     "first_seen": "2026-05-28T23:19:59.896652",
+    "title": "Hardware Test Reliability Engineer"
+  },
+  "https://xylem.wd5.myworkdayjobs.com/xylem-careers/job/morrisville-north-carolina-office/hardware-test-reliability-engineer_r51018": {
+    "company": "Xylem",
+    "first_seen": "2026-09-30T17:42:24.841829",
     "title": "Hardware Test Reliability Engineer"
   },
   "https://xylem.wd5.myworkdayjobs.com/xylem-careers/job/morrisville-north-carolina-office/senior-electronics-hardware-engineer_r48855": {
