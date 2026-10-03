@@ -1459,6 +1459,11 @@
     "first_seen": "2026-09-10T15:56:26.848727",
     "title": "2027 Masters ASIC Package Engineering Co-op/Intern"
   },
+  "https://careers.amd.com/careers-home/jobs/91633?lang=en-us": {
+    "company": "AMD",
+    "first_seen": "2026-10-03T15:47:36.582304",
+    "title": "Spring/Summer 2027 Masters Photonics Design Engineering Co-Op"
+  },
   "https://careers.amd.com/careers-home/jobs/91864?lang=en-us": {
     "company": "AMD",
     "first_seen": "2026-09-10T15:56:26.848727",
@@ -1528,6 +1533,11 @@
     "company": "AMD",
     "first_seen": "2026-09-30T17:42:24.841829",
     "title": "2027 Undergrad Thermal Engineering Intern/Co-Op"
+  },
+  "https://careers.amd.com/careers-home/jobs/93125?lang=en-us": {
+    "company": "AMD",
+    "first_seen": "2026-10-03T15:47:36.582304",
+    "title": "Summer 2027 Hardware Engineer Intern"
   },
   "https://careers.appliedmaterials.com/careers/job/790312921923": {
     "company": "Applied Materials",
@@ -2614,6 +2624,16 @@
     "first_seen": "2026-10-02T17:32:53.433047",
     "title": "Fulfillment Coordinator - May 2027 Graduates"
   },
+  "https://careers.formlabs.com/job/8249899/apply": {
+    "company": "Formlabs",
+    "first_seen": "2026-10-03T15:47:36.582304",
+    "title": "Manufacturing Engineer"
+  },
+  "https://careers.formlabs.com/job/8250319/apply": {
+    "company": "Formlabs",
+    "first_seen": "2026-10-03T15:47:36.582304",
+    "title": "Manufacturing Engineer - May 2027 Graduates"
+  },
   "https://careers.itw.com/us/en/job/jr10021/manufacturing-engineer-intern": {
     "company": "ITW",
     "first_seen": "2026-09-11T15:58:45.534278",
@@ -2644,10 +2664,20 @@
     "first_seen": "2026-09-12T15:05:47.678304",
     "title": "Mechanical Engineering Intern"
   },
+  "https://careers.itw.com/us/en/job/jr10073/summer-2027-mechanical-engineering-intern": {
+    "company": "ITW",
+    "first_seen": "2026-10-03T15:47:36.582304",
+    "title": "Summer 2027 Mechanical Engineering Intern"
+  },
   "https://careers.itw.com/us/en/job/jr10077/manufacturing-engineering-intern": {
     "company": "ITW",
     "first_seen": "2026-09-12T15:05:47.678304",
     "title": "Manufacturing Engineering Intern"
+  },
+  "https://careers.itw.com/us/en/job/jr10077/summer-2027-manufacturing-engineering-intern": {
+    "company": "ITW",
+    "first_seen": "2026-10-03T15:47:36.582304",
+    "title": "Summer 2027 Manufacturing Engineering Intern"
   },
   "https://careers.itw.com/us/en/job/jr10096/research-development-engineering-intern": {
     "company": "ITW",
@@ -2658,6 +2688,11 @@
     "company": "ITW",
     "first_seen": "2026-09-22T16:23:23.093066",
     "title": "Manufacturing Engineering Intern"
+  },
+  "https://careers.itw.com/us/en/job/jr10104/engineering-intern": {
+    "company": "ITW",
+    "first_seen": "2026-10-03T15:47:36.582304",
+    "title": "Engineering Intern"
   },
   "https://careers.itw.com/us/en/job/jr10144/mechanical-engineering-intern-summer-2027": {
     "company": "ITW",
@@ -2673,6 +2708,11 @@
     "company": "ITW",
     "first_seen": "2026-09-30T17:42:24.841829",
     "title": "Industrial Engineering Co-Op Intern"
+  },
+  "https://careers.itw.com/us/en/job/jr10355/summer-2027-technical-writing-intern": {
+    "company": "ITW",
+    "first_seen": "2026-10-03T15:47:36.582304",
+    "title": "Summer 2027 Technical Writing Intern"
   },
   "https://careers.itw.com/us/en/job/jr10402/industrial-engineering-co-op-intern": {
     "company": "ITW",
@@ -3478,6 +3518,36 @@
     "company": "WSP",
     "first_seen": "2026-10-01T18:06:16.053830",
     "title": "Project Manager - Power Delivery New Orleans | Baton Rouge | Houston"
+  },
+  "https://emit.fa.ca3.oraclecloud.com/hcmui/candidateexperience/en/sites/cx_2001/job/96765": {
+    "company": "WSP",
+    "first_seen": "2026-10-03T15:47:36.582304",
+    "title": "Senior Transmission Line Engineer (Northeast) - Remote Syracuse | Portland | Mount Laurel | Boston | New York | Freeport"
+  },
+  "https://emit.fa.ca3.oraclecloud.com/hcmui/candidateexperience/en/sites/cx_2001/job/96773": {
+    "company": "WSP",
+    "first_seen": "2026-10-03T15:47:36.582304",
+    "title": "Lighting Intern- Summer 2027 Boston"
+  },
+  "https://emit.fa.ca3.oraclecloud.com/hcmui/candidateexperience/en/sites/cx_2001/job/96787": {
+    "company": "WSP",
+    "first_seen": "2026-10-03T15:47:36.582304",
+    "title": "Building Technology Systems - Consultant New York | Newark | Philadelphia | Boston"
+  },
+  "https://emit.fa.ca3.oraclecloud.com/hcmui/candidateexperience/en/sites/cx_2001/job/96797": {
+    "company": "WSP",
+    "first_seen": "2026-10-03T15:47:36.582304",
+    "title": "Senior Substation Project Engineer San Diego"
+  },
+  "https://emit.fa.ca3.oraclecloud.com/hcmui/candidateexperience/en/sites/cx_2001/job/96801": {
+    "company": "WSP",
+    "first_seen": "2026-10-03T15:47:36.582304",
+    "title": "Lead Substation Project Engineer Orlando"
+  },
+  "https://emit.fa.ca3.oraclecloud.com/hcmui/candidateexperience/en/sites/cx_2001/job/96816": {
+    "company": "WSP",
+    "first_seen": "2026-10-03T15:47:36.582304",
+    "title": "Substation Project Engineer Lake Oswego"
   },
   "https://emit.fa.ca3.oraclecloud.com/hcmui/candidateexperience/en/sites/cx_2001/requisitions/preview/79723": {
     "company": "WSP",
@@ -5909,6 +5979,11 @@
     "first_seen": "2026-08-21T12:47:11.071406",
     "title": "Structural Engineer II"
   },
+  "https://hargroveepc.wd12.myworkdayjobs.com/hargrove_careers/job/deer-park-tx/maintenance-mechanical-planner_2026-001185": {
+    "company": "Hargrove EPC",
+    "first_seen": "2026-10-03T15:47:36.582304",
+    "title": "Maintenance Mechanical Planner"
+  },
   "https://hargroveepc.wd12.myworkdayjobs.com/hargrove_careers/job/duke-ok/process-engineer_2026-000419": {
     "company": "Hargrove EPC",
     "first_seen": "2026-05-30T13:32:19.890371",
@@ -6668,6 +6743,11 @@
     "company": "Amperesand.io",
     "first_seen": "2026-10-01T18:06:16.053830",
     "title": "Engineering TechnicianNewReno, Nevada, United States\u2192"
+  },
+  "https://job-boards.greenhouse.io/amperesand/jobs/4432580009": {
+    "company": "Amperesand",
+    "first_seen": "2026-10-03T15:47:36.582304",
+    "title": "Senior Test Engineering Manager "
   },
   "https://job-boards.greenhouse.io/axon/jobs/6301266003": {
     "company": "Axon",
@@ -12513,6 +12593,11 @@
     "company": "Siemens Energy",
     "first_seen": "2026-08-18T12:46:10.332090",
     "title": "R&D Process Engineer for Turbine Auxiliaries (f/m/d)"
+  },
+  "https://jobs.siemens-energy.com/en_us/jobs/folderdetail/regional-portfolio-project-engineer/304028": {
+    "company": "Siemens Energy",
+    "first_seen": "2026-10-03T15:47:36.582304",
+    "title": "Regional Portfolio Project Engineer"
   },
   "https://jobs.siemens-energy.com/en_us/jobs/folderdetail/regional-quality-engineering-rqe-contract-position/300134": {
     "company": "Siemens Energy",
