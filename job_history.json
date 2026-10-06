@@ -3799,10 +3799,30 @@
     "first_seen": "2026-10-03T15:47:36.582304",
     "title": "Substation Project Engineer Lake Oswego"
   },
+  "https://emit.fa.ca3.oraclecloud.com/hcmui/candidateexperience/en/sites/cx_2001/job/96914": {
+    "company": "WSP",
+    "first_seen": "2026-10-06T18:00:32.898558",
+    "title": "Deputy Project Manager New York"
+  },
   "https://emit.fa.ca3.oraclecloud.com/hcmui/candidateexperience/en/sites/cx_2001/job/96924": {
     "company": "WSP",
     "first_seen": "2026-10-05T23:44:02.157392",
     "title": "Senior Technical Manager, Mechanical Engineer - Vertical Transportation New York"
+  },
+  "https://emit.fa.ca3.oraclecloud.com/hcmui/candidateexperience/en/sites/cx_2001/job/96937": {
+    "company": "WSP",
+    "first_seen": "2026-10-06T18:00:32.898558",
+    "title": "Senior Air Quality Project Manager Houston | Austin | El Paso | New Orleans | Shreveport | Baton Rouge | San Antonio | Dallas | Fort Worth"
+  },
+  "https://emit.fa.ca3.oraclecloud.com/hcmui/candidateexperience/en/sites/cx_2001/job/96958": {
+    "company": "WSP",
+    "first_seen": "2026-10-06T18:00:32.898558",
+    "title": "Project Controls Consultant Houston | Dallas | Austin | San Antonio | Corpus Christi | El Paso | New Orleans | Baton Rouge | Shreveport"
+  },
+  "https://emit.fa.ca3.oraclecloud.com/hcmui/candidateexperience/en/sites/cx_2001/job/96961": {
+    "company": "WSP",
+    "first_seen": "2026-10-06T18:00:32.898558",
+    "title": "Lead Aviation Project Manager Dallas | Houston | San Antonio | Baton Rouge | New Orleans"
   },
   "https://emit.fa.ca3.oraclecloud.com/hcmui/candidateexperience/en/sites/cx_2001/requisitions/preview/79723": {
     "company": "WSP",
@@ -7339,6 +7359,11 @@
     "first_seen": "2026-05-28T23:19:59.896652",
     "title": "Structural Engineer, Entry Level "
   },
+  "https://job-boards.greenhouse.io/dlrgroup/jobs/5163916008": {
+    "company": "DLR Group",
+    "first_seen": "2026-10-06T18:00:32.898558",
+    "title": "Senior Structural Engineer "
+  },
   "https://job-boards.greenhouse.io/dlrgroup/jobs/5167537008": {
     "company": "DLR Group",
     "first_seen": "2026-05-28T23:19:59.896652",
@@ -9253,6 +9278,11 @@
     "company": "AMETEK",
     "first_seen": "2026-07-30T14:00:31.370225",
     "title": "Manufacturing Engineer"
+  },
+  "https://jobs.ametek.com/job/rochester-manufacturing-engineer-optics-ny-14623/1414059700": {
+    "company": "AMETEK",
+    "first_seen": "2026-10-06T18:00:32.898558",
+    "title": "Manufacturing Engineer - Optics"
   },
   "https://jobs.ametek.com/job/rochester-manufacturing-engineering-intern-ny-14605/1399263300": {
     "company": "AMETEK",
@@ -12364,6 +12394,11 @@
     "first_seen": "2026-09-24T16:35:07.734325",
     "title": "Control Systems Engineer (f/m/d)"
   },
+  "https://jobs.siemens-energy.com/en_us/jobs/folderdetail/cooling-flow-system-and-clearance-design-engineer-w-m-d/304163": {
+    "company": "Siemens Energy",
+    "first_seen": "2026-10-06T18:00:32.898558",
+    "title": "Cooling Flow System and Clearance Design Engineer (w/m/d)"
+  },
   "https://jobs.siemens-energy.com/en_us/jobs/folderdetail/design-engineer-for-ooem-dry-gas-seals-f-m-d/302569": {
     "company": "Siemens Energy",
     "first_seen": "2026-09-04T15:51:39.156677",
@@ -14564,6 +14599,11 @@
     "first_seen": "2026-09-24T16:35:07.734325",
     "title": "Process Engineer"
   },
+  "https://sbdinc.wd1.myworkdayjobs.com/stanley_black_decker_career_site/job/towson-md-united-states/electrical-engineer-iii--electrical-systems-_req-1000047128": {
+    "company": "Stanley Black & Decker",
+    "first_seen": "2026-10-06T18:00:32.898558",
+    "title": "Project Engineer, Electro-mechanical"
+  },
   "https://sbdinc.wd1.myworkdayjobs.com/stanley_black_decker_career_site/job/towson-md-united-states/electro-mechanical-engineer_req-1000049987": {
     "company": "Stanley Black & Decker",
     "first_seen": "2026-08-05T14:09:46.422630",
@@ -14698,6 +14738,11 @@
     "company": "Stanley Black & Decker",
     "first_seen": "2026-09-17T16:20:07.049059",
     "title": "Project Engineer, Mechanical"
+  },
+  "https://sbdinc.wd1.myworkdayjobs.com/stanley_black_decker_career_site/job/towson-md-united-states/project-engineer--model-based-design_req-1000052445-1": {
+    "company": "Stanley Black & Decker",
+    "first_seen": "2026-10-06T18:00:32.898558",
+    "title": "Project Engineer, Model Based Design"
   },
   "https://sbdinc.wd1.myworkdayjobs.com/stanley_black_decker_career_site/job/towson-md-united-states/stanley-leadership-program-engineering--mechanical-materials_req-1000050881": {
     "company": "Stanley Black & Decker",
@@ -14993,6 +15038,11 @@
     "company": "Terex",
     "first_seen": "2026-05-30T13:32:19.890371",
     "title": "EHS Summer Intern"
+  },
+  "https://terex.wd1.myworkdayjobs.com/terexcareers/job/us-mi-durand/graduate-manufacturing-engineer_req-14541": {
+    "company": "Terex",
+    "first_seen": "2026-10-06T18:00:32.898558",
+    "title": "Graduate Manufacturing Engineer"
   },
   "https://terex.wd1.myworkdayjobs.com/terexcareers/job/us-mo-mount-vernon/design-engineer_req-12837-1": {
     "company": "Terex",
@@ -15437,6 +15487,16 @@
   "https://xylem.wd5.myworkdayjobs.com/xylem-careers/job/pewaukee-wisconsin/mechanical-assembler_r50106": {
     "company": "Xylem",
     "first_seen": "2026-09-16T16:14:58.897249",
+    "title": "Mechanical Assembler"
+  },
+  "https://xylem.wd5.myworkdayjobs.com/xylem-careers/job/pewaukee-wisconsin/mechanical-assembler_r51110": {
+    "company": "Xylem",
+    "first_seen": "2026-10-06T18:00:32.898558",
+    "title": "Mechanical Assembler"
+  },
+  "https://xylem.wd5.myworkdayjobs.com/xylem-careers/job/pewaukee-wisconsin/mechanical-assembler_r51111": {
+    "company": "Xylem",
+    "first_seen": "2026-10-06T18:00:32.898558",
     "title": "Mechanical Assembler"
   },
   "https://xylem.wd5.myworkdayjobs.com/xylem-careers/job/pewaukee-wisconsin/pump-assembler---2nd-shift-_r48047": {
