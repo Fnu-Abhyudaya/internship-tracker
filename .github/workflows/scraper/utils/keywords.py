@@ -2,7 +2,8 @@
 
 # ===== ROLES TO INCLUDE =====
 ROLE_KEYWORDS = [
-    'mechanical engineer', 'mechanical engineering',
+    'mechanical engineer', 'mechanical engineering', 
+    'equipment engineering', 'equipment engineer', 
     'mechanical intern', 'mechanical engineering intern',
     'mechanical design', 'mechanical design engineer',
     'me intern', 'hardware engineer', 'hardware engineering',
@@ -36,10 +37,7 @@ ROLE_KEYWORDS = [
     'plant engineer', 'plant engineering',
     'facilities engineer', 'facilities engineering',
     'maintenance engineer', 'project engineer',
-    'project engineering', 'engineering intern',
-    'engineering co-op', 'mechanical co-op',
-    'undergraduate intern', 'graduate intern',
-    'intern', 'mechanical', 'coop', 'co-op',
+    'project engineering', 'engineering intern', 'mechanical', 
     'fall', 'spring', 'summer',
     '2026', '2027', 'new',
 ]
@@ -56,7 +54,7 @@ EXCLUDE_KEYWORDS = [
     'finance', 'logistic', 'cybersecurity', 'tax',
     'construction', 'procurement', 'management',
     'data', 'purchasing', 'analytics', 'geology',
-    'human resource',
+    'human resource', 'coop', 'co-op', 'intern',
 ]
 
 # Whole-word-only excludes (to avoid false positives like
@@ -72,6 +70,9 @@ SEARCH_KEYWORDS = [
     'design',
     'hardware',
     'manufacturing',
+    'equipment',
+    'cell',
+    'quality',
 ]
 
 
