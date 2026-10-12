@@ -559,6 +559,11 @@
     "first_seen": "2026-09-26T15:50:34.968906",
     "title": "Robotics Engineer"
   },
+  "https://boards.greenhouse.io/neuralink/jobs/8027961003?gh_jid=8027961003": {
+    "company": "Neuralink",
+    "first_seen": "2026-10-12T21:00:02.016254",
+    "title": "Systems Engineer - Compute"
+  },
   "https://boseallaboutme.wd503.myworkdayjobs.com/bose_careers/job/us-ma---framingham/consulting-systems-engineer_r28990": {
     "company": "Bose",
     "first_seen": "2026-06-01T17:42:16.418050",
@@ -678,6 +683,11 @@
     "company": "Brunswick",
     "first_seen": "2026-08-06T14:08:28.878568",
     "title": "Manufacturing Engineer - Machine & Grind"
+  },
+  "https://brunswick.wd1.myworkdayjobs.com/search/job/fond-du-lac-wi/manufacturing-engineer---machining_jr-051869": {
+    "company": "Brunswick",
+    "first_seen": "2026-10-12T21:00:02.016254",
+    "title": "Manufacturing Engineer - Machining"
   },
   "https://brunswick.wd1.myworkdayjobs.com/search/job/fond-du-lac-wi/manufacturing-engineer-iv_jr-050383": {
     "company": "Brunswick",
@@ -908,6 +918,11 @@
     "company": "Brunswick",
     "first_seen": "2026-06-22T17:03:07.170285",
     "title": "Brunswick New York Mills, Maintenance Tech (2nd shift)"
+  },
+  "https://brunswick.wd1.myworkdayjobs.com/search/job/new-york-mills-mn/brunswick-new-york-mills-finisher--night-shift-_jr-049845": {
+    "company": "Brunswick",
+    "first_seen": "2026-10-12T21:00:02.016254",
+    "title": "Brunswick New York Mills-Finisher (Night Shift)"
   },
   "https://brunswick.wd1.myworkdayjobs.com/search/job/new-york-mills-mn/brunswick-new-york-mills-operation---2nd-shift-parts-fabrication_jr-048503": {
     "company": "Brunswick",
@@ -4098,6 +4113,11 @@
     "company": "WSP",
     "first_seen": "2026-10-09T18:04:31.781377",
     "title": "Associate HVAC Mechanical Engineer- Building Systems Hamilton"
+  },
+  "https://emit.fa.ca3.oraclecloud.com/hcmui/candidateexperience/en/sites/cx_2001/job/97349": {
+    "company": "WSP",
+    "first_seen": "2026-10-12T21:00:02.016254",
+    "title": "Senior Mechanical Designer - Facilities Boise | Madison | Overland Park | Houston | Austin"
   },
   "https://emit.fa.ca3.oraclecloud.com/hcmui/candidateexperience/en/sites/cx_2001/requisitions/preview/79723": {
     "company": "WSP",
@@ -7369,6 +7389,21 @@
     "first_seen": "2026-10-10T17:02:34.695828",
     "title": "Senior Power Electronics Control EngineerNewReno, Nevada, United States; San Francisco, California, United States; Sunnyvale, California, United States\u2192"
   },
+  "https://job-boards.greenhouse.io/amperesand/jobs/4448305009": {
+    "company": "Amperesand.io",
+    "first_seen": "2026-10-12T21:00:02.016254",
+    "title": "Senior Applications EngineerNewReno, Nevada, United States; San Francisco, California, United States\u2192"
+  },
+  "https://job-boards.greenhouse.io/amperesand/jobs/4448323009": {
+    "company": "Amperesand.io",
+    "first_seen": "2026-10-12T21:00:02.016254",
+    "title": "Staff Applications Engineer-Power SystemsNewReno, Nevada, United States; San Francisco, California, United States\u2192"
+  },
+  "https://job-boards.greenhouse.io/amperesand/jobs/4448325009": {
+    "company": "Amperesand.io",
+    "first_seen": "2026-10-12T21:00:02.016254",
+    "title": "Staff Applications Engineer-Grid IntegrationNewReno, Nevada, United States; San Francisco, California, United States\u2192"
+  },
   "https://job-boards.greenhouse.io/axon/jobs/6301266003": {
     "company": "Axon",
     "first_seen": "2026-05-29T18:46:43.602361",
@@ -8124,6 +8159,31 @@
     "first_seen": "2026-10-09T18:04:31.781377",
     "title": "Regional Structural Engineering Discipline Leader"
   },
+  "https://job-boards.greenhouse.io/dlrgroup/jobs/5450069008": {
+    "company": "DLR Group",
+    "first_seen": "2026-10-12T21:00:02.016254",
+    "title": " Senior Mechanical Engineer - Energy"
+  },
+  "https://job-boards.greenhouse.io/dlrgroup/jobs/5450076008": {
+    "company": "DLR Group",
+    "first_seen": "2026-10-12T21:00:02.016254",
+    "title": "Senior Structural Engineer "
+  },
+  "https://job-boards.greenhouse.io/dlrgroup/jobs/5450078008": {
+    "company": "DLR Group",
+    "first_seen": "2026-10-12T21:00:02.016254",
+    "title": "Senior Structural Engineer "
+  },
+  "https://job-boards.greenhouse.io/dlrgroup/jobs/5450082008": {
+    "company": "DLR Group",
+    "first_seen": "2026-10-12T21:00:02.016254",
+    "title": "Senior Structural Engineer "
+  },
+  "https://job-boards.greenhouse.io/dlrgroup/jobs/5450084008": {
+    "company": "DLR Group",
+    "first_seen": "2026-10-12T21:00:02.016254",
+    "title": "Senior Structural Engineer "
+  },
   "https://job-boards.greenhouse.io/lunarenergy/jobs/5984882004": {
     "company": "Lunar Energy",
     "first_seen": "2026-05-28T23:19:59.896652",
@@ -8489,6 +8549,11 @@
     "first_seen": "2026-09-28T19:20:17.151799",
     "title": "ADAS Calibration and Validation Engineer"
   },
+  "https://job-boards.greenhouse.io/scoutmotors/jobs/5260286007": {
+    "company": "Scout Motors",
+    "first_seen": "2026-10-12T21:00:02.016254",
+    "title": "Specialist, Manufacturing Engineer - Assembly Interior"
+  },
   "https://job-boards.greenhouse.io/sharkninjaoperatingllc/jobs/4601610006": {
     "company": "SharkNinja",
     "first_seen": "2026-06-11T16:04:51.663940",
@@ -8809,6 +8874,11 @@
     "first_seen": "2026-08-14T13:07:14.714570",
     "title": "Operational Excellence Intern"
   },
+  "https://jobs.ametek.com/job/aurora-test-engineer-ii-il-60504/1439136800": {
+    "company": "AMETEK",
+    "first_seen": "2026-10-12T21:00:02.016254",
+    "title": "Test Engineer II"
+  },
   "https://jobs.ametek.com/job/austin-pcb-design-engineer-tx-78746/1393945000": {
     "company": "AMETEK",
     "first_seen": "2026-05-29T20:27:40.573582",
@@ -8983,6 +9053,11 @@
     "company": "AMETEK",
     "first_seen": "2026-05-30T13:32:19.890371",
     "title": "Supplier Quality Engineer"
+  },
+  "https://jobs.ametek.com/job/bothell-mechanical-engineer-rf-power-amplifiers-wa-98021/1439123200": {
+    "company": "AMETEK",
+    "first_seen": "2026-10-12T21:00:02.016254",
+    "title": "Mechanical Engineer - RF Power Amplifiers"
   },
   "https://jobs.ametek.com/job/bridgeport-injection-molding-process-engineer-ct-06610-0156/1378742900": {
     "company": "AMETEK",
@@ -13124,6 +13199,11 @@
     "first_seen": "2026-06-01T17:42:16.418050",
     "title": "Mechanical Integrity Engineer - Rotors"
   },
+  "https://jobs.siemens-energy.com/en_us/jobs/folderdetail/mechanical-integrity-engineer/304837": {
+    "company": "Siemens Energy",
+    "first_seen": "2026-10-12T21:00:02.016254",
+    "title": "Mechanical Integrity Engineer"
+  },
   "https://jobs.siemens-energy.com/en_us/jobs/folderdetail/mechanical-maintenance-engineer-beni-suef-power-plant/302115": {
     "company": "Siemens Energy",
     "first_seen": "2026-09-02T16:03:35.330355",
@@ -14464,6 +14544,11 @@
     "first_seen": "2026-05-30T13:32:19.890371",
     "title": "Renewable Energy Automation Engineer 40"
   },
+  "https://nidec.wd1.myworkdayjobs.com/nidec/job/north-americausaohiocanton-oh/manufacturing-engineering-iii_r0017863": {
+    "company": "Nidec",
+    "first_seen": "2026-10-12T21:00:02.016254",
+    "title": "Manufacturing Engineering III"
+  },
   "https://nidec.wd1.myworkdayjobs.com/nidec/job/north-americausaohiocanton-oh/mechanical-engineer-i_r0016511": {
     "company": "Nidec",
     "first_seen": "2026-06-29T15:50:09.260865",
@@ -14803,6 +14888,11 @@
     "company": "NVIDIA",
     "first_seen": "2026-06-03T16:52:14.091373",
     "title": "Senior Product Manager, Internal AI and Employee Productivity"
+  },
+  "https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/us-ca-santa-clara/senior-site-reliability-engineer---cloud_jr2022489": {
+    "company": "NVIDIA",
+    "first_seen": "2026-10-12T21:00:02.016254",
+    "title": "Senior Site Reliability Engineer - Cloud"
   },
   "https://nvidia.wd5.myworkdayjobs.com/nvidiaexternalcareersite/job/us-ca-santa-clara/senior-supplier-quality-engineer_jr2017015": {
     "company": "NVIDIA",
@@ -15263,6 +15353,11 @@
     "company": "STV Inc",
     "first_seen": "2026-05-30T13:32:19.890371",
     "title": "Lead Structural Engineer"
+  },
+  "https://stvinc.wd5.myworkdayjobs.com/stv/job/chicago-illinois/senior-structural-engineer_jr6361": {
+    "company": "STV Inc",
+    "first_seen": "2026-10-12T21:00:02.016254",
+    "title": "Senior Structural Engineer"
   },
   "https://stvinc.wd5.myworkdayjobs.com/stv/job/chicago-illinois/transportation-project-engineer_jr6250-1": {
     "company": "STV Inc",
