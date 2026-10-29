@@ -1,73 +1,174 @@
+API 200 https://boards-api.greenhouse.io/v1/boards/dmcengineering/jobs len=11786 jobs_mentions=0
+API 404 https://boards-api.greenhouse.io/v1/boards/dmcinc/jobs len=38 jobs_mentions=0
+API 404 https://boards-api.greenhouse.io/v1/boards/dmc/jobs len=38 jobs_mentions=0
+API 404 https://boards-api.greenhouse.io/v1/boards/dmcinfo/jobs len=38 jobs_mentions=0
+API 405 https://careers-usa-titanmaterials.icims.com/jobs/search?ss=1&in_iframe=1 len=2115 jobs_mentions=0
+API 405 https://careers-usa-titanmaterials.icims.com/jobs/search?ss=1&searchKeyword=mechanical&in_iframe=1 len=2115 jobs_mentions=0
 
-######## RESULTS ########
-@@ AprilAire | PlaywrightScraper | jobs=62 | pages_ok=5 | errors=0
-     JOB Engineering Tech II - Firmware | Location Sun Prairie, Wisconsin | https://careers.aprilaire.com/jobs/2670?lang=en-us
-     JOB Apply Now | N/A | https://careers-aprilaire.icims.com/jobs/2670/login
-     JOB Mechanical Engineer I | Location Sun Prairie, Wisconsin | https://careers.aprilaire.com/jobs/2651?lang=en-us
-@@ Audubon | PlaywrightScraper | jobs=0 | pages_ok=2 | errors=0
-@@ Bosch | PlaywrightScraper | jobs=8 | pages_ok=2 | errors=0
-     JOB Customer Service Representative (5:00 am - 1:30 pm) | N/A | https://jobs.bosch.com/en/job/REF295628P-customer-service-representative-5-00-am-1-30-pm
-     JOB Senior Safety Engineer - Power Tools and Accessories | N/A | https://jobs.bosch.com/en/job/REF293511Q-senior-safety-engineer-power-tools-and-accessorie
-     JOB Associate/Envir. Health & Safety Engineer | N/A | https://jobs.bosch.com/en/job/REF292021O-associate-envir-health-safety-engineer
-@@ DMC Engineering | GreenhouseScraper | jobs=0 | pages_ok=0 | errors=1
-     ERR HTTP 404 from https://boards-api.greenhouse.io/v1/boards/dmcengineering2024/jobs
-@@ EPTA Refrigeration | OracleHCMScraper | jobs=1 | pages_ok=9 | errors=0
-     JOB  | N/A | https://fa-eukp-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1
-@@ EwingCole | PlaywrightScraper | jobs=0 | pages_ok=2 | errors=0
-@@ Figure | GreenhouseScraper | jobs=86 | pages_ok=1 | errors=0
-     JOB Wire Harness Engineer | San Jose, CA | https://job-boards.greenhouse.io/figureai/jobs/4697402006
-     JOB Staff AI Inference and Acceleration Engineer | San Jose, CA | https://job-boards.greenhouse.io/figureai/jobs/4692572006
-     JOB Software Engineer, Privacy & Data Governance | San Jose, CA | https://job-boards.greenhouse.io/figureai/jobs/4690871006
-@@ Formlabs | PlaywrightScraper | jobs=230 | pages_ok=2 | errors=0
-     JOB Technical Sales Representative - German Speaking | N/A | https://careers.formlabs.com/job/7988991/apply/
-     JOB Technical Sales Representative - French Speaking | N/A | https://careers.formlabs.com/job/7989288/apply/
-     JOB Technical Sales Representative - Italian Speaking | N/A | https://careers.formlabs.com/job/8000746/apply/
-@@ Hendrickson | PlaywrightScraper | jobs=0 | pages_ok=2 | errors=0
-@@ Insulet | WorkdayScraper | jobs=75 | pages_ok=17 | errors=0
-     JOB Senior Manager, Global Logistics and Transportation (Hybrid - Acton, M | Acton, Massachusetts | https://insulet.wd5.myworkdayjobs.com/insuletcareers/job/Acton-Massachusetts/Senior-Manage
-     JOB Tech Lead, Operational Technology NPI | Acton, Massachusetts | https://insulet.wd5.myworkdayjobs.com/insuletcareers/job/Acton-Massachusetts/Tech-Lead--Op
-     JOB Senior Control Engineer (Onsite - Acton) | US - Massachusetts | https://insulet.wd5.myworkdayjobs.com/insuletcareers/job/US---Massachusetts/Senior-Control
-@@ JTEKT North America | PlaywrightScraper | jobs=49 | pages_ok=3 | errors=0
-     JOB Sales Account Manager - Automotive | N/A | https://jobs.dayforcehcm.com/en-US/JTEKT/CANDIDATEPORTAL/jobs/21052
-     JOB Cost Planning Analyst | N/A | https://jobs.dayforcehcm.com/en-US/JTEKT/CANDIDATEPORTAL/jobs/21043
-     JOB CNC Operator (B-Tech) - 3rd shift | N/A | https://jobs.dayforcehcm.com/en-US/JTEKT/CANDIDATEPORTAL/jobs/21037
-@@ Jordan & Skala Engineers | PlaywrightScraper | jobs=28 | pages_ok=2 | errors=0
-     JOB CAD/BIM Revit/CAD Drafting Technician Plano, TX → | Plano, TX | https://jordanskala.com/job/revit-cad-drafting-technician-4/
-     JOB CAD/BIM Revit/CAD Drafting Technician Houston, TX → | Houston, TX | https://jordanskala.com/job/revit-cad-drafting-technician-5/
-     JOB CAD/BIM Revit/CAD Drafting Technician Tampa, FL → | Tampa, FL | https://jordanskala.com/job/revit-cad-drafting-technician/
-@@ Landis+Gyr | SuccessFactorsScraper | jobs=3 | pages_ok=11 | errors=0
-     JOB Intern - Electronics Engineering | Lafayette, IN, US | https://careers.landisgyr.com/job/Lafayette-Intern-Electronics-Engineering-IN/1431897833/
-     JOB Co-op - General Engineering Lab and Test Engineering | Lafayette, IN, US | https://careers.landisgyr.com/job/Lafayette-Co-op-General-Engineering-Lab-and-Test-Enginee
-     JOB Co-op Component Engineering | Alpharetta, GA, US | https://careers.landisgyr.com/job/Alpharetta-Co-op-Component-Engineering-GA-30004/14311103
-@@ Lincoln Electric | SuccessFactorsScraper | jobs=239 | pages_ok=22 | errors=0
-     JOB Applications Engineer (Machining) | Fort Loramie, OH, US, 45845 | https://jobs.lincolnelectric.com/job/Fort-Loramie-Applications-Engineer-%28Machining%29-OH
-     JOB Senior Engineering Manager, Consumable Methods & Process | Cleveland, OH, US, 44117 | https://jobs.lincolnelectric.com/job/Cleveland-Senior-Engineering-Manager%2C-Consumable-Me
-     JOB Mechanical Engineer | Bettendorf, IA, US, 52722 | https://jobs.lincolnelectric.com/job/Bettendorf-Mechanical-Engineer-IA-52722/1435867833/
-@@ Linewise | PlaywrightScraper | jobs=8 | pages_ok=2 | errors=0
-     JOB Careers | N/A | https://linewise.io/careers/
-     JOB CNC program lead | N/A | https://linewise.io/careers/cnc-program-lead/
-     JOB Mechanical engineering lead | N/A | https://linewise.io/careers/mechanical-engineering-lead/
-@@ Modine | SuccessFactorsScraper | jobs=0 | pages_ok=9 | errors=0
-@@ Panasonic | PlaywrightScraper | jobs=44 | pages_ok=3 | errors=0
-     JOB Controls Engineer II | Location Sparks, Nevada US | https://careers.na.panasonic.com/jobs/50548?lang=en-us&previousLocale=en-US
-     JOB Apply Now | N/A | https://uscareers-napanasonic.icims.com/jobs/50548/login
-     JOB Electrical Technician, Facilities Maintenance, Day Shit (A Shift) | Location Sparks, Nevada US | https://careers.na.panasonic.com/jobs/50616?lang=en-us&previousLocale=en-US
-@@ Pelican Energy Consultants | PlaywrightScraper | jobs=1 | pages_ok=2 | errors=0
-     JOB CAREERS | N/A | https://www.pelicanenergy.com/careers-employment
-@@ Quantum Computing Inc | PlaywrightScraper | jobs=49 | pages_ok=2 | errors=0
-     JOB Quantum Optics Scientist (Post-Doc) | N/A | https://quantum-computing-inc.alphastaff-hiring.com/job/1024022/quantum-optics-scientist-p
-     JOB HR Business Partner | N/A | https://quantum-computing-inc.alphastaff-hiring.com/job/1069309/hr-business-partner
-     JOB Talent Acquisition Lead | N/A | https://quantum-computing-inc.alphastaff-hiring.com/job/1069322/talent-acquisition-lead
-@@ Shinkei | PlaywrightScraper | jobs=0 | pages_ok=2 | errors=0
-@@ Titan America | ICIMSScraper | jobs=0 | pages_ok=0 | errors=1
-     ERR HTTP 405 when loading https://careers-usa-titanmaterials.icims.com/jobs/search?ss=1&searchKeyword=mechanical&searchRelation=keyword_all&searchCategory=8737&searchPositionType=2049&searchSortField=postedDate&searchSortDirection=desc&pr=1
-@@ Vast | GreenhouseScraper | jobs=179 | pages_ok=1 | errors=0
-     JOB Avionics Manufacturing Technician, Wire Harnessing  | Long Beach, California, United States | https://boards.greenhouse.io/vast/jobs/4671183006?gh_jid=4671183006
-     JOB Avionics Test Software Engineer | Long Beach, California, United States | https://boards.greenhouse.io/vast/jobs/4714389006?gh_jid=4714389006
-     JOB Manufacturing Planner, Integration | Long Beach, California, United States | https://boards.greenhouse.io/vast/jobs/4724530006?gh_jid=4724530006
-@@ Vast?vastspace | GreenhouseScraper | jobs=0 | pages_ok=0 | errors=1
-     ERR HTTP 404 from https://boards-api.greenhouse.io/v1/boards/vastspace/jobs
-@@ Vast?vastspacecompany | GreenhouseScraper | jobs=0 | pages_ok=0 | errors=1
-     ERR HTTP 404 from https://boards-api.greenhouse.io/v1/boards/vastspacecompany/jobs
-@@ Vast?vastspacellc | GreenhouseScraper | jobs=0 | pages_ok=0 | errors=1
-     ERR HTTP 404 from https://boards-api.greenhouse.io/v1/boards/vastspacellc/jobs
+==== Shinkei status=200 final=https://careers.kula.ai/shinkei
+FRAMES ['https://www.google.com/recaptcha/api2/anchor?ar=1&k=6LdmwoIpAAAAAGUl86dlBYUTa4G0BrRyTYs52Z1g&co=aHR0cHM6Ly9jYXJlZXJzLmt1bGEuYWk6NDQz&hl=en&v=NhfdZHzre166o-vFZrWsq3yu&size=invisible&anchor-ms=20000&execute-ms=30000&ovv=CADq00gF&cb=jm0xr75i8443', 'about:blank', 'about:blank', 'about:blank']
+ANCHORS 18
+  A /shinkei/32624-mechanical-engineer | Apply Now
+  A /shinkei/32626-electrical-engineer | Apply Now
+  A /shinkei/32631-test-operations-technician | Apply Now
+  A /shinkei/35453-strategy-and-operations-analyst | Apply Now
+  A /shinkei/48950-manufacturing-finance-inventory-operations-manager | Apply Now
+  A /shinkei/50714-test-engineer | Apply Now
+  A /shinkei/51542-technical-talent-partner | Apply Now
+  A /shinkei/51937-mechanical-engineering-intern-associate-engineer | Apply Now
+  A /shinkei/51940-manufacturing-technician-mid-level | Apply Now
+  A /shinkei/53228-software-engineer-robotics | Apply Now
+  A /shinkei/53417-software-engineer-fullstack | Apply Now
+  A /shinkei/54853-manufacturing-technician-junior-entry-level | Apply Now
+  A /shinkei/34690-new-product-commercialization-manager | Apply Now
+  A /shinkei/52268-product-innovation-manager | Apply Now
+  A /shinkei/54521-regional-sales-manager-remote | Apply Now
+  A /shinkei/54855-regional-sales-director-remote | Apply Now
+TEXT Shinkei Careers | Open Jobs Open Positions View open roles All departments All locations Shinkei Mechanical Engineer Engineering • El Segundo, California, United States • Full time • On-Site Apply Now Electrical Engineer Engineering • El Segundo, California, United States • Full time • On-Site Apply Now Test Operations Technician Engineering • El Segundo, California, United States • Full time • On-Site Apply Now Strategy and Operations Analyst Business Operations • El Segundo, California, United States • Full time • On-Site Apply Now Manufacturing Finance & Inventory Operations Manager Finance
+CLICKABLE ['BUTTON  All departments', 'BUTTON  All locations', 'BUTTON  Shinkei', 'BUTTON  Seremoni']
+
+==== Pelican status=200 final=https://www.pelicanenergy.com/careers-employment
+FRAMES []
+ANCHORS 34
+  A /careers-employment | CAREERS
+  A https://www.linkedin.com/company/pelican-energy-consultants?trk=hb_tab_compy_id_608127 | 
+  A https://www.facebook.com/profile.php?id=100072447708888 | 
+  A tel:9858714200 | 985-871-4200
+TEXT CAREERS | Join Our Team Today — Pelican Energy Consultants 0 Skip to Content HOME SECTORS CCUS Midstream Downstream Upstream SERVICES Project Management Engineering On-site Construction Services Procurement Services Design / Drafting ABOUT About Us Community Safety Clients CAREERS CONTACT Open Menu Close Menu HOME SECTORS CCUS Midstream Downstream Upstream SERVICES Project Management Engineering On-site Construction Services Procurement Services Design / Drafting ABOUT About Us Community Safety Clients CAREERS CONTACT Open Menu Close Menu HOME Folder: SECTORS Folder: SERVICES Folder: ABOUT CAR
+CLICKABLE ['BUTTON  SECTORS', 'BUTTON  SERVICES', 'BUTTON  ABOUT', 'BUTTON   Open Menu Close Menu ', 'BUTTON   SECTORS ', 'BUTTON   SERVICES ', 'BUTTON   ABOUT ', 'BUTTON   Open Menu Close Menu ', 'SDF-BUTTON  My Applications', 'SDF-BUTTON  Join Our Talent Community', 'SDF-BUTTON  ', 'SDF-BUTTON  ', 'SDF-BUTTON  ', 'A  ', 'SDF-BUTTON  Share', 'SDF-BUTTON  Apply Now', 'A  ', 'SDF-BUTTON  Share', 'SDF-BUTTON  Apply Now', 'A  ', 'SDF-BUTTON  Share', 'SDF-BUTTON  Apply Now', 'A  ', 'SDF-BUTTON  Share', 'SDF-BUTTON  Apply Now']
+
+==== EwingCole status=200 final=https://recruiting.paylocity.com/recruiting/jobs/All/51ea68bb-1bab-467d-89a7-f55fce6e8647/EwingCole-Inc
+FRAMES ['about:blank']
+ANCHORS 49
+  A /Recruiting/Jobs/Details/4619164 | Project Manager - Civic Practice
+  A /Recruiting/Jobs/Details/4577924 | Mechanical Engineer in Training 1
+  A /Recruiting/Jobs/Details/4577901 | Mechanical Project Engineer
+  A /Recruiting/Jobs/Details/4289803 | Project Architect
+  A /Recruiting/Jobs/Details/4552800 | Structural Engineering Intern - Summer 2027
+  A /Recruiting/Jobs/Details/4552326 | Structural Engineering Intern - Summer 2027
+  A /Recruiting/Jobs/Details/4549547 | Electrical Engineering Intern - Summer 2027
+  A /Recruiting/Jobs/Details/4513332 | Structural Engineer in Training 1
+  A /Recruiting/Jobs/Details/4543830 | Project Low Voltage Designer
+  A /Recruiting/Jobs/Details/4543813 | Low Voltage Design Technician 1
+  A /Recruiting/Jobs/Details/4543843 | Senior Mechanical Project Engineer
+  A /Recruiting/Jobs/Details/3945697 | Senior Electrical Engineer
+  A /Recruiting/Jobs/Details/4522836 | Lighting Design Intern - Summer 2027
+  A /Recruiting/Jobs/Details/4522826 | Lighting Designer 3
+  A /Recruiting/Jobs/Details/4522788 | Lighting Designer 2
+  A /Recruiting/Jobs/Details/4522748 | Lighting Designer 1
+  A /Recruiting/Jobs/Details/4455592 | Electrical Engineer in Training 1
+  A /Recruiting/Jobs/Details/4405295 | Project Architect
+  A /Recruiting/Jobs/Details/3916162 | Interior Designer 2 - Healthcare Practice
+  A /Recruiting/Jobs/Details/4115481 | Interior Designer 3 - Healthcare Practice
+  A /Recruiting/Jobs/Details/3830566 | Architect 3 - Healthcare Practice
+  A /Recruiting/Jobs/Details/4480715 | Electrical Engineer in Training 1 - 2027 Graduates
+  A /Recruiting/Jobs/Details/4182467 | Structural Project Engineer
+  A /Recruiting/Jobs/Details/4251191 | Architectural Project Manager
+  A /Recruiting/Jobs/Details/3931804 | Fire Protection Engineer
+  A /Recruiting/Jobs/Details/3919780 | Electrical Project Engineer
+  A /Recruiting/Jobs/Details/4220312 | Senior Mechanical Project Engineer
+  A /Recruiting/Jobs/Details/4194532 | Senior Mechanical Project Engineer
+  A /Recruiting/Jobs/Details/4455594 | Mechanical Engineer in Training 1
+  A /Recruiting/Jobs/Details/4417458 | Senior Project Architect
+  A /Recruiting/Jobs/Details/4415446 | Interior Designer 1
+  A /Recruiting/Jobs/Details/4366875 | Senior Architectural Project Manager - Healthcare 
+  A /Recruiting/Jobs/Details/4349091 | Fire Protection Engineer
+  A /Recruiting/Jobs/Details/4349087 | Fire Protection Engineer
+  A /Recruiting/Jobs/Details/4349076 | Fire Protection Engineer
+  A /Recruiting/Jobs/Details/4349068 | Plumbing Project Engineer
+  A /Recruiting/Jobs/Details/4251258 | Fire Protection Engineer in Training 1
+  A /Recruiting/Jobs/Details/3696478 | Healthcare Planner
+  A /Recruiting/Jobs/Details/4268027 | Structural Project Engineer
+  A /Recruiting/PublicLeads/New/51ea68bb-1bab-467d-89a7-f55fce6e8647 | Share Your Information
+  A /Recruiting/PrivacyPolicy/List?key=51ea68bb-1bab-467d-89a7-f55fce6e8647 | EwingCole, Inc.: Privacy Policy
+TEXT EwingCole, Inc. - Job Opportunities .ot-sdk-cookie-policy{font-family:inherit;font-size:16px}.ot-sdk-cookie-policy.otRelFont{font-size:1rem}.ot-sdk-cookie-policy h3,.ot-sdk-cookie-policy h4,.ot-sdk-cookie-policy h6,.ot-sdk-cookie-policy p,.ot-sdk-cookie-policy li,.ot-sdk-cookie-policy a,.ot-sdk-cookie-policy th,.ot-sdk-cookie-policy #cookie-policy-description,.ot-sdk-cookie-policy .ot-sdk-cookie-policy-group,.ot-sdk-cookie-policy #cookie-policy-title{color:dimgray}.ot-sdk-cookie-policy #cookie-policy-description{margin-bottom:1em}.ot-sdk-cookie-policy h4{font-size:1.2em}.ot-sdk-cookie-policy h
+CLICKABLE ['BUTTON  ', 'BUTTON  ', 'BUTTON  ', 'BUTTON  ', 'BUTTON  Cookies Settings', 'BUTTON  Accept All Cookies', 'BUTTON  ', 'BUTTON  ', 'BUTTON  Allow All', 'BUTTON  ', 'BUTTON  ', 'BUTTON  ', 'BUTTON  Back Button', 'BUTTON  Filter Icon', 'BUTTON  Clear', 'BUTTON  Apply', 'BUTTON  Cancel', 'BUTTON  Reject All', 'BUTTON  Confirm My Choices']
+
+==== Hendrickson status=200 final=https://myjobs.adp.com/hendrickson/cx/job-listing
+FRAMES ['about:blank']
+ANCHORS 5
+TEXT Career Site Sign in Search Location Location Distance 5 mi 10 mi 25 mi 50 mi 75 mi 100 mi 150 mi 250 mi Search Search results loaded. 190 jobs found Filters Create Job Alert Job Results (190) Plant Accountant Lebanon, Indiana, United States 26-1421 Position Purpose Proactive maintenance of accounting functions at plant locations including day to day functions associated with inventory management and costing. Work closely with plant manager for increased financial visibility at the plant level Essential Functions Provide financial support for capital development projects from approval to instal
+CLICKABLE ['BUTTON  Sign in', 'SDF-BUTTON  ', 'SDF-BUTTON  ', 'SDF-BUTTON  ', 'SDF-BUTTON  ', 'SDF-BUTTON  ', 'DIV  25 mi', 'BUTTON  ', 'SDF-BUTTON  Search', 'SDF-BUTTON  Filters', 'SDF-BUTTON  Create Job Alert', 'SDF-BUTTON  Plant Accountant', 'SDF-BUTTON  ', 'SDF-BUTTON  Apply', 'SDF-BUTTON  Planner', 'SDF-BUTTON  ', 'SDF-BUTTON  Apply', 'SDF-BUTTON  Human Resources Manager: Lebanon, IN', 'SDF-BUTTON  ', 'SDF-BUTTON  Apply', 'SDF-BUTTON  Human Resources Representative/Generalist', 'SDF-BUTTON  ', 'SDF-BUTTON  Apply', 'SDF-BUTTON  Quality Technician - 3rd Shift', 'SDF-BUTTON  ']
+
+==== Audubon status=200 final=https://myjobs.adp.com/auduboncorporatecareers/cx/job-listing
+FRAMES ['about:blank']
+ANCHORS 4
+TEXT Career Site English (US) Español (US) Sign in Search Location Location Distance 5 mi 10 mi 25 mi 50 mi 75 mi 100 mi 150 mi 250 mi Search Search results loaded. 235 jobs found Filters Create Job Alert Job Results (235) Instrument Engineer, Senior Metairie, Louisiana, United States AES-5366 Audubon is seeking a Senior Instrument Engineer in our Metairie, LA office. The Senior Instrument Engineer will perform instrument engineering assignments associated with designing equipment, components, structures or systems. Job Function & Responsibilities: Independently prepare intermediate to advanced lev
+CLICKABLE ['SDF-BUTTON  English (US)', 'BUTTON  Sign in', 'SDF-BUTTON  ', 'SDF-BUTTON  ', 'SDF-BUTTON  ', 'SDF-BUTTON  ', 'SDF-BUTTON  ', 'DIV  25 mi', 'BUTTON  ', 'SDF-BUTTON  Search', 'SDF-BUTTON  Filters', 'SDF-BUTTON  Create Job Alert', 'SDF-BUTTON  Instrument Engineer, Senior', 'SDF-BUTTON  ', 'SDF-BUTTON  Apply', 'SDF-BUTTON  Project Manager, Senior', 'SDF-BUTTON  ', 'SDF-BUTTON  Apply', 'SDF-BUTTON  Project Controls Specialist', 'SDF-BUTTON  ', 'SDF-BUTTON  Apply', 'SDF-BUTTON  IT Service Desk Analyst II', 'SDF-BUTTON  ', 'SDF-BUTTON  Apply', 'SDF-BUTTON  QC Lead']
+
+==== Modine status=200 final=https://careers.modine.com/search/?q=engineer&sortColumn=referencedate&sortDirection=desc&searchResultView=LIST
+FRAMES []
+ANCHORS 45
+  A /go/CorporateProfessional/9564000/ | CORPORATE/PROFESSIONAL
+  A /go/EngineeringTechnical/9564100/ | ENGINEERING/TECHNICAL
+  A /go/Manufacturing-Hourly/9564200/ | MANUFACTURING HOURLY
+  A /go/OperationsSupply-Chain/9564300/ | OPERATIONS/SUPPLY CHAIN
+  A /go/InternCo-op/9564400/ | INTERN/CO-OP
+  A /go/All-Jobs/9564500/ | ALL JOBS
+  A https://careers.modine.com/search/?q=engineer&sortColumn=referencedate&sortDirection=desc&locale=de_DE | Deutsch (Deutschland)
+  A https://careers.modine.com/search/?q=engineer&sortColumn=referencedate&sortDirection=desc&locale=en_US | English (United States)
+  A https://careers.modine.com/search/?q=engineer&sortColumn=referencedate&sortDirection=desc&locale=es_MX | Español (México)
+  A https://careers.modine.com/search/?q=engineer&sortColumn=referencedate&sortDirection=desc&locale=hu_HU | Magyar (Magyarország)
+  A https://careers.modine.com/search/?q=engineer&sortColumn=referencedate&sortDirection=desc&locale=it_IT | Italiano (Italia)
+  A https://careers.modine.com/search/?q=engineer&sortColumn=referencedate&sortDirection=desc&locale=ko_KR | 한국어 (대한민국)
+  A https://careers.modine.com/search/?q=engineer&sortColumn=referencedate&sortDirection=desc&locale=nl_NL | Nederlands (Nederland)
+  A https://careers.modine.com/search/?q=engineer&sortColumn=referencedate&sortDirection=desc&locale=pt_BR | Português (Brasil)
+  A https://careers.modine.com/search/?q=engineer&sortColumn=referencedate&sortDirection=desc&locale=sr_RS | српски (Republika Srbija)
+  A https://careers.modine.com/search/?q=engineer&sortColumn=referencedate&sortDirection=desc&locale=sv_SE | Svenska (Konungariket Sverige)
+  A https://careers.modine.com/search/?q=engineer&sortColumn=referencedate&sortDirection=desc&locale=zh_CN | 简体中文 (中国大陆)
+  A /job/Engineering-Director/8726-en_US | Engineering Director
+  A /job/Sustaining-Engineer/9143-en_US | Sustaining Engineer
+  A /job/Product-Engineer/10208-en_US | Product Engineer
+  A /job/Engineering-Technician/10389-en_US | Engineering Technician
+  A /job/Engineering-Manager/8614-en_US | Engineering Manager
+  A /job/Quality-Engineer/9376-en_US | Quality Engineer
+  A /job/Manufacturing-Engineer/10206-en_US | Manufacturing Engineer
+  A /job/Industrial-Engineer/9380-en_US | Industrial Engineer
+  A /job/Principal-Engineer/10647-en_US | Principal Engineer
+  A /job/EHS-Engineer-II/10016-en_US | EHS Engineer II
+  A https://www.modine.com/wp-content/uploads/2019/12/EO-CEO-Policy-2021.pdf | EEO STATEMENT
+  A https://www.modine.com/wp-content/uploads/2019/12/Modine-Privacy-Statement.pdf | PRIVACY STATEMENT
+TEXT Engineer - Modine Manufacturing Company Jobs By continuing to use and navigate this website, you are agreeing to the use of cookies. Accept Close Skip to main content HOME ABOUT US ABOUT MODINE BENEFITS CULTURE & DIVERSITY VIEW OPPORTUNITIES CORPORATE/PROFESSIONAL ENGINEERING/TECHNICAL MANUFACTURING HOURLY OPERATIONS/SUPPLY CHAIN INTERN/CO-OP ALL JOBS Search Jobs HOME ABOUT US ABOUT MODINE BENEFITS CULTURE & DIVERSITY VIEW OPPORTUNITIES CORPORATE/PROFESSIONAL ENGINEERING/TECHNICAL MANUFACTURING HOURLY OPERATIONS/SUPPLY CHAIN INTERN/CO-OP ALL JOBS Language Deutsch (Deutschland) English (United 
+CLICKABLE ['BUTTON  Accept', 'BUTTON  Close', 'A  ABOUT US ', 'A  VIEW OPPORTUNITIES ', 'BUTTON  ', 'BUTTON  Search Jobs', 'A  ', 'A   ABOUT US ', 'A   VIEW OPPORTUNITIES ', 'A  Language ', 'A  View Profile', 'BUTTON  Search Jobs', 'BUTTON  Get Job Alerts for This Search', 'BUTTON  ', 'BUTTON  ', 'BUTTON  ', 'BUTTON  Job Posting Location', 'BUTTON  State/Province', 'BUTTON  Country/Region', 'BUTTON  Job Function', 'BUTTON  Remote, Onsite or Hybrid?', 'BUTTON  1', 'BUTTON  2', 'BUTTON  3', 'BUTTON  4']
+
+==== Titan-PW status=405 final=https://careers-usa-titanmaterials.icims.com/jobs/search?ss=1&in_iframe=1
+FRAMES []
+ANCHORS 0
+TEXT Human Verification Temporary error. Please try again. Before proceeding to your request, you need to solve a puzzle, and the puzzle requires Google Translate to be disabled. Please disable Google Translate and retry. Let's confirm you are human Complete the security check before continuing. This step verifies that you are not a bot, which helps to protect your account and prevent spam. Begin العربية Čeština Dansk Deutsch English Español Français Bahasa Indonesia Italiano 日本語 한국어 Nederlands Polski Português Svenska ไทย Türkçe 中文 JavaScript is disabled In order to continue, you need to verify th
+CLICKABLE ['BUTTON  Begin']
+
+==== DMC-site status=200 final=https://www.dmcinfo.com/careers/open-positions/
+FRAMES ['about:blank', 'https://job-boards.greenhouse.io/embed/job_board?for=dmcengineering&validityToken=Xl0KkzZYZLOzSCQBAGd1uDnUK-KPR_fAXf82aUDzXVmVvAGUZvc1my6cUVr9nxgQnowgVOIBS8YWSV41a4-jQlWYuBDTe1btDwCqr1x8E7DDG-vQW0YhP5oCXhQ0MX8n5DSfZrfgAWwEsHv5nfWfuyN-mI3V8jaM_GFHkSI0a2WovjT7Dq0O3j7ZBA8AbC7GOIQBBxZFw4nHP-24-mB3wJWsplzY_sKrtCZSzi1aSB8d84XYO-5R6FHSBPPtbkYW722qP_z7bMVHgRMWWy-7NblP-o8vx5vltu4qlr31MsDMp-eIG61r-vUDC57VoiyJdKnMsNKi4jWb8KZWAz2YCw%3D%3D']
+ANCHORS 178
+  A https://dmcinfo.us19.list-manage.com/subscribe?u=5e8ac4d7608cc0e981bb9fa86&id=51570e2e93 | Subscribe to our newsletter
+  A mailto:email.sales@dmcinfo.com?subject=DMC%20Inquiry%20[#6487247407] | email.sales@dmcinfo.com
+  A tel:8883624400 | (888) DMC-4400
+  A https://www.dmcinfo.com/services/test-and-measurement-automation/labview-programming/j1939-labview-drivers/ | J1939 LabVIEW Drivers
+  A https://www.dmcinfo.com/careers/ | Careers
+  A /careers/#culture | Culture
+  A https://www.dmcinfo.com/careers/open-positions/ | Open Positions
+  A https://www.dmcinfo.com/careers/diversity-and-inclusion/ | Diversity & Inclusion
+  A https://www.dmcinfo.com/careers/starting-an-engineering-career-at-dmc/ | Starting Your Career at DMC
+  A https://www.dmcinfo.com/careers#culture | Culture
+  A https://www.facebook.com/pages/DMC-Inc/107982009242929 | Facebook
+  A https://my.greenhouse.io/users/sign_in?job_board=dmcengineering&source=job_alert_board | Create alert
+  A https://www.dmcinfo.com/careers/open-positions?gh_jid=4046410008 | Senior EngineerAny DMC Office Location
+  A https://www.dmcinfo.com/careers/open-positions?gh_jid=5227298008 | Automation Engineer (Experienced)Any DMC Office Lo
+  A https://www.dmcinfo.com/careers/open-positions?gh_jid=5286536008 | Automation Travel Engineer (Experienced)Any DMC Of
+  A https://www.dmcinfo.com/careers/open-positions?gh_jid=4048404008 | Electrical DrafterChicago (Headquarters)
+  A https://www.dmcinfo.com/careers/open-positions?gh_jid=4048407008 | Electrical Engineer Any DMC Office Location
+  A https://www.dmcinfo.com/careers/open-positions?gh_jid=5147505008 | Entry Level Automation EngineerAny DMC Office Loca
+  A https://www.dmcinfo.com/careers/open-positions?gh_jid=5374487008 | Entry Level Automation Engineer (2027)Any DMC Offi
+  A https://www.dmcinfo.com/careers/open-positions?gh_jid=5286534008 | Entry Level Automation Travel EngineerAny DMC Offi
+  A https://www.dmcinfo.com/careers/open-positions?gh_jid=5387833008 | Entry Level Electrical Design Engineer (2027)Chica
+  A https://www.dmcinfo.com/careers/open-positions?gh_jid=5450129008 | Mechanical Design Engineer (Entry Level 2027)Chica
+  A https://www.dmcinfo.com/careers/open-positions?gh_jid=5450108008 | Mechanical Design Engineer (Experienced) Chicago (
+  A https://www.dmcinfo.com/careers/open-positions?gh_jid=5227029008 | SCADA DeveloperAny DMC Office Location
+  A https://www.dmcinfo.com/careers/open-positions?gh_jid=4817735008 | Senior Business AnalystChicago (Headquarters)
+  A https://www.dmcinfo.com/careers/open-positions?gh_jid=4643726008 | Embedded EngineerChicago (Headquarters); Denver
+  A https://www.dmcinfo.com/careers/open-positions?gh_jid=4590064008 | Embedded Firmware EngineerTbilisi, Georgia (the co
+  A https://www.dmcinfo.com/careers/open-positions?gh_jid=5400262008 | Experienced Test Systems Engineer Boston; Chicago 
+  A https://www.dmcinfo.com/careers/open-positions?gh_jid=5421844008 | Administrative Assistant (Part-Time)Denver
+  A https://www.dmcinfo.com/careers/open-positions?gh_jid=4976847008 | Recruiting Coordinator Chicago (Headquarters)
+TEXT Open Positions | DMC, Inc. Subscribe to our newsletter email.sales@dmcinfo.com (888) DMC-4400 Contact Us Services Services Manufacturing Automation & Intelligence Test & Measurement Automation Embedded Development & Programming Digital Workplace Solutions Manufacturing Center Manufacturing Automation & Intelligence Test & Measurement Automation Embedded Development & Programming Digital Workplace Solutions Manufacturing Center Manufacturing Automation & Intelligence Manufacturing Automation & Intelligence Engineering intelligent factory floor systems, including electrical & mechanical design a
+CLICKABLE ['BUTTON  ', 'SPAN  ', 'A  Services', 'A  ', 'A  ', 'A  ', 'A  ', 'A  ', 'BUTTON  ']
