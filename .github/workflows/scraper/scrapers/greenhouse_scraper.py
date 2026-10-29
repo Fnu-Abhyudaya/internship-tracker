@@ -94,4 +94,8 @@ class GreenhouseScraper(BaseScraper):
             logger.error(
                 f"[{self.company_name}] Greenhouse error: {e}"
             )
+            self.record_error(
+                f"Greenhouse scraper error: "
+                f"{self.describe_exception(e)}"
+            )
         return results

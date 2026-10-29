@@ -89,10 +89,19 @@ class ICIMSScraper(BaseScraper):
                     ))
 
                 if not found_any:
+                    if page_num == 1:
+                        self.record_error(
+                            "Page loaded but no job listings were "
+                            "found on it (site layout may have changed)"
+                        )
                     break
         except Exception as e:
             logger.error(
                 f"[{self.company_name}] iCIMS error: {e}"
+            )
+            self.record_error(
+                f"iCIMS scraper error: "
+                f"{self.describe_exception(e)}"
             )
 
         return results

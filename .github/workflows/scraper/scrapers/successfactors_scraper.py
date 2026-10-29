@@ -209,6 +209,10 @@ class SuccessFactorsScraper(BaseScraper):
             logger.error(
                 f"[{self.company_name}] SuccessFactors error: {e}"
             )
+            self.record_error(
+                f"SuccessFactors scraper error: "
+                f"{self.describe_exception(e)}"
+            )
 
         all_results.sort(
             key=lambda p: p.date_posted or '',

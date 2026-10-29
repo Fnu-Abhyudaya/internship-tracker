@@ -36,14 +36,24 @@ class WorkdayScraper(BaseScraper):
                 allow_redirects=True
             ) as response:
                 if response.status == 200:
-                    return await response.json(content_type=None)
+                    data = await response.json(content_type=None)
+                    self.record_success()
+                    return data
                 logger.warning(
                     f"[{self.company_name}] "
                     f"POST {api_url} returned {response.status}"
                 )
+                self.record_error(
+                    f"HTTP {response.status} from Workday search API "
+                    f"({api_url})"
+                )
         except Exception as e:
             logger.error(
                 f"[{self.company_name}] POST error: {e}"
+            )
+            self.record_error(
+                f"Workday search request failed "
+                f"({self.describe_exception(e)})"
             )
         return None
 
@@ -145,6 +155,10 @@ class WorkdayScraper(BaseScraper):
         except Exception as e:
             logger.error(
                 f"[{self.company_name}] Workday error: {e}"
+            )
+            self.record_error(
+                f"Workday scraper error: "
+                f"{self.describe_exception(e)}"
             )
 
         # Dedupe by URL

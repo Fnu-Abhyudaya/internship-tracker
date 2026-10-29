@@ -38,6 +38,9 @@ class BaseScraper(ABC):
         self.base_url = base_url
         self.rate_limit = rate_limit
         self.session: Optional[aiohttp.ClientSession] = None
+        # Scan-health tracking (reported in the Excel "Scan Issues" sheet)
+        self.errors: List[str] = []
+        self.pages_ok: int = 0
         self.headers = {
             'User-Agent': (
                 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) '
@@ -50,6 +53,23 @@ class BaseScraper(ABC):
             ),
             'Accept-Language': 'en-US,en;q=0.5',
         }
+
+    def record_error(self, message: str):
+        """Remember a problem hit while scanning this site."""
+        message = ' '.join(str(message).split())
+        if len(message) > 300:
+            message = message[:297] + '...'
+        self.errors.append(message)
+
+    def record_success(self):
+        """Note that a page/API request for this site loaded fine."""
+        self.pages_ok += 1
+
+    @staticmethod
+    def describe_exception(e: Exception) -> str:
+        text = str(e).strip()
+        name = type(e).__name__
+        return f"{name}: {text}" if text else name
 
     async def create_session(self):
         if not self.session:
@@ -75,16 +95,24 @@ class BaseScraper(ABC):
                 url, params=params, allow_redirects=True
             ) as response:
                 if response.status == 200:
+                    self.record_success()
                     return await response.text()
                 else:
                     logger.warning(
                         f"[{self.company_name}] "
                         f"HTTP {response.status} for {url}"
                     )
+                    self.record_error(
+                        f"HTTP {response.status} when loading {url}"
+                    )
                     return None
         except Exception as e:
             logger.error(
                 f"[{self.company_name}] Error fetching {url}: {e}"
+            )
+            self.record_error(
+                f"Could not load {url} "
+                f"({self.describe_exception(e)})"
             )
             return None
 
@@ -97,16 +125,25 @@ class BaseScraper(ABC):
                 url, params=params, allow_redirects=True
             ) as response:
                 if response.status == 200:
-                    return await response.json(content_type=None)
+                    data = await response.json(content_type=None)
+                    self.record_success()
+                    return data
                 else:
                     logger.warning(
                         f"[{self.company_name}] "
                         f"HTTP {response.status}"
                     )
+                    self.record_error(
+                        f"HTTP {response.status} from {url}"
+                    )
                     return None
         except Exception as e:
             logger.error(
                 f"[{self.company_name}] JSON error: {e}"
+            )
+            self.record_error(
+                f"Bad/unreadable response from {url} "
+                f"({self.describe_exception(e)})"
             )
             return None
 
@@ -126,6 +163,9 @@ class BaseScraper(ABC):
         except Exception as e:
             logger.error(
                 f"[{self.company_name}] Scraper failed: {e}"
+            )
+            self.record_error(
+                f"Scraper crashed: {self.describe_exception(e)}"
             )
             return []
         finally:

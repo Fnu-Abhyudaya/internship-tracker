@@ -10,7 +10,36 @@ from datetime import datetime
 logger = logging.getLogger(__name__)
 
 
-def send_email(filepath, recipient, total_jobs, total_companies):
+def _scan_issue_html(failed_sites):
+    """One summary line about websites that could not be scanned."""
+    if failed_sites:
+        return (
+            f'<li style="color: #b91c1c;"><strong>{failed_sites}</strong> '
+            f'website(s) could not be scanned properly - see the '
+            f'"Scan Issues" sheet</li>'
+        )
+    return '<li>All websites were scanned without errors</li>'
+
+
+def _attach_excel(msg, filepath):
+    if filepath and os.path.exists(filepath):
+        with open(filepath, 'rb') as f:
+            part = MIMEBase(
+                'application',
+                'vnd.openxmlformats-officedocument'
+                '.spreadsheetml.sheet'
+            )
+            part.set_payload(f.read())
+            encoders.encode_base64(part)
+            part.add_header(
+                'Content-Disposition',
+                f'attachment; filename="{os.path.basename(filepath)}"'
+            )
+            msg.attach(part)
+
+
+def send_email(filepath, recipient, total_jobs, total_companies,
+               failed_sites=0):
     smtp_server = os.environ.get('SMTP_SERVER', 'smtp.gmail.com')
     smtp_port = int(os.environ.get('SMTP_PORT', '587'))
     smtp_username = os.environ.get('SMTP_USERNAME', '')
@@ -39,6 +68,7 @@ def send_email(filepath, recipient, total_jobs, total_companies):
         <ul>
             <li><strong>{total_jobs}</strong> new internship postings</li>
             <li>From <strong>{total_companies}</strong> companies</li>
+            {_scan_issue_html(failed_sites)}
         </ul>
         <p>See the attached Excel file for all details with
            clickable links.</p>
@@ -50,21 +80,7 @@ def send_email(filepath, recipient, total_jobs, total_companies):
     """
 
     msg.attach(MIMEText(body, 'html'))
-
-    if os.path.exists(filepath):
-        with open(filepath, 'rb') as f:
-            part = MIMEBase(
-                'application',
-                'vnd.openxmlformats-officedocument'
-                '.spreadsheetml.sheet'
-            )
-            part.set_payload(f.read())
-            encoders.encode_base64(part)
-            part.add_header(
-                'Content-Disposition',
-                f'attachment; filename="{os.path.basename(filepath)}"'
-            )
-            msg.attach(part)
+    _attach_excel(msg, filepath)
 
     with smtplib.SMTP(smtp_server, smtp_port) as server:
         server.starttls()
@@ -73,7 +89,7 @@ def send_email(filepath, recipient, total_jobs, total_companies):
         logger.info(f"Email sent to {recipient}")
 
 
-def send_no_results_email(recipient):
+def send_no_results_email(recipient, filepath=None, failed_sites=0):
     smtp_server = os.environ.get('SMTP_SERVER', 'smtp.gmail.com')
     smtp_port = int(os.environ.get('SMTP_PORT', '587'))
     smtp_username = os.environ.get('SMTP_USERNAME', '')
@@ -95,10 +111,14 @@ def send_no_results_email(recipient):
         <h2>Daily Internship Tracker - {today}</h2>
         <p>No new internship postings were found in the
            last 24 hours.</p>
+        <ul>{_scan_issue_html(failed_sites)}</ul>
+        <p>The attached Excel file lists any websites that could
+           not be scanned.</p>
     </body></html>
     """
 
     msg.attach(MIMEText(body, 'html'))
+    _attach_excel(msg, filepath)
 
     with smtplib.SMTP(smtp_server, smtp_port) as server:
         server.starttls()

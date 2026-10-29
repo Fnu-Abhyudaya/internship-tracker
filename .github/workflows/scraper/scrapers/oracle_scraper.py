@@ -128,6 +128,10 @@ class OracleHCMScraper(BaseScraper):
             logger.error(
                 f"[{self.company_name}] Oracle HCM error: {e}"
             )
+            self.record_error(
+                f"Oracle HCM scraper error: "
+                f"{self.describe_exception(e)}"
+            )
 
         # Dedupe
         seen = set()

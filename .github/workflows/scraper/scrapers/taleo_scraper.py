@@ -48,6 +48,11 @@ class TaleoScraper(BaseScraper):
                 )
 
                 if not job_rows:
+                    if page_num == 1:
+                        self.record_error(
+                            "Page loaded but no job listings were "
+                            "found on it (site layout may have changed)"
+                        )
                     break
 
                 page_added = 0
@@ -76,6 +81,10 @@ class TaleoScraper(BaseScraper):
         except Exception as e:
             logger.error(
                 f"[{self.company_name}] Taleo error: {e}"
+            )
+            self.record_error(
+                f"Taleo scraper error: "
+                f"{self.describe_exception(e)}"
             )
 
         return results

@@ -132,15 +132,26 @@ class PlaywrightScraper(BaseScraper):
                 )
 
                 try:
-                    await page.goto(
+                    response = await page.goto(
                         page_url,
                         wait_until='domcontentloaded',
                         timeout=45000
                     )
+                    if response is not None and response.status >= 400:
+                        self.record_error(
+                            f"HTTP {response.status} when loading "
+                            f"page {page_num} ({page_url})"
+                        )
+                        break
+                    self.record_success()
                 except Exception as e:
                     logger.warning(
                         f"[{self.company_name}] page "
                         f"{page_num} nav error: {e}"
+                    )
+                    self.record_error(
+                        f"Page {page_num} failed to load ({page_url}): "
+                        f"{self.describe_exception(e)}"
                     )
                     break
 
@@ -185,6 +196,10 @@ class PlaywrightScraper(BaseScraper):
         except Exception as e:
             logger.error(
                 f"[{self.company_name}] Playwright error: {e}"
+            )
+            self.record_error(
+                f"Playwright scraper error: "
+                f"{self.describe_exception(e)}"
             )
         finally:
             try:

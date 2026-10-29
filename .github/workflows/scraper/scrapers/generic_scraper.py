@@ -46,6 +46,10 @@ class GenericHTMLScraper(BaseScraper):
             logger.error(
                 f"[{self.company_name}] Generic error: {e}"
             )
+            self.record_error(
+                f"Generic scraper error: "
+                f"{self.describe_exception(e)}"
+            )
 
         results.sort(
             key=lambda p: p.date_posted or '',
@@ -267,5 +271,9 @@ class AshbyScraper(BaseScraper):
         except Exception as e:
             logger.error(
                 f"[{self.company_name}] Ashby error: {e}"
+            )
+            self.record_error(
+                f"Ashby scraper error: "
+                f"{self.describe_exception(e)}"
             )
         return results
