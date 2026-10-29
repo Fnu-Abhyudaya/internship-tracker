@@ -10,6 +10,7 @@ from .taleo_scraper import TaleoScraper
 from .generic_scraper import GenericHTMLScraper, AshbyScraper
 from .playwright_scraper import PlaywrightScraper
 from .successfactors_scraper import SuccessFactorsScraper
+from .adp_scraper import ADPScraper
 
 
 def get_all_scrapers() -> List[BaseScraper]:
@@ -39,6 +40,8 @@ def get_all_scrapers() -> List[BaseScraper]:
          'url': 'https://stvinc.wd5.myworkdayjobs.com/en-US/stv'},
         {'company': 'Calista/Yulista',
          'url': 'https://calistacorp.wd1.myworkdayjobs.com/Yulista'},
+        {'company': 'Insulet',
+         'url': 'https://insulet.wd5.myworkdayjobs.com/insuletcareers'},
     ]
     for cfg in workday_configs:
         scrapers.append(WorkdayScraper(
@@ -56,6 +59,9 @@ def get_all_scrapers() -> List[BaseScraper]:
         {'company': 'Fellow Products', 'token': 'fellowproducts'},
         {'company': 'Salient Motion', 'token': 'salientmotion'},
         {'company': 'Amperesand', 'token': 'amperesand'},
+        {'company': 'Figure', 'token': 'figureai'},
+        {'company': 'DMC Engineering', 'token': 'dmcengineering'},
+        {'company': 'Vast', 'token': 'vast'},
     ]
     for cfg in greenhouse_configs:
         scrapers.append(GreenhouseScraper(
@@ -72,6 +78,8 @@ def get_all_scrapers() -> List[BaseScraper]:
          'url': 'https://jobs.nokia.com/en/sites/CX_1/jobs'},
         {'company': 'Centrus Energy',
          'url': 'https://eese.fa.us8.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CentrusEnergyCareers/jobs'},
+        {'company': 'EPTA Refrigeration',
+         'url': 'https://fa-eukp-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/jobs'},
     ]
     for cfg in oracle_configs:
         scrapers.append(OracleHCMScraper(
@@ -133,6 +141,10 @@ def get_all_scrapers() -> List[BaseScraper]:
          'url': 'https://jobs.dana.com/search/'},
         {'company': 'AECOM',
          'url': 'https://aecom.jobs/search/'},
+        {'company': 'Landis+Gyr',
+         'url': 'https://careers.landisgyr.com/search/?optionsFacetsDD_country=US&optionsFacetsDD_customfield2=Intern'},
+        {'company': 'Lincoln Electric',
+         'url': 'https://jobs.lincolnelectric.com/search/'},
     ]
     for cfg in successfactors_configs:
         scrapers.append(SuccessFactorsScraper(
@@ -223,12 +235,49 @@ def get_all_scrapers() -> List[BaseScraper]:
          'url': 'https://repfitness.com/pages/rep-careers'},
         {'company': 'Standard Subsea',
          'url': 'https://www.standardsubsea.com/careers'},
+        # ----- Added Oct 2026 from "New Career Links" bookmarks -----
+        {'company': 'Shinkei',
+         'url': 'https://careers.kula.ai/shinkei',
+         'pattern': r'/shinkei/\d+-'},
+        {'company': 'Modine',
+         'url': 'https://careers.modine.com/go/InternCo-op/9564400/'},
+        {'company': 'Jordan & Skala Engineers',
+         'url': 'https://www.jordanskala.com/careers/current-openings/'},
+        {'company': 'JTEKT North America',
+         'url': 'https://jobs.dayforcehcm.com/JTEKT/CANDIDATEPORTAL'},
+        {'company': 'AprilAire',
+         'url': 'https://careers.aprilaire.com/jobs?page=1&sortBy=posted_date&descending=true'},
+        {'company': 'EwingCole',
+         'url': 'https://recruiting.paylocity.com/recruiting/jobs/All/51ea68bb-1bab-467d-89a7-f55fce6e8647/EwingCole-Inc'},
+        {'company': 'Linewise',
+         'url': 'https://linewise.io/careers/'},
+        {'company': 'Bosch',
+         'url': 'https://jobs.bosch.com/en/?country=us&pages=10'},
+        {'company': 'Quantum Computing Inc',
+         'url': 'https://quantum-computing-inc.alphastaff-hiring.com/'},
+        {'company': 'Panasonic',
+         'url': 'https://careers.na.panasonic.com/jobs?page=1&location=United%20States&woe=12&regionCode=US&stretchUnit=MILES&stretch=50&sortBy=posted_date&limit=100&categories=Engineering%7CManufacturing%7CProduction&keywords=mechanical&descending=true'},
     ]
     for cfg in playwright_configs:
         scrapers.append(PlaywrightScraper(
             company_name=cfg['company'],
             base_url=cfg['url'],
             wait_selector=cfg.get('wait'),
+            job_link_pattern=cfg.get('pattern'),
+        ))
+
+    # ===== ADP (myjobs sites and Workforce Now widgets) =====
+    adp_configs = [
+        {'company': 'Hendrickson',
+         'url': 'https://myjobs.adp.com/hendrickson/cx/job-listing'},
+        {'company': 'Audubon',
+         'url': 'https://myjobs.adp.com/auduboncorporatecareers/cx/job-listing'},
+        {'company': 'Pelican Energy Consultants',
+         'url': 'https://www.pelicanenergy.com/careers-employment'},
+    ]
+    for cfg in adp_configs:
+        scrapers.append(ADPScraper(
+            company_name=cfg['company'], base_url=cfg['url']
         ))
 
     return scrapers

@@ -38,6 +38,7 @@ class OracleHCMScraper(BaseScraper):
             )
             params = {
                 'onlyData': 'true',
+                'expand': 'requisitionList',
                 'finder': finder,
                 'limit': PAGE_SIZE,
                 'offset': offset,
@@ -50,12 +51,20 @@ class OracleHCMScraper(BaseScraper):
             items = data.get('items', [])
             if items and isinstance(items[0], dict) and \
                     'requisitionList' in items[0]:
-                items = items[0].get('requisitionList', [])
+                items = items[0].get('requisitionList') or []
+            elif items and isinstance(items[0], dict) and \
+                    'SearchId' in items[0]:
+                # Search summary without the job list - treat as a failure
+                self.record_error(
+                    "Oracle returned a search summary but no job list"
+                )
+                break
 
             if not items:
                 break
 
             page_added = 0
+            page_recent = 0
             for item in items:
                 title = item.get('Title', '') or item.get('title', '')
                 req_id = item.get('Id', '') or item.get('id', '')
@@ -68,10 +77,11 @@ class OracleHCMScraper(BaseScraper):
                     item.get('primaryLocation', '')
                 )
 
+                if not is_within_last_24_hours(posted):
+                    continue
+                page_recent += 1
                 if self.filter_internships and \
                         not matches_role_keywords(title):
-                    continue
-                if not is_within_last_24_hours(posted):
                     continue
                 if not is_us_location(loc):
                     continue
@@ -95,8 +105,9 @@ class OracleHCMScraper(BaseScraper):
                 f"{page_added} kept"
             )
 
-            # Stop early if page wasn't full
-            if len(items) < PAGE_SIZE:
+            # Stop early if page wasn't full, or if nothing on this
+            # page was recent (results are sorted newest first)
+            if len(items) < PAGE_SIZE or page_recent == 0:
                 break
 
         return results
