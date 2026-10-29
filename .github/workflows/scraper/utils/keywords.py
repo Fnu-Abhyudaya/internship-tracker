@@ -38,6 +38,7 @@ ROLE_KEYWORDS = [
     'facilities engineer', 'facilities engineering',
     'maintenance engineer', 'project engineer',
     'project engineering', 'engineering intern', 'mechanical', 
+    'product', 'development',
     'fall', 'spring', 'summer',
     '2026', '2027', 'new',
 ]
