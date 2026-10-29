@@ -1,0 +1,73 @@
+
+######## RESULTS ########
+@@ AprilAire | PlaywrightScraper | jobs=62 | pages_ok=5 | errors=0
+     JOB Engineering Tech II - Firmware | Location Sun Prairie, Wisconsin | https://careers.aprilaire.com/jobs/2670?lang=en-us
+     JOB Apply Now | N/A | https://careers-aprilaire.icims.com/jobs/2670/login
+     JOB Mechanical Engineer I | Location Sun Prairie, Wisconsin | https://careers.aprilaire.com/jobs/2651?lang=en-us
+@@ Audubon | PlaywrightScraper | jobs=0 | pages_ok=2 | errors=0
+@@ Bosch | PlaywrightScraper | jobs=8 | pages_ok=2 | errors=0
+     JOB Customer Service Representative (5:00 am - 1:30 pm) | N/A | https://jobs.bosch.com/en/job/REF295628P-customer-service-representative-5-00-am-1-30-pm
+     JOB Senior Safety Engineer - Power Tools and Accessories | N/A | https://jobs.bosch.com/en/job/REF293511Q-senior-safety-engineer-power-tools-and-accessorie
+     JOB Associate/Envir. Health & Safety Engineer | N/A | https://jobs.bosch.com/en/job/REF292021O-associate-envir-health-safety-engineer
+@@ DMC Engineering | GreenhouseScraper | jobs=0 | pages_ok=0 | errors=1
+     ERR HTTP 404 from https://boards-api.greenhouse.io/v1/boards/dmcengineering2024/jobs
+@@ EPTA Refrigeration | OracleHCMScraper | jobs=1 | pages_ok=9 | errors=0
+     JOB  | N/A | https://fa-eukp-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1
+@@ EwingCole | PlaywrightScraper | jobs=0 | pages_ok=2 | errors=0
+@@ Figure | GreenhouseScraper | jobs=86 | pages_ok=1 | errors=0
+     JOB Wire Harness Engineer | San Jose, CA | https://job-boards.greenhouse.io/figureai/jobs/4697402006
+     JOB Staff AI Inference and Acceleration Engineer | San Jose, CA | https://job-boards.greenhouse.io/figureai/jobs/4692572006
+     JOB Software Engineer, Privacy & Data Governance | San Jose, CA | https://job-boards.greenhouse.io/figureai/jobs/4690871006
+@@ Formlabs | PlaywrightScraper | jobs=230 | pages_ok=2 | errors=0
+     JOB Technical Sales Representative - German Speaking | N/A | https://careers.formlabs.com/job/7988991/apply/
+     JOB Technical Sales Representative - French Speaking | N/A | https://careers.formlabs.com/job/7989288/apply/
+     JOB Technical Sales Representative - Italian Speaking | N/A | https://careers.formlabs.com/job/8000746/apply/
+@@ Hendrickson | PlaywrightScraper | jobs=0 | pages_ok=2 | errors=0
+@@ Insulet | WorkdayScraper | jobs=75 | pages_ok=17 | errors=0
+     JOB Senior Manager, Global Logistics and Transportation (Hybrid - Acton, M | Acton, Massachusetts | https://insulet.wd5.myworkdayjobs.com/insuletcareers/job/Acton-Massachusetts/Senior-Manage
+     JOB Tech Lead, Operational Technology NPI | Acton, Massachusetts | https://insulet.wd5.myworkdayjobs.com/insuletcareers/job/Acton-Massachusetts/Tech-Lead--Op
+     JOB Senior Control Engineer (Onsite - Acton) | US - Massachusetts | https://insulet.wd5.myworkdayjobs.com/insuletcareers/job/US---Massachusetts/Senior-Control
+@@ JTEKT North America | PlaywrightScraper | jobs=49 | pages_ok=3 | errors=0
+     JOB Sales Account Manager - Automotive | N/A | https://jobs.dayforcehcm.com/en-US/JTEKT/CANDIDATEPORTAL/jobs/21052
+     JOB Cost Planning Analyst | N/A | https://jobs.dayforcehcm.com/en-US/JTEKT/CANDIDATEPORTAL/jobs/21043
+     JOB CNC Operator (B-Tech) - 3rd shift | N/A | https://jobs.dayforcehcm.com/en-US/JTEKT/CANDIDATEPORTAL/jobs/21037
+@@ Jordan & Skala Engineers | PlaywrightScraper | jobs=28 | pages_ok=2 | errors=0
+     JOB CAD/BIM Revit/CAD Drafting Technician Plano, TX → | Plano, TX | https://jordanskala.com/job/revit-cad-drafting-technician-4/
+     JOB CAD/BIM Revit/CAD Drafting Technician Houston, TX → | Houston, TX | https://jordanskala.com/job/revit-cad-drafting-technician-5/
+     JOB CAD/BIM Revit/CAD Drafting Technician Tampa, FL → | Tampa, FL | https://jordanskala.com/job/revit-cad-drafting-technician/
+@@ Landis+Gyr | SuccessFactorsScraper | jobs=3 | pages_ok=11 | errors=0
+     JOB Intern - Electronics Engineering | Lafayette, IN, US | https://careers.landisgyr.com/job/Lafayette-Intern-Electronics-Engineering-IN/1431897833/
+     JOB Co-op - General Engineering Lab and Test Engineering | Lafayette, IN, US | https://careers.landisgyr.com/job/Lafayette-Co-op-General-Engineering-Lab-and-Test-Enginee
+     JOB Co-op Component Engineering | Alpharetta, GA, US | https://careers.landisgyr.com/job/Alpharetta-Co-op-Component-Engineering-GA-30004/14311103
+@@ Lincoln Electric | SuccessFactorsScraper | jobs=239 | pages_ok=22 | errors=0
+     JOB Applications Engineer (Machining) | Fort Loramie, OH, US, 45845 | https://jobs.lincolnelectric.com/job/Fort-Loramie-Applications-Engineer-%28Machining%29-OH
+     JOB Senior Engineering Manager, Consumable Methods & Process | Cleveland, OH, US, 44117 | https://jobs.lincolnelectric.com/job/Cleveland-Senior-Engineering-Manager%2C-Consumable-Me
+     JOB Mechanical Engineer | Bettendorf, IA, US, 52722 | https://jobs.lincolnelectric.com/job/Bettendorf-Mechanical-Engineer-IA-52722/1435867833/
+@@ Linewise | PlaywrightScraper | jobs=8 | pages_ok=2 | errors=0
+     JOB Careers | N/A | https://linewise.io/careers/
+     JOB CNC program lead | N/A | https://linewise.io/careers/cnc-program-lead/
+     JOB Mechanical engineering lead | N/A | https://linewise.io/careers/mechanical-engineering-lead/
+@@ Modine | SuccessFactorsScraper | jobs=0 | pages_ok=9 | errors=0
+@@ Panasonic | PlaywrightScraper | jobs=44 | pages_ok=3 | errors=0
+     JOB Controls Engineer II | Location Sparks, Nevada US | https://careers.na.panasonic.com/jobs/50548?lang=en-us&previousLocale=en-US
+     JOB Apply Now | N/A | https://uscareers-napanasonic.icims.com/jobs/50548/login
+     JOB Electrical Technician, Facilities Maintenance, Day Shit (A Shift) | Location Sparks, Nevada US | https://careers.na.panasonic.com/jobs/50616?lang=en-us&previousLocale=en-US
+@@ Pelican Energy Consultants | PlaywrightScraper | jobs=1 | pages_ok=2 | errors=0
+     JOB CAREERS | N/A | https://www.pelicanenergy.com/careers-employment
+@@ Quantum Computing Inc | PlaywrightScraper | jobs=49 | pages_ok=2 | errors=0
+     JOB Quantum Optics Scientist (Post-Doc) | N/A | https://quantum-computing-inc.alphastaff-hiring.com/job/1024022/quantum-optics-scientist-p
+     JOB HR Business Partner | N/A | https://quantum-computing-inc.alphastaff-hiring.com/job/1069309/hr-business-partner
+     JOB Talent Acquisition Lead | N/A | https://quantum-computing-inc.alphastaff-hiring.com/job/1069322/talent-acquisition-lead
+@@ Shinkei | PlaywrightScraper | jobs=0 | pages_ok=2 | errors=0
+@@ Titan America | ICIMSScraper | jobs=0 | pages_ok=0 | errors=1
+     ERR HTTP 405 when loading https://careers-usa-titanmaterials.icims.com/jobs/search?ss=1&searchKeyword=mechanical&searchRelation=keyword_all&searchCategory=8737&searchPositionType=2049&searchSortField=postedDate&searchSortDirection=desc&pr=1
+@@ Vast | GreenhouseScraper | jobs=179 | pages_ok=1 | errors=0
+     JOB Avionics Manufacturing Technician, Wire Harnessing  | Long Beach, California, United States | https://boards.greenhouse.io/vast/jobs/4671183006?gh_jid=4671183006
+     JOB Avionics Test Software Engineer | Long Beach, California, United States | https://boards.greenhouse.io/vast/jobs/4714389006?gh_jid=4714389006
+     JOB Manufacturing Planner, Integration | Long Beach, California, United States | https://boards.greenhouse.io/vast/jobs/4724530006?gh_jid=4724530006
+@@ Vast?vastspace | GreenhouseScraper | jobs=0 | pages_ok=0 | errors=1
+     ERR HTTP 404 from https://boards-api.greenhouse.io/v1/boards/vastspace/jobs
+@@ Vast?vastspacecompany | GreenhouseScraper | jobs=0 | pages_ok=0 | errors=1
+     ERR HTTP 404 from https://boards-api.greenhouse.io/v1/boards/vastspacecompany/jobs
+@@ Vast?vastspacellc | GreenhouseScraper | jobs=0 | pages_ok=0 | errors=1
+     ERR HTTP 404 from https://boards-api.greenhouse.io/v1/boards/vastspacellc/jobs
