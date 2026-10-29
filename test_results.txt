@@ -1,171 +1,293 @@
-
+2026-10-29 04:27:26,046 - INFO - Starting 99 scrapers...
+2026-10-29 04:27:26,047 - INFO - Scraping Stanley Black & Decker...
+2026-10-29 04:27:26,065 - INFO - Scraping Bose...
+2026-10-29 04:27:26,066 - INFO - Scraping Hargrove EPC...
+2026-10-29 04:27:26,066 - INFO - Scraping NVIDIA...
+2026-10-29 04:27:26,066 - INFO - Scraping Xylem...
+2026-10-29 04:27:32,705 - INFO - [Bose] Found 0 postings
+2026-10-29 04:27:32,705 - INFO - Scraping Nidec...
+2026-10-29 04:27:33,127 - INFO - [Hargrove EPC] Found 4 postings
+2026-10-29 04:27:33,127 - INFO - Scraping ResMed...
+2026-10-29 04:27:38,855 - INFO - [Stanley Black & Decker] Found 0 postings
+2026-10-29 04:27:38,855 - INFO - Scraping Taylor...
+2026-10-29 04:27:38,859 - INFO - [Xylem] Found 4 postings
+2026-10-29 04:27:38,859 - INFO - Scraping Terex...
+2026-10-29 04:27:44,486 - INFO - [NVIDIA] Found 0 postings
+2026-10-29 04:27:44,486 - INFO - Scraping STV Inc...
+2026-10-29 04:27:45,778 - INFO - [ResMed] Found 0 postings
+2026-10-29 04:27:45,778 - INFO - Scraping Calista/Yulista...
+2026-10-29 04:27:46,803 - INFO - [Taylor] Found 1 postings
+2026-10-29 04:27:46,803 - INFO - Scraping Insulet...
+2026-10-29 04:27:48,998 - INFO - [Terex] Found 1 postings
+2026-10-29 04:27:48,998 - INFO - Scraping SharkNinja...
+2026-10-29 04:27:50,308 - INFO - [SharkNinja] Found 0 postings
+2026-10-29 04:27:50,310 - INFO - Scraping Axon...
+2026-10-29 04:27:51,638 - INFO - [Axon] Found 0 postings
+2026-10-29 04:27:51,639 - INFO - Scraping Neuralink...
+2026-10-29 04:27:52,796 - INFO - [Neuralink] Found 0 postings
+2026-10-29 04:27:52,796 - INFO - Scraping Scout Motors...
+2026-10-29 04:27:53,752 - INFO - [STV Inc] Found 0 postings
+2026-10-29 04:27:53,753 - INFO - Scraping DLR Group...
+2026-10-29 04:27:54,031 - INFO - [Scout Motors] Found 1 postings
+2026-10-29 04:27:54,031 - INFO - Scraping Rugged Robotics...
+2026-10-29 04:27:54,446 - INFO - [Nidec] Found 0 postings
+2026-10-29 04:27:54,447 - INFO - Scraping Fellow Products...
+2026-10-29 04:27:55,017 - INFO - [DLR Group] Found 0 postings
+2026-10-29 04:27:55,018 - INFO - Scraping Salient Motion...
+2026-10-29 04:27:55,143 - INFO - [Rugged Robotics] Found 0 postings
+2026-10-29 04:27:55,144 - INFO - Scraping Amperesand...
+2026-10-29 04:27:55,573 - WARNING - [Fellow Products] HTTP 404
+2026-10-29 04:27:55,574 - INFO - [Fellow Products] Found 0 postings
+2026-10-29 04:27:55,574 - INFO - Scraping Figure...
+2026-10-29 04:27:56,135 - INFO - [Salient Motion] Found 0 postings
+2026-10-29 04:27:56,136 - INFO - Scraping DMC Engineering...
+2026-10-29 04:27:56,369 - INFO - [Amperesand] Found 0 postings
+2026-10-29 04:27:56,369 - INFO - Scraping Vast...
+2026-10-29 04:27:56,768 - INFO - [Figure] Found 6 postings
+2026-10-29 04:27:56,768 - INFO - Scraping Eaton...
+2026-10-29 04:27:57,133 - INFO - [Insulet] Found 2 postings
+2026-10-29 04:27:57,133 - INFO - Scraping Nokia...
+2026-10-29 04:27:57,260 - INFO - [DMC Engineering] Found 0 postings
+2026-10-29 04:27:57,260 - INFO - Scraping Centrus Energy...
+2026-10-29 04:27:57,327 - INFO - [Calista/Yulista] Found 1 postings
+2026-10-29 04:27:57,327 - INFO - Scraping EPTA Refrigeration...
+2026-10-29 04:27:57,800 - INFO - [Vast] Found 0 postings
+2026-10-29 04:27:57,801 - INFO - Scraping SSOE Group...
+2026-10-29 04:27:58,941 - WARNING - [SSOE Group] HTTP 405 for https://careers-ssoe.icims.com/jobs/search?ss=1&searchSortField=postedDate&searchSortDirection=desc&pr=1
+2026-10-29 04:27:58,941 - INFO - [SSOE Group] Found 0 postings
+2026-10-29 04:27:58,942 - INFO - Scraping Marvin...
+2026-10-29 04:27:59,075 - ERROR - [Nokia] JSON error: Expecting value: line 1 column 1 (char 0)
+2026-10-29 04:28:00,099 - WARNING - [Marvin] HTTP 405 for https://careers-marvin.icims.com/jobs/search?searchSortField=postedDate&searchSortDirection=desc&pr=1
+2026-10-29 04:28:00,099 - INFO - [Marvin] Found 0 postings
+2026-10-29 04:28:00,099 - INFO - Scraping EMCOR Group...
+2026-10-29 04:28:00,535 - ERROR - [Nokia] JSON error: Expecting value: line 1 column 1 (char 0)
+2026-10-29 04:28:01,285 - WARNING - [EMCOR Group] HTTP 405 for https://careers-emcorgroup.icims.com/jobs/search?ss=1&searchSortField=postedDate&searchSortDirection=desc&pr=1
+2026-10-29 04:28:01,286 - INFO - [EMCOR Group] Found 0 postings
+2026-10-29 04:28:01,286 - INFO - Scraping Mariana Minerals...
+2026-10-29 04:28:01,988 - ERROR - [Nokia] JSON error: Expecting value: line 1 column 1 (char 0)
+2026-10-29 04:28:02,473 - INFO - [Mariana Minerals] Found 6 postings
+2026-10-29 04:28:02,473 - INFO - Scraping Matic Robots...
+2026-10-29 04:28:03,451 - ERROR - [Nokia] JSON error: Expecting value: line 1 column 1 (char 0)
+2026-10-29 04:28:03,568 - INFO - [Matic Robots] Found 7 postings
+2026-10-29 04:28:03,568 - INFO - Scraping Dyno Nobel...
+2026-10-29 04:28:05,128 - INFO - [Dyno Nobel] Found 0 postings
+2026-10-29 04:28:05,130 - INFO - Scraping AMETEK...
+2026-10-29 04:28:05,353 - ERROR - [Nokia] JSON error: Expecting value: line 1 column 1 (char 0)
+2026-10-29 04:28:06,797 - ERROR - [Nokia] JSON error: Expecting value: line 1 column 1 (char 0)
+2026-10-29 04:28:08,595 - ERROR - [Nokia] JSON error: Expecting value: line 1 column 1 (char 0)
+2026-10-29 04:28:10,450 - ERROR - [Nokia] JSON error: Expecting value: line 1 column 1 (char 0)
+2026-10-29 04:28:11,887 - ERROR - [Nokia] JSON error: Expecting value: line 1 column 1 (char 0)
+2026-10-29 04:28:11,887 - INFO - [Nokia] Found 0 postings
+2026-10-29 04:28:11,887 - INFO - Scraping BD...
+2026-10-29 04:28:25,847 - INFO - [BD] Found 0 postings
+2026-10-29 04:28:25,849 - INFO - Scraping Tenneco...
+2026-10-29 04:28:35,185 - INFO - [AMETEK] Found 69 postings
+2026-10-29 04:28:35,186 - INFO - Scraping Danfoss...
+2026-10-29 04:28:43,981 - INFO - [Tenneco] Found 8 postings
+2026-10-29 04:28:43,982 - INFO - Scraping ASSA ABLOY...
+2026-10-29 04:28:47,299 - INFO - [Danfoss] Found 0 postings
+2026-10-29 04:28:47,301 - INFO - Scraping Schaeffler...
+2026-10-29 04:28:59,901 - INFO - [EPTA Refrigeration] Found 0 postings
+2026-10-29 04:28:59,901 - INFO - Scraping ATS Automation...
+2026-10-29 04:29:04,108 - INFO - [ASSA ABLOY] Found 10 postings
+2026-10-29 04:29:04,109 - INFO - Scraping Fresenius Medical Care...
+2026-10-29 04:29:05,617 - WARNING - [Fresenius Medical Care] HTTP 404 for https://jobs.freseniusmedicalcare.com/search/?q=intern&sortColumn=referencedate&sortDirection=desc&startrow=0
+2026-10-29 04:29:06,775 - WARNING - [Fresenius Medical Care] HTTP 404 for https://jobs.freseniusmedicalcare.com/search/?q=mechanical&sortColumn=referencedate&sortDirection=desc&startrow=0
+2026-10-29 04:29:08,008 - WARNING - [Fresenius Medical Care] HTTP 404 for https://jobs.freseniusmedicalcare.com/search/?q=engineer&sortColumn=referencedate&sortDirection=desc&startrow=0
+2026-10-29 04:29:09,331 - WARNING - [Fresenius Medical Care] HTTP 404 for https://jobs.freseniusmedicalcare.com/search/?q=design&sortColumn=referencedate&sortDirection=desc&startrow=0
+2026-10-29 04:29:10,531 - WARNING - [Fresenius Medical Care] HTTP 404 for https://jobs.freseniusmedicalcare.com/search/?q=hardware&sortColumn=referencedate&sortDirection=desc&startrow=0
+2026-10-29 04:29:11,728 - WARNING - [Fresenius Medical Care] HTTP 404 for https://jobs.freseniusmedicalcare.com/search/?q=manufacturing&sortColumn=referencedate&sortDirection=desc&startrow=0
+2026-10-29 04:29:12,947 - WARNING - [Fresenius Medical Care] HTTP 404 for https://jobs.freseniusmedicalcare.com/search/?q=equipment&sortColumn=referencedate&sortDirection=desc&startrow=0
+2026-10-29 04:29:14,101 - WARNING - [Fresenius Medical Care] HTTP 404 for https://jobs.freseniusmedicalcare.com/search/?q=cell&sortColumn=referencedate&sortDirection=desc&startrow=0
+2026-10-29 04:29:15,292 - WARNING - [Fresenius Medical Care] HTTP 404 for https://jobs.freseniusmedicalcare.com/search/?q=quality&sortColumn=referencedate&sortDirection=desc&startrow=0
+2026-10-29 04:29:15,292 - INFO - [Fresenius Medical Care] Found 0 postings
+2026-10-29 04:29:15,292 - INFO - Scraping Sloan Valve...
+2026-10-29 04:29:24,779 - INFO - [Centrus Energy] Found 0 postings
+2026-10-29 04:29:24,780 - INFO - Scraping Dana Inc...
+2026-10-29 04:29:25,579 - INFO - [ATS Automation] Found 16 postings
+2026-10-29 04:29:25,579 - INFO - Scraping AECOM...
+2026-10-29 04:29:28,267 - INFO - [Sloan Valve] Found 0 postings
+2026-10-29 04:29:28,267 - WARNING - [AECOM] HTTP 404 for https://aecom.jobs/search/?q=intern&sortColumn=referencedate&sortDirection=desc&startrow=0
+2026-10-29 04:29:28,268 - INFO - Scraping Landis+Gyr...
+2026-10-29 04:29:30,431 - WARNING - [AECOM] HTTP 404 for https://aecom.jobs/search/?q=mechanical&sortColumn=referencedate&sortDirection=desc&startrow=0
+2026-10-29 04:29:31,739 - INFO - [Schaeffler] Found 49 postings
+2026-10-29 04:29:31,740 - INFO - Scraping Lincoln Electric...
+2026-10-29 04:29:32,761 - WARNING - [AECOM] HTTP 404 for https://aecom.jobs/search/?q=engineer&sortColumn=referencedate&sortDirection=desc&startrow=0
+2026-10-29 04:29:35,193 - WARNING - [AECOM] HTTP 404 for https://aecom.jobs/search/?q=design&sortColumn=referencedate&sortDirection=desc&startrow=0
+2026-10-29 04:29:37,501 - WARNING - [AECOM] HTTP 404 for https://aecom.jobs/search/?q=hardware&sortColumn=referencedate&sortDirection=desc&startrow=0
+2026-10-29 04:29:39,469 - WARNING - [AECOM] HTTP 404 for https://aecom.jobs/search/?q=manufacturing&sortColumn=referencedate&sortDirection=desc&startrow=0
+2026-10-29 04:29:40,973 - INFO - [Landis+Gyr] Found 0 postings
+2026-10-29 04:29:41,030 - INFO - Scraping Bendix (Knorr-Bremse)...
+2026-10-29 04:29:41,478 - WARNING - [AECOM] HTTP 404 for https://aecom.jobs/search/?q=equipment&sortColumn=referencedate&sortDirection=desc&startrow=0
+2026-10-29 04:29:43,661 - WARNING - [AECOM] HTTP 404 for https://aecom.jobs/search/?q=cell&sortColumn=referencedate&sortDirection=desc&startrow=0
+2026-10-29 04:29:46,026 - WARNING - [AECOM] HTTP 404 for https://aecom.jobs/search/?q=quality&sortColumn=referencedate&sortDirection=desc&startrow=0
+2026-10-29 04:29:46,026 - INFO - [AECOM] Found 0 postings
+2026-10-29 04:29:46,026 - INFO - Scraping Tesla...
+2026-10-29 04:29:46,240 - INFO - [Tesla] Found 0 postings
+2026-10-29 04:29:46,240 - INFO - Scraping Apple...
+2026-10-29 04:29:52,545 - INFO - [Lincoln Electric] Found 13 postings
+2026-10-29 04:29:52,545 - INFO - Scraping AMD...
+2026-10-29 04:29:52,985 - INFO - [Dana Inc] Found 14 postings
+2026-10-29 04:29:52,985 - INFO - Scraping ASML...
+2026-10-29 04:29:56,350 - INFO - [Bendix (Knorr-Bremse)] Found 0 postings
+2026-10-29 04:29:56,350 - INFO - Scraping Altec...
+2026-10-29 04:29:56,701 - INFO - [Altec] Found 0 postings
+2026-10-29 04:29:56,701 - INFO - Scraping Cummins...
+2026-10-29 04:30:10,149 - INFO - [ASML] Found 0 postings
+2026-10-29 04:30:10,149 - INFO - Scraping Veeco...
+2026-10-29 04:30:10,915 - INFO - [AMD] Found 1 postings
+2026-10-29 04:30:10,915 - INFO - Scraping HARMAN...
+2026-10-29 04:30:11,019 - INFO - [Cummins] Found 2 postings
+2026-10-29 04:30:11,020 - INFO - Scraping Hyundai...
+2026-10-29 04:30:23,142 - INFO - [Hyundai] Found 2 postings
+2026-10-29 04:30:23,142 - INFO - Scraping Siemens Energy...
+2026-10-29 04:30:24,549 - INFO - [Veeco] Found 0 postings
+2026-10-29 04:30:24,549 - INFO - Scraping Atlas Copco...
+2026-10-29 04:30:27,490 - INFO - [Apple] Found 1 postings
+2026-10-29 04:30:27,490 - INFO - Scraping Applied Materials...
+2026-10-29 04:30:27,874 - INFO - [HARMAN] Found 0 postings
+2026-10-29 04:30:27,875 - INFO - Scraping The Boring Company...
+2026-10-29 04:30:38,515 - INFO - [The Boring Company] Found 10 postings
+2026-10-29 04:30:38,515 - INFO - Scraping Volvo Group...
+2026-10-29 04:30:38,885 - INFO - [Siemens Energy] Found 4 postings
+2026-10-29 04:30:38,885 - INFO - Scraping ams-OSRAM...
+2026-10-29 04:30:40,162 - INFO - [Atlas Copco] Found 2 postings
+2026-10-29 04:30:40,162 - INFO - Scraping ZF Group...
+2026-10-29 04:30:41,541 - INFO - [Applied Materials] Found 0 postings
+2026-10-29 04:30:41,541 - INFO - Scraping ChargePoint...
+2026-10-29 04:30:51,128 - INFO - [ams-OSRAM] Found 0 postings
+2026-10-29 04:30:51,128 - INFO - Scraping Agility Robotics...
+2026-10-29 04:32:24,778 - WARNING - [Eaton] Timed out
+2026-10-29 04:32:24,785 - INFO - Scraping Formlabs...
+2026-10-29 04:32:24,964 - INFO - [ChargePoint] Found 0 postings
+2026-10-29 04:32:24,964 - INFO - [ZF Group] Found 0 postings
+2026-10-29 04:32:24,964 - INFO - Scraping Skyryse...
+2026-10-29 04:32:24,967 - INFO - Scraping Lunar Energy...
+2026-10-29 04:34:08,212 - WARNING - [Volvo Group] Timed out
+2026-10-29 04:34:08,213 - INFO - Scraping Fortive...
+2026-10-29 04:34:08,377 - WARNING - [Agility Robotics] Timed out
+2026-10-29 04:34:08,378 - INFO - Scraping Brunswick...
+2026-10-29 04:34:12,801 - INFO - [Lunar Energy] Found 6 postings
+2026-10-29 04:34:12,801 - INFO - Scraping ITW...
+2026-10-29 04:34:12,978 - INFO - [Skyryse] Found 0 postings
+2026-10-29 04:34:12,978 - INFO - Scraping WSP...
+2026-10-29 04:34:13,205 - INFO - [WSP] Found 0 postings
+2026-10-29 04:34:13,205 - INFO - Scraping Addium...
+2026-10-29 04:34:18,046 - INFO - [Formlabs] Found 35 postings
+2026-10-29 04:34:18,047 - INFO - Scraping Vantedge Medical...
+2026-10-29 04:34:21,600 - INFO - [Brunswick] Found 0 postings
+2026-10-29 04:34:21,600 - INFO - Scraping Halo Industries...
+2026-10-29 04:34:22,949 - INFO - [Fortive] Found 0 postings
+2026-10-29 04:34:22,949 - INFO - Scraping ProMach...
+2026-10-29 04:34:26,424 - INFO - [Addium] Found 0 postings
+2026-10-29 04:34:26,424 - INFO - Scraping CIRTEC Medical...
+2026-10-29 04:34:26,647 - INFO - [CIRTEC Medical] Found 0 postings
+2026-10-29 04:34:26,647 - INFO - Scraping Amperesand.io...
+2026-10-29 04:34:28,013 - INFO - [ITW] Found 0 postings
+2026-10-29 04:34:28,014 - INFO - Scraping Legence...
+2026-10-29 04:34:29,621 - INFO - [Vantedge Medical] Found 6 postings
+2026-10-29 04:34:29,621 - INFO - Scraping Clark Nexsen...
+2026-10-29 04:34:32,736 - INFO - [Halo Industries] Found 0 postings
+2026-10-29 04:34:32,737 - INFO - Scraping Manitou Group...
+2026-10-29 04:34:37,688 - INFO - [Amperesand.io] Found 0 postings
+2026-10-29 04:34:37,688 - INFO - Scraping ASM International...
+2026-10-29 04:34:39,524 - INFO - [Legence] Found 1 postings
+2026-10-29 04:34:39,525 - INFO - Scraping Lonza...
+2026-10-29 04:34:40,193 - INFO - [ProMach] Found 0 postings
+2026-10-29 04:34:40,194 - INFO - Scraping Rep Fitness...
+2026-10-29 04:34:41,008 - INFO - [Clark Nexsen] Found 0 postings
+2026-10-29 04:34:41,009 - INFO - Scraping Standard Subsea...
+2026-10-29 04:34:47,759 - INFO - [Manitou Group] Found 0 postings
+2026-10-29 04:34:47,759 - INFO - Scraping Shinkei...
+2026-10-29 04:34:49,451 - INFO - [ASM International] Found 0 postings
+2026-10-29 04:34:49,451 - INFO - Scraping Modine...
+2026-10-29 04:34:51,928 - INFO - [Standard Subsea] Found 0 postings
+2026-10-29 04:34:51,928 - INFO - Scraping Jordan & Skala Engineers...
+2026-10-29 04:34:54,095 - INFO - [Lonza] Found 0 postings
+2026-10-29 04:34:54,095 - INFO - Scraping JTEKT North America...
+2026-10-29 04:34:59,306 - INFO - [Rep Fitness] Found 0 postings
+2026-10-29 04:34:59,306 - INFO - Scraping AprilAire...
+2026-10-29 04:34:59,826 - INFO - [Shinkei] Found 3 postings
+2026-10-29 04:34:59,827 - INFO - Scraping EwingCole...
+2026-10-29 04:35:03,029 - INFO - [Modine] Found 0 postings
+2026-10-29 04:35:03,029 - INFO - Scraping Linewise...
+2026-10-29 04:35:05,571 - INFO - [Jordan & Skala Engineers] Found 2 postings
+2026-10-29 04:35:05,571 - INFO - Scraping Bosch...
+2026-10-29 04:35:10,382 - INFO - [JTEKT North America] Found 11 postings
+2026-10-29 04:35:10,382 - INFO - Scraping Quantum Computing Inc...
+2026-10-29 04:35:11,197 - INFO - [EwingCole] Found 10 postings
+2026-10-29 04:35:11,198 - INFO - Scraping Panasonic...
+2026-10-29 04:35:13,703 - INFO - [Linewise] Found 1 postings
+2026-10-29 04:35:13,703 - INFO - Scraping Hendrickson...
+2026-10-29 04:35:18,887 - INFO - [AprilAire] Found 4 postings
+2026-10-29 04:35:18,887 - INFO - Scraping Audubon...
+2026-10-29 04:35:19,613 - INFO - [Bosch] Found 5 postings
+2026-10-29 04:35:19,613 - INFO - Scraping Pelican Energy Consultants...
+2026-10-29 04:35:26,357 - INFO - [Hendrickson] Found 17 postings
+2026-10-29 04:35:26,359 - INFO - [Quantum Computing Inc] Found 15 postings
+2026-10-29 04:35:35,092 - INFO - [Audubon] Found 37 postings
+2026-10-29 04:35:35,884 - INFO - [Panasonic] Found 21 postings
+2026-10-29 04:35:45,289 - INFO - [Pelican Energy Consultants] Found 0 postings
+2026-10-29 04:35:45,342 - INFO - Total raw postings: 408
+2026-10-29 04:35:45,342 - INFO - Websites with scan issues: 16 of 99
+2026-10-29 04:35:45,347 - INFO - Filter results: kept 408, rejected 0 (keyword), rejected 0 (location)
+2026-10-29 04:35:45,347 - INFO - Within-run dedup: 408 -> 408
+2026-10-29 04:35:45,438 - INFO - Saved: output/internship_postings_2026-10-29.xlsx
 ######## RESULTS ########
-@@ Bosch | PlaywrightScraper | jobs=8 | pages_ok=2 | errors=0
-     JOB Customer Service Representative (5:00 am - 1:30 pm) | N/A |  | https://jobs.bosch.com/en/job/REF295628P-customer-service-representative-5-00-am-1-30-pm
-     JOB Senior Safety Engineer - Power Tools and Accessories | N/A |  | https://jobs.bosch.com/en/job/REF293511Q-senior-safety-engineer-power-tools-and-accessories
-     JOB Associate/Envir. Health & Safety Engineer | N/A |  | https://jobs.bosch.com/en/job/REF292021O-associate-envir-health-safety-engineer
-@@ Bosch-pages5 | PlaywrightScraper | jobs=40 | pages_ok=2 | errors=0
-     JOB Customer Service Representative (5:00 am - 1:30 pm) | N/A |  | https://jobs.bosch.com/en/job/REF295628P-customer-service-representative-5-00-am-1-30-pm
-     JOB Senior Safety Engineer - Power Tools and Accessories | N/A |  | https://jobs.bosch.com/en/job/REF293511Q-senior-safety-engineer-power-tools-and-accessories
-     JOB Associate/Envir. Health & Safety Engineer | N/A |  | https://jobs.bosch.com/en/job/REF292021O-associate-envir-health-safety-engineer
-@@ Shinkei | PlaywrightScraper | jobs=160 | pages_ok=10 | errors=0
-     JOB Mechanical Engineer | N/A |  | https://careers.kula.ai/shinkei/32624-mechanical-engineer
-     JOB Electrical Engineer | N/A |  | https://careers.kula.ai/shinkei/32626-electrical-engineer
-     JOB Test Operations Technician | N/A |  | https://careers.kula.ai/shinkei/32631-test-operations-technician
-     JOB Strategy And Operations Analyst | N/A |  | https://careers.kula.ai/shinkei/35453-strategy-and-operations-analyst
-     JOB Manufacturing Finance Inventory Operations Manager | N/A |  | https://careers.kula.ai/shinkei/48950-manufacturing-finance-inventory-operations-manager
-     JOB Test Engineer | N/A |  | https://careers.kula.ai/shinkei/50714-test-engineer
-     JOB Technical Talent Partner | N/A |  | https://careers.kula.ai/shinkei/51542-technical-talent-partner
-     JOB Mechanical Engineering Intern Associate Engineer | N/A |  | https://careers.kula.ai/shinkei/51937-mechanical-engineering-intern-associate-engineer
-     JOB Manufacturing Technician Mid Level | N/A |  | https://careers.kula.ai/shinkei/51940-manufacturing-technician-mid-level
-     JOB Software Engineer Robotics | N/A |  | https://careers.kula.ai/shinkei/53228-software-engineer-robotics
-     JOB Software Engineer Fullstack | N/A |  | https://careers.kula.ai/shinkei/53417-software-engineer-fullstack
-     JOB Manufacturing Technician Junior Entry Level | N/A |  | https://careers.kula.ai/shinkei/54853-manufacturing-technician-junior-entry-level
-     JOB New Product Commercialization Manager | N/A |  | https://careers.kula.ai/shinkei/34690-new-product-commercialization-manager
-     JOB Product Innovation Manager | N/A |  | https://careers.kula.ai/shinkei/52268-product-innovation-manager
-     JOB Regional Sales Manager Remote | N/A |  | https://careers.kula.ai/shinkei/54521-regional-sales-manager-remote
-     JOB Regional Sales Director Remote | N/A |  | https://careers.kula.ai/shinkei/54855-regional-sales-director-remote
-     JOB Mechanical Engineer | N/A |  | https://careers.kula.ai/shinkei/32624-mechanical-engineer?page=2
-     JOB Electrical Engineer | N/A |  | https://careers.kula.ai/shinkei/32626-electrical-engineer?page=2
-     JOB Test Operations Technician | N/A |  | https://careers.kula.ai/shinkei/32631-test-operations-technician?page=2
-     JOB Strategy And Operations Analyst | N/A |  | https://careers.kula.ai/shinkei/35453-strategy-and-operations-analyst?page=2
-     JOB Manufacturing Finance Inventory Operations Manager | N/A |  | https://careers.kula.ai/shinkei/48950-manufacturing-finance-inventory-operations-manager?page=2
-     JOB Test Engineer | N/A |  | https://careers.kula.ai/shinkei/50714-test-engineer?page=2
-     JOB Technical Talent Partner | N/A |  | https://careers.kula.ai/shinkei/51542-technical-talent-partner?page=2
-     JOB Mechanical Engineering Intern Associate Engineer | N/A |  | https://careers.kula.ai/shinkei/51937-mechanical-engineering-intern-associate-engineer?page=2
-     JOB Manufacturing Technician Mid Level | N/A |  | https://careers.kula.ai/shinkei/51940-manufacturing-technician-mid-level?page=2
-     JOB Software Engineer Robotics | N/A |  | https://careers.kula.ai/shinkei/53228-software-engineer-robotics?page=2
-     JOB Software Engineer Fullstack | N/A |  | https://careers.kula.ai/shinkei/53417-software-engineer-fullstack?page=2
-     JOB Manufacturing Technician Junior Entry Level | N/A |  | https://careers.kula.ai/shinkei/54853-manufacturing-technician-junior-entry-level?page=2
-     JOB New Product Commercialization Manager | N/A |  | https://careers.kula.ai/shinkei/34690-new-product-commercialization-manager?page=2
-     JOB Product Innovation Manager | N/A |  | https://careers.kula.ai/shinkei/52268-product-innovation-manager?page=2
-     JOB Regional Sales Manager Remote | N/A |  | https://careers.kula.ai/shinkei/54521-regional-sales-manager-remote?page=2
-     JOB Regional Sales Director Remote | N/A |  | https://careers.kula.ai/shinkei/54855-regional-sales-director-remote?page=2
-     JOB Mechanical Engineer | N/A |  | https://careers.kula.ai/shinkei/32624-mechanical-engineer?page=3
-     JOB Electrical Engineer | N/A |  | https://careers.kula.ai/shinkei/32626-electrical-engineer?page=3
-     JOB Test Operations Technician | N/A |  | https://careers.kula.ai/shinkei/32631-test-operations-technician?page=3
-     JOB Strategy And Operations Analyst | N/A |  | https://careers.kula.ai/shinkei/35453-strategy-and-operations-analyst?page=3
-     JOB Manufacturing Finance Inventory Operations Manager | N/A |  | https://careers.kula.ai/shinkei/48950-manufacturing-finance-inventory-operations-manager?page=3
-     JOB Test Engineer | N/A |  | https://careers.kula.ai/shinkei/50714-test-engineer?page=3
-     JOB Technical Talent Partner | N/A |  | https://careers.kula.ai/shinkei/51542-technical-talent-partner?page=3
-     JOB Mechanical Engineering Intern Associate Engineer | N/A |  | https://careers.kula.ai/shinkei/51937-mechanical-engineering-intern-associate-engineer?page=3
-     JOB Manufacturing Technician Mid Level | N/A |  | https://careers.kula.ai/shinkei/51940-manufacturing-technician-mid-level?page=3
-     JOB Software Engineer Robotics | N/A |  | https://careers.kula.ai/shinkei/53228-software-engineer-robotics?page=3
-     JOB Software Engineer Fullstack | N/A |  | https://careers.kula.ai/shinkei/53417-software-engineer-fullstack?page=3
-     JOB Manufacturing Technician Junior Entry Level | N/A |  | https://careers.kula.ai/shinkei/54853-manufacturing-technician-junior-entry-level?page=3
-     JOB New Product Commercialization Manager | N/A |  | https://careers.kula.ai/shinkei/34690-new-product-commercialization-manager?page=3
-     JOB Product Innovation Manager | N/A |  | https://careers.kula.ai/shinkei/52268-product-innovation-manager?page=3
-     JOB Regional Sales Manager Remote | N/A |  | https://careers.kula.ai/shinkei/54521-regional-sales-manager-remote?page=3
-     JOB Regional Sales Director Remote | N/A |  | https://careers.kula.ai/shinkei/54855-regional-sales-director-remote?page=3
-     JOB Mechanical Engineer | N/A |  | https://careers.kula.ai/shinkei/32624-mechanical-engineer?page=4
-     JOB Electrical Engineer | N/A |  | https://careers.kula.ai/shinkei/32626-electrical-engineer?page=4
-     JOB Test Operations Technician | N/A |  | https://careers.kula.ai/shinkei/32631-test-operations-technician?page=4
-     JOB Strategy And Operations Analyst | N/A |  | https://careers.kula.ai/shinkei/35453-strategy-and-operations-analyst?page=4
-     JOB Manufacturing Finance Inventory Operations Manager | N/A |  | https://careers.kula.ai/shinkei/48950-manufacturing-finance-inventory-operations-manager?page=4
-     JOB Test Engineer | N/A |  | https://careers.kula.ai/shinkei/50714-test-engineer?page=4
-     JOB Technical Talent Partner | N/A |  | https://careers.kula.ai/shinkei/51542-technical-talent-partner?page=4
-     JOB Mechanical Engineering Intern Associate Engineer | N/A |  | https://careers.kula.ai/shinkei/51937-mechanical-engineering-intern-associate-engineer?page=4
-     JOB Manufacturing Technician Mid Level | N/A |  | https://careers.kula.ai/shinkei/51940-manufacturing-technician-mid-level?page=4
-     JOB Software Engineer Robotics | N/A |  | https://careers.kula.ai/shinkei/53228-software-engineer-robotics?page=4
-     JOB Software Engineer Fullstack | N/A |  | https://careers.kula.ai/shinkei/53417-software-engineer-fullstack?page=4
-     JOB Manufacturing Technician Junior Entry Level | N/A |  | https://careers.kula.ai/shinkei/54853-manufacturing-technician-junior-entry-level?page=4
-     JOB New Product Commercialization Manager | N/A |  | https://careers.kula.ai/shinkei/34690-new-product-commercialization-manager?page=4
-     JOB Product Innovation Manager | N/A |  | https://careers.kula.ai/shinkei/52268-product-innovation-manager?page=4
-     JOB Regional Sales Manager Remote | N/A |  | https://careers.kula.ai/shinkei/54521-regional-sales-manager-remote?page=4
-     JOB Regional Sales Director Remote | N/A |  | https://careers.kula.ai/shinkei/54855-regional-sales-director-remote?page=4
-     JOB Mechanical Engineer | N/A |  | https://careers.kula.ai/shinkei/32624-mechanical-engineer?page=5
-     JOB Electrical Engineer | N/A |  | https://careers.kula.ai/shinkei/32626-electrical-engineer?page=5
-     JOB Test Operations Technician | N/A |  | https://careers.kula.ai/shinkei/32631-test-operations-technician?page=5
-     JOB Strategy And Operations Analyst | N/A |  | https://careers.kula.ai/shinkei/35453-strategy-and-operations-analyst?page=5
-     JOB Manufacturing Finance Inventory Operations Manager | N/A |  | https://careers.kula.ai/shinkei/48950-manufacturing-finance-inventory-operations-manager?page=5
-     JOB Test Engineer | N/A |  | https://careers.kula.ai/shinkei/50714-test-engineer?page=5
-     JOB Technical Talent Partner | N/A |  | https://careers.kula.ai/shinkei/51542-technical-talent-partner?page=5
-     JOB Mechanical Engineering Intern Associate Engineer | N/A |  | https://careers.kula.ai/shinkei/51937-mechanical-engineering-intern-associate-engineer?page=5
-     JOB Manufacturing Technician Mid Level | N/A |  | https://careers.kula.ai/shinkei/51940-manufacturing-technician-mid-level?page=5
-     JOB Software Engineer Robotics | N/A |  | https://careers.kula.ai/shinkei/53228-software-engineer-robotics?page=5
-     JOB Software Engineer Fullstack | N/A |  | https://careers.kula.ai/shinkei/53417-software-engineer-fullstack?page=5
-     JOB Manufacturing Technician Junior Entry Level | N/A |  | https://careers.kula.ai/shinkei/54853-manufacturing-technician-junior-entry-level?page=5
-     JOB New Product Commercialization Manager | N/A |  | https://careers.kula.ai/shinkei/34690-new-product-commercialization-manager?page=5
-     JOB Product Innovation Manager | N/A |  | https://careers.kula.ai/shinkei/52268-product-innovation-manager?page=5
-     JOB Regional Sales Manager Remote | N/A |  | https://careers.kula.ai/shinkei/54521-regional-sales-manager-remote?page=5
-     JOB Regional Sales Director Remote | N/A |  | https://careers.kula.ai/shinkei/54855-regional-sales-director-remote?page=5
-     JOB Mechanical Engineer | N/A |  | https://careers.kula.ai/shinkei/32624-mechanical-engineer?page=6
-     JOB Electrical Engineer | N/A |  | https://careers.kula.ai/shinkei/32626-electrical-engineer?page=6
-     JOB Test Operations Technician | N/A |  | https://careers.kula.ai/shinkei/32631-test-operations-technician?page=6
-     JOB Strategy And Operations Analyst | N/A |  | https://careers.kula.ai/shinkei/35453-strategy-and-operations-analyst?page=6
-     JOB Manufacturing Finance Inventory Operations Manager | N/A |  | https://careers.kula.ai/shinkei/48950-manufacturing-finance-inventory-operations-manager?page=6
-     JOB Test Engineer | N/A |  | https://careers.kula.ai/shinkei/50714-test-engineer?page=6
-     JOB Technical Talent Partner | N/A |  | https://careers.kula.ai/shinkei/51542-technical-talent-partner?page=6
-     JOB Mechanical Engineering Intern Associate Engineer | N/A |  | https://careers.kula.ai/shinkei/51937-mechanical-engineering-intern-associate-engineer?page=6
-     JOB Manufacturing Technician Mid Level | N/A |  | https://careers.kula.ai/shinkei/51940-manufacturing-technician-mid-level?page=6
-     JOB Software Engineer Robotics | N/A |  | https://careers.kula.ai/shinkei/53228-software-engineer-robotics?page=6
-     JOB Software Engineer Fullstack | N/A |  | https://careers.kula.ai/shinkei/53417-software-engineer-fullstack?page=6
-     JOB Manufacturing Technician Junior Entry Level | N/A |  | https://careers.kula.ai/shinkei/54853-manufacturing-technician-junior-entry-level?page=6
-     JOB New Product Commercialization Manager | N/A |  | https://careers.kula.ai/shinkei/34690-new-product-commercialization-manager?page=6
-     JOB Product Innovation Manager | N/A |  | https://careers.kula.ai/shinkei/52268-product-innovation-manager?page=6
-     JOB Regional Sales Manager Remote | N/A |  | https://careers.kula.ai/shinkei/54521-regional-sales-manager-remote?page=6
-     JOB Regional Sales Director Remote | N/A |  | https://careers.kula.ai/shinkei/54855-regional-sales-director-remote?page=6
-     JOB Mechanical Engineer | N/A |  | https://careers.kula.ai/shinkei/32624-mechanical-engineer?page=7
-     JOB Electrical Engineer | N/A |  | https://careers.kula.ai/shinkei/32626-electrical-engineer?page=7
-     JOB Test Operations Technician | N/A |  | https://careers.kula.ai/shinkei/32631-test-operations-technician?page=7
-     JOB Strategy And Operations Analyst | N/A |  | https://careers.kula.ai/shinkei/35453-strategy-and-operations-analyst?page=7
-     JOB Manufacturing Finance Inventory Operations Manager | N/A |  | https://careers.kula.ai/shinkei/48950-manufacturing-finance-inventory-operations-manager?page=7
-     JOB Test Engineer | N/A |  | https://careers.kula.ai/shinkei/50714-test-engineer?page=7
-     JOB Technical Talent Partner | N/A |  | https://careers.kula.ai/shinkei/51542-technical-talent-partner?page=7
-     JOB Mechanical Engineering Intern Associate Engineer | N/A |  | https://careers.kula.ai/shinkei/51937-mechanical-engineering-intern-associate-engineer?page=7
-     JOB Manufacturing Technician Mid Level | N/A |  | https://careers.kula.ai/shinkei/51940-manufacturing-technician-mid-level?page=7
-     JOB Software Engineer Robotics | N/A |  | https://careers.kula.ai/shinkei/53228-software-engineer-robotics?page=7
-     JOB Software Engineer Fullstack | N/A |  | https://careers.kula.ai/shinkei/53417-software-engineer-fullstack?page=7
-     JOB Manufacturing Technician Junior Entry Level | N/A |  | https://careers.kula.ai/shinkei/54853-manufacturing-technician-junior-entry-level?page=7
-     JOB New Product Commercialization Manager | N/A |  | https://careers.kula.ai/shinkei/34690-new-product-commercialization-manager?page=7
-     JOB Product Innovation Manager | N/A |  | https://careers.kula.ai/shinkei/52268-product-innovation-manager?page=7
-     JOB Regional Sales Manager Remote | N/A |  | https://careers.kula.ai/shinkei/54521-regional-sales-manager-remote?page=7
-     JOB Regional Sales Director Remote | N/A |  | https://careers.kula.ai/shinkei/54855-regional-sales-director-remote?page=7
-     JOB Mechanical Engineer | N/A |  | https://careers.kula.ai/shinkei/32624-mechanical-engineer?page=8
-     JOB Electrical Engineer | N/A |  | https://careers.kula.ai/shinkei/32626-electrical-engineer?page=8
-     JOB Test Operations Technician | N/A |  | https://careers.kula.ai/shinkei/32631-test-operations-technician?page=8
-     JOB Strategy And Operations Analyst | N/A |  | https://careers.kula.ai/shinkei/35453-strategy-and-operations-analyst?page=8
-     JOB Manufacturing Finance Inventory Operations Manager | N/A |  | https://careers.kula.ai/shinkei/48950-manufacturing-finance-inventory-operations-manager?page=8
-     JOB Test Engineer | N/A |  | https://careers.kula.ai/shinkei/50714-test-engineer?page=8
-     JOB Technical Talent Partner | N/A |  | https://careers.kula.ai/shinkei/51542-technical-talent-partner?page=8
-     JOB Mechanical Engineering Intern Associate Engineer | N/A |  | https://careers.kula.ai/shinkei/51937-mechanical-engineering-intern-associate-engineer?page=8
-     JOB Manufacturing Technician Mid Level | N/A |  | https://careers.kula.ai/shinkei/51940-manufacturing-technician-mid-level?page=8
-     JOB Software Engineer Robotics | N/A |  | https://careers.kula.ai/shinkei/53228-software-engineer-robotics?page=8
-     JOB Software Engineer Fullstack | N/A |  | https://careers.kula.ai/shinkei/53417-software-engineer-fullstack?page=8
-     JOB Manufacturing Technician Junior Entry Level | N/A |  | https://careers.kula.ai/shinkei/54853-manufacturing-technician-junior-entry-level?page=8
-     JOB New Product Commercialization Manager | N/A |  | https://careers.kula.ai/shinkei/34690-new-product-commercialization-manager?page=8
-     JOB Product Innovation Manager | N/A |  | https://careers.kula.ai/shinkei/52268-product-innovation-manager?page=8
-     JOB Regional Sales Manager Remote | N/A |  | https://careers.kula.ai/shinkei/54521-regional-sales-manager-remote?page=8
-     JOB Regional Sales Director Remote | N/A |  | https://careers.kula.ai/shinkei/54855-regional-sales-director-remote?page=8
-     JOB Mechanical Engineer | N/A |  | https://careers.kula.ai/shinkei/32624-mechanical-engineer?page=9
-     JOB Electrical Engineer | N/A |  | https://careers.kula.ai/shinkei/32626-electrical-engineer?page=9
-     JOB Test Operations Technician | N/A |  | https://careers.kula.ai/shinkei/32631-test-operations-technician?page=9
-     JOB Strategy And Operations Analyst | N/A |  | https://careers.kula.ai/shinkei/35453-strategy-and-operations-analyst?page=9
-     JOB Manufacturing Finance Inventory Operations Manager | N/A |  | https://careers.kula.ai/shinkei/48950-manufacturing-finance-inventory-operations-manager?page=9
-     JOB Test Engineer | N/A |  | https://careers.kula.ai/shinkei/50714-test-engineer?page=9
-     JOB Technical Talent Partner | N/A |  | https://careers.kula.ai/shinkei/51542-technical-talent-partner?page=9
-     JOB Mechanical Engineering Intern Associate Engineer | N/A |  | https://careers.kula.ai/shinkei/51937-mechanical-engineering-intern-associate-engineer?page=9
-     JOB Manufacturing Technician Mid Level | N/A |  | https://careers.kula.ai/shinkei/51940-manufacturing-technician-mid-level?page=9
-     JOB Software Engineer Robotics | N/A |  | https://careers.kula.ai/shinkei/53228-software-engineer-robotics?page=9
-     JOB Software Engineer Fullstack | N/A |  | https://careers.kula.ai/shinkei/53417-software-engineer-fullstack?page=9
-     JOB Manufacturing Technician Junior Entry Level | N/A |  | https://careers.kula.ai/shinkei/54853-manufacturing-technician-junior-entry-level?page=9
-     JOB New Product Commercialization Manager | N/A |  | https://careers.kula.ai/shinkei/34690-new-product-commercialization-manager?page=9
-     JOB Product Innovation Manager | N/A |  | https://careers.kula.ai/shinkei/52268-product-innovation-manager?page=9
-     JOB Regional Sales Manager Remote | N/A |  | https://careers.kula.ai/shinkei/54521-regional-sales-manager-remote?page=9
-     JOB Regional Sales Director Remote | N/A |  | https://careers.kula.ai/shinkei/54855-regional-sales-director-remote?page=9
-     JOB Mechanical Engineer | N/A |  | https://careers.kula.ai/shinkei/32624-mechanical-engineer?page=10
-     JOB Electrical Engineer | N/A |  | https://careers.kula.ai/shinkei/32626-electrical-engineer?page=10
-     JOB Test Operations Technician | N/A |  | https://careers.kula.ai/shinkei/32631-test-operations-technician?page=10
-     JOB Strategy And Operations Analyst | N/A |  | https://careers.kula.ai/shinkei/35453-strategy-and-operations-analyst?page=10
-     JOB Manufacturing Finance Inventory Operations Manager | N/A |  | https://careers.kula.ai/shinkei/48950-manufacturing-finance-inventory-operations-manager?page=10
-     JOB Test Engineer | N/A |  | https://careers.kula.ai/shinkei/50714-test-engineer?page=10
-     JOB Technical Talent Partner | N/A |  | https://careers.kula.ai/shinkei/51542-technical-talent-partner?page=10
-     JOB Mechanical Engineering Intern Associate Engineer | N/A |  | https://careers.kula.ai/shinkei/51937-mechanical-engineering-intern-associate-engineer?page=10
-     JOB Manufacturing Technician Mid Level | N/A |  | https://careers.kula.ai/shinkei/51940-manufacturing-technician-mid-level?page=10
-     JOB Software Engineer Robotics | N/A |  | https://careers.kula.ai/shinkei/53228-software-engineer-robotics?page=10
-     JOB Software Engineer Fullstack | N/A |  | https://careers.kula.ai/shinkei/53417-software-engineer-fullstack?page=10
-     JOB Manufacturing Technician Junior Entry Level | N/A |  | https://careers.kula.ai/shinkei/54853-manufacturing-technician-junior-entry-level?page=10
-     JOB New Product Commercialization Manager | N/A |  | https://careers.kula.ai/shinkei/34690-new-product-commercialization-manager?page=10
-     JOB Product Innovation Manager | N/A |  | https://careers.kula.ai/shinkei/52268-product-innovation-manager?page=10
-     JOB Regional Sales Manager Remote | N/A |  | https://careers.kula.ai/shinkei/54521-regional-sales-manager-remote?page=10
-     JOB Regional Sales Director Remote | N/A |  | https://careers.kula.ai/shinkei/54855-regional-sales-director-remote?page=10
+sites: 99 raw: 408 kept: 408
+  AMD: 1
+  AMETEK: 69
+  ASSA ABLOY: 10
+  ATS Automation: 16
+  Apple: 1
+  AprilAire: 4
+  Atlas Copco: 2
+  Audubon: 37
+  Bosch: 5
+  Calista/Yulista: 1
+  Cummins: 2
+  Dana Inc: 14
+  EwingCole: 10
+  Figure: 6
+  Formlabs: 35
+  Hargrove EPC: 4
+  Hendrickson: 17
+  Hyundai: 2
+  Insulet: 2
+  JTEKT North America: 11
+  Jordan & Skala Engineers: 2
+  Legence: 1
+  Lincoln Electric: 13
+  Linewise: 1
+  Lunar Energy: 6
+  Mariana Minerals: 6
+  Matic Robots: 7
+  Panasonic: 21
+  Quantum Computing Inc: 15
+  Schaeffler: 49
+  Scout Motors: 1
+  Shinkei: 3
+  Siemens Energy: 4
+  Taylor: 1
+  Tenneco: 8
+  Terex: 1
+  The Boring Company: 10
+  Vantedge Medical: 6
+  Xylem: 4
+ISSUES 16
+  Failed | Fellow Products | 'HTTP 404 from https://boards-api.greenhouse.io/v1/boards/fellowproducts/jobs'
+  Failed | SSOE Group | 'HTTP 405 when loading https://careers-ssoe.icims.com/jobs/search?ss=1&searchSortField=postedDate&searchSortDirection=desc&pr=1'
+  Failed | Marvin | 'HTTP 405 when loading https://careers-marvin.icims.com/jobs/search?searchSortField=postedDate&searchSortDirection=desc&pr=1'
+  Failed | EMCOR Group | 'HTTP 405 when loading https://careers-emcorgroup.icims.com/jobs/search?ss=1&searchSortField=postedDate&searchSortDirection=desc&pr=1'
+  Partial | Dyno Nobel | 'Page loaded but no job listings were found on it (site layout may have changed)'
+  Failed | Nokia | 'Bad/unreadable response from https://jobs.nokia.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions (JSONDecodeError: Expecting value: line 1 '
+  Failed | Fresenius Medical Care | 'HTTP 404 when loading https://jobs.freseniusmedicalcare.com/search/?q=intern&sortColumn=referencedate&sortDirection=desc&startrow=0\nHTTP 404 when load'
+  Failed | AECOM | 'HTTP 404 when loading https://aecom.jobs/search/?q=intern&sortColumn=referencedate&sortDirection=desc&startrow=0\nHTTP 404 when loading https://aecom.j'
+  Failed | Tesla | 'HTTP 403 when loading page 1 (https://www.tesla.com/careers/search/?region=5&site=US&query=intern)'
+  Failed | Altec | 'HTTP 403 when loading page 1 (https://jobs.altec.com/search/intern/jobs/within/50/miles?location_country=United+States)'
+  Timed out | Eaton | 'Did not finish within 180 seconds; jobs from this site may be missing.'
+  Timed out | Volvo Group | 'Did not finish within 180 seconds; jobs from this site may be missing.'
+  Timed out | Agility Robotics | 'Did not finish within 180 seconds; jobs from this site may be missing.'
+  Failed | WSP | 'HTTP 403 when loading page 1 (https://www.wsp.com/en-us/careers/job-opportunities?country=US)'
+  Failed | CIRTEC Medical | 'HTTP 403 when loading page 1 (https://cirteccareers.ttcportals.com/search/jobs?q=intern)'
+  Failed | Pelican Energy Consultants | 'Page loaded but its ADP job list never appeared (site layout may have changed)'
