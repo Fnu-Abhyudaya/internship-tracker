@@ -94,6 +94,23 @@ def _build_paginated_url(base_url: str, page_num: int) -> str:
     return f"{base_url}{sep}page={page_num}"
 
 
+GENERIC_LINK_TEXT = {
+    'apply', 'apply now', 'apply here', 'view job', 'view', 'details',
+    'view details', 'learn more', 'read more', 'more', 'see more',
+    'job details', 'more info', 'view position', 'see details',
+}
+
+
+def _title_from_slug(href: str) -> str:
+    """Turn '/acme/51937-mechanical-engineering-intern' into a title."""
+    last = href.split('?')[0].rstrip('/').split('/')[-1]
+    last = re.sub(r'^\d+[-_]', '', last)
+    words = [w for w in re.split(r'[-_]+', last) if w]
+    if len(words) < 2 or all(w.isdigit() for w in words):
+        return ''
+    return ' '.join(w.capitalize() for w in words)
+
+
 class PlaywrightScraper(BaseScraper):
     def __init__(self, company_name, base_url,
                  wait_selector=None,
@@ -248,18 +265,19 @@ class PlaywrightScraper(BaseScraper):
 
         soup = BeautifulSoup(html, 'lxml')
 
+        # ' i' = case-insensitive (e.g. Paylocity uses /Jobs/Details/)
         selectors = [
-            'a[href*="/job/"]',
-            'a[href*="/jobs/"]',
-            'a[href*="/career"]',
-            'a[href*="/position"]',
-            'a[href*="/opening"]',
-            'a[href*="JobDetail"]',
-            'a[href*="job-details"]',
-            'a[href*="requisition"]',
-            'a[href*="JobReq"]',
-            'a[href*="?id="]',
-            'a[href*="jobId"]',
+            'a[href*="/job/" i]',
+            'a[href*="/jobs/" i]',
+            'a[href*="/career" i]',
+            'a[href*="/position" i]',
+            'a[href*="/opening" i]',
+            'a[href*="JobDetail" i]',
+            'a[href*="job-details" i]',
+            'a[href*="requisition" i]',
+            'a[href*="JobReq" i]',
+            'a[href*="?id=" i]',
+            'a[href*="jobId" i]',
         ]
 
         all_links = []
@@ -280,6 +298,8 @@ class PlaywrightScraper(BaseScraper):
                 continue
 
             title = clean_text(link.get_text())
+            if title.lower().strip(' >→›»') in GENERIC_LINK_TEXT:
+                title = ''
             parent = link.find_parent(
                 ['div', 'li', 'article', 'tr']
             )
@@ -294,6 +314,8 @@ class PlaywrightScraper(BaseScraper):
                         title = clean_text(t_el.get_text())
                         break
 
+            if not title or len(title) < 3:
+                title = _title_from_slug(href)
             if not title or len(title) < 3:
                 continue
 

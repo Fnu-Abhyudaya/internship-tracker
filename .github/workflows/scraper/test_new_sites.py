@@ -1,46 +1,47 @@
-"""TEMPORARY diagnostics round 2: ADP data feeds + EPTA Oracle."""
-import asyncio, json, re, aiohttp
-from .scrapers.playwright_scraper import get_browser, shutdown_browser
-UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
-PAGES = {
- 'Hendrickson': 'https://myjobs.adp.com/hendrickson/cx/job-listing',
- 'Pelican': 'https://www.pelicanenergy.com/careers-employment',
-}
+"""TEMPORARY: test new + fixed sites with filters relaxed."""
+import asyncio, json
+from .scrapers import greenhouse_scraper, workday_scraper, oracle_scraper, adp_scraper
+from .scrapers.company_configs import get_all_scrapers
+from .scrapers.playwright_scraper import shutdown_browser
+
+for m in (greenhouse_scraper, workday_scraper, oracle_scraper):
+    m.is_within_last_24_hours = lambda *_: True
+_orig = adp_scraper.ADPScraper._to_posting
+_shown = set()
+def _peek(self, job, feed):
+    if self.company_name not in _shown:
+        _shown.add(self.company_name)
+        print(f'KEYS {self.company_name}: {sorted(job.keys())}')
+        print(f'SAMPLE {self.company_name}: {json.dumps(job)[:700]}')
+    return _orig(self, job, feed)
+adp_scraper.ADPScraper._to_posting = _peek
+
+NEW = {'Insulet', 'Figure', 'DMC Engineering', 'Vast', 'EPTA Refrigeration',
+       'Landis+Gyr', 'Modine', 'Lincoln Electric', 'Shinkei',
+       'Jordan & Skala Engineers', 'JTEKT North America',
+       'Pelican Energy Consultants', 'AprilAire', 'EwingCole', 'Hendrickson',
+       'Audubon', 'Linewise', 'Bosch', 'Quantum Computing Inc', 'Panasonic',
+       'Formlabs', 'Eaton', 'Nokia', 'Centrus Energy', 'Vantedge Medical'}
 
 async def main():
-    b = await get_browser()
-    for name, url in PAGES.items():
-        ctx = await b.new_context(user_agent=UA)
-        pg = await ctx.new_page()
-        caught = []
-        async def on_resp(r):
-            ct = r.headers.get('content-type', '')
-            if 'json' in ct and r.request.resource_type in ('xhr', 'fetch'):
-                try:
-                    body = await r.text()
-                except Exception:
-                    body = ''
-                caught.append((r.request.method, r.url, r.status, body))
-        pg.on('response', on_resp)
-        await pg.goto(url, wait_until='domcontentloaded', timeout=45000)
-        await pg.wait_for_timeout(10000)
-        print(f'\n==== {name}')
-        for m, u, st, body in caught:
-            print(f'XHR {m} {st} {u[:200]} len={len(body)}')
-            if re.search(r'requisition|jobTitle|job', body, re.I) and len(body) > 500:
-                print('   BODY', body[:1500].replace('\n', ' '))
-        html = await pg.content()
-        for mt in sorted(set(re.findall(r'https?://[^"\'\s<>]*adp[^"\'\s<>]*', html)))[:15]:
-            print('ADPURL', mt[:200])
-        for f in pg.frames:
-            print('FRAME', f.url[:200])
-        await ctx.close()
+    scrapers = [s for s in get_all_scrapers() if s.company_name in NEW]
+    sem = asyncio.Semaphore(5)
+    async def one(s):
+        async with sem:
+            s.filter_internships = False
+            try:
+                return s, await asyncio.wait_for(s.run(), 240)
+            except asyncio.TimeoutError:
+                return s, None
+    out = await asyncio.gather(*(one(s) for s in scrapers))
     await shutdown_browser()
-    api = ('https://fa-eukp-saasfaprod1.fa.ocs.oraclecloud.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions'
-           '?onlyData=true&expand=requisitionList&finder=findReqs;siteNumber=CX_1,keyword=engineer,sortBy=POSTING_DATES_DESC&limit=5')
-    async with aiohttp.ClientSession(headers={'User-Agent': UA}) as s:
-        async with s.get(api) as r:
-            t = await r.text()
-            print('\n==== EPTA', r.status, t[:2500].replace('\n', ' '))
+    print('\n######## RESULTS ########')
+    for s, res in sorted(out, key=lambda x: x[0].company_name):
+        n = 'TIMEOUT' if res is None else len(res)
+        print(f'@@ {s.company_name} | {type(s).__name__} | jobs={n} | pages_ok={s.pages_ok} | errors={len(s.errors)}')
+        for e in list(dict.fromkeys(s.errors))[:2]:
+            print(f'     ERR {e}')
+        for r in (res or [])[:3]:
+            print(f'     JOB {r.title[:60]} | {r.location} | {r.date_posted} | {r.url[:100]}')
 
 asyncio.run(main())

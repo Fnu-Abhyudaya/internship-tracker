@@ -38,6 +38,7 @@ class OracleHCMScraper(BaseScraper):
             )
             params = {
                 'onlyData': 'true',
+                'expand': 'requisitionList',
                 'finder': finder,
                 'limit': PAGE_SIZE,
                 'offset': offset,
@@ -50,7 +51,14 @@ class OracleHCMScraper(BaseScraper):
             items = data.get('items', [])
             if items and isinstance(items[0], dict) and \
                     'requisitionList' in items[0]:
-                items = items[0].get('requisitionList', [])
+                items = items[0].get('requisitionList') or []
+            elif items and isinstance(items[0], dict) and \
+                    'SearchId' in items[0]:
+                # Search summary without the job list - treat as a failure
+                self.record_error(
+                    "Oracle returned a search summary but no job list"
+                )
+                break
 
             if not items:
                 break
