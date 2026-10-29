@@ -320,6 +320,10 @@ class PlaywrightScraper(BaseScraper):
                 continue
 
             job_url = normalize_url(current_url, href)
+            # Some sites copy the listing's ?page=N onto every job link;
+            # strip it so the same job isn't counted once per page.
+            job_url = re.sub(r'([?&])page=\d+&?', r'\1', job_url)
+            job_url = job_url.rstrip('?&')
             if job_url in seen:
                 continue
             seen.add(job_url)

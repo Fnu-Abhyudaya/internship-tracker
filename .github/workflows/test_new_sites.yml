@@ -18,5 +18,5 @@ jobs:
       - run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -f test_results.txt test_stderr.txt
+          git add -f test_results.txt test_stderr.txt dry_run.xlsx
           git commit -m "test results [skip ci]" && git push

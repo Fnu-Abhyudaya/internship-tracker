@@ -252,7 +252,7 @@ def get_all_scrapers() -> List[BaseScraper]:
         {'company': 'Linewise',
          'url': 'https://linewise.io/careers/'},
         {'company': 'Bosch',
-         'url': 'https://jobs.bosch.com/en/?country=us'},
+         'url': 'https://jobs.bosch.com/en/?country=us&pages=10'},
         {'company': 'Quantum Computing Inc',
          'url': 'https://quantum-computing-inc.alphastaff-hiring.com/'},
         {'company': 'Panasonic',
