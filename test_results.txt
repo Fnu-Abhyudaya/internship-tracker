@@ -1,74 +1,105 @@
+KEYS Pelican Energy Consultants: ['clientRequisitionID', 'customFieldGroup', 'itemID', 'links', 'organizationalUnits', 'postDate', 'postingInstructions', 'requisitionLocations', 'requisitionTitle', 'screeningRequirements', 'sponsoredVisaTypeCodes', 'workLevelCode']
+SAMPLE Pelican Energy Consultants: {"itemID": "9205503237370_1", "postingInstructions": [], "links": [], "clientRequisitionID": "1247", "customFieldGroup": {"dateFields": [{"dateValue": "2026-10-09T14:08Z", "nameCode": {"codeValue": "PostingDate"}}, {"dateValue": "2026-10-29T00:22Z", "nameCode": {"codeValue": "CurrentServerDateTime"}}], "indicatorFields": [{"indicatorValue": false, "nameCode": {"codeValue": "PriortyStatusFlag"}}, {"indicatorValue": false, "nameCode": {"codeValue": "InternalPostingFlag"}}, {"indicatorValue": true, "nameCode": {"codeValue": "MinValue"}}, {"indicatorValue": true, "nameCode": {"codeValue": "IsVsidApplicable"}}, {"indicatorValue": false, "nameCode": {"codeValue": "IsSassDlReqForExtPostFlag"}}, {"i
+KEYS Audubon: ['canApply', 'careerSiteDomains', 'clientRequisitionID', 'easyApplyEnabled', 'gridControl', 'jobDescription', 'jobTitle', 'organizationalUnits', 'postingLocations', 'publishedJobTitle', 'reqId', 'requisitionLocations', 'type', 'workLevelCode', 'workLocations']
+SAMPLE Audubon: {"organizationalUnits": [], "workLocations": [], "postingLocations": [], "requisitionLocations": [{"itemID": "5000003689306", "address": {"country": {"codeValue": "USA", "longName": "United States"}, "cityName": "Metairie", "postalCode": "70005", "lineOne": "111 Veterans Blvd. Suite 1200", "countrySubdivisionLevel1": {"codeValue": "LA", "longName": "Louisiana"}, "geoCoordinate": {"latitude": 30.083764, "longitude": -90.126831}}, "nameCode": {"codeValue": "ME", "longName": "Metairie, LA"}, "postingIndicator": true, "primaryIndicator": true}], "careerSiteDomains": ["auduboncorporatecareers"], "jobDescription": "<p><span>Audubon is seeking a Senior Instrument Engineer in our Metairie, LA office
+KEYS Hendrickson: ['canApply', 'careerSiteDomains', 'clientRequisitionID', 'easyApplyEnabled', 'gridControl', 'jobDescription', 'jobTitle', 'organizationalUnits', 'postingLocations', 'publishedJobTitle', 'reqId', 'requisitionLocations', 'type', 'workLevelCode', 'workLocations']
+SAMPLE Hendrickson: {"organizationalUnits": [], "workLocations": [], "postingLocations": [], "requisitionLocations": [{"itemID": "5000035880406", "address": {"country": {"codeValue": "USA", "longName": "United States"}, "cityName": "Lebanon", "postalCode": "46052", "lineOne": "180 Mt. Zion Road", "countrySubdivisionLevel1": {"codeValue": "IN", "longName": "Indiana"}, "geoCoordinate": {"latitude": 40.043462, "longitude": -86.463222}}, "nameCode": {"codeValue": "10006", "longName": "Lebanon IN"}, "postingIndicator": true, "primaryIndicator": true}], "careerSiteDomains": ["hendrickson"], "jobDescription": "<p><strong>Position Purpose</strong></p>\n<p>Proactive maintenance of accounting functions at plant locations
 
-==== Hendrickson
-XHR GET 200 https://synerg.adp.com/data/keys.json len=827
-XHR GET 200 https://synerg.adp.com/themes/one/manifest-5.56.1.json len=16568
-XHR GET 200 https://synerg.adp.com/themes/one/icon-map.a0ba312e91.json len=285982
-XHR GET 200 https://synerg.adp.com/themes/one/illustration-map.d05ebce372.json len=8409
-XHR GET 200 https://myjobs.adp.com/public/staffing/v1/career-site/hendrickson len=3447
-   BODY {"id":"a123c21c-5916-4aac-92f3-0a0e48eb20a1","name":"H - US External CS","domain":"hendrickson","isMyJobsEnabled":true,"isSignOutEnabled":true,"isReferAfriendEnabled":true,"isTalentCommunityEnabled":true,"isOtpLoginEnabled":false,"directToAppGrid":false,"isiClientId":"hendricyip","clientName":"Boler, Hendrickson, Anchor Harvey","orgoid":"G3A8AB9RF8RWY9M7","settings":{"themeId":"","externalId":"452839","externalDomain":"H-USecs","bbqVersion":"","customJobDetailsFields":[],"enabledFeatures":{"AckPrivacyStatement":true,"addStateSearchFilter":true,"allowImageTypes":true,"candidateApplicationWorkflow":true,"candidateProfile":true,"candidateProfileAboutMe":true,"candidateProfileMyJobs":true,"chooseVerificationMethod":true,"customJobDetails":true,"customJobFilters":true,"cxFeatureGuards":true,"cxSettings":true,"deleteCareerSite":true,"enableCxDocuments":true,"enableCxGoogleTagManager":true,"enableCxToken":true,"evergreenMultilocationsEnabled":true,"hideJobDetailsMultiLoc":true,"hideSocialLogins":true,"honorEGRMPostingFlag":true,"honorRMPostingFlag":true,"isFooterV2Enabled":true,"multiLingualSearch":true,"notifyMe":true,"referAFriend":true,"resultsFieldsRedesign":true,"rightToBeForgotten":true,"showAITransparencyLink":true,"showEnglishOnlyCharactersTooltip":true,"showVirtualFields":true,"similarJobs":true,"skillsCuration":true,"taskListView":true},"careerSiteType":"External"},"active":true,"hideDaysPosted":true,"links":[{"rel":"self","href":"/public/staffing/v1/career-site/hendrickso
-XHR GET 200 https://myjobs.adp.com/public/core/v1/client?appId=cx len=1122
-   BODY {"name":"Boler, Hendrickson, Anchor Harvey","myadp_alias":"e692ea6e-7272-461f-81dc-e81104e7648c","orgoid":"G3A8AB9RF8RWY9M7","pod":"RMPOD4","products":["ADP4ME","ADPBINVMNG","ADPFACS","ADPFedSSO","ADPI","ADPI","ADPRECRUIT","BackgroundChecking","CRT","CRT","DVS","DashCallCenter","ECE","EeT","GL","GLI","GPC","HWSE","Lifion","MFT","MFT","MFT","NASPortal","RDBX","RDBX","RDBX","RDBX","RDBX","RDBX","TMS","TPiNet","TaxCredits","eI9","eI9","iPay","iReports"],"locales":["en-US"],"links":[{"rel":"returnSOR","href":"https://recruiting.adp.com"},{"rel":"otpLogin","href":"https://recruiting.adp.com/srccar/public/rest/1/:site-id/login/myjobs/authenticate"},{"rel":"srccar","href":"https://recruiting.adp.com/srccar/public/nghome.guid?c=2208639&ncsp={context}&d={domain}"},{"rel":"apply","href":"https://recruiting.adp.com/srccar/public/nghome.guid?c=2208639&ncsp={context}&d={domain}&r={reqId}&sc={externalId}&cx=continue_application&_reqID={reqId}&myjobs=true"},{"rel":"appUI","href":"https://recruiting.adp.com/srccar/public/nghome.guid?appUI=true&c=2208639&ncsp={context}&d={domain}&sc={externalId}"}],"activeCareerSites":16}
-XHR GET 200 https://my.adp.com/myadp_prefix/mycareer/public/api/rm/staffing/v1/client-configuration/careersite/setting-categories/CX/settings?rmapp=cxsa&languageID=enUS len=183304
-   BODY {"cxSettings":{"settings":[],"categoryCode":{"code":"CX"},"settingSubCategories":[{"settings":[],"categoryCode":{"code":"CX.AGENT"}},{"settings":[{"settingValue":[""],"settingID":"CX.BRANDING.appliedImage","settingName":"appliedImage"},{"settingValue":[""],"settingID":"CX.BRANDING.appliedImageAltText","settingName":"appliedImageAltText"},{"settingValue":[""],"settingID":"CX.BRANDING.bannerAltText","settingName":"bannerAltText"},{"settingValue":[""],"settingID":"CX.BRANDING.bannerContent","settingName":"bannerContent"},{"settingValue":[""],"settingID":"CX.BRANDING.bannerType","settingName":"bannerType"},{"settingValue":[1441939],"settingID":"CX.BRANDING.candidateProfileComponentID","settingName":"candidateProfileComponentID"},{"settingValue":["hendrickson"],"settingID":"CX.BRANDING.domain","settingName":"domain"},{"settingValue":[0],"settingID":"CX.BRANDING.generalReferralDefaultPolicyID","settingName":"generalReferralDefaultPolicyID"},{"settingValue":[""],"settingID":"CX.BRANDING.generalReferralLinkDefaultStatus","settingName":"generalReferralLinkDefaultStatus"},{"settingValue":[0],"settingID":"CX.BRANDING.generalReferralSystemReqID","settingName":"generalReferralSystemReqID"},{"settingValue":["https://myjobs.cf.adp.com/admin-config/assets/G3A8AB9RF8RWY9M7/452839/485ef671-1d59-494d-a69e-5000be70cc7d/Hendrickson Company Logo Red.png?id\u003dc93932f3-0ab7-4200-8e2d-11afe231dc94"],"settingID":"CX.BRANDING.headerLogo","settingName":"headerLogo"},{"settingValue":[""],"settingID":"
-XHR GET 200 https://firebase.googleapis.com/v1alpha/projects/-/apps/1:825950710244:web:e5c4b2bdfae2f600ddfff1/webConfig len=401
-XHR POST 200 https://firebaseinstallations.googleapis.com/v1/projects/api-project-825950710244/installations len=626
-XHR GET 200 https://cdn.cookielaw.org/consent/019f5c13-d395-717b-ae36-9fb1b8596b7c/019f5c13-d395-717b-ae36-9fb1b8596b7c.json len=5789
-   BODY {"CookieSPAEnabled":false,"CookieSameSiteNoneEnabled":false,"CookieV2CSPEnabled":false,"MultiVariantTestingEnabled":false,"UseV2":true,"MobileSDK":false,"SkipGeolocation":false,"ScriptType":"PRODUCTION","Version":"202608.1.0","OptanonDataJSON":"019f5c13-d395-717b-ae36-9fb1b8596b7c","GeolocationUrl":"https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location","BulkDomainCheckUrl":"https://cookies-data.onetrust.io/bannersdk/v1/domaingroupcheck","RuleSet":[{"Id":"01a0485c-bb07-7680-973d-609a43be93b6","Name":"ESI/Canada (EU Included) Rule","Countries":["no","de","fi","be","pt","bg","jp","dk","lt","lu","lv","hr","fr","hu","se","mc","si","sk","mf","sm","gb","yt","ie","ca","gf","ee","ad","mq","ch","mt","gp","is","cn","gr","it","es","re","at","cy","cz","ax","pl","ro","li","nl"],"States":{"us":["fl","pa","ca"]},"LanguageSwitcherPlaceholder":{"es-hn":"es-hn","de":"de","en-ie":"en-ie","en-us":"en-us","en-ca":"en-ca","pt":"pt","en-in":"en-in","en-za":"en-za","fr":"fr","nl-be":"nl-be","de-at":"de-at","default":"en","fr-ch":"fr-ch","es-us":"es-us","en-au":"en-au","de-ch":"de-ch","de-de":"de-de","pt-br":"pt-br","zh-hans":"zh-hans","es-uy":"es-uy","es-es":"es-es","es-ve":"es-ve","es-cr":"es-cr","it":"it","es-cl":"es-cl","es-mx":"es-mx","es":"es","fr-ca":"fr-ca","zh":"zh","es-co":"es-co","es-pe":"es-pe","it-it":"it-it","en-nz":"en-nz","pt-pt":"pt-pt","es-ar":"es-ar","fr-be":"fr-be","ja":"ja","it-ch":"it-ch","pl":"pl","fr-fr":"fr-fr","en-gb":"en-gb","nl":"nl"},"BannerPushesDown":false,"
-XHR GET 200 https://my.adp.com/myadp_prefix/mycareer/public/api/rm/codelists/staffing/v3/position-seeker-management/CXLANGUAGES/adprecruit/1?rmapp=cla&$skip=0&$top=1000&tz=Africa/Abidjan len=208
-XHR POST 200 https://firebaseremoteconfig.googleapis.com/v1/projects/api-project-825950710244/namespaces/fireperf:fetch?key=AIzaSyD33BccP7A3WeqNuklfgcSSPUcfqYw0uDo len=1272
-XHR GET 200 https://geolocation.onetrust.com/cookieconsentpub/v1/geo/location len=65
-XHR GET 200 https://cdn.cookielaw.org/consent/019f5c13-d395-717b-ae36-9fb1b8596b7c/01a0485c-b9b5-7a82-b782-eda8a45a77fb/en.json len=60114
-   BODY {"DomainData":{"pclifeSpanYr":"Year","pclifeSpanYrs":"Years","pclifeSpanSecs":"A few seconds","pclifeSpanWk":"Week","pclifeSpanWks":"Weeks","pccontinueWithoutAcceptText":"Continue without Accepting","pccloseButtonType":"Icon","MainText":"Set your cookie preferences","MainInfoText":"ADP values your privacy. We provide you with this intuitive tool to help you understand what information may be collected by cookies, by whom, what cookies are used for and to give you control over how the information is being collected and used. For more information on our data policies, please visit our Privacy Statement.\n\nPlease choose whether this site may use Functional, Analytics and/or Advertising cookies, as described below.\n","AboutText":"Cookie privacy statement","AboutCookiesText":"Your Privacy","ConfirmText":"Select All","AllowAllText":"Save Settings","CookiesUsedText":"Source","CookiesDescText":"Description","AboutLink":"https://www.adp.com/about-adp/data-privacy/adp-cookie-privacy-statement.aspx","ActiveText":"Active","AlwaysActiveText":"Always Active","AlwaysInactiveText":"Always Inactive","PCShowAlwaysActiveToggle":true,"AlertNoticeText":"We use our own and third-party cookies and similar technologies to enhance and personalize your experience, analyze use of our website, and conduct marketing. For more information, please see our <a class=\"ot-cookie-policy-link\" href=https://www.adp.com/about-adp/data-privacy/adp-cookie-privacy-statement.aspx>Cookie Privacy Statement</a>","Ale
-XHR GET 200 https://cdn.cookielaw.org/scripttemplates/202608.1.0/assets/otCenterRounded.json len=15997
-XHR GET 200 https://cdn.cookielaw.org/scripttemplates/202608.1.0/assets/v2/otPcCenter.json len=74288
-XHR GET 200 https://maps.googleapis.com/maps/api/mapsjs/gen_204?csp_test=true len=3
-XHR GET 200 https://my.adp.com/myadp_prefix/mycareer/public/staffing/v1/job-requisitions/search-custom-filters?$select=reqId,jobTitle,publishedJobTitle,type,jobDescription,jobQualifications,workLocations,workLeve len=2710
-XHR GET 200 https://my.adp.com/myadp_prefix/mycareer/public/staffing/v2/career-site/hendrickson/talent-community-details?tz=Africa/Abidjan len=575
-XHR GET 200 https://my.adp.com/myadp_prefix/mycareer/public/staffing/v1/job-requisitions/apply-custom-filters?$select=reqId,jobTitle,publishedJobTitle,type,jobDescription,jobQualifications,workLocations,workLevel len=45406
-   BODY {"count":190,"jobRequisitions":[{"organizationalUnits":[],"workLocations":[],"postingLocations":[],"requisitionLocations":[{"itemID":"5000035880406","address":{"country":{"codeValue":"USA","longName":"United States"},"cityName":"Lebanon","postalCode":"46052","lineOne":"180 Mt. Zion Road","countrySubdivisionLevel1":{"codeValue":"IN","longName":"Indiana"},"geoCoordinate":{"latitude":40.043462,"longitude":-86.463222}},"nameCode":{"codeValue":"10006","longName":"Lebanon IN"},"postingIndicator":true,"primaryIndicator":true}],"careerSiteDomains":["hendrickson"],"jobDescription":"<p><strong>Position Purpose</strong></p>\n<p>Proactive maintenance of accounting functions at plant locations including day to day functions associated with inventory management and costing.  Work closely with plant manager for increased financial visibility at the plant level</p>\n<p> </p>\n<p><strong>Essential Functions</strong></p>\n<ul>\n<li>Provide financial support for capital development projects from approval to installation</li>\n<li>Responsible for accurate recording of manufacturing and overhead costs</li>\n<li>Analyzes variances, monthly operating results, and key operating measures ensuring results are accurately reported</li>\n<li>Produces daily, weekly, monthly reports of manufacturing results and performance</li>\n<li>Assists local management in identifying and implementing cost reduction opportunities</li>\n<li>Assists division accounting personnel in the monthly closing process. Records re
-ADPURL https://myjobs.adp.com/hendrickson/cx/job-listing
-ADPURL https://myjobs.cf.adp.com/
-ADPURL https://myjobs.cf.adp.com/admin-config/assets/G3A8AB9RF8RWY9M7/452839/485ef671-1d59-494d-a69e-5000be70cc7d/Hendrickson
-ADPURL https://myjobs.cf.adp.com/admin-config/assets/G3A8AB9RF8RWY9M7/452839/c234e61f-9fe3-4a32-abc5-da9d5eea54ca/Hendrickson
-ADPURL https://myjobs.cf.adp.com/assets/icons/adp-logo.svg
-ADPURL https://myjobs.cf.adp.com/main.25bc376333385060.js
-ADPURL https://myjobs.cf.adp.com/polyfills.d1049113254e70ac.js
-ADPURL https://myjobs.cf.adp.com/runtime.17f1eb4156cc6697.js
-ADPURL https://myjobs.cf.adp.com/styles.671006d3ffca3ca1.css
-ADPURL https://online.adp.com/inc/js/lib/6a8f894227f41759348779077d1e5851.js
-ADPURL https://static.adp.com/static/redbox/barbecue/4d050bf1e6677a0632d1.css
-ADPURL https://static.adp.com/static/redbox/barbecue/8271cea173587cc164be.css
-ADPURL https://static.adp.com/static/redbox/barbecue/barbecue.js
-ADPURL https://static.adp.com/static/redbox/barbecue/myadp-barbecue-loader.js?1793247495238
-ADPURL https://static.adp.com/static/redbox/ext/config/config.js
-FRAME https://myjobs.adp.com/hendrickson/cx/job-listing
-FRAME about:blank
-
-==== Pelican
-XHR POST 200 https://www.pelicanenergy.com/api/census/render-batch len=17
-XHR GET 200 https://synerg.adp.com/data/keys.json len=827
-XHR GET 200 https://synerg.adp.com/themes/one/manifest-5.56.1.json len=16568
-XHR GET 200 https://synerg.adp.com/themes/one/illustration-map.d05ebce372.json len=8409
-XHR GET 200 https://synerg.adp.com/themes/one/icon-map.a0ba312e91.json len=285982
-XHR GET 200 https://workforcenow.adp.com/mascsr/default/mdf/recwebcomponents/themes/one/manifest-26.37.0.json len=251
-XHR GET 200 https://workforcenow.adp.com/mascsr/default/careercenter/public/events/staffing/v1/job-requisitions?cid=9ecaf208-0ecb-4b01-a7fe-60095fa096a4&ccId=9203505775391_3&lang=en_US&locale=en_US&$top=6&isWidge len=11855
-   BODY {"jobRequisitions":[{"itemID":"9205503237370_1","postingInstructions":[],"links":[],"clientRequisitionID":"1247","customFieldGroup":{"dateFields":[{"dateValue":"2026-10-09T14:08Z","nameCode":{"codeValue":"PostingDate"}},{"dateValue":"2026-10-29T00:18Z","nameCode":{"codeValue":"CurrentServerDateTime"}}],"indicatorFields":[{"indicatorValue":false,"nameCode":{"codeValue":"PriortyStatusFlag"}},{"indicatorValue":false,"nameCode":{"codeValue":"InternalPostingFlag"}},{"indicatorValue":true,"nameCode":{"codeValue":"MinValue"}},{"indicatorValue":true,"nameCode":{"codeValue":"IsVsidApplicable"}},{"indicatorValue":false,"nameCode":{"codeValue":"IsSassDlReqForExtPostFlag"}},{"indicatorValue":false,"nameCode":{"codeValue":"IsSassDlReqForIntPostFlag"}},{"indicatorValue":false,"nameCode":{"codeValue":"IsMonetaryFlag"}},{"indicatorValue":false,"nameCode":{"codeValue":"IsNonMonetaryFlag"}}],"numberFields":[{"categoryCode":{"codeValue":"ApplicantCount"},"numberValue":0.0},{"categoryCode":{"codeValue":"AwardAmount"}}],"stringFields":[{"nameCode":{"codeValue":"ExternalJobID"},"stringValue":"600572"},{"nameCode":{"codeValue":"CareerCenterRefId"}},{"nameCode":{"codeValue":"GuidelineOid"}},{"nameCode":{"codeValue":"CurrencySymbolOrCode"}},{"nameCode":{"codeValue":"HomeDepartment"},"stringValue":""},{"nameCode":{"codeValue":"JobClass"},"stringValue":"Professional"}]},"organizationalUnits":[],"postDate":"2026-10-09T23:38:00","requisitionLocations":[{"address":{"cityName":"Covington","countrySubdivisi
-XHR GET 200 https://synerg.adp.com/sdfx/themes/one/manifest-5.56.1.json len=698
-ADPURL https://synerg.adp.com/config/synerg-config.js
-ADPURL https://synerg.adp.com/sdfx/config/sdfx-config.js
-ADPURL https://synerg.adp.com/sdfx/sdfx/sdfx-5.56.1.esm.js
-ADPURL https://synerg.adp.com/sdfx/themes/one/sdfx-pagination.c2c0475766.js
-ADPURL https://synerg.adp.com/synerg-web-components/circular-fonts/fonts-4d42b8671c.css
-ADPURL https://synerg.adp.com/synerg-web-components/synerg-web-components-5.56.1.esm.js
-ADPURL https://synerg.adp.com/themes/one/sdf-a11y.091ec15ade.js
-ADPURL https://synerg.adp.com/themes/one/sdf-action-menu.484e393790.js
-ADPURL https://synerg.adp.com/themes/one/sdf-alert-toaster.aa690c563c.js
-ADPURL https://synerg.adp.com/themes/one/sdf-busy-indicator.6619154db8.js
-ADPURL https://synerg.adp.com/themes/one/sdf-button.73363686bc.js
-ADPURL https://synerg.adp.com/themes/one/sdf-card-header-advanced.cf4e44d71c.js
-ADPURL https://synerg.adp.com/themes/one/sdf-card-header.c60122a1ec.js
-ADPURL https://synerg.adp.com/themes/one/sdf-close-button.af8ed06a56.js
-ADPURL https://synerg.adp.com/themes/one/sdf-floating-pane.9ffb08ef78.js
-FRAME https://www.pelicanenergy.com/careers-employment
-
-==== EPTA 200 {   "items" : [ {     "SearchId" : 1,     "Keyword" : "engineer",     "CorrectedKeyword" : null,     "UseExactKeywordFlag" : false,     "SuggestedKeyword" : null,     "ExecuteSpellCheckFlag" : true,     "Location" : null,     "LocationId" : null,     "Radius" : 0,     "RadiusUnit" : "MI",     "SelectedTitlesFacet" : null,     "SelectedCategoriesFacet" : null,     "SelectedPostingDatesFacet" : null,     "SelectedLocationsFacet" : null,     "LastSelectedFacet" : null,     "Facets" : "TITLES;LOCATIONS;LOCATION_LEVEL1;LOCATION_LEVEL2;LOCATION_LEVEL3;CATEGORIES;POSTING_DATES;WORK_LOCATIONS;FLEX_FIELDS;ORGANIZATIONS;WORKPLACE_TYPES",     "Offset" : 0,     "Limit" : 25,     "SortBy" : "POSTING_DATES_DESC",     "TotalJobsCount" : 22,     "Latitude" : null,     "Longitude" : null,     "SiteNumber" : "CX_1",     "JobFamilyId" : null,     "PostingStartDate" : null,     "PostingEndDate" : null,     "SelectedWorkLocationsFacet" : null,     "RequisitionId" : null,     "CandidateNumber" : null,     "WorkLocationZipCode" : null,     "WorkLocationCountryCode" : null,     "SelectedFlexFieldsFacets" : null,     "OrganizationId" : null,     "SelectedOrganizationsFacet" : null,     "UserTargetFacetName" : null,     "UserTargetFacetInputTerm" : null,     "HotJobFlag" : null,     "WorkplaceType" : null,     "SelectedWorkplaceTypesFacet" : null,     "BotQRShortCode" : null,     "requisitionList" : [ {       "Id" : "3148",       "Title" : "Fixed Term Mechanical Engineer",       "PostedDate" : "2026-10-28",       "PostingEndDate" : null,       "Language" : "US",       "PrimaryLocationCountry" : "GB",       "GeographyId" : 300000013019275,       "HotJobFlag" : false,       "WorkplaceTypeCode" : "ORA_HYBRID",       "JobFamily" : null,       "JobFunction" : null,       "WorkerType" : null,       "ContractType" : null,       "ManagerLevel" : null,       "JobSchedule" : null,       "JobShift" : null,       "JobType" : null,       "StudyLevel" : null,       "DomesticTravelRequired" : null,       "InternationalTravelRequired" : null,       "WorkDurationYears" : null,       "WorkDurationMonths" : null,       "WorkHours" : null,       "WorkDays" : null,       "LegalEmployer" : null,       "BusinessUnit" : null,       "Department" : null,       "Organization" : null,       "BusinessUnitId" : 300000012636304,       "LegalEmployerId" : 300000042732999,       "OrganizationId" : 300000012636304,       "MediaThumbURL" : null,       "ShortDescriptionStr" : "",       "PrimaryLocation" : "Bradford, 
+######## RESULTS ########
+@@ AprilAire | PlaywrightScraper | jobs=32 | pages_ok=5 | errors=0
+     JOB Engineering Tech II - Firmware | Location Sun Prairie, Wisconsin |  | https://careers.aprilaire.com/jobs/2670?lang=en-us
+     JOB Mechanical Engineer I | Location Sun Prairie, Wisconsin |  | https://careers.aprilaire.com/jobs/2651?lang=en-us
+     JOB Industrial Engineering Co-Op | Location Sun Prairie, Wisconsin |  | https://careers.aprilaire.com/jobs/2668?lang=en-us
+@@ Audubon | ADPScraper | jobs=235 | pages_ok=3 | errors=0
+     JOB Instrument Engineer, Senior | Metairie, LA, USA | None | https://myjobs.adp.com/auduboncorporatecareers/cx/job-details?reqId=5001234771006
+     JOB Project Manager, Senior | Broomfield, CO, USA | None | https://myjobs.adp.com/auduboncorporatecareers/cx/job-details?reqId=5001234644206
+     JOB Project Controls Specialist | Mobile, AL, USA | None | https://myjobs.adp.com/auduboncorporatecareers/cx/job-details?reqId=5001234271906
+@@ Bosch | PlaywrightScraper | jobs=8 | pages_ok=2 | errors=0
+     JOB Customer Service Representative (5:00 am - 1:30 pm) | N/A |  | https://jobs.bosch.com/en/job/REF295628P-customer-service-representative-5-00-am-1-30-pm
+     JOB Senior Safety Engineer - Power Tools and Accessories | N/A |  | https://jobs.bosch.com/en/job/REF293511Q-senior-safety-engineer-power-tools-and-accessories
+     JOB Associate/Envir. Health & Safety Engineer | N/A |  | https://jobs.bosch.com/en/job/REF292021O-associate-envir-health-safety-engineer
+@@ Centrus Energy | OracleHCMScraper | jobs=72 | pages_ok=63 | errors=0
+     JOB ManufacturingTechnician,Sr. | Oak Ridge, TN, United States | 2026-10-27 | https://eese.fa.us8.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CentrusEnergyCareers/job/854
+     JOB EPC Construction Engineer | Piketon, OH, United States | 2026-10-27 | https://eese.fa.us8.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CentrusEnergyCareers/job/846
+     JOB EPC Sr. Manager, Construction | Piketon, OH, United States | 2026-10-27 | https://eese.fa.us8.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CentrusEnergyCareers/job/848
+@@ DMC Engineering | GreenhouseScraper | jobs=2 | pages_ok=1 | errors=0
+     JOB Embedded Firmware Engineer | Tbilisi, Georgia (the country) | 2026-09-01T14:36:56-04:00 | https://www.dmcinfo.com/careers/open-positions?gh_jid=4590064008
+     JOB Experienced Test Systems Engineer  | Boston; Chicago (Headquarters); Denver; Detroit; Houston; New York City; Raleigh; San Diego; Seattle | 2026-09-01T14:36:56-04:00 | https://www.dmcinfo.com/careers/open-positions?gh_jid=5400262008
+@@ EPTA Refrigeration | OracleHCMScraper | jobs=9 | pages_ok=36 | errors=0
+     JOB Product Manager | Columbus, GA, United States | 2026-10-28 | https://fa-eukp-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/3139
+     JOB CAD Designer | Columbus, GA, United States | 2026-10-26 | https://fa-eukp-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/2902
+     JOB R&D LAB Technician III | Columbus, GA, United States | 2026-10-16 | https://fa-eukp-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/2852
+@@ Eaton | OracleHCMScraper | jobs=81 | pages_ok=90 | errors=0
+     JOB Product Development Engineer -  Internal Propulsion Thermal  | Dearborn, MI, United States | 2026-10-28 | https://efds.fa.em5.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/72915
+     JOB Product Specialist - Internal Requirement Applications Devel | Dearborn, MI, United States | 2026-10-28 | https://efds.fa.em5.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/72247
+     JOB Cloud & Data Tools Engineer | Palo Alto, CA, United States | 2026-10-28 | https://efds.fa.em5.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/72440
+@@ EwingCole | PlaywrightScraper | jobs=39 | pages_ok=2 | errors=0
+     JOB Project Manager - Civic Practice | N/A |  | https://recruiting.paylocity.com/Recruiting/Jobs/Details/4619164
+     JOB Mechanical Engineer in Training 1 | N/A |  | https://recruiting.paylocity.com/Recruiting/Jobs/Details/4577924
+     JOB Mechanical Project Engineer | N/A |  | https://recruiting.paylocity.com/Recruiting/Jobs/Details/4577901
+@@ Figure | GreenhouseScraper | jobs=86 | pages_ok=1 | errors=0
+     JOB Wire Harness Engineer | San Jose, CA | 2026-10-28T20:03:53-04:00 | https://job-boards.greenhouse.io/figureai/jobs/4697402006
+     JOB Staff AI Inference and Acceleration Engineer | San Jose, CA | 2026-10-28T20:03:35-04:00 | https://job-boards.greenhouse.io/figureai/jobs/4692572006
+     JOB Software Engineer, Privacy & Data Governance | San Jose, CA | 2026-10-28T20:03:24-04:00 | https://job-boards.greenhouse.io/figureai/jobs/4690871006
+@@ Formlabs | PlaywrightScraper | jobs=230 | pages_ok=2 | errors=0
+     JOB Technical Sales Representative - German Speaking | N/A |  | https://careers.formlabs.com/job/7988991/apply/
+     JOB Technical Sales Representative - French Speaking | N/A |  | https://careers.formlabs.com/job/7989288/apply/
+     JOB Technical Sales Representative - Italian Speaking | N/A |  | https://careers.formlabs.com/job/8000746/apply/
+@@ Hendrickson | ADPScraper | jobs=190 | pages_ok=2 | errors=0
+     JOB Plant Accountant | Lebanon, IN, USA | None | https://myjobs.adp.com/hendrickson/cx/job-details?reqId=5001234715506
+     JOB Planner | Navarre, OH, USA | None | https://myjobs.adp.com/hendrickson/cx/job-details?reqId=5001234172706
+     JOB Human Resources Manager: Lebanon, IN | Lebanon, IN, USA | None | https://myjobs.adp.com/hendrickson/cx/job-details?reqId=5001233957006
+@@ Insulet | WorkdayScraper | jobs=75 | pages_ok=17 | errors=0
+     JOB Senior Manager, Global Logistics and Transportation (Hybrid  | Acton, Massachusetts | Posted Yesterday | https://insulet.wd5.myworkdayjobs.com/insuletcareers/job/Acton-Massachusetts/Senior-Manager--Global-
+     JOB Tech Lead, Operational Technology NPI | Acton, Massachusetts | Posted Yesterday | https://insulet.wd5.myworkdayjobs.com/insuletcareers/job/Acton-Massachusetts/Tech-Lead--Operational-
+     JOB Senior Control Engineer (Onsite - Acton) | US - Massachusetts | Posted Yesterday | https://insulet.wd5.myworkdayjobs.com/insuletcareers/job/US---Massachusetts/Senior-Control-Engineer-
+@@ JTEKT North America | PlaywrightScraper | jobs=49 | pages_ok=3 | errors=0
+     JOB Sales Account Manager - Automotive | N/A |  | https://jobs.dayforcehcm.com/en-US/JTEKT/CANDIDATEPORTAL/jobs/21052
+     JOB Cost Planning Analyst | N/A |  | https://jobs.dayforcehcm.com/en-US/JTEKT/CANDIDATEPORTAL/jobs/21043
+     JOB CNC Operator (B-Tech) - 3rd shift | N/A |  | https://jobs.dayforcehcm.com/en-US/JTEKT/CANDIDATEPORTAL/jobs/21037
+@@ Jordan & Skala Engineers | PlaywrightScraper | jobs=28 | pages_ok=2 | errors=0
+     JOB CAD/BIM Revit/CAD Drafting Technician Plano, TX → | Plano, TX |  | https://jordanskala.com/job/revit-cad-drafting-technician-4/
+     JOB CAD/BIM Revit/CAD Drafting Technician Houston, TX → | Houston, TX |  | https://jordanskala.com/job/revit-cad-drafting-technician-5/
+     JOB CAD/BIM Revit/CAD Drafting Technician Tampa, FL → | Tampa, FL |  | https://jordanskala.com/job/revit-cad-drafting-technician/
+@@ Landis+Gyr | SuccessFactorsScraper | jobs=3 | pages_ok=11 | errors=0
+     JOB Intern - Electronics Engineering | Lafayette, IN, US | Oct 28, 2026 | https://careers.landisgyr.com/job/Lafayette-Intern-Electronics-Engineering-IN/1431897833/
+     JOB Co-op - General Engineering Lab and Test Engineering | Lafayette, IN, US | Oct 24, 2026 | https://careers.landisgyr.com/job/Lafayette-Co-op-General-Engineering-Lab-and-Test-Engineering-IN/14
+     JOB Co-op Component Engineering | Alpharetta, GA, US | Oct 24, 2026 | https://careers.landisgyr.com/job/Alpharetta-Co-op-Component-Engineering-GA-30004/1431110333/
+@@ Lincoln Electric | SuccessFactorsScraper | jobs=238 | pages_ok=21 | errors=0
+     JOB Mechanical Engineer | Bettendorf, IA, US, 52722 | Oct 9, 2026 | https://jobs.lincolnelectric.com/job/Bettendorf-Mechanical-Engineer-IA-52722/1435867833/
+     JOB Senior Engineering Manager, Consumable Methods & Process | Cleveland, OH, US, 44117 | Oct 9, 2026 | https://jobs.lincolnelectric.com/job/Cleveland-Senior-Engineering-Manager%2C-Consumable-Methods-&-Pr
+     JOB Applications Engineer (Machining) | Coldwater, OH, US, 45828 | Oct 9, 2026 | https://jobs.lincolnelectric.com/job/Coldwater-Applications-Engineer-%28Machining%29-OH-45828/143573
+@@ Linewise | PlaywrightScraper | jobs=8 | pages_ok=2 | errors=0
+     JOB Careers | N/A |  | https://linewise.io/careers/
+     JOB CNC program lead | N/A |  | https://linewise.io/careers/cnc-program-lead/
+     JOB Mechanical engineering lead | N/A |  | https://linewise.io/careers/mechanical-engineering-lead/
+@@ Modine | PlaywrightScraper | jobs=17 | pages_ok=2 | errors=0
+     JOB Engineering/Program Management Intern | N/A |  | https://careers.modine.com/job/EngineeringProgram-Management-Intern/10632-en_US
+     JOB Engineering/Program Management Intern | N/A |  | https://careers.modine.com/job/EngineeringProgram-Management-Intern/10633-en_US
+     JOB Engineering/Program Management Intern | N/A |  | https://careers.modine.com/job/EngineeringProgram-Management-Intern/10635-en_US
+@@ Nokia | OracleHCMScraper | jobs=0 | pages_ok=0 | errors=9
+     ERR Bad/unreadable response from https://jobs.nokia.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions (JSONDecodeError: Expecting value: line 1 column 1 (char 0))
+@@ Panasonic | PlaywrightScraper | jobs=123 | pages_ok=3 | errors=0
+     JOB Assistant Production Manager, Electrode - Nights | Location Sparks, Nevada US |  | https://careers.na.panasonic.com/jobs/51116?lang=en-us&previousLocale=en-US
+     JOB Design Engineer | Location Sparks, Nevada US |  | https://careers.na.panasonic.com/jobs/51952?lang=en-us&previousLocale=en-US
+     JOB Controls Engineer I | Location Sparks, Nevada US |  | https://careers.na.panasonic.com/jobs/51950?lang=en-us&previousLocale=en-US
+@@ Pelican Energy Consultants | ADPScraper | jobs=11 | pages_ok=1 | errors=0
+     JOB Entry Level Instrument/Controls Engineer | Covington, LA | 2026-10-09 | https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=9ecaf208-0ecb-4b01-
+     JOB Entry Level Electrical Engineer | Covington, LA | 2026-10-08 | https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=9ecaf208-0ecb-4b01-
+     JOB Structural Drafter | Covington, LA | 2026-10-08 | https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=9ecaf208-0ecb-4b01-
+@@ Quantum Computing Inc | PlaywrightScraper | jobs=49 | pages_ok=2 | errors=0
+     JOB Quantum Optics Scientist (Post-Doc) | N/A |  | https://quantum-computing-inc.alphastaff-hiring.com/job/1024022/quantum-optics-scientist-post-doc
+     JOB HR Business Partner | N/A |  | https://quantum-computing-inc.alphastaff-hiring.com/job/1069309/hr-business-partner
+     JOB Talent Acquisition Lead | N/A |  | https://quantum-computing-inc.alphastaff-hiring.com/job/1069322/talent-acquisition-lead
+@@ Shinkei | PlaywrightScraper | jobs=160 | pages_ok=10 | errors=0
+     JOB Mechanical Engineer | N/A |  | https://careers.kula.ai/shinkei/32624-mechanical-engineer
+     JOB Electrical Engineer | N/A |  | https://careers.kula.ai/shinkei/32626-electrical-engineer
+     JOB Test Operations Technician | N/A |  | https://careers.kula.ai/shinkei/32631-test-operations-technician
+@@ Vantedge Medical | PlaywrightScraper | jobs=21 | pages_ok=2 | errors=0
+     JOB Mechanical Assembler II Temporary | N/A |  | https://recruiting.paylocity.com/Recruiting/Jobs/Details/4086861
+     JOB NC Punch Press Operator | N/A |  | https://recruiting.paylocity.com/Recruiting/Jobs/Details/4125013
+     JOB Sr. Program Manager, NPI | N/A |  | https://recruiting.paylocity.com/Recruiting/Jobs/Details/4352229
+@@ Vast | GreenhouseScraper | jobs=179 | pages_ok=1 | errors=0
+     JOB Avionics Manufacturing Technician, Wire Harnessing  | Long Beach, California, United States | 2026-10-28T20:05:26-04:00 | https://boards.greenhouse.io/vast/jobs/4671183006?gh_jid=4671183006
+     JOB Avionics Test Software Engineer | Long Beach, California, United States | 2026-10-28T18:52:30-04:00 | https://boards.greenhouse.io/vast/jobs/4714389006?gh_jid=4714389006
+     JOB Manufacturing Planner, Integration | Long Beach, California, United States | 2026-10-28T13:37:40-04:00 | https://boards.greenhouse.io/vast/jobs/4724530006?gh_jid=4724530006
