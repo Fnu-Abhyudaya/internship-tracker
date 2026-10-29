@@ -54,12 +54,18 @@ EXCLUDE_KEYWORDS = [
     'finance', 'logistic', 'cybersecurity', 'tax',
     'construction', 'procurement', 'management',
     'data', 'purchasing', 'analytics', 'geology',
-    'human resource', 'coop', 'co-op', 'intern',
+    'human resource',
 ]
 
 # Whole-word-only excludes (to avoid false positives like
 # "ITar" matching "it", "ITS" matching "its", etc.)
-EXCLUDE_WHOLE_WORDS = ['it', 'hr']
+EXCLUDE_WHOLE_WORDS = [
+    'it', 'hr',
+    # Internships / co-ops (whole words, so "Internal" and
+    # "International" job titles are NOT excluded)
+    'intern', 'interns', 'internship', 'internships',
+    'coop', 'coops', 'co-op', 'co-ops', 'co op', 'co ops',
+]
 
 
 # ===== SEARCH TERMS USED WHEN QUERYING SITES =====
