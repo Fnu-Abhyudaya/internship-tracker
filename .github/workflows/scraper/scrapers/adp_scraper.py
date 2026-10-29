@@ -80,9 +80,14 @@ class ADPScraper(BaseScraper):
                 )
                 return results
 
-            for _ in range(20):          # wait up to ~20 s for the feed
+            for i in range(45):          # wait up to ~45 s for the feed
                 if feed:
                     break
+                if i % 5 == 0:           # scroll to wake lazy-loaded widgets
+                    try:
+                        await page.mouse.wheel(0, 4000)
+                    except Exception:
+                        pass
                 await page.wait_for_timeout(1000)
             if not feed:
                 self.record_error(

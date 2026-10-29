@@ -64,6 +64,7 @@ class OracleHCMScraper(BaseScraper):
                 break
 
             page_added = 0
+            page_recent = 0
             for item in items:
                 title = item.get('Title', '') or item.get('title', '')
                 req_id = item.get('Id', '') or item.get('id', '')
@@ -76,10 +77,11 @@ class OracleHCMScraper(BaseScraper):
                     item.get('primaryLocation', '')
                 )
 
+                if not is_within_last_24_hours(posted):
+                    continue
+                page_recent += 1
                 if self.filter_internships and \
                         not matches_role_keywords(title):
-                    continue
-                if not is_within_last_24_hours(posted):
                     continue
                 if not is_us_location(loc):
                     continue
@@ -103,8 +105,9 @@ class OracleHCMScraper(BaseScraper):
                 f"{page_added} kept"
             )
 
-            # Stop early if page wasn't full
-            if len(items) < PAGE_SIZE:
+            # Stop early if page wasn't full, or if nothing on this
+            # page was recent (results are sorted newest first)
+            if len(items) < PAGE_SIZE or page_recent == 0:
                 break
 
         return results
