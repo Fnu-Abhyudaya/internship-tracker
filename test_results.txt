@@ -1,105 +1,171 @@
-KEYS Pelican Energy Consultants: ['clientRequisitionID', 'customFieldGroup', 'itemID', 'links', 'organizationalUnits', 'postDate', 'postingInstructions', 'requisitionLocations', 'requisitionTitle', 'screeningRequirements', 'sponsoredVisaTypeCodes', 'workLevelCode']
-SAMPLE Pelican Energy Consultants: {"itemID": "9205503237370_1", "postingInstructions": [], "links": [], "clientRequisitionID": "1247", "customFieldGroup": {"dateFields": [{"dateValue": "2026-10-09T14:08Z", "nameCode": {"codeValue": "PostingDate"}}, {"dateValue": "2026-10-29T00:22Z", "nameCode": {"codeValue": "CurrentServerDateTime"}}], "indicatorFields": [{"indicatorValue": false, "nameCode": {"codeValue": "PriortyStatusFlag"}}, {"indicatorValue": false, "nameCode": {"codeValue": "InternalPostingFlag"}}, {"indicatorValue": true, "nameCode": {"codeValue": "MinValue"}}, {"indicatorValue": true, "nameCode": {"codeValue": "IsVsidApplicable"}}, {"indicatorValue": false, "nameCode": {"codeValue": "IsSassDlReqForExtPostFlag"}}, {"i
-KEYS Audubon: ['canApply', 'careerSiteDomains', 'clientRequisitionID', 'easyApplyEnabled', 'gridControl', 'jobDescription', 'jobTitle', 'organizationalUnits', 'postingLocations', 'publishedJobTitle', 'reqId', 'requisitionLocations', 'type', 'workLevelCode', 'workLocations']
-SAMPLE Audubon: {"organizationalUnits": [], "workLocations": [], "postingLocations": [], "requisitionLocations": [{"itemID": "5000003689306", "address": {"country": {"codeValue": "USA", "longName": "United States"}, "cityName": "Metairie", "postalCode": "70005", "lineOne": "111 Veterans Blvd. Suite 1200", "countrySubdivisionLevel1": {"codeValue": "LA", "longName": "Louisiana"}, "geoCoordinate": {"latitude": 30.083764, "longitude": -90.126831}}, "nameCode": {"codeValue": "ME", "longName": "Metairie, LA"}, "postingIndicator": true, "primaryIndicator": true}], "careerSiteDomains": ["auduboncorporatecareers"], "jobDescription": "<p><span>Audubon is seeking a Senior Instrument Engineer in our Metairie, LA office
-KEYS Hendrickson: ['canApply', 'careerSiteDomains', 'clientRequisitionID', 'easyApplyEnabled', 'gridControl', 'jobDescription', 'jobTitle', 'organizationalUnits', 'postingLocations', 'publishedJobTitle', 'reqId', 'requisitionLocations', 'type', 'workLevelCode', 'workLocations']
-SAMPLE Hendrickson: {"organizationalUnits": [], "workLocations": [], "postingLocations": [], "requisitionLocations": [{"itemID": "5000035880406", "address": {"country": {"codeValue": "USA", "longName": "United States"}, "cityName": "Lebanon", "postalCode": "46052", "lineOne": "180 Mt. Zion Road", "countrySubdivisionLevel1": {"codeValue": "IN", "longName": "Indiana"}, "geoCoordinate": {"latitude": 40.043462, "longitude": -86.463222}}, "nameCode": {"codeValue": "10006", "longName": "Lebanon IN"}, "postingIndicator": true, "primaryIndicator": true}], "careerSiteDomains": ["hendrickson"], "jobDescription": "<p><strong>Position Purpose</strong></p>\n<p>Proactive maintenance of accounting functions at plant locations
 
 ######## RESULTS ########
-@@ AprilAire | PlaywrightScraper | jobs=32 | pages_ok=5 | errors=0
-     JOB Engineering Tech II - Firmware | Location Sun Prairie, Wisconsin |  | https://careers.aprilaire.com/jobs/2670?lang=en-us
-     JOB Mechanical Engineer I | Location Sun Prairie, Wisconsin |  | https://careers.aprilaire.com/jobs/2651?lang=en-us
-     JOB Industrial Engineering Co-Op | Location Sun Prairie, Wisconsin |  | https://careers.aprilaire.com/jobs/2668?lang=en-us
-@@ Audubon | ADPScraper | jobs=235 | pages_ok=3 | errors=0
-     JOB Instrument Engineer, Senior | Metairie, LA, USA | None | https://myjobs.adp.com/auduboncorporatecareers/cx/job-details?reqId=5001234771006
-     JOB Project Manager, Senior | Broomfield, CO, USA | None | https://myjobs.adp.com/auduboncorporatecareers/cx/job-details?reqId=5001234644206
-     JOB Project Controls Specialist | Mobile, AL, USA | None | https://myjobs.adp.com/auduboncorporatecareers/cx/job-details?reqId=5001234271906
 @@ Bosch | PlaywrightScraper | jobs=8 | pages_ok=2 | errors=0
      JOB Customer Service Representative (5:00 am - 1:30 pm) | N/A |  | https://jobs.bosch.com/en/job/REF295628P-customer-service-representative-5-00-am-1-30-pm
      JOB Senior Safety Engineer - Power Tools and Accessories | N/A |  | https://jobs.bosch.com/en/job/REF293511Q-senior-safety-engineer-power-tools-and-accessories
      JOB Associate/Envir. Health & Safety Engineer | N/A |  | https://jobs.bosch.com/en/job/REF292021O-associate-envir-health-safety-engineer
-@@ Centrus Energy | OracleHCMScraper | jobs=72 | pages_ok=63 | errors=0
-     JOB ManufacturingTechnician,Sr. | Oak Ridge, TN, United States | 2026-10-27 | https://eese.fa.us8.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CentrusEnergyCareers/job/854
-     JOB EPC Construction Engineer | Piketon, OH, United States | 2026-10-27 | https://eese.fa.us8.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CentrusEnergyCareers/job/846
-     JOB EPC Sr. Manager, Construction | Piketon, OH, United States | 2026-10-27 | https://eese.fa.us8.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CentrusEnergyCareers/job/848
-@@ DMC Engineering | GreenhouseScraper | jobs=2 | pages_ok=1 | errors=0
-     JOB Embedded Firmware Engineer | Tbilisi, Georgia (the country) | 2026-09-01T14:36:56-04:00 | https://www.dmcinfo.com/careers/open-positions?gh_jid=4590064008
-     JOB Experienced Test Systems Engineer  | Boston; Chicago (Headquarters); Denver; Detroit; Houston; New York City; Raleigh; San Diego; Seattle | 2026-09-01T14:36:56-04:00 | https://www.dmcinfo.com/careers/open-positions?gh_jid=5400262008
-@@ EPTA Refrigeration | OracleHCMScraper | jobs=9 | pages_ok=36 | errors=0
-     JOB Product Manager | Columbus, GA, United States | 2026-10-28 | https://fa-eukp-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/3139
-     JOB CAD Designer | Columbus, GA, United States | 2026-10-26 | https://fa-eukp-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/2902
-     JOB R&D LAB Technician III | Columbus, GA, United States | 2026-10-16 | https://fa-eukp-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/2852
-@@ Eaton | OracleHCMScraper | jobs=81 | pages_ok=90 | errors=0
-     JOB Product Development Engineer -  Internal Propulsion Thermal  | Dearborn, MI, United States | 2026-10-28 | https://efds.fa.em5.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/72915
-     JOB Product Specialist - Internal Requirement Applications Devel | Dearborn, MI, United States | 2026-10-28 | https://efds.fa.em5.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/72247
-     JOB Cloud & Data Tools Engineer | Palo Alto, CA, United States | 2026-10-28 | https://efds.fa.em5.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/72440
-@@ EwingCole | PlaywrightScraper | jobs=39 | pages_ok=2 | errors=0
-     JOB Project Manager - Civic Practice | N/A |  | https://recruiting.paylocity.com/Recruiting/Jobs/Details/4619164
-     JOB Mechanical Engineer in Training 1 | N/A |  | https://recruiting.paylocity.com/Recruiting/Jobs/Details/4577924
-     JOB Mechanical Project Engineer | N/A |  | https://recruiting.paylocity.com/Recruiting/Jobs/Details/4577901
-@@ Figure | GreenhouseScraper | jobs=86 | pages_ok=1 | errors=0
-     JOB Wire Harness Engineer | San Jose, CA | 2026-10-28T20:03:53-04:00 | https://job-boards.greenhouse.io/figureai/jobs/4697402006
-     JOB Staff AI Inference and Acceleration Engineer | San Jose, CA | 2026-10-28T20:03:35-04:00 | https://job-boards.greenhouse.io/figureai/jobs/4692572006
-     JOB Software Engineer, Privacy & Data Governance | San Jose, CA | 2026-10-28T20:03:24-04:00 | https://job-boards.greenhouse.io/figureai/jobs/4690871006
-@@ Formlabs | PlaywrightScraper | jobs=230 | pages_ok=2 | errors=0
-     JOB Technical Sales Representative - German Speaking | N/A |  | https://careers.formlabs.com/job/7988991/apply/
-     JOB Technical Sales Representative - French Speaking | N/A |  | https://careers.formlabs.com/job/7989288/apply/
-     JOB Technical Sales Representative - Italian Speaking | N/A |  | https://careers.formlabs.com/job/8000746/apply/
-@@ Hendrickson | ADPScraper | jobs=190 | pages_ok=2 | errors=0
-     JOB Plant Accountant | Lebanon, IN, USA | None | https://myjobs.adp.com/hendrickson/cx/job-details?reqId=5001234715506
-     JOB Planner | Navarre, OH, USA | None | https://myjobs.adp.com/hendrickson/cx/job-details?reqId=5001234172706
-     JOB Human Resources Manager: Lebanon, IN | Lebanon, IN, USA | None | https://myjobs.adp.com/hendrickson/cx/job-details?reqId=5001233957006
-@@ Insulet | WorkdayScraper | jobs=75 | pages_ok=17 | errors=0
-     JOB Senior Manager, Global Logistics and Transportation (Hybrid  | Acton, Massachusetts | Posted Yesterday | https://insulet.wd5.myworkdayjobs.com/insuletcareers/job/Acton-Massachusetts/Senior-Manager--Global-
-     JOB Tech Lead, Operational Technology NPI | Acton, Massachusetts | Posted Yesterday | https://insulet.wd5.myworkdayjobs.com/insuletcareers/job/Acton-Massachusetts/Tech-Lead--Operational-
-     JOB Senior Control Engineer (Onsite - Acton) | US - Massachusetts | Posted Yesterday | https://insulet.wd5.myworkdayjobs.com/insuletcareers/job/US---Massachusetts/Senior-Control-Engineer-
-@@ JTEKT North America | PlaywrightScraper | jobs=49 | pages_ok=3 | errors=0
-     JOB Sales Account Manager - Automotive | N/A |  | https://jobs.dayforcehcm.com/en-US/JTEKT/CANDIDATEPORTAL/jobs/21052
-     JOB Cost Planning Analyst | N/A |  | https://jobs.dayforcehcm.com/en-US/JTEKT/CANDIDATEPORTAL/jobs/21043
-     JOB CNC Operator (B-Tech) - 3rd shift | N/A |  | https://jobs.dayforcehcm.com/en-US/JTEKT/CANDIDATEPORTAL/jobs/21037
-@@ Jordan & Skala Engineers | PlaywrightScraper | jobs=28 | pages_ok=2 | errors=0
-     JOB CAD/BIM Revit/CAD Drafting Technician Plano, TX → | Plano, TX |  | https://jordanskala.com/job/revit-cad-drafting-technician-4/
-     JOB CAD/BIM Revit/CAD Drafting Technician Houston, TX → | Houston, TX |  | https://jordanskala.com/job/revit-cad-drafting-technician-5/
-     JOB CAD/BIM Revit/CAD Drafting Technician Tampa, FL → | Tampa, FL |  | https://jordanskala.com/job/revit-cad-drafting-technician/
-@@ Landis+Gyr | SuccessFactorsScraper | jobs=3 | pages_ok=11 | errors=0
-     JOB Intern - Electronics Engineering | Lafayette, IN, US | Oct 28, 2026 | https://careers.landisgyr.com/job/Lafayette-Intern-Electronics-Engineering-IN/1431897833/
-     JOB Co-op - General Engineering Lab and Test Engineering | Lafayette, IN, US | Oct 24, 2026 | https://careers.landisgyr.com/job/Lafayette-Co-op-General-Engineering-Lab-and-Test-Engineering-IN/14
-     JOB Co-op Component Engineering | Alpharetta, GA, US | Oct 24, 2026 | https://careers.landisgyr.com/job/Alpharetta-Co-op-Component-Engineering-GA-30004/1431110333/
-@@ Lincoln Electric | SuccessFactorsScraper | jobs=238 | pages_ok=21 | errors=0
-     JOB Mechanical Engineer | Bettendorf, IA, US, 52722 | Oct 9, 2026 | https://jobs.lincolnelectric.com/job/Bettendorf-Mechanical-Engineer-IA-52722/1435867833/
-     JOB Senior Engineering Manager, Consumable Methods & Process | Cleveland, OH, US, 44117 | Oct 9, 2026 | https://jobs.lincolnelectric.com/job/Cleveland-Senior-Engineering-Manager%2C-Consumable-Methods-&-Pr
-     JOB Applications Engineer (Machining) | Coldwater, OH, US, 45828 | Oct 9, 2026 | https://jobs.lincolnelectric.com/job/Coldwater-Applications-Engineer-%28Machining%29-OH-45828/143573
-@@ Linewise | PlaywrightScraper | jobs=8 | pages_ok=2 | errors=0
-     JOB Careers | N/A |  | https://linewise.io/careers/
-     JOB CNC program lead | N/A |  | https://linewise.io/careers/cnc-program-lead/
-     JOB Mechanical engineering lead | N/A |  | https://linewise.io/careers/mechanical-engineering-lead/
-@@ Modine | PlaywrightScraper | jobs=17 | pages_ok=2 | errors=0
-     JOB Engineering/Program Management Intern | N/A |  | https://careers.modine.com/job/EngineeringProgram-Management-Intern/10632-en_US
-     JOB Engineering/Program Management Intern | N/A |  | https://careers.modine.com/job/EngineeringProgram-Management-Intern/10633-en_US
-     JOB Engineering/Program Management Intern | N/A |  | https://careers.modine.com/job/EngineeringProgram-Management-Intern/10635-en_US
-@@ Nokia | OracleHCMScraper | jobs=0 | pages_ok=0 | errors=9
-     ERR Bad/unreadable response from https://jobs.nokia.com/hcmRestApi/resources/latest/recruitingCEJobRequisitions (JSONDecodeError: Expecting value: line 1 column 1 (char 0))
-@@ Panasonic | PlaywrightScraper | jobs=123 | pages_ok=3 | errors=0
-     JOB Assistant Production Manager, Electrode - Nights | Location Sparks, Nevada US |  | https://careers.na.panasonic.com/jobs/51116?lang=en-us&previousLocale=en-US
-     JOB Design Engineer | Location Sparks, Nevada US |  | https://careers.na.panasonic.com/jobs/51952?lang=en-us&previousLocale=en-US
-     JOB Controls Engineer I | Location Sparks, Nevada US |  | https://careers.na.panasonic.com/jobs/51950?lang=en-us&previousLocale=en-US
-@@ Pelican Energy Consultants | ADPScraper | jobs=11 | pages_ok=1 | errors=0
-     JOB Entry Level Instrument/Controls Engineer | Covington, LA | 2026-10-09 | https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=9ecaf208-0ecb-4b01-
-     JOB Entry Level Electrical Engineer | Covington, LA | 2026-10-08 | https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=9ecaf208-0ecb-4b01-
-     JOB Structural Drafter | Covington, LA | 2026-10-08 | https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=9ecaf208-0ecb-4b01-
-@@ Quantum Computing Inc | PlaywrightScraper | jobs=49 | pages_ok=2 | errors=0
-     JOB Quantum Optics Scientist (Post-Doc) | N/A |  | https://quantum-computing-inc.alphastaff-hiring.com/job/1024022/quantum-optics-scientist-post-doc
-     JOB HR Business Partner | N/A |  | https://quantum-computing-inc.alphastaff-hiring.com/job/1069309/hr-business-partner
-     JOB Talent Acquisition Lead | N/A |  | https://quantum-computing-inc.alphastaff-hiring.com/job/1069322/talent-acquisition-lead
+@@ Bosch-pages5 | PlaywrightScraper | jobs=40 | pages_ok=2 | errors=0
+     JOB Customer Service Representative (5:00 am - 1:30 pm) | N/A |  | https://jobs.bosch.com/en/job/REF295628P-customer-service-representative-5-00-am-1-30-pm
+     JOB Senior Safety Engineer - Power Tools and Accessories | N/A |  | https://jobs.bosch.com/en/job/REF293511Q-senior-safety-engineer-power-tools-and-accessories
+     JOB Associate/Envir. Health & Safety Engineer | N/A |  | https://jobs.bosch.com/en/job/REF292021O-associate-envir-health-safety-engineer
 @@ Shinkei | PlaywrightScraper | jobs=160 | pages_ok=10 | errors=0
      JOB Mechanical Engineer | N/A |  | https://careers.kula.ai/shinkei/32624-mechanical-engineer
      JOB Electrical Engineer | N/A |  | https://careers.kula.ai/shinkei/32626-electrical-engineer
      JOB Test Operations Technician | N/A |  | https://careers.kula.ai/shinkei/32631-test-operations-technician
-@@ Vantedge Medical | PlaywrightScraper | jobs=21 | pages_ok=2 | errors=0
-     JOB Mechanical Assembler II Temporary | N/A |  | https://recruiting.paylocity.com/Recruiting/Jobs/Details/4086861
-     JOB NC Punch Press Operator | N/A |  | https://recruiting.paylocity.com/Recruiting/Jobs/Details/4125013
-     JOB Sr. Program Manager, NPI | N/A |  | https://recruiting.paylocity.com/Recruiting/Jobs/Details/4352229
-@@ Vast | GreenhouseScraper | jobs=179 | pages_ok=1 | errors=0
-     JOB Avionics Manufacturing Technician, Wire Harnessing  | Long Beach, California, United States | 2026-10-28T20:05:26-04:00 | https://boards.greenhouse.io/vast/jobs/4671183006?gh_jid=4671183006
-     JOB Avionics Test Software Engineer | Long Beach, California, United States | 2026-10-28T18:52:30-04:00 | https://boards.greenhouse.io/vast/jobs/4714389006?gh_jid=4714389006
-     JOB Manufacturing Planner, Integration | Long Beach, California, United States | 2026-10-28T13:37:40-04:00 | https://boards.greenhouse.io/vast/jobs/4724530006?gh_jid=4724530006
+     JOB Strategy And Operations Analyst | N/A |  | https://careers.kula.ai/shinkei/35453-strategy-and-operations-analyst
+     JOB Manufacturing Finance Inventory Operations Manager | N/A |  | https://careers.kula.ai/shinkei/48950-manufacturing-finance-inventory-operations-manager
+     JOB Test Engineer | N/A |  | https://careers.kula.ai/shinkei/50714-test-engineer
+     JOB Technical Talent Partner | N/A |  | https://careers.kula.ai/shinkei/51542-technical-talent-partner
+     JOB Mechanical Engineering Intern Associate Engineer | N/A |  | https://careers.kula.ai/shinkei/51937-mechanical-engineering-intern-associate-engineer
+     JOB Manufacturing Technician Mid Level | N/A |  | https://careers.kula.ai/shinkei/51940-manufacturing-technician-mid-level
+     JOB Software Engineer Robotics | N/A |  | https://careers.kula.ai/shinkei/53228-software-engineer-robotics
+     JOB Software Engineer Fullstack | N/A |  | https://careers.kula.ai/shinkei/53417-software-engineer-fullstack
+     JOB Manufacturing Technician Junior Entry Level | N/A |  | https://careers.kula.ai/shinkei/54853-manufacturing-technician-junior-entry-level
+     JOB New Product Commercialization Manager | N/A |  | https://careers.kula.ai/shinkei/34690-new-product-commercialization-manager
+     JOB Product Innovation Manager | N/A |  | https://careers.kula.ai/shinkei/52268-product-innovation-manager
+     JOB Regional Sales Manager Remote | N/A |  | https://careers.kula.ai/shinkei/54521-regional-sales-manager-remote
+     JOB Regional Sales Director Remote | N/A |  | https://careers.kula.ai/shinkei/54855-regional-sales-director-remote
+     JOB Mechanical Engineer | N/A |  | https://careers.kula.ai/shinkei/32624-mechanical-engineer?page=2
+     JOB Electrical Engineer | N/A |  | https://careers.kula.ai/shinkei/32626-electrical-engineer?page=2
+     JOB Test Operations Technician | N/A |  | https://careers.kula.ai/shinkei/32631-test-operations-technician?page=2
+     JOB Strategy And Operations Analyst | N/A |  | https://careers.kula.ai/shinkei/35453-strategy-and-operations-analyst?page=2
+     JOB Manufacturing Finance Inventory Operations Manager | N/A |  | https://careers.kula.ai/shinkei/48950-manufacturing-finance-inventory-operations-manager?page=2
+     JOB Test Engineer | N/A |  | https://careers.kula.ai/shinkei/50714-test-engineer?page=2
+     JOB Technical Talent Partner | N/A |  | https://careers.kula.ai/shinkei/51542-technical-talent-partner?page=2
+     JOB Mechanical Engineering Intern Associate Engineer | N/A |  | https://careers.kula.ai/shinkei/51937-mechanical-engineering-intern-associate-engineer?page=2
+     JOB Manufacturing Technician Mid Level | N/A |  | https://careers.kula.ai/shinkei/51940-manufacturing-technician-mid-level?page=2
+     JOB Software Engineer Robotics | N/A |  | https://careers.kula.ai/shinkei/53228-software-engineer-robotics?page=2
+     JOB Software Engineer Fullstack | N/A |  | https://careers.kula.ai/shinkei/53417-software-engineer-fullstack?page=2
+     JOB Manufacturing Technician Junior Entry Level | N/A |  | https://careers.kula.ai/shinkei/54853-manufacturing-technician-junior-entry-level?page=2
+     JOB New Product Commercialization Manager | N/A |  | https://careers.kula.ai/shinkei/34690-new-product-commercialization-manager?page=2
+     JOB Product Innovation Manager | N/A |  | https://careers.kula.ai/shinkei/52268-product-innovation-manager?page=2
+     JOB Regional Sales Manager Remote | N/A |  | https://careers.kula.ai/shinkei/54521-regional-sales-manager-remote?page=2
+     JOB Regional Sales Director Remote | N/A |  | https://careers.kula.ai/shinkei/54855-regional-sales-director-remote?page=2
+     JOB Mechanical Engineer | N/A |  | https://careers.kula.ai/shinkei/32624-mechanical-engineer?page=3
+     JOB Electrical Engineer | N/A |  | https://careers.kula.ai/shinkei/32626-electrical-engineer?page=3
+     JOB Test Operations Technician | N/A |  | https://careers.kula.ai/shinkei/32631-test-operations-technician?page=3
+     JOB Strategy And Operations Analyst | N/A |  | https://careers.kula.ai/shinkei/35453-strategy-and-operations-analyst?page=3
+     JOB Manufacturing Finance Inventory Operations Manager | N/A |  | https://careers.kula.ai/shinkei/48950-manufacturing-finance-inventory-operations-manager?page=3
+     JOB Test Engineer | N/A |  | https://careers.kula.ai/shinkei/50714-test-engineer?page=3
+     JOB Technical Talent Partner | N/A |  | https://careers.kula.ai/shinkei/51542-technical-talent-partner?page=3
+     JOB Mechanical Engineering Intern Associate Engineer | N/A |  | https://careers.kula.ai/shinkei/51937-mechanical-engineering-intern-associate-engineer?page=3
+     JOB Manufacturing Technician Mid Level | N/A |  | https://careers.kula.ai/shinkei/51940-manufacturing-technician-mid-level?page=3
+     JOB Software Engineer Robotics | N/A |  | https://careers.kula.ai/shinkei/53228-software-engineer-robotics?page=3
+     JOB Software Engineer Fullstack | N/A |  | https://careers.kula.ai/shinkei/53417-software-engineer-fullstack?page=3
+     JOB Manufacturing Technician Junior Entry Level | N/A |  | https://careers.kula.ai/shinkei/54853-manufacturing-technician-junior-entry-level?page=3
+     JOB New Product Commercialization Manager | N/A |  | https://careers.kula.ai/shinkei/34690-new-product-commercialization-manager?page=3
+     JOB Product Innovation Manager | N/A |  | https://careers.kula.ai/shinkei/52268-product-innovation-manager?page=3
+     JOB Regional Sales Manager Remote | N/A |  | https://careers.kula.ai/shinkei/54521-regional-sales-manager-remote?page=3
+     JOB Regional Sales Director Remote | N/A |  | https://careers.kula.ai/shinkei/54855-regional-sales-director-remote?page=3
+     JOB Mechanical Engineer | N/A |  | https://careers.kula.ai/shinkei/32624-mechanical-engineer?page=4
+     JOB Electrical Engineer | N/A |  | https://careers.kula.ai/shinkei/32626-electrical-engineer?page=4
+     JOB Test Operations Technician | N/A |  | https://careers.kula.ai/shinkei/32631-test-operations-technician?page=4
+     JOB Strategy And Operations Analyst | N/A |  | https://careers.kula.ai/shinkei/35453-strategy-and-operations-analyst?page=4
+     JOB Manufacturing Finance Inventory Operations Manager | N/A |  | https://careers.kula.ai/shinkei/48950-manufacturing-finance-inventory-operations-manager?page=4
+     JOB Test Engineer | N/A |  | https://careers.kula.ai/shinkei/50714-test-engineer?page=4
+     JOB Technical Talent Partner | N/A |  | https://careers.kula.ai/shinkei/51542-technical-talent-partner?page=4
+     JOB Mechanical Engineering Intern Associate Engineer | N/A |  | https://careers.kula.ai/shinkei/51937-mechanical-engineering-intern-associate-engineer?page=4
+     JOB Manufacturing Technician Mid Level | N/A |  | https://careers.kula.ai/shinkei/51940-manufacturing-technician-mid-level?page=4
+     JOB Software Engineer Robotics | N/A |  | https://careers.kula.ai/shinkei/53228-software-engineer-robotics?page=4
+     JOB Software Engineer Fullstack | N/A |  | https://careers.kula.ai/shinkei/53417-software-engineer-fullstack?page=4
+     JOB Manufacturing Technician Junior Entry Level | N/A |  | https://careers.kula.ai/shinkei/54853-manufacturing-technician-junior-entry-level?page=4
+     JOB New Product Commercialization Manager | N/A |  | https://careers.kula.ai/shinkei/34690-new-product-commercialization-manager?page=4
+     JOB Product Innovation Manager | N/A |  | https://careers.kula.ai/shinkei/52268-product-innovation-manager?page=4
+     JOB Regional Sales Manager Remote | N/A |  | https://careers.kula.ai/shinkei/54521-regional-sales-manager-remote?page=4
+     JOB Regional Sales Director Remote | N/A |  | https://careers.kula.ai/shinkei/54855-regional-sales-director-remote?page=4
+     JOB Mechanical Engineer | N/A |  | https://careers.kula.ai/shinkei/32624-mechanical-engineer?page=5
+     JOB Electrical Engineer | N/A |  | https://careers.kula.ai/shinkei/32626-electrical-engineer?page=5
+     JOB Test Operations Technician | N/A |  | https://careers.kula.ai/shinkei/32631-test-operations-technician?page=5
+     JOB Strategy And Operations Analyst | N/A |  | https://careers.kula.ai/shinkei/35453-strategy-and-operations-analyst?page=5
+     JOB Manufacturing Finance Inventory Operations Manager | N/A |  | https://careers.kula.ai/shinkei/48950-manufacturing-finance-inventory-operations-manager?page=5
+     JOB Test Engineer | N/A |  | https://careers.kula.ai/shinkei/50714-test-engineer?page=5
+     JOB Technical Talent Partner | N/A |  | https://careers.kula.ai/shinkei/51542-technical-talent-partner?page=5
+     JOB Mechanical Engineering Intern Associate Engineer | N/A |  | https://careers.kula.ai/shinkei/51937-mechanical-engineering-intern-associate-engineer?page=5
+     JOB Manufacturing Technician Mid Level | N/A |  | https://careers.kula.ai/shinkei/51940-manufacturing-technician-mid-level?page=5
+     JOB Software Engineer Robotics | N/A |  | https://careers.kula.ai/shinkei/53228-software-engineer-robotics?page=5
+     JOB Software Engineer Fullstack | N/A |  | https://careers.kula.ai/shinkei/53417-software-engineer-fullstack?page=5
+     JOB Manufacturing Technician Junior Entry Level | N/A |  | https://careers.kula.ai/shinkei/54853-manufacturing-technician-junior-entry-level?page=5
+     JOB New Product Commercialization Manager | N/A |  | https://careers.kula.ai/shinkei/34690-new-product-commercialization-manager?page=5
+     JOB Product Innovation Manager | N/A |  | https://careers.kula.ai/shinkei/52268-product-innovation-manager?page=5
+     JOB Regional Sales Manager Remote | N/A |  | https://careers.kula.ai/shinkei/54521-regional-sales-manager-remote?page=5
+     JOB Regional Sales Director Remote | N/A |  | https://careers.kula.ai/shinkei/54855-regional-sales-director-remote?page=5
+     JOB Mechanical Engineer | N/A |  | https://careers.kula.ai/shinkei/32624-mechanical-engineer?page=6
+     JOB Electrical Engineer | N/A |  | https://careers.kula.ai/shinkei/32626-electrical-engineer?page=6
+     JOB Test Operations Technician | N/A |  | https://careers.kula.ai/shinkei/32631-test-operations-technician?page=6
+     JOB Strategy And Operations Analyst | N/A |  | https://careers.kula.ai/shinkei/35453-strategy-and-operations-analyst?page=6
+     JOB Manufacturing Finance Inventory Operations Manager | N/A |  | https://careers.kula.ai/shinkei/48950-manufacturing-finance-inventory-operations-manager?page=6
+     JOB Test Engineer | N/A |  | https://careers.kula.ai/shinkei/50714-test-engineer?page=6
+     JOB Technical Talent Partner | N/A |  | https://careers.kula.ai/shinkei/51542-technical-talent-partner?page=6
+     JOB Mechanical Engineering Intern Associate Engineer | N/A |  | https://careers.kula.ai/shinkei/51937-mechanical-engineering-intern-associate-engineer?page=6
+     JOB Manufacturing Technician Mid Level | N/A |  | https://careers.kula.ai/shinkei/51940-manufacturing-technician-mid-level?page=6
+     JOB Software Engineer Robotics | N/A |  | https://careers.kula.ai/shinkei/53228-software-engineer-robotics?page=6
+     JOB Software Engineer Fullstack | N/A |  | https://careers.kula.ai/shinkei/53417-software-engineer-fullstack?page=6
+     JOB Manufacturing Technician Junior Entry Level | N/A |  | https://careers.kula.ai/shinkei/54853-manufacturing-technician-junior-entry-level?page=6
+     JOB New Product Commercialization Manager | N/A |  | https://careers.kula.ai/shinkei/34690-new-product-commercialization-manager?page=6
+     JOB Product Innovation Manager | N/A |  | https://careers.kula.ai/shinkei/52268-product-innovation-manager?page=6
+     JOB Regional Sales Manager Remote | N/A |  | https://careers.kula.ai/shinkei/54521-regional-sales-manager-remote?page=6
+     JOB Regional Sales Director Remote | N/A |  | https://careers.kula.ai/shinkei/54855-regional-sales-director-remote?page=6
+     JOB Mechanical Engineer | N/A |  | https://careers.kula.ai/shinkei/32624-mechanical-engineer?page=7
+     JOB Electrical Engineer | N/A |  | https://careers.kula.ai/shinkei/32626-electrical-engineer?page=7
+     JOB Test Operations Technician | N/A |  | https://careers.kula.ai/shinkei/32631-test-operations-technician?page=7
+     JOB Strategy And Operations Analyst | N/A |  | https://careers.kula.ai/shinkei/35453-strategy-and-operations-analyst?page=7
+     JOB Manufacturing Finance Inventory Operations Manager | N/A |  | https://careers.kula.ai/shinkei/48950-manufacturing-finance-inventory-operations-manager?page=7
+     JOB Test Engineer | N/A |  | https://careers.kula.ai/shinkei/50714-test-engineer?page=7
+     JOB Technical Talent Partner | N/A |  | https://careers.kula.ai/shinkei/51542-technical-talent-partner?page=7
+     JOB Mechanical Engineering Intern Associate Engineer | N/A |  | https://careers.kula.ai/shinkei/51937-mechanical-engineering-intern-associate-engineer?page=7
+     JOB Manufacturing Technician Mid Level | N/A |  | https://careers.kula.ai/shinkei/51940-manufacturing-technician-mid-level?page=7
+     JOB Software Engineer Robotics | N/A |  | https://careers.kula.ai/shinkei/53228-software-engineer-robotics?page=7
+     JOB Software Engineer Fullstack | N/A |  | https://careers.kula.ai/shinkei/53417-software-engineer-fullstack?page=7
+     JOB Manufacturing Technician Junior Entry Level | N/A |  | https://careers.kula.ai/shinkei/54853-manufacturing-technician-junior-entry-level?page=7
+     JOB New Product Commercialization Manager | N/A |  | https://careers.kula.ai/shinkei/34690-new-product-commercialization-manager?page=7
+     JOB Product Innovation Manager | N/A |  | https://careers.kula.ai/shinkei/52268-product-innovation-manager?page=7
+     JOB Regional Sales Manager Remote | N/A |  | https://careers.kula.ai/shinkei/54521-regional-sales-manager-remote?page=7
+     JOB Regional Sales Director Remote | N/A |  | https://careers.kula.ai/shinkei/54855-regional-sales-director-remote?page=7
+     JOB Mechanical Engineer | N/A |  | https://careers.kula.ai/shinkei/32624-mechanical-engineer?page=8
+     JOB Electrical Engineer | N/A |  | https://careers.kula.ai/shinkei/32626-electrical-engineer?page=8
+     JOB Test Operations Technician | N/A |  | https://careers.kula.ai/shinkei/32631-test-operations-technician?page=8
+     JOB Strategy And Operations Analyst | N/A |  | https://careers.kula.ai/shinkei/35453-strategy-and-operations-analyst?page=8
+     JOB Manufacturing Finance Inventory Operations Manager | N/A |  | https://careers.kula.ai/shinkei/48950-manufacturing-finance-inventory-operations-manager?page=8
+     JOB Test Engineer | N/A |  | https://careers.kula.ai/shinkei/50714-test-engineer?page=8
+     JOB Technical Talent Partner | N/A |  | https://careers.kula.ai/shinkei/51542-technical-talent-partner?page=8
+     JOB Mechanical Engineering Intern Associate Engineer | N/A |  | https://careers.kula.ai/shinkei/51937-mechanical-engineering-intern-associate-engineer?page=8
+     JOB Manufacturing Technician Mid Level | N/A |  | https://careers.kula.ai/shinkei/51940-manufacturing-technician-mid-level?page=8
+     JOB Software Engineer Robotics | N/A |  | https://careers.kula.ai/shinkei/53228-software-engineer-robotics?page=8
+     JOB Software Engineer Fullstack | N/A |  | https://careers.kula.ai/shinkei/53417-software-engineer-fullstack?page=8
+     JOB Manufacturing Technician Junior Entry Level | N/A |  | https://careers.kula.ai/shinkei/54853-manufacturing-technician-junior-entry-level?page=8
+     JOB New Product Commercialization Manager | N/A |  | https://careers.kula.ai/shinkei/34690-new-product-commercialization-manager?page=8
+     JOB Product Innovation Manager | N/A |  | https://careers.kula.ai/shinkei/52268-product-innovation-manager?page=8
+     JOB Regional Sales Manager Remote | N/A |  | https://careers.kula.ai/shinkei/54521-regional-sales-manager-remote?page=8
+     JOB Regional Sales Director Remote | N/A |  | https://careers.kula.ai/shinkei/54855-regional-sales-director-remote?page=8
+     JOB Mechanical Engineer | N/A |  | https://careers.kula.ai/shinkei/32624-mechanical-engineer?page=9
+     JOB Electrical Engineer | N/A |  | https://careers.kula.ai/shinkei/32626-electrical-engineer?page=9
+     JOB Test Operations Technician | N/A |  | https://careers.kula.ai/shinkei/32631-test-operations-technician?page=9
+     JOB Strategy And Operations Analyst | N/A |  | https://careers.kula.ai/shinkei/35453-strategy-and-operations-analyst?page=9
+     JOB Manufacturing Finance Inventory Operations Manager | N/A |  | https://careers.kula.ai/shinkei/48950-manufacturing-finance-inventory-operations-manager?page=9
+     JOB Test Engineer | N/A |  | https://careers.kula.ai/shinkei/50714-test-engineer?page=9
+     JOB Technical Talent Partner | N/A |  | https://careers.kula.ai/shinkei/51542-technical-talent-partner?page=9
+     JOB Mechanical Engineering Intern Associate Engineer | N/A |  | https://careers.kula.ai/shinkei/51937-mechanical-engineering-intern-associate-engineer?page=9
+     JOB Manufacturing Technician Mid Level | N/A |  | https://careers.kula.ai/shinkei/51940-manufacturing-technician-mid-level?page=9
+     JOB Software Engineer Robotics | N/A |  | https://careers.kula.ai/shinkei/53228-software-engineer-robotics?page=9
+     JOB Software Engineer Fullstack | N/A |  | https://careers.kula.ai/shinkei/53417-software-engineer-fullstack?page=9
+     JOB Manufacturing Technician Junior Entry Level | N/A |  | https://careers.kula.ai/shinkei/54853-manufacturing-technician-junior-entry-level?page=9
+     JOB New Product Commercialization Manager | N/A |  | https://careers.kula.ai/shinkei/34690-new-product-commercialization-manager?page=9
+     JOB Product Innovation Manager | N/A |  | https://careers.kula.ai/shinkei/52268-product-innovation-manager?page=9
+     JOB Regional Sales Manager Remote | N/A |  | https://careers.kula.ai/shinkei/54521-regional-sales-manager-remote?page=9
+     JOB Regional Sales Director Remote | N/A |  | https://careers.kula.ai/shinkei/54855-regional-sales-director-remote?page=9
+     JOB Mechanical Engineer | N/A |  | https://careers.kula.ai/shinkei/32624-mechanical-engineer?page=10
+     JOB Electrical Engineer | N/A |  | https://careers.kula.ai/shinkei/32626-electrical-engineer?page=10
+     JOB Test Operations Technician | N/A |  | https://careers.kula.ai/shinkei/32631-test-operations-technician?page=10
+     JOB Strategy And Operations Analyst | N/A |  | https://careers.kula.ai/shinkei/35453-strategy-and-operations-analyst?page=10
+     JOB Manufacturing Finance Inventory Operations Manager | N/A |  | https://careers.kula.ai/shinkei/48950-manufacturing-finance-inventory-operations-manager?page=10
+     JOB Test Engineer | N/A |  | https://careers.kula.ai/shinkei/50714-test-engineer?page=10
+     JOB Technical Talent Partner | N/A |  | https://careers.kula.ai/shinkei/51542-technical-talent-partner?page=10
+     JOB Mechanical Engineering Intern Associate Engineer | N/A |  | https://careers.kula.ai/shinkei/51937-mechanical-engineering-intern-associate-engineer?page=10
+     JOB Manufacturing Technician Mid Level | N/A |  | https://careers.kula.ai/shinkei/51940-manufacturing-technician-mid-level?page=10
+     JOB Software Engineer Robotics | N/A |  | https://careers.kula.ai/shinkei/53228-software-engineer-robotics?page=10
+     JOB Software Engineer Fullstack | N/A |  | https://careers.kula.ai/shinkei/53417-software-engineer-fullstack?page=10
+     JOB Manufacturing Technician Junior Entry Level | N/A |  | https://careers.kula.ai/shinkei/54853-manufacturing-technician-junior-entry-level?page=10
+     JOB New Product Commercialization Manager | N/A |  | https://careers.kula.ai/shinkei/34690-new-product-commercialization-manager?page=10
+     JOB Product Innovation Manager | N/A |  | https://careers.kula.ai/shinkei/52268-product-innovation-manager?page=10
+     JOB Regional Sales Manager Remote | N/A |  | https://careers.kula.ai/shinkei/54521-regional-sales-manager-remote?page=10
+     JOB Regional Sales Director Remote | N/A |  | https://careers.kula.ai/shinkei/54855-regional-sales-director-remote?page=10
