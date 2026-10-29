@@ -16,15 +16,12 @@ def _peek(self, job, feed):
     return _orig(self, job, feed)
 adp_scraper.ADPScraper._to_posting = _peek
 
-NEW = {'Insulet', 'Figure', 'DMC Engineering', 'Vast', 'EPTA Refrigeration',
-       'Landis+Gyr', 'Modine', 'Lincoln Electric', 'Shinkei',
-       'Jordan & Skala Engineers', 'JTEKT North America',
-       'Pelican Energy Consultants', 'AprilAire', 'EwingCole', 'Hendrickson',
-       'Audubon', 'Linewise', 'Bosch', 'Quantum Computing Inc', 'Panasonic',
-       'Formlabs', 'Eaton', 'Nokia', 'Centrus Energy', 'Vantedge Medical'}
+NEW = {'Shinkei', 'Bosch'}
 
 async def main():
+    from .scrapers.playwright_scraper import PlaywrightScraper
     scrapers = [s for s in get_all_scrapers() if s.company_name in NEW]
+    scrapers.append(PlaywrightScraper('Bosch-pages5', 'https://jobs.bosch.com/en/?country=us&pages=5'))
     sem = asyncio.Semaphore(5)
     async def one(s):
         async with sem:
@@ -41,7 +38,7 @@ async def main():
         print(f'@@ {s.company_name} | {type(s).__name__} | jobs={n} | pages_ok={s.pages_ok} | errors={len(s.errors)}')
         for e in list(dict.fromkeys(s.errors))[:2]:
             print(f'     ERR {e}')
-        for r in (res or [])[:3]:
+        for r in (res or [])[:200 if s.company_name == 'Shinkei' else 3]:
             print(f'     JOB {r.title[:60]} | {r.location} | {r.date_posted} | {r.url[:100]}')
 
 asyncio.run(main())
