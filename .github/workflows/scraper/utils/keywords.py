@@ -55,7 +55,7 @@ EXCLUDE_KEYWORDS = [
     'finance', 'logistic', 'cybersecurity', 'tax',
     'construction', 'procurement', 'management',
     'data', 'purchasing', 'analytics', 'geology',
-    'human resource',
+    'human resource', 'business',
 ]
 
 # Whole-word-only excludes (to avoid false positives like
