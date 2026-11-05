@@ -139,6 +139,11 @@
     "first_seen": "2026-10-31T16:56:18.548517",
     "title": "Production Manager"
   },
+  "https://assaabloy.jobs2web.com/job/berlin-r&d-engineer-mechanical-core-%28mwd%29-be-14167/1452273133": {
+    "company": "ASSA ABLOY",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "R&D Engineer Mechanical Core (m/w/d)"
+  },
   "https://assaabloy.jobs2web.com/job/berlin-r&d-entwicklungsingenieur-mechanical-core-%28mwd%29-be-14167/1379442033": {
     "company": "ASSA ABLOY",
     "first_seen": "2026-05-29T20:27:40.573582",
@@ -433,6 +438,11 @@
     "company": "ASSA ABLOY",
     "first_seen": "2026-11-01T17:45:28.139908",
     "title": "Production Test Technician"
+  },
+  "https://assaabloy.jobs2web.com/job/new-haven-productprogram-manager-ct-06511/1444988933": {
+    "company": "ASSA ABLOY",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Product/Program Manager"
   },
   "https://assaabloy.jobs2web.com/job/new-haven-smt-process-engineer-%28pcba%29-ct-06511/1398453033": {
     "company": "ASSA ABLOY",
@@ -734,30 +744,285 @@
     "first_seen": "2026-10-27T17:41:31.631507",
     "title": "Infrastructure Engineer, Mechanical Tooling"
   },
+  "https://boards.greenhouse.io/neuralink/jobs/8196930003?gh_jid=8196930003": {
+    "company": "Neuralink",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Mechanical Design Engineer"
+  },
+  "https://boards.greenhouse.io/vast/jobs/4337591006?gh_jid=4337591006": {
+    "company": "Vast",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Senior Harness Design Engineer"
+  },
   "https://boards.greenhouse.io/vast/jobs/4585081006?gh_jid=4585081006": {
     "company": "Vast",
     "first_seen": "2026-11-02T21:32:11.892639",
     "title": "Avionics Manufacturing Engineer "
+  },
+  "https://boards.greenhouse.io/vast/jobs/4602753006?gh_jid=4602753006": {
+    "company": "Vast",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Tooling Engineer"
+  },
+  "https://boards.greenhouse.io/vast/jobs/4603872006?gh_jid=4603872006": {
+    "company": "Vast",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Propulsion Test Engineer "
+  },
+  "https://boards.greenhouse.io/vast/jobs/4605713006?gh_jid=4605713006": {
+    "company": "Vast",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Avionics Manufacturing Engineer, Wiring Harnesses "
+  },
+  "https://boards.greenhouse.io/vast/jobs/4621291006?gh_jid=4621291006": {
+    "company": "Vast",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Mechanical Engineer II"
+  },
+  "https://boards.greenhouse.io/vast/jobs/4644361006?gh_jid=4644361006": {
+    "company": "Vast",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "RF Systems Engineer "
+  },
+  "https://boards.greenhouse.io/vast/jobs/4650839006?gh_jid=4650839006": {
+    "company": "Vast",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Fluids Test Engineer"
+  },
+  "https://boards.greenhouse.io/vast/jobs/4666738006?gh_jid=4666738006": {
+    "company": "Vast",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Senior Mechanical Engineer, Thermal Control Systems"
+  },
+  "https://boards.greenhouse.io/vast/jobs/4676121006?gh_jid=4676121006": {
+    "company": "Vast",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Staff Environmental Test Engineer"
+  },
+  "https://boards.greenhouse.io/vast/jobs/4679345006?gh_jid=4679345006": {
+    "company": "Vast",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Senior Mechanical Engineer, Structures"
+  },
+  "https://boards.greenhouse.io/vast/jobs/4682799006?gh_jid=4682799006": {
+    "company": "Vast",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Senior Mechanical Engineer, Life Support Systems"
+  },
+  "https://boards.greenhouse.io/vast/jobs/4683284006?gh_jid=4683284006": {
+    "company": "Vast",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Mechanical Engineer II, Thermal Control Systems "
+  },
+  "https://boards.greenhouse.io/vast/jobs/4686352006?gh_jid=4686352006": {
+    "company": "Vast",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Senior Thermal Engineer"
+  },
+  "https://boards.greenhouse.io/vast/jobs/4690307006?gh_jid=4690307006": {
+    "company": "Vast",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Staff Thermal Engineer"
+  },
+  "https://boards.greenhouse.io/vast/jobs/4692866006?gh_jid=4692866006": {
+    "company": "Vast",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Tooling Engineer I"
   },
   "https://boards.greenhouse.io/vast/jobs/4694236006?gh_jid=4694236006": {
     "company": "Vast",
     "first_seen": "2026-10-30T17:49:11.684079",
     "title": "Build Reliability Engineer (Structures)"
   },
+  "https://boards.greenhouse.io/vast/jobs/4694833006?gh_jid=4694833006": {
+    "company": "Vast",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Structures Design Reliability Engineer"
+  },
+  "https://boards.greenhouse.io/vast/jobs/4694835006?gh_jid=4694835006": {
+    "company": "Vast",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Thermal Fluids Design Reliability Engineer"
+  },
+  "https://boards.greenhouse.io/vast/jobs/4694836006?gh_jid=4694836006": {
+    "company": "Vast",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Avionics Design Reliability Engineer"
+  },
+  "https://boards.greenhouse.io/vast/jobs/4694841006?gh_jid=4694841006": {
+    "company": "Vast",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Propulsion Design Reliability Engineer"
+  },
+  "https://boards.greenhouse.io/vast/jobs/4696280006?gh_jid=4696280006": {
+    "company": "Vast",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Propulsion Test Engineer"
+  },
+  "https://boards.greenhouse.io/vast/jobs/4696727006?gh_jid=4696727006": {
+    "company": "Vast",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Reliability Engineer"
+  },
+  "https://boards.greenhouse.io/vast/jobs/4699081006?gh_jid=4699081006": {
+    "company": "Vast",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Design Reliability Engineer"
+  },
+  "https://boards.greenhouse.io/vast/jobs/4700681006?gh_jid=4700681006": {
+    "company": "Vast",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Senior Manufacturing Engineer"
+  },
+  "https://boards.greenhouse.io/vast/jobs/4701302006?gh_jid=4701302006": {
+    "company": "Vast",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Systems Engineer"
+  },
+  "https://boards.greenhouse.io/vast/jobs/4702107006?gh_jid=4702107006": {
+    "company": "Vast",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Test Engineer, Structures Test"
+  },
+  "https://boards.greenhouse.io/vast/jobs/4702874006?gh_jid=4702874006": {
+    "company": "Vast",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Mechanical Engineer II, Life Support Systems"
+  },
+  "https://boards.greenhouse.io/vast/jobs/4703939006?gh_jid=4703939006": {
+    "company": "Vast",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Manufacturing Technician, Mechanical Assemblies "
+  },
+  "https://boards.greenhouse.io/vast/jobs/4703949006?gh_jid=4703949006": {
+    "company": "Vast",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Test Engineer "
+  },
+  "https://boards.greenhouse.io/vast/jobs/4705164006?gh_jid=4705164006": {
+    "company": "Vast",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Controls and Automation Engineer II"
+  },
   "https://boards.greenhouse.io/vast/jobs/4705984006?gh_jid=4705984006": {
     "company": "Vast",
     "first_seen": "2026-10-31T16:56:18.548517",
     "title": "Senior Test Engineer, Thermal Control Systems "
+  },
+  "https://boards.greenhouse.io/vast/jobs/4706013006?gh_jid=4706013006": {
+    "company": "Vast",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Senior Mechanical Engineer, Lunar"
+  },
+  "https://boards.greenhouse.io/vast/jobs/4708204006?gh_jid=4708204006": {
+    "company": "Vast",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Supervisor, Avionics Manufacturing - Electro Mechanical "
+  },
+  "https://boards.greenhouse.io/vast/jobs/4708985006?gh_jid=4708985006": {
+    "company": "Vast",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Avionics Test Engineer"
+  },
+  "https://boards.greenhouse.io/vast/jobs/4709836006?gh_jid=4709836006": {
+    "company": "Vast",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Avionics Manufacturing Engineer, Solar Array"
+  },
+  "https://boards.greenhouse.io/vast/jobs/4710168006?gh_jid=4710168006": {
+    "company": "Vast",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Senior RF Test Engineer"
+  },
+  "https://boards.greenhouse.io/vast/jobs/4710375006?gh_jid=4710375006": {
+    "company": "Vast",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Avionics Mechanical Design Engineer"
+  },
+  "https://boards.greenhouse.io/vast/jobs/4711793006?gh_jid=4711793006": {
+    "company": "Vast",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Mechanical Test Engineer II"
+  },
+  "https://boards.greenhouse.io/vast/jobs/4711855006?gh_jid=4711855006": {
+    "company": "Vast",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Mechanical Engineering, Avionics"
+  },
+  "https://boards.greenhouse.io/vast/jobs/4712537006?gh_jid=4712537006": {
+    "company": "Vast",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Avionics System Test Engineer"
+  },
+  "https://boards.greenhouse.io/vast/jobs/4712558006?gh_jid=4712558006": {
+    "company": "Vast",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Production Technician "
+  },
+  "https://boards.greenhouse.io/vast/jobs/4715348006?gh_jid=4715348006": {
+    "company": "Vast",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Senior Power Systems Engineer"
+  },
+  "https://boards.greenhouse.io/vast/jobs/4715615006?gh_jid=4715615006": {
+    "company": "Vast",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Assembly Integration & Test Engineer, Satellites"
+  },
+  "https://boards.greenhouse.io/vast/jobs/4715744006?gh_jid=4715744006": {
+    "company": "Vast",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Solar Array Test Engineer"
+  },
+  "https://boards.greenhouse.io/vast/jobs/4715767006?gh_jid=4715767006": {
+    "company": "Vast",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Fluid Systems Engineering"
   },
   "https://boards.greenhouse.io/vast/jobs/4716363006?gh_jid=4716363006": {
     "company": "Vast",
     "first_seen": "2026-10-30T17:49:11.684079",
     "title": "Senior Systems Engineer - Satellites"
   },
+  "https://boards.greenhouse.io/vast/jobs/4716857006?gh_jid=4716857006": {
+    "company": "Vast",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Staff Design Reliability Engineer"
+  },
+  "https://boards.greenhouse.io/vast/jobs/4717816006?gh_jid=4717816006": {
+    "company": "Vast",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Mechanical Engineering, Structures"
+  },
+  "https://boards.greenhouse.io/vast/jobs/4717817006?gh_jid=4717817006": {
+    "company": "Vast",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Mechanical Engineering, Thermal Control Systems"
+  },
+  "https://boards.greenhouse.io/vast/jobs/4718300006?gh_jid=4718300006": {
+    "company": "Vast",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Mechanical Engineering, Avionics (New Grad)"
+  },
+  "https://boards.greenhouse.io/vast/jobs/4718301006?gh_jid=4718301006": {
+    "company": "Vast",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Mechanical Engineering, Structures (New Grad)"
+  },
+  "https://boards.greenhouse.io/vast/jobs/4718302006?gh_jid=4718302006": {
+    "company": "Vast",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Mechanical Engineering, Thermal Control Systems (New Grad)"
+  },
   "https://boards.greenhouse.io/vast/jobs/4718573006?gh_jid=4718573006": {
     "company": "Vast",
     "first_seen": "2026-11-04T19:28:10.525769",
     "title": "Senior Mechanical Engineering Analyst"
+  },
+  "https://boards.greenhouse.io/vast/jobs/4722703006?gh_jid=4722703006": {
+    "company": "Vast",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Senior Power Systems Engineer,  Lunar"
   },
   "https://boards.greenhouse.io/vast/jobs/4723039006?gh_jid=4723039006": {
     "company": "Vast",
@@ -768,6 +1033,21 @@
     "company": "Vast",
     "first_seen": "2026-11-04T19:28:10.525769",
     "title": "Build Reliability Engineer - Fluid Systems"
+  },
+  "https://boards.greenhouse.io/vast/jobs/4723400006?gh_jid=4723400006": {
+    "company": "Vast",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Supplier Reliability Engineer - Metallic Materials & Processes "
+  },
+  "https://boards.greenhouse.io/vast/jobs/4723412006?gh_jid=4723412006": {
+    "company": "Vast",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Senior Supplier Reliability Engineer  "
+  },
+  "https://boards.greenhouse.io/vast/jobs/4723509006?gh_jid=4723509006": {
+    "company": "Vast",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Senior Network Automation Engineer"
   },
   "https://boards.greenhouse.io/vast/jobs/4726177006?gh_jid=4726177006": {
     "company": "Vast",
@@ -803,6 +1083,11 @@
     "company": "Vast",
     "first_seen": "2026-11-04T19:28:10.525769",
     "title": "Senior Thermal Engineer, Lunar"
+  },
+  "https://boards.greenhouse.io/vast/jobs/4727480006?gh_jid=4727480006": {
+    "company": "Vast",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Production Specialist"
   },
   "https://boseallaboutme.wd503.myworkdayjobs.com/bose_careers/job/us-ma---framingham/advanced-development-audio-experience-engineer_r29171": {
     "company": "Bose",
@@ -1389,6 +1674,11 @@
     "first_seen": "2026-07-08T14:06:56.041216",
     "title": "Mechanical Assembler IV"
   },
+  "https://calistacorp.wd1.myworkdayjobs.com/yulista/job/huntsville-al/mechanical-engineer-l_jr110174": {
+    "company": "Calista/Yulista",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Mechanical Engineer l"
+  },
   "https://calistacorp.wd1.myworkdayjobs.com/yulista/job/huntsville-al/mechanical-execution-planner-iii_jr108794": {
     "company": "Calista/Yulista",
     "first_seen": "2026-05-30T13:32:19.890371",
@@ -1468,6 +1758,11 @@
     "company": "Calista/Yulista",
     "first_seen": "2026-09-01T16:09:49.600279",
     "title": "Supplier Quality Engineer II"
+  },
+  "https://calistacorp.wd1.myworkdayjobs.com/yulista/job/huntsville-al/ysl-systems-engineer-ll_jr110172": {
+    "company": "Calista/Yulista",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "YSL Systems Engineer ll"
   },
   "https://calistacorp.wd1.myworkdayjobs.com/yulista/job/lakehurst-nj/mechanical-engineer--configuration-i--ii----iii--evergreen-_jr110128": {
     "company": "Calista/Yulista",
@@ -3928,6 +4223,11 @@
     "company": "Panasonic",
     "first_seen": "2026-10-30T17:49:11.684079",
     "title": "Mechanical Engineer II"
+  },
+  "https://careers.na.panasonic.com/jobs/50558?lang=en-us&previouslocale=en-us": {
+    "company": "Panasonic",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Manufacturing Engineer I"
   },
   "https://careers.na.panasonic.com/jobs/50560?lang=en-us&previouslocale=en-us": {
     "company": "Panasonic",
@@ -8274,6 +8574,11 @@
     "first_seen": "2026-10-29T18:07:36.505623",
     "title": "Manufacturing Engineer (Onsite - Acton, MA)"
   },
+  "https://insulet.wd5.myworkdayjobs.com/insuletcareers/job/us---massachusetts/associate-systems-engineer--v-v_req-2026-18881": {
+    "company": "Insulet",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Associate Systems Engineer, V&V"
+  },
   "https://insulet.wd5.myworkdayjobs.com/insuletcareers/job/us---massachusetts/sr-staff-ot-systems-engineer--onsite---acton-_req-2026-18829-1": {
     "company": "Insulet",
     "first_seen": "2026-10-29T18:07:36.505623",
@@ -10034,6 +10339,11 @@
     "first_seen": "2026-11-02T21:32:11.892639",
     "title": "Senior Supplier Quality Engineer \u2013 Structural"
   },
+  "https://job-boards.greenhouse.io/scoutmotors/jobs/5284674007": {
+    "company": "Scout Motors",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Specialist, Production Steering & Documentaion"
+  },
   "https://job-boards.greenhouse.io/sharkninjaoperatingllc/jobs/4552924006": {
     "company": "SharkNinja",
     "first_seen": "2026-11-02T21:32:11.892639",
@@ -10389,6 +10699,16 @@
     "first_seen": "2026-10-31T16:56:18.548517",
     "title": "Product Developer - Coffee"
   },
+  "https://job-boards.greenhouse.io/sharkninjaoperatingllc/jobs/4726779006": {
+    "company": "SharkNinja",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Senior Manager - Product Integrity - Water, Kitchenware & Cookware"
+  },
+  "https://job-boards.greenhouse.io/sharkninjaoperatingllc/jobs/4726899006": {
+    "company": "SharkNinja",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Product Developer - Coolers & Drinkware "
+  },
   "https://jobs.ametek.com/job/athens-mechanical-engineer-oh-45701/1383970000": {
     "company": "AMETEK",
     "first_seen": "2026-05-29T20:27:40.573582",
@@ -10733,6 +11053,11 @@
     "company": "AMETEK",
     "first_seen": "2026-08-31T18:52:01.042635",
     "title": "Mechanical Engineer"
+  },
+  "https://jobs.ametek.com/job/columbus-product-manager-oh-43085/1437810800": {
+    "company": "AMETEK",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Product Manager"
   },
   "https://jobs.ametek.com/job/columbus-project-engineer-oh-43085/1391802700": {
     "company": "AMETEK",
@@ -12719,6 +13044,16 @@
     "first_seen": "2026-10-29T18:07:36.505623",
     "title": "Quality Engineer"
   },
+  "https://jobs.bosch.com/en/job/ref295144m-process-engineer-in-joining-technologies": {
+    "company": "Bosch",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Process Engineer in Joining Technologies"
+  },
+  "https://jobs.bosch.com/en/job/ref295146u-process-engineer-in-image-processing-and-vision-systems": {
+    "company": "Bosch",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Process Engineer in Image Processing and Vision Systems"
+  },
   "https://jobs.bosch.com/en/job/ref296607k-reliability-engineer": {
     "company": "Bosch",
     "first_seen": "2026-10-29T18:07:36.505623",
@@ -12744,6 +13079,11 @@
     "first_seen": "2026-10-29T18:07:36.505623",
     "title": "Manufacturing Engineer - Automated Assembly"
   },
+  "https://jobs.bosch.com/en/job/ref297641l-manufacturing-engineering-grinding-technician": {
+    "company": "Bosch",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Manufacturing Engineering Grinding Technician"
+  },
   "https://jobs.bosch.com/en/job/ref299360g-senior-product-safety-specialist-diablo-tools": {
     "company": "Bosch",
     "first_seen": "2026-10-29T18:07:36.505623",
@@ -12758,6 +13098,16 @@
     "company": "Bosch",
     "first_seen": "2026-11-04T19:28:10.525769",
     "title": "PM Production Worker"
+  },
+  "https://jobs.bosch.com/en/job/ref299885k-production-worker": {
+    "company": "Bosch",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Production Worker"
+  },
+  "https://jobs.bosch.com/en/job/ref299891y-production-worker": {
+    "company": "Bosch",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Production Worker"
   },
   "https://jobs.bosch.com/en/job/ref299964k-manufacturing-engineer-i": {
     "company": "Bosch",
@@ -13543,6 +13893,11 @@
     "company": "Lincoln Electric",
     "first_seen": "2026-10-29T18:07:36.505623",
     "title": "Mechanical Project Engineer"
+  },
+  "https://jobs.lincolnelectric.com/job/gainesville-production-support-operator-ga-30504/1454817233": {
+    "company": "Lincoln Electric",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Production Support Operator"
   },
   "https://jobs.lincolnelectric.com/job/hamilton-mechanical-engineering-lead-on-l9h-7l8/1428888133": {
     "company": "Lincoln Electric",
@@ -14604,6 +14959,11 @@
     "first_seen": "2026-09-03T15:53:03.872581",
     "title": "Mechanical Service Lead Industrial MRO"
   },
+  "https://jobs.schaeffler.com/job/jeonju-production_set-up-operator-54854/1453744733": {
+    "company": "Schaeffler",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Production_Set-up Operator"
+  },
   "https://jobs.schaeffler.com/job/johannesburg-intern-customer-service-2000/1422893833": {
     "company": "Schaeffler",
     "first_seen": "2026-08-04T14:11:12.763390",
@@ -15194,10 +15554,20 @@
     "first_seen": "2026-10-14T16:37:42.841701",
     "title": "Mechanical Design Eng."
   },
+  "https://jobs.schaeffler.com/job/vadodara-mechanical-design-eng_-390013/1454538633": {
+    "company": "Schaeffler",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Mechanical Design Eng."
+  },
   "https://jobs.schaeffler.com/job/vadodara-mechanical-eng_-390013/1406435133": {
     "company": "Schaeffler",
     "first_seen": "2026-06-30T14:22:19.328769",
     "title": "Mechanical Eng."
+  },
+  "https://jobs.schaeffler.com/job/vadodara-production-maintenance-eng_-390013/1454538233": {
+    "company": "Schaeffler",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Production Maintenance Eng."
   },
   "https://jobs.schaeffler.com/job/winsted%2c-ct-industrial-mechatronics-mechanic-apprentice-winsted-ct-6098/1414386933": {
     "company": "Schaeffler",
@@ -16009,6 +16379,11 @@
     "first_seen": "2026-07-04T13:26:55.569949",
     "title": "Product Design Engineering (Mechanical Engineer)"
   },
+  "https://jobs.siemens-energy.com/en_us/jobs/folderdetail/production-and-material-planning-specialist/305067": {
+    "company": "Siemens Energy",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Production and Material Planning Specialist"
+  },
   "https://jobs.siemens-energy.com/en_us/jobs/folderdetail/project-engineer-siemens-energy-dammam-ksa/298151": {
     "company": "Siemens Energy",
     "first_seen": "2026-07-05T13:33:00.611105",
@@ -16444,6 +16819,11 @@
     "first_seen": "2026-06-05T14:52:50.047072",
     "title": "Wind Technician (Renewables)"
   },
+  "https://jobs.siemens-energy.com/en_us/jobs/folderdetail/wind-technician-renewables/306107": {
+    "company": "Siemens Energy",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Wind Technician (Renewables)"
+  },
   "https://jobs.siemens-energy.com/en_us/jobs/folderdetail/wind-turbine-loads-engineer-project-intern/301646": {
     "company": "Siemens Energy",
     "first_seen": "2026-08-18T12:46:10.332090",
@@ -16568,6 +16948,11 @@
     "company": "Tenneco",
     "first_seen": "2026-09-28T19:20:17.151799",
     "title": "Manufacturing Engineer"
+  },
+  "https://jobs.tenneco.com/job/cambridge-snr-manufacturing-engineer-oh/1448227900": {
+    "company": "Tenneco",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Snr Manufacturing Engineer"
   },
   "https://jobs.tenneco.com/job/glasgow-hourly-air-disc-production-technician-nights-ky/1436256500": {
     "company": "Tenneco",
@@ -17349,10 +17734,20 @@
     "first_seen": "2026-10-29T18:07:36.505623",
     "title": "3rd shift - Production Associate"
   },
+  "https://myjobs.adp.com/hendrickson/cx/job-details?reqid=5001232309506": {
+    "company": "Hendrickson",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Engineering Manager: Product Engineering"
+  },
   "https://myjobs.adp.com/hendrickson/cx/job-details?reqid=5001232395306": {
     "company": "Hendrickson",
     "first_seen": "2026-10-29T18:07:36.505623",
     "title": "Manufacturing Engineering Technician - Afternoons"
+  },
+  "https://myjobs.adp.com/hendrickson/cx/job-details?reqid=5001235389006": {
+    "company": "Hendrickson",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "3rd shift - Production Associate"
   },
   "https://myjobs.adp.com/hendrickson/cx/job-details?reqid=5001235899406": {
     "company": "Hendrickson",
@@ -17623,6 +18018,16 @@
     "company": "Nidec",
     "first_seen": "2026-08-14T13:07:14.714570",
     "title": "Design Engineer III"
+  },
+  "https://nidec.wd1.myworkdayjobs.com/nidec/job/north-americausamissourist-louis---ccp-mo/design-engineer-iii_r0018385": {
+    "company": "Nidec",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Design Engineer III"
+  },
+  "https://nidec.wd1.myworkdayjobs.com/nidec/job/north-americausamissourist-louis---ccp-mo/electromagnetic-design-engineer_r0018387-1": {
+    "company": "Nidec",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Electromagnetic Design Engineer"
   },
   "https://nidec.wd1.myworkdayjobs.com/nidec/job/north-americausamissourist-louis---ccp-mo/engineering-co-op_r0014941-1": {
     "company": "Nidec",
@@ -18449,6 +18854,11 @@
     "first_seen": "2026-11-04T19:28:10.525769",
     "title": "Production Manager"
   },
+  "https://recruiting.paylocity.com/recruiting/jobs/details/4641848": {
+    "company": "Vantedge Medical",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Mechanical Assembler"
+  },
   "https://resmed.wd3.myworkdayjobs.com/resmed_external_careers/job/calabasas-ca-united-states/automation-engineer_jr_051484-1": {
     "company": "ResMed",
     "first_seen": "2026-05-28T23:19:59.896652",
@@ -18548,6 +18958,11 @@
     "company": "Stanley Black & Decker",
     "first_seen": "2026-06-05T14:52:50.047072",
     "title": "Mechanical Engineer III"
+  },
+  "https://sbdinc.wd1.myworkdayjobs.com/stanley_black_decker_career_site/job/east-longmeadow-ma-united-states/senior-analyst-quality-engineering_req-1000053313": {
+    "company": "Stanley Black & Decker",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Senior Analyst Quality Engineering"
   },
   "https://sbdinc.wd1.myworkdayjobs.com/stanley_black_decker_career_site/job/east-longmeadow-ma-united-states/sr-manufacturing-engineer_req-1000050021": {
     "company": "Stanley Black & Decker",
@@ -19134,6 +19549,11 @@
     "first_seen": "2026-07-25T13:26:57.834148",
     "title": "Quality - Safety Intern"
   },
+  "https://taylor.wd1.myworkdayjobs.com/external/job/duluth-ga---taylor-print--visual-impressions-inc/production-control-assistant_r30526": {
+    "company": "Taylor",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Production Control Assistant"
+  },
   "https://taylor.wd1.myworkdayjobs.com/external/job/fl-pompano-beach-3000-nw-27th-ave-800/production-assembly-and-support_r30519": {
     "company": "Taylor",
     "first_seen": "2026-11-02T21:32:11.892639",
@@ -19203,6 +19623,11 @@
     "company": "Taylor",
     "first_seen": "2026-10-30T17:49:11.684079",
     "title": "Production Team Lead (2nd Shift)"
+  },
+  "https://taylor.wd1.myworkdayjobs.com/external/job/north-mankato-mn---precision-press-inc/production-supervisor--2nd-shift-_r30629": {
+    "company": "Taylor",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Production Supervisor (2nd Shift)"
   },
   "https://taylor.wd1.myworkdayjobs.com/external/job/north-mankato-mn---taylor-corporation/equipment-operator---production-support---multiple-openings-_r30609": {
     "company": "Taylor",
@@ -19624,6 +20049,16 @@
     "first_seen": "2026-10-30T17:49:11.684079",
     "title": "NewInternship - Mechatronics EngineerWilton, CT, USInterns and TraineesInternship"
   },
+  "https://www.asml.com/en/careers/find-your-job/internship-optical-modeling-and-simulation-engineering-j00354940": {
+    "company": "ASML",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "NewInternship-Optical Modeling and Simulation EngineeringSan Jose, CA, USInterns and TraineesInternship"
+  },
+  "https://www.asml.com/en/careers/find-your-job/internship-optical-modeling-and-simulation-engineering-j00355370": {
+    "company": "ASML",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "NewInternship-Optical Modeling and Simulation EngineeringSan Jose, CA, USInterns and TraineesInternship"
+  },
   "https://www.asml.com/en/careers/find-your-job/internship-product-engineer-computational-model-j00355245": {
     "company": "ASML",
     "first_seen": "2026-10-31T16:56:18.548517",
@@ -19824,6 +20259,11 @@
     "first_seen": "2026-10-15T16:23:53.893817",
     "title": "CFD Engineer/ Sr. CFD Engineer 1"
   },
+  "https://www.jobs.atlascopcogroup.com/job/design-engineer-senior-design-engineer-gap-engineered-solutions-gecia/175903-en_us": {
+    "company": "Atlas Copco",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Design Engineer/ Senior Design Engineer - GAP- Engineered Solutions GECIA"
+  },
   "https://www.jobs.atlascopcogroup.com/job/junior-mechanical-engineer/175865-en_us": {
     "company": "Atlas Copco",
     "first_seen": "2026-10-19T18:26:01.456781",
@@ -19838,6 +20278,11 @@
     "company": "Atlas Copco",
     "first_seen": "2026-10-07T18:30:23.745438",
     "title": "Project Engineer - Upgrades"
+  },
+  "https://www.jobs.atlascopcogroup.com/job/senior-design-engineer-itba-products-&amp;-solutions-1-1/176006-en_us": {
+    "company": "Atlas Copco",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Senior Design Engineer/ ITBA Products & Solutions 1 1"
   },
   "https://www.jobs.atlascopcogroup.com/job/senior-design-engineer-itba-products-&amp;-solutions-1/172513-en_us": {
     "company": "Atlas Copco",
@@ -19918,6 +20363,11 @@
     "company": "Xylem",
     "first_seen": "2026-08-14T13:07:14.714570",
     "title": "Project Engineer III"
+  },
+  "https://xylem.wd5.myworkdayjobs.com/xylem-careers/job/holland-michigan/engineer-ii_r51012": {
+    "company": "Xylem",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Project Engineer II"
   },
   "https://xylem.wd5.myworkdayjobs.com/xylem-careers/job/indianapolis-indiana/production-worker_r51507": {
     "company": "Xylem",
@@ -20018,6 +20468,16 @@
     "company": "Xylem",
     "first_seen": "2026-05-30T13:32:19.890371",
     "title": "MECHANICAL ENGINEER PRODUCT DEVELOPMENT"
+  },
+  "https://xylem.wd5.myworkdayjobs.com/xylem-careers/job/texarkana-arkansas/production-line-worker_r51530": {
+    "company": "Xylem",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Production Line Worker"
+  },
+  "https://xylem.wd5.myworkdayjobs.com/xylem-careers/job/texarkana-arkansas/production-line-worker_r51607": {
+    "company": "Xylem",
+    "first_seen": "2026-11-05T19:35:06.954691",
+    "title": "Production Line Worker"
   },
   "https://xylem.wd5.myworkdayjobs.com/xylem-careers/job/thomasville-georgia/engineer-iii_r46457": {
     "company": "Xylem",
