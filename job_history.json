@@ -4309,6 +4309,16 @@
     "first_seen": "2026-11-20T19:42:34.543239",
     "title": "Mechanical Project Manager"
   },
+  "https://careers.formlabs.com/job/8415354/apply": {
+    "company": "Formlabs",
+    "first_seen": "2026-11-24T22:00:40.301927",
+    "title": "Head of Hardware Product - SLS"
+  },
+  "https://careers.formlabs.com/job/8415364/apply": {
+    "company": "Formlabs",
+    "first_seen": "2026-11-24T22:00:40.301927",
+    "title": "Senior Product Manager, Hardware"
+  },
   "https://careers.itw.com/us/en/job/jr10021/manufacturing-engineer-intern": {
     "company": "ITW",
     "first_seen": "2026-09-11T15:58:45.534278",
@@ -8989,6 +8999,11 @@
     "first_seen": "2026-06-03T16:52:14.091373",
     "title": "Mechanical Engineering Co-Op"
   },
+  "https://hargroveepc.wd12.myworkdayjobs.com/hargrove_careers/job/new-johnsonville-tn/project-engineer_2026-001414": {
+    "company": "Hargrove EPC",
+    "first_seen": "2026-11-24T22:00:40.301927",
+    "title": "Project Engineer"
+  },
   "https://hargroveepc.wd12.myworkdayjobs.com/hargrove_careers/job/norco-la/reliability-engineer_2026-000570": {
     "company": "Hargrove EPC",
     "first_seen": "2026-06-18T15:28:34.258499",
@@ -9168,6 +9183,31 @@
     "company": "Insulet",
     "first_seen": "2026-10-29T18:07:36.505623",
     "title": "Manufacturing Engineer (Onsite - Acton, MA)"
+  },
+  "https://insulet.wd5.myworkdayjobs.com/insuletcareers/job/acton-massachusetts/process-quality-engineer--npi--onsite---acton--ma-_req-2026-19344": {
+    "company": "Insulet",
+    "first_seen": "2026-11-24T22:00:40.301927",
+    "title": "Process Quality Engineer, NPI (Onsite - Acton, MA)"
+  },
+  "https://insulet.wd5.myworkdayjobs.com/insuletcareers/job/acton-massachusetts/product-owner--acton--ma-or-san-diego--ca--hybrid-_req-2026-19216": {
+    "company": "Insulet",
+    "first_seen": "2026-11-24T22:00:40.301927",
+    "title": "Product Owner- Acton, MA or San Diego, CA (Hybrid)"
+  },
+  "https://insulet.wd5.myworkdayjobs.com/insuletcareers/job/acton-massachusetts/sr-supplier-quality-engineer--npi---onsite---acton--ma-_req-2026-19343": {
+    "company": "Insulet",
+    "first_seen": "2026-11-24T22:00:40.301927",
+    "title": "Sr. Supplier Quality Engineer, NPI\u200b (Onsite - Acton, MA)"
+  },
+  "https://insulet.wd5.myworkdayjobs.com/insuletcareers/job/acton-massachusetts/supplier-quality-engineer-manager---metals--onsite---acton--ma-_req-2026-19347": {
+    "company": "Insulet",
+    "first_seen": "2026-11-24T22:00:40.301927",
+    "title": "Supplier Quality Engineer Manager - Metals (Onsite - Acton, MA)"
+  },
+  "https://insulet.wd5.myworkdayjobs.com/insuletcareers/job/acton-massachusetts/supplier-quality-engineer-manager---plastics--hybrid---acton--ma-_req-2026-19346-1": {
+    "company": "Insulet",
+    "first_seen": "2026-11-24T22:00:40.301927",
+    "title": "Supplier Quality Engineer Manager \u2013 Plastics (Onsite - Acton, MA)"
   },
   "https://insulet.wd5.myworkdayjobs.com/insuletcareers/job/us---massachusetts/associate-systems-engineer--v-v_req-2026-18881": {
     "company": "Insulet",
@@ -9943,6 +9983,11 @@
     "company": "Axon",
     "first_seen": "2026-11-04T19:28:10.525769",
     "title": "Site Reliability Engineer II"
+  },
+  "https://job-boards.greenhouse.io/axon/jobs/8038248003": {
+    "company": "Axon",
+    "first_seen": "2026-11-24T22:00:40.301927",
+    "title": "Senior Product Manager, TASER Fleet"
   },
   "https://job-boards.greenhouse.io/axon/jobs/8042275003": {
     "company": "Axon",
@@ -11454,6 +11499,11 @@
     "first_seen": "2026-11-23T23:29:56.086496",
     "title": "Product Design Engineer II - Skincare"
   },
+  "https://job-boards.greenhouse.io/sharkninjaoperatingllc/jobs/4731025006": {
+    "company": "SharkNinja",
+    "first_seen": "2026-11-24T22:00:40.301927",
+    "title": "Product Design Engineer"
+  },
   "https://jobs.ametek.com/job/athens-mechanical-engineer-oh-45701/1383970000": {
     "company": "AMETEK",
     "first_seen": "2026-05-29T20:27:40.573582",
@@ -12444,6 +12494,11 @@
     "first_seen": "2026-06-22T17:03:07.170285",
     "title": "Electromechanical Assembler"
   },
+  "https://jobs.ametek.com/job/oak-ridge-electro-mechanical-technician-tn-37831/1453380000": {
+    "company": "AMETEK",
+    "first_seen": "2026-11-24T22:00:40.301927",
+    "title": "Electro-Mechanical Technician"
+  },
   "https://jobs.ametek.com/job/oak-ridge-mechanical-staff-engineer-tn-37831/1433333300": {
     "company": "AMETEK",
     "first_seen": "2026-09-24T16:35:07.734325",
@@ -12567,6 +12622,11 @@
   "https://jobs.ametek.com/job/peabody-production-welder-ma-01960/1413710900": {
     "company": "AMETEK",
     "first_seen": "2026-10-30T17:49:11.684079",
+    "title": "Production Welder"
+  },
+  "https://jobs.ametek.com/job/peabody-production-welder-ma-01960/1442669800": {
+    "company": "AMETEK",
+    "first_seen": "2026-11-24T22:00:40.301927",
     "title": "Production Welder"
   },
   "https://jobs.ametek.com/job/peabody-quality-engineer-ma-01960/1413968600": {
@@ -13289,6 +13349,11 @@
     "first_seen": "2026-08-06T14:08:28.878568",
     "title": "Field Service Representative - Mechanical"
   },
+  "https://jobs.atsautomation.com/job/cambridge-field-service-representative-mechatronics-integrator-on-n3h-4r7/1460435333": {
+    "company": "ATS Automation",
+    "first_seen": "2026-11-24T22:00:40.301927",
+    "title": "Field Service Representative - Mechatronics Integrator"
+  },
   "https://jobs.atsautomation.com/job/cambridge-global-manager%2c-mechanical-design-manufacturing-solutions-on-n3h-4r7/1446200533": {
     "company": "ATS Automation",
     "first_seen": "2026-10-09T18:04:31.781377",
@@ -13404,6 +13469,11 @@
     "first_seen": "2026-10-14T16:37:42.841701",
     "title": "Junior Systems Design Engineer I"
   },
+  "https://jobs.atsautomation.com/job/lewis-center-mechanical-design-engineer-i-oh-43035-9445/1460298933": {
+    "company": "ATS Automation",
+    "first_seen": "2026-11-24T22:00:40.301927",
+    "title": "Mechanical Design Engineer I"
+  },
   "https://jobs.atsautomation.com/job/lewis-center-mechanical-design-engineer-intern-oh-43035-9445/1388074733": {
     "company": "ATS Automation",
     "first_seen": "2026-05-28T23:19:59.896652",
@@ -13423,6 +13493,11 @@
     "company": "ATS Automation",
     "first_seen": "2026-05-28T23:19:59.896652",
     "title": "Senior Controls Design Engineer III"
+  },
+  "https://jobs.atsautomation.com/job/lewis-center-senior-mechanical-design-engineer-iii-oh-43035-9445/1460297633": {
+    "company": "ATS Automation",
+    "first_seen": "2026-11-24T22:00:40.301927",
+    "title": "Senior Mechanical Design Engineer III"
   },
   "https://jobs.atsautomation.com/job/lewis-center-senior-mechanical-engineer-oh-43035-9445/1227166101": {
     "company": "ATS Automation",
@@ -14274,6 +14349,11 @@
     "first_seen": "2026-10-29T18:07:36.505623",
     "title": "Production Operator"
   },
+  "https://jobs.dana.com/job/ft_wayne-production-supervisor-1st-heat-treat-in-46808-1998/1443584900": {
+    "company": "Dana Inc",
+    "first_seen": "2026-11-24T22:00:40.301927",
+    "title": "Production Supervisor 1st Heat Treat"
+  },
   "https://jobs.dana.com/job/ft_wayne-production-supervisor-1st-in-46808-1998/1405729200": {
     "company": "Dana Inc",
     "first_seen": "2026-10-29T18:07:36.505623",
@@ -14708,6 +14788,11 @@
     "company": "JTEKT North America",
     "first_seen": "2026-11-23T23:29:56.086496",
     "title": "Manager Production Req# 5669"
+  },
+  "https://jobs.dayforcehcm.com/en-us/jtekt/candidateportal/jobs/21257": {
+    "company": "JTEKT North America",
+    "first_seen": "2026-11-24T22:00:40.301927",
+    "title": "Senior Production Engineer Req# 5626"
   },
   "https://jobs.dayforcehcm.com/en-us/legence/studentportal/jobs/30566": {
     "company": "Legence",
@@ -15973,6 +16058,11 @@
     "company": "Schaeffler",
     "first_seen": "2026-06-10T15:37:53.626735",
     "title": "Professional Internal Audit (m/w/d) - Methoden, Reporting & Qualit\u00e4tssicherung"
+  },
+  "https://jobs.schaeffler.com/job/herzogenaurach-werkstudent-people-development-und-qualification-&-learning-%28dmw%29-91074/1460080933": {
+    "company": "Schaeffler",
+    "first_seen": "2026-11-24T22:00:40.301927",
+    "title": "Werkstudent People Development und Qualification & Learning (d/m/w)"
   },
   "https://jobs.schaeffler.com/job/herzogenaurach-werkstudent-production-engineering-%28dmw%29-91074/1381122133": {
     "company": "Schaeffler",
@@ -17534,6 +17624,11 @@
     "first_seen": "2026-07-31T14:06:29.716703",
     "title": "Mechanikus karbantart\u00f3 (Mechanical Maintenance)"
   },
+  "https://jobs.siemens-energy.com/en_us/jobs/folderdetail/mechenical-design-engineer-generators/305148": {
+    "company": "Siemens Energy",
+    "first_seen": "2026-11-24T22:00:40.301927",
+    "title": "Mechenical Design Engineer - Generators"
+  },
   "https://jobs.siemens-energy.com/en_us/jobs/folderdetail/mgt-new-unit-commissioning-engineer/301941": {
     "company": "Siemens Energy",
     "first_seen": "2026-09-07T17:20:23.260626",
@@ -17728,6 +17823,11 @@
     "company": "Siemens Energy",
     "first_seen": "2026-08-14T13:07:14.714570",
     "title": "Quality Engineer (m/w/d)"
+  },
+  "https://jobs.siemens-energy.com/en_us/jobs/folderdetail/quality-engineer-manufacturing/305527": {
+    "company": "Siemens Energy",
+    "first_seen": "2026-11-24T22:00:40.301927",
+    "title": "Quality Engineer - Manufacturing"
   },
   "https://jobs.siemens-energy.com/en_us/jobs/folderdetail/quality-engineer/299185": {
     "company": "Siemens Energy",
@@ -18494,6 +18594,11 @@
     "first_seen": "2026-10-29T18:07:36.505623",
     "title": "Production Operator (2nd Shift)"
   },
+  "https://jobs.tenneco.com/job/seward-production-operator-ne-68434/1453330000": {
+    "company": "Tenneco",
+    "first_seen": "2026-11-24T22:00:40.301927",
+    "title": "Production Operator"
+  },
   "https://jobs.tenneco.com/job/seward-quality-engineer-ne-68434/1396723100": {
     "company": "Tenneco",
     "first_seen": "2026-06-15T17:22:03.987568",
@@ -18532,6 +18637,11 @@
   "https://jobs.tenneco.com/job/smithville-production-supervisor-tn/1428920200": {
     "company": "Tenneco",
     "first_seen": "2026-10-29T18:07:36.505623",
+    "title": "Production Supervisor"
+  },
+  "https://jobs.tenneco.com/job/smithville-production-supervisor-tn/1453412600": {
+    "company": "Tenneco",
+    "first_seen": "2026-11-24T22:00:40.301927",
     "title": "Production Supervisor"
   },
   "https://jobs.tenneco.com/job/south-bend-manufacturing-engineer-welding-in-46601/1381637400": {
@@ -20304,6 +20414,11 @@
     "first_seen": "2026-11-23T23:29:56.086496",
     "title": "Optomechanical Engineer"
   },
+  "https://quantum-computing-inc.alphastaff-hiring.com/job/1078414/production-group-leader": {
+    "company": "Quantum Computing Inc",
+    "first_seen": "2026-11-24T22:00:40.301927",
+    "title": "Production Group Leader"
+  },
   "https://recruiting.paylocity.com/recruiting/jobs/details/4086861": {
     "company": "Vantedge Medical",
     "first_seen": "2026-10-29T18:07:36.505623",
@@ -21019,6 +21134,11 @@
     "first_seen": "2026-09-22T16:23:23.093066",
     "title": "Structural Engineering Specialist"
   },
+  "https://stvinc.wd5.myworkdayjobs.com/stv/job/harrisburg-pennsylvania/structural-engineering-specialist_jr6506": {
+    "company": "STV Inc",
+    "first_seen": "2026-11-24T22:00:40.301927",
+    "title": "Structural Engineering Specialist"
+  },
   "https://stvinc.wd5.myworkdayjobs.com/stv/job/hartford-connecticut/project-design-engineer_jr5237": {
     "company": "STV Inc",
     "first_seen": "2026-05-30T13:32:19.890371",
@@ -21178,6 +21298,11 @@
     "company": "Taylor",
     "first_seen": "2026-10-31T16:56:18.548517",
     "title": "Production Assembly and Support"
+  },
+  "https://taylor.wd1.myworkdayjobs.com/external/job/fridley-mn---taylor-print--packaging/production-assembly-support--temporary-_r30705": {
+    "company": "Taylor",
+    "first_seen": "2026-11-24T22:00:40.301927",
+    "title": "Production Assembly Support (Temporary)"
   },
   "https://taylor.wd1.myworkdayjobs.com/external/job/fridley-mn---taylor-print--packaging/production-engineer_r30393": {
     "company": "Taylor",
@@ -21868,6 +21993,11 @@
     "company": "ASML",
     "first_seen": "2026-11-23T23:29:56.086496",
     "title": "NewInternship - Mechatronics EngineerWilton, CT, USDesign Engineering and ArchitectureInternship"
+  },
+  "https://www.asml.com/en/careers/find-your-job/internship-optical-and-metrology-engineering-j00358248": {
+    "company": "ASML",
+    "first_seen": "2026-11-24T22:00:40.301927",
+    "title": "NewInternship - Optical and Metrology EngineeringSan Diego, CA, USInterns and TraineesInternship"
   },
   "https://www.asml.com/en/careers/find-your-job/internship-optical-engineering-j00355371": {
     "company": "ASML",
